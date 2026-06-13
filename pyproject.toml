@@ -1,0 +1,26 @@
+[project]
+name = "formaltrust-platform"
+version = "0.1.0"
+description = "Modular LangGraph-based MVP platform for LLM trustworthiness validation"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx",
+    "langgraph",
+    "pydantic",
+    "pyyaml",
+    "typer",
+]
+
+[project.scripts]
+formaltrust = "formaltrust_platform.cli:app"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["formaltrust_platform*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
