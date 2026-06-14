@@ -7,6 +7,7 @@ from langgraph.graph import END, START, StateGraph
 from pydantic import ValidationError
 
 from formaltrust_platform.config import GraphConfig, NodeSpec
+from formaltrust_platform.interfaces import NodeConfigError, validate_config
 from formaltrust_platform.registry import NodeCallable, NodeRegistry
 from formaltrust_platform.state import FormalTrustState, state_to_dict
 
@@ -20,8 +21,17 @@ def build_graph(config: GraphConfig, registry: NodeRegistry):
     node_names = {node.name for node in config.nodes}
 
     for node_spec in config.nodes:
-        node = registry.get(node_spec.node_id)
-        graph.add_node(node_spec.name, _wrap_node(node_spec, node))
+        descriptor = registry.describe(node_spec.node_id)
+        # Fail fast (once, at assembly time) with a friendly diagnostic instead
+        # of a deep KeyError inside the node. Secrets are not checked here so a
+        # graph can be validated offline; nodes still read keys at run time.
+        issues = validate_config(descriptor, node_spec.config, check_env=False)
+        if issues:
+            joined = "; ".join(issues)
+            raise NodeConfigError(
+                f"Node '{node_spec.name}' ({node_spec.node_id}) has invalid config: {joined}"
+            )
+        graph.add_node(node_spec.name, _wrap_node(node_spec, descriptor.func))
 
     for edge in config.edges:
         source = _edge_endpoint(edge.from_node, node_names)

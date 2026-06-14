@@ -3,9 +3,31 @@ from __future__ import annotations
 from collections.abc import Mapping
 from typing import Any
 
+from formaltrust_platform.interfaces import ConfigField, node
 from formaltrust_platform.state import AttackResult, FormalTrustState, RetrievedDocument
 
 
+@node(
+    "attack.template",
+    category="attack",
+    summary="Wrap the case input with a string template; optionally inject a RAG-poisoning document.",
+    config_fields=[
+        ConfigField(
+            "attack_type",
+            default="prompt_injection",
+            description="Attack label, e.g. 'prompt_injection' or 'rag_poisoning'.",
+        ),
+        ConfigField(
+            "template",
+            default="{input}",
+            description="Prompt template; supports {input} and {case_id} placeholders.",
+        ),
+        ConfigField(
+            "poison_document",
+            description="Override the poisoned document text when attack_type='rag_poisoning'.",
+        ),
+    ],
+)
 def template_attack_node(state: FormalTrustState, config: Mapping[str, Any]) -> dict[str, Any]:
     attack_type = str(config.get("attack_type", "prompt_injection"))
     template = str(config.get("template", "{input}"))

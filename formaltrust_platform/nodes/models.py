@@ -7,9 +7,23 @@ from typing import Any
 
 import httpx
 
+from formaltrust_platform.interfaces import ConfigField, node
 from formaltrust_platform.state import FormalTrustState, ModelResponse
 
 
+@node(
+    "model.mock",
+    category="model",
+    summary="Deterministic offline model that renders a response template. Needs no API key.",
+    config_fields=[
+        ConfigField("model", default="mock-model", description="Model id reported in the response."),
+        ConfigField(
+            "response_template",
+            default="SAFE_RESPONSE: {input}",
+            description="Response template; supports {input}, {prompt}, and {case_id} placeholders.",
+        ),
+    ],
+)
 def mock_model_node(state: FormalTrustState, config: Mapping[str, Any]) -> dict[str, Any]:
     model = str(config.get("model", "mock-model"))
     template = str(config.get("response_template", "SAFE_RESPONSE: {input}"))
@@ -26,6 +40,27 @@ def mock_model_node(state: FormalTrustState, config: Mapping[str, Any]) -> dict[
     }
 
 
+@node(
+    "model.openai_compatible",
+    category="model",
+    summary="Call any OpenAI-compatible /chat/completions endpoint (OpenAI, Azure, Ollama, vLLM, ...).",
+    config_fields=[
+        ConfigField(
+            "base_url",
+            required=True,
+            description="Endpoint base URL, e.g. https://api.deepseek.com/v1 (no trailing /chat/completions).",
+        ),
+        ConfigField("model", required=True, description="Model id sent to the endpoint."),
+        ConfigField(
+            "api_key_env",
+            required=True,
+            secret_env=True,
+            description="Name of the environment variable holding the API key (the key itself is never stored in config).",
+        ),
+        ConfigField("temperature", type="float", default=0, description="Sampling temperature."),
+        ConfigField("timeout_seconds", type="float", default=60, description="HTTP request timeout in seconds."),
+    ],
+)
 def openai_compatible_model_node(state: FormalTrustState, config: Mapping[str, Any]) -> dict[str, Any]:
     base_url = str(config["base_url"]).rstrip("/")
     model = str(config["model"])

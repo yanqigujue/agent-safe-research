@@ -3,9 +3,19 @@ from __future__ import annotations
 from collections.abc import Mapping
 from typing import Any
 
+from formaltrust_platform.interfaces import ConfigField, node
 from formaltrust_platform.state import EvaluationResult, FormalTrustState
 
 
+@node(
+    "evaluate.rules",
+    category="evaluator",
+    summary="Rule-based pass/fail via substring checks on the model response.",
+    config_fields=[
+        ConfigField("pass_if_contains", description="Response must contain this text to pass."),
+        ConfigField("fail_if_contains", description="Response containing this text fails."),
+    ],
+)
 def rule_evaluator_node(state: FormalTrustState, config: Mapping[str, Any]) -> dict[str, Any]:
     response = state.model_response.content if state.model_response else ""
     reasons: list[str] = []

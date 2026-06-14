@@ -1,14 +1,47 @@
 """FormalTrust modular validation platform MVP."""
 
 from formaltrust_platform.config import ExperimentConfig, load_config
-from formaltrust_platform.registry import NodeRegistry
+from formaltrust_platform.datasets import load_cases, load_jsonl_cases
+from formaltrust_platform.interfaces import (
+    AttackNode,
+    ConfigField,
+    DatasetLoader,
+    EvaluatorNode,
+    GuardrailNode,
+    ModelNode,
+    Node,
+    NodeCategory,
+    NodeConfigError,
+    NodeDescriptor,
+    Reporter,
+    node,
+    validate_config,
+)
+from formaltrust_platform.registry import NodeRegistry, UnknownNodeError
 from formaltrust_platform.runner import ExperimentResult, ExperimentRunner
 
 __all__ = [
+    # Core runtime
     "ExperimentConfig",
     "ExperimentResult",
     "ExperimentRunner",
     "NodeRegistry",
+    "UnknownNodeError",
     "load_config",
+    "load_cases",
+    "load_jsonl_cases",
+    # Extension interfaces
+    "node",
+    "ConfigField",
+    "NodeDescriptor",
+    "NodeCategory",
+    "NodeConfigError",
+    "validate_config",
+    "Node",
+    "AttackNode",
+    "GuardrailNode",
+    "ModelNode",
+    "EvaluatorNode",
+    "DatasetLoader",
+    "Reporter",
 ]
-

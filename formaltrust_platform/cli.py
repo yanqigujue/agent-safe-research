@@ -6,6 +6,7 @@ from typing import Optional
 import typer
 
 from formaltrust_platform.config import load_config
+from formaltrust_platform.interfaces import NodeConfigError
 from formaltrust_platform.runner import ExperimentRunner
 
 app = typer.Typer(help="FormalTrust modular validation platform CLI.")
@@ -25,6 +26,13 @@ def run_command(
     if output_dir is not None:
         experiment_config = experiment_config.with_output_dir(output_dir)
 
-    result = ExperimentRunner().run(experiment_config)
+    try:
+        result = ExperimentRunner().run(experiment_config)
+    except NodeConfigError as exc:
+        # A node's config violates its declared interface — surface it cleanly
+        # instead of as a traceback.
+        typer.echo(f"Config error: {exc}", err=True)
+        raise typer.Exit(code=2) from exc
+
     typer.echo(f"Run directory: {result.run_dir}")
     typer.echo(f"Report: {result.report_path}")

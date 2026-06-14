@@ -7,7 +7,7 @@ from typing import Any
 
 from formaltrust_platform.artifacts import write_case_artifact, write_results
 from formaltrust_platform.config import ExperimentConfig
-from formaltrust_platform.datasets import load_jsonl_cases
+from formaltrust_platform.datasets import load_cases
 from formaltrust_platform.graph import build_graph
 from formaltrust_platform.registry import NodeRegistry
 from formaltrust_platform.report import write_markdown_report
@@ -31,7 +31,7 @@ class ExperimentRunner:
         run_dir = config.output_dir / run_id
         run_dir.mkdir(parents=True, exist_ok=True)
 
-        cases = load_jsonl_cases(config.dataset_path)
+        cases = load_cases(config.dataset_path)
         app = build_graph(config.graph, self.registry)
         states: list[FormalTrustState] = []
 
