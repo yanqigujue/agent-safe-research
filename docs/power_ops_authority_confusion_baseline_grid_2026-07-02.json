@@ -1,0 +1,249 @@
+{
+  "artifact_type": "power_ops_authority_confusion_baseline_grid",
+  "rows_path": "examples\\data\\power_ops_trace_authority_confusion_rows.json",
+  "row_count": 10,
+  "baseline_count": 5,
+  "baselines": {
+    "capguard": {
+      "baseline": "capguard",
+      "total_rows": 10,
+      "legal_preservation_rate": 1.0,
+      "laundering_block_rate": 1.0,
+      "laundering_reject_rate": 1.0,
+      "false_allow_rate": 0.0,
+      "false_block_rate": 0.0,
+      "abstain_rate": 0.0,
+      "same_source_contrast_gap": 1.0,
+      "legal_witness_compression_rate": 0.0,
+      "field_family_results": {
+        "internal_review_ticket": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "plan_note": {
+          "count": 2,
+          "laundering_block_rate": 1.0
+        },
+        "public_notice_draft": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "review_queue": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "risk_report": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "risk_report_style": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "tool_arguments": {
+          "count": 2,
+          "laundering_block_rate": 1.0
+        },
+        "work_order": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        }
+      }
+    },
+    "permission_only": {
+      "baseline": "permission_only",
+      "total_rows": 10,
+      "legal_preservation_rate": 1.0,
+      "laundering_block_rate": 0.0,
+      "laundering_reject_rate": 0.0,
+      "false_allow_rate": 1.0,
+      "false_block_rate": 0.0,
+      "abstain_rate": 0.0,
+      "same_source_contrast_gap": 0.0,
+      "legal_witness_compression_rate": 0.0,
+      "field_family_results": {
+        "internal_review_ticket": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "plan_note": {
+          "count": 2,
+          "laundering_block_rate": 0.0
+        },
+        "public_notice_draft": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "review_queue": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "risk_report": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "risk_report_style": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "tool_arguments": {
+          "count": 2,
+          "laundering_block_rate": 0.0
+        },
+        "work_order": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        }
+      }
+    },
+    "boundary_scope_only": {
+      "baseline": "boundary_scope_only",
+      "total_rows": 10,
+      "legal_preservation_rate": 1.0,
+      "laundering_block_rate": 0.0,
+      "laundering_reject_rate": 0.0,
+      "false_allow_rate": 1.0,
+      "false_block_rate": 0.0,
+      "abstain_rate": 0.0,
+      "same_source_contrast_gap": 0.0,
+      "legal_witness_compression_rate": 0.0,
+      "field_family_results": {
+        "internal_review_ticket": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "plan_note": {
+          "count": 2,
+          "laundering_block_rate": 0.0
+        },
+        "public_notice_draft": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "review_queue": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "risk_report": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "risk_report_style": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "tool_arguments": {
+          "count": 2,
+          "laundering_block_rate": 0.0
+        },
+        "work_order": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        }
+      }
+    },
+    "field_attribution_only": {
+      "baseline": "field_attribution_only",
+      "total_rows": 10,
+      "legal_preservation_rate": 1.0,
+      "laundering_block_rate": 0.0,
+      "laundering_reject_rate": 0.0,
+      "false_allow_rate": 1.0,
+      "false_block_rate": 0.0,
+      "abstain_rate": 0.0,
+      "same_source_contrast_gap": 0.0,
+      "legal_witness_compression_rate": 0.0,
+      "field_family_results": {
+        "internal_review_ticket": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "plan_note": {
+          "count": 2,
+          "laundering_block_rate": 0.0
+        },
+        "public_notice_draft": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "review_queue": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "risk_report": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "risk_report_style": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        },
+        "tool_arguments": {
+          "count": 2,
+          "laundering_block_rate": 0.0
+        },
+        "work_order": {
+          "count": 1,
+          "laundering_block_rate": 0.0
+        }
+      }
+    },
+    "strict_block": {
+      "baseline": "strict_block",
+      "total_rows": 10,
+      "legal_preservation_rate": 0.0,
+      "laundering_block_rate": 1.0,
+      "laundering_reject_rate": 1.0,
+      "false_allow_rate": 0.0,
+      "false_block_rate": 1.0,
+      "abstain_rate": 0.0,
+      "same_source_contrast_gap": 0.0,
+      "legal_witness_compression_rate": 0.0,
+      "field_family_results": {
+        "internal_review_ticket": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "plan_note": {
+          "count": 2,
+          "laundering_block_rate": 1.0
+        },
+        "public_notice_draft": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "review_queue": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "risk_report": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "risk_report_style": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        },
+        "tool_arguments": {
+          "count": 2,
+          "laundering_block_rate": 1.0
+        },
+        "work_order": {
+          "count": 1,
+          "laundering_block_rate": 1.0
+        }
+      }
+    }
+  },
+  "boundary_blind_baselines": [
+    "permission_only",
+    "boundary_scope_only",
+    "field_attribution_only"
+  ],
+  "overconservative_baselines": [
+    "strict_block"
+  ],
+  "capguard_role_confusion_advantage": 1.0,
+  "role_aware_best_baseline": "capguard",
+  "claim_boundary": "This grid evaluates trace-derived authority-confusion rows only; it is not a production benchmark."
+}

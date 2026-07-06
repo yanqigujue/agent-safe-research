@@ -1,0 +1,28 @@
+{
+  "artifact_type": "eair_reportable_claim_bundle_seal",
+  "sealed": true,
+  "claims_path": "outputs\\eair_warrant_reportable_export\\reportable_claims.json",
+  "claims_sha256": "fd90f121fd3f55b2d5546a0ad65e3db94b42d525b39fec3a32f2d562bc9d70df",
+  "claim_audit_path": "outputs\\eair_warrant_reportable_export\\claim_audit\\reportable_claim_citation_audit.json",
+  "claim_audit_sha256": "7a375e1e8d7a1012ffdc4db407f40133230a5c68a4e79c55b2161f82cea96512",
+  "require_reviewed": false,
+  "human_reviewed": false,
+  "review_status": "unreviewed",
+  "claim_count": 15,
+  "passed_claim_count": 15,
+  "failed_claim_count": 0,
+  "cited_artifacts": [
+    {
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\integrity\\reportable_export_integrity_audit.json",
+      "artifact_sha256": "fc7c069b659ed288761966a403cc37198b207d64301b82fbe4d61173fc755e62",
+      "claim_count": 1
+    },
+    {
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "claim_count": 14
+    }
+  ],
+  "errors": [],
+  "seal_payload_sha256": "e5b2f5c5fcd8290f074c48173633d9683ea9454cd907f68fb24d2eeb98891036"
+}

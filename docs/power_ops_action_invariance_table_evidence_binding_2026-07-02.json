@@ -1,0 +1,632 @@
+{
+  "artifact_type": "power_ops_table_evidence_binding",
+  "readme_path": "README_POWER_OPS_ACTION_INVARIANCE.md",
+  "table_count": 3,
+  "evidence_count": 16,
+  "fully_supported_row_count": 21,
+  "unsupported_row_count": 0,
+  "tables": {
+    "Current Result": {
+      "columns": [
+        "Mode",
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "row_count": 14
+    },
+    "Baseline Grid": {
+      "columns": [
+        "Baseline",
+        "Authorized final preservation",
+        "Unauthorized final removal",
+        "Whole-action block",
+        "Executable invariance",
+        "False allow fields"
+      ],
+      "row_count": 4
+    },
+    "Performance Profile": {
+      "columns": [
+        "Profile",
+        "Normal preservation",
+        "Safety removal",
+        "Whole-action block",
+        "Latency proxy",
+        "Audit compression"
+      ],
+      "row_count": 3
+    }
+  },
+  "rows": [
+    {
+      "table": "Current Result",
+      "row_label": "strict-block",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_summary",
+      "observed_values": {
+        "Mode": "strict-block",
+        "Passed": "10/10",
+        "Whole-action block rate": "1.000",
+        "Executable repair success": "0.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "10/10",
+        "Whole-action block rate": "1.000",
+        "Executable repair success": "0.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "fieldwise-repair",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_summary",
+      "observed_values": {
+        "Mode": "fieldwise-repair",
+        "Passed": "10/10",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "10/10",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "trace-repair",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_summary",
+      "observed_values": {
+        "Mode": "trace-repair",
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "span-otlp-repair",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_summary",
+      "observed_values": {
+        "Mode": "span-otlp-repair",
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "agentdojo-style",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_summary",
+      "observed_values": {
+        "Mode": "agentdojo-style",
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "semireal-trace",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_summary",
+      "observed_values": {
+        "Mode": "semireal-trace",
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "expanded-fieldwise",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_expanded_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_summary",
+      "observed_values": {
+        "Mode": "expanded-fieldwise",
+        "Passed": "18/18",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "18/18",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "metamorphic",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_metamorphic_summary",
+      "observed_values": {
+        "Mode": "metamorphic",
+        "Passed": "4/4",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "4/4",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "skill-authority",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_skill_authority_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_summary",
+      "observed_values": {
+        "Mode": "skill-authority",
+        "Passed": "8/8",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "8/8",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "trace-import",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_trace_import_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_trace_import_summary",
+      "observed_values": {
+        "Mode": "trace-import",
+        "Passed": "4/4",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "4/4",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "multistep-trace-import",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_multistep_trace_import_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_trace_import_summary",
+      "observed_values": {
+        "Mode": "multistep-trace-import",
+        "Passed": "1/1",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "1/1",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "planner-skill-tool-memory",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_planner_skill_tool_memory_summary",
+      "observed_values": {
+        "Mode": "planner-skill-tool-memory",
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "2/2",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "normal-behavior-stress",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_normal_behavior_stress_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_normal_behavior_stress_summary",
+      "observed_values": {
+        "Mode": "normal-behavior-stress",
+        "Passed": "4/4",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "4/4",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Current Result",
+      "row_label": "external-50-full-agent-cases",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_external_case_50_results_2026-07-02.json",
+      "source_artifact_type": "power_ops_external_case_50_summary",
+      "observed_values": {
+        "Mode": "external-50-full-agent-cases",
+        "Passed": "50/50",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "expected_values": {
+        "Passed": "50/50",
+        "Whole-action block rate": "0.000",
+        "Executable repair success": "1.000",
+        "Repair frame validity": "1.000"
+      },
+      "supported_metrics": [
+        "Passed",
+        "Whole-action block rate",
+        "Executable repair success",
+        "Repair frame validity"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Baseline Grid",
+      "row_label": "strict-block",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_baseline_grid_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_baseline_grid",
+      "observed_values": {
+        "Baseline": "strict-block",
+        "Authorized final preservation": "0.000",
+        "Unauthorized final removal": "1.000",
+        "Whole-action block": "1.000",
+        "Executable invariance": "0.000",
+        "False allow fields": "0.000"
+      },
+      "expected_values": {
+        "Authorized final preservation": "0.000",
+        "Unauthorized final removal": "1.000",
+        "Whole-action block": "1.000",
+        "Executable invariance": "0.000",
+        "False allow fields": "0.000"
+      },
+      "supported_metrics": [
+        "Authorized final preservation",
+        "Unauthorized final removal",
+        "Whole-action block",
+        "Executable invariance",
+        "False allow fields"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Baseline Grid",
+      "row_label": "fieldwise-decision-only",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_baseline_grid_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_baseline_grid",
+      "observed_values": {
+        "Baseline": "fieldwise-decision-only",
+        "Authorized final preservation": "0.000",
+        "Unauthorized final removal": "1.000",
+        "Whole-action block": "1.000",
+        "Executable invariance": "0.000",
+        "False allow fields": "0.000"
+      },
+      "expected_values": {
+        "Authorized final preservation": "0.000",
+        "Unauthorized final removal": "1.000",
+        "Whole-action block": "1.000",
+        "Executable invariance": "0.000",
+        "False allow fields": "0.000"
+      },
+      "supported_metrics": [
+        "Authorized final preservation",
+        "Unauthorized final removal",
+        "Whole-action block",
+        "Executable invariance",
+        "False allow fields"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Baseline Grid",
+      "row_label": "provenance-only",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_baseline_grid_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_baseline_grid",
+      "observed_values": {
+        "Baseline": "provenance-only",
+        "Authorized final preservation": "1.000",
+        "Unauthorized final removal": "0.000",
+        "Whole-action block": "0.000",
+        "Executable invariance": "0.000",
+        "False allow fields": "1.000"
+      },
+      "expected_values": {
+        "Authorized final preservation": "1.000",
+        "Unauthorized final removal": "0.000",
+        "Whole-action block": "0.000",
+        "Executable invariance": "0.000",
+        "False allow fields": "1.000"
+      },
+      "supported_metrics": [
+        "Authorized final preservation",
+        "Unauthorized final removal",
+        "Whole-action block",
+        "Executable invariance",
+        "False allow fields"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Baseline Grid",
+      "row_label": "fieldwise-repair",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_baseline_grid_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_baseline_grid",
+      "observed_values": {
+        "Baseline": "fieldwise-repair",
+        "Authorized final preservation": "1.000",
+        "Unauthorized final removal": "1.000",
+        "Whole-action block": "0.000",
+        "Executable invariance": "1.000",
+        "False allow fields": "0.000"
+      },
+      "expected_values": {
+        "Authorized final preservation": "1.000",
+        "Unauthorized final removal": "1.000",
+        "Whole-action block": "0.000",
+        "Executable invariance": "1.000",
+        "False allow fields": "0.000"
+      },
+      "supported_metrics": [
+        "Authorized final preservation",
+        "Unauthorized final removal",
+        "Whole-action block",
+        "Executable invariance",
+        "False allow fields"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Performance Profile",
+      "row_label": "expanded-fieldwise",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_performance_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_performance_profile",
+      "observed_values": {
+        "Profile": "expanded-fieldwise",
+        "Normal preservation": "1.000",
+        "Safety removal": "1.000",
+        "Whole-action block": "0.000",
+        "Latency proxy": "36",
+        "Audit compression": "0.500"
+      },
+      "expected_values": {
+        "Normal preservation": "1.000",
+        "Safety removal": "1.000",
+        "Whole-action block": "0.000",
+        "Latency proxy": "36",
+        "Audit compression": "0.500"
+      },
+      "supported_metrics": [
+        "Normal preservation",
+        "Safety removal",
+        "Whole-action block",
+        "Latency proxy",
+        "Audit compression"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Performance Profile",
+      "row_label": "metamorphic",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_performance_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_performance_profile",
+      "observed_values": {
+        "Profile": "metamorphic",
+        "Normal preservation": "1.000",
+        "Safety removal": "1.000",
+        "Whole-action block": "0.000",
+        "Latency proxy": "8",
+        "Audit compression": "0.688"
+      },
+      "expected_values": {
+        "Normal preservation": "1.000",
+        "Safety removal": "1.000",
+        "Whole-action block": "0.000",
+        "Latency proxy": "8",
+        "Audit compression": "0.688"
+      },
+      "supported_metrics": [
+        "Normal preservation",
+        "Safety removal",
+        "Whole-action block",
+        "Latency proxy",
+        "Audit compression"
+      ],
+      "missing_metrics": []
+    },
+    {
+      "table": "Performance Profile",
+      "row_label": "skill-authority",
+      "status": "fully_supported",
+      "source_artifact": "docs\\power_ops_action_invariance_performance_2026-07-02.json",
+      "source_artifact_type": "power_ops_action_invariance_performance_profile",
+      "observed_values": {
+        "Profile": "skill-authority",
+        "Normal preservation": "1.000",
+        "Safety removal": "1.000",
+        "Whole-action block": "0.000",
+        "Latency proxy": "16",
+        "Audit compression": "0.500"
+      },
+      "expected_values": {
+        "Normal preservation": "1.000",
+        "Safety removal": "1.000",
+        "Whole-action block": "0.000",
+        "Latency proxy": "16",
+        "Audit compression": "0.500"
+      },
+      "supported_metrics": [
+        "Normal preservation",
+        "Safety removal",
+        "Whole-action block",
+        "Latency proxy",
+        "Audit compression"
+      ],
+      "missing_metrics": []
+    }
+  ]
+}

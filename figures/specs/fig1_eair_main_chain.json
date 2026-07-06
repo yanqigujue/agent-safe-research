@@ -1,0 +1,141 @@
+{
+  "title": "WarrantGuard proof-carrying action chain",
+  "canvas": {"width": 1280, "height": 480},
+  "style": {
+    "font_family": "Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif",
+    "font_size": 15,
+    "bg_color": "#FFFFFF",
+    "palette": ["#E0F2FE", "#DCFCE7", "#FEF3C7", "#FCE7F3", "#EDE9FE", "#FEE2E2"]
+  },
+  "labels": [
+    {
+      "text": "WarrantGuard: Proof-Carrying Actions for High-Risk RAG Agents",
+      "x": 640,
+      "y": 42,
+      "font_size": 26,
+      "color": "#111827",
+      "anchor": "middle"
+    },
+    {
+      "text": "Retrieved evidence may influence an action only through a verifiable evidence warrant.",
+      "x": 640,
+      "y": 72,
+      "font_size": 15,
+      "color": "#4B5563",
+      "anchor": "middle"
+    },
+    {
+      "text": "Execute(a) iff HardGate(a)=PASS, VerifyWarrant(a,W_a)=PASS, and CounterWarrant(a,W_a)=CLEAR",
+      "x": 640,
+      "y": 358,
+      "font_size": 18,
+      "color": "#111827",
+      "anchor": "middle"
+    },
+    {
+      "text": "W_a covers decision, tool args, parameters, approval, risk level, risk report, freshness, source diversity, conflict resolution, and counter-evidence.",
+      "x": 640,
+      "y": 386,
+      "font_size": 14,
+      "color": "#475569",
+      "anchor": "middle"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "evidence",
+      "label": "Retrieved Evidence",
+      "sublabel": "K_q / Top-K",
+      "x": 124,
+      "y": 214,
+      "width": 150,
+      "height": 80,
+      "shape": "rounded",
+      "fill": "#E0F2FE",
+      "stroke": "#0284C7",
+      "font_size": 16
+    },
+    {
+      "id": "claim_graph",
+      "label": "Claim Graph",
+      "sublabel": "claims / conflict / version",
+      "x": 320,
+      "y": 214,
+      "width": 170,
+      "height": 80,
+      "shape": "rounded",
+      "fill": "#DCFCE7",
+      "stroke": "#16A34A",
+      "font_size": 16
+    },
+    {
+      "id": "warrant_builder",
+      "label": "Warrant Builder",
+      "sublabel": "construct W_a",
+      "x": 535,
+      "y": 214,
+      "width": 174,
+      "height": 80,
+      "shape": "rounded",
+      "fill": "#FEF3C7",
+      "stroke": "#D97706",
+      "font_size": 16
+    },
+    {
+      "id": "warrant_verifier",
+      "label": "Warrant Verifier",
+      "sublabel": "HardGate + VerifyWarrant",
+      "x": 755,
+      "y": 214,
+      "width": 174,
+      "height": 80,
+      "shape": "rounded",
+      "fill": "#FCE7F3",
+      "stroke": "#DB2777",
+      "font_size": 16
+    },
+    {
+      "id": "proof_action",
+      "label": "Proof-Carrying Action",
+      "sublabel": "(a, W_a)",
+      "x": 980,
+      "y": 214,
+      "width": 186,
+      "height": 80,
+      "shape": "rounded",
+      "fill": "#EDE9FE",
+      "stroke": "#7C3AED",
+      "font_size": 16
+    },
+    {
+      "id": "execution",
+      "label": "Execution Outcome",
+      "sublabel": "execute / block / review",
+      "x": 1170,
+      "y": 214,
+      "width": 154,
+      "height": 80,
+      "shape": "rounded",
+      "fill": "#FEE2E2",
+      "stroke": "#DC2626",
+      "font_size": 16
+    }
+  ],
+  "edges": [
+    {"from": "evidence", "to": "claim_graph", "label": "extract"},
+    {"from": "claim_graph", "to": "warrant_builder", "label": "bind"},
+    {"from": "warrant_builder", "to": "warrant_verifier", "label": "submit"},
+    {"from": "warrant_verifier", "to": "proof_action", "label": "certify"},
+    {"from": "proof_action", "to": "execution", "label": "gate"}
+  ],
+  "groups": [
+    {
+      "id": "main_chain",
+      "label": "Proof-carrying action pattern",
+      "node_ids": ["evidence", "claim_graph", "warrant_builder", "warrant_verifier", "proof_action", "execution"],
+      "fill": "#F8FAFC",
+      "stroke": "#CBD5E1",
+      "padding": 26
+    }
+  ]
+}

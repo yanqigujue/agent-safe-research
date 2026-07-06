@@ -1,0 +1,274 @@
+　　　　　　
+2026 年 春 季学期研究生课程考核
+　　　　　　　　　　　　（读书报告、研究报告）
+考核科目	:     多媒体安全          
+学生所在院（系）	:     XXXXX
+学生所在学科	:      XXXXX
+学  生  姓  名	:      XXXX
+学          号	:      XXXX
+学 生 类 别	:      XXXX
+考核结果			
+阅卷人			
+			
+评阅意见：		
+
+
+报告评分表
+序号	说明	满分	得分
+1	选题及课题背景	15	
+2	国内外现状分析	25	
+3	技术方法及路线	40	
+4	实验结果及分析	10	
+5	报告文档格式及规范	10	
+6	总分	100	
+
+
+哈尔滨工业大学
+2026年6月
+
+
+
+
+
+《多媒体安全》课程研究报告
+2026春季学期
+
+
+
+
+
+
+
+　　　　　姓    名：				XXX
+　　　　　学    号：			XXX
+　　　　　专    业：		  XXX
+　　　　　
+
+哈尔滨工业大学
+2026年6月
+
+
+基于XXXXXXXXX方法
+摘要：在信息社会， XXXX
+XXXX
+XXXX
+XXXX
+XXXX
+XXXX
+XXXX
+XXXX
+关键字：虹膜识别、K-means聚类法、图像分割
+
+Abstract: This work is present
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+
+Keywords: Face recognition
+1.研究背景与目的
+　　　随着信息时代的到来，个人资料、个人财产都是以数字信息的形式存在。当用户需要使用这些信息时，用户身份的确认就显得尤为重要。传统的身份认证方式主要有证件、密码以及两则结合这三种方式。然而这些认证技术存在着容易遗忘丢失或损坏、可能被窃取或伪造、易于被破解、操作繁琐等问题。
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+　　
+　　　图1 虹膜识别简要流程
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+　　　
+2.方案设计
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+
+
+图1 基于动态聚类的虹膜图像分割流程
+　　　图像1是本文所用的基于动态聚类的虹膜图像分割方法的主要流程，输入一幅虹膜图像，进行图像预处理，预处理的过程主要包含图像质量评估，虹膜的检测，舍去不包含眼睛、眼睛闭合、图像模糊等不符合条件的虹膜图像，预处理过程还包括图像的降噪，归一化，对比增强等步骤。再进行图像与处理后，对图像的每一个像素按横纵坐标、灰度共三维的信息进行K-means动态聚类，将聚类结果进行分类，按照每一类划分图像区域。知道每一类划分区域后，选取感兴趣区域，对感兴趣区域采用图像处理的方法进行虹膜图像分割，获得虹膜内外边缘、眼睑、睫毛等区域的分割结果。
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+　　　
+3.算法描述
+　　　图2显示了IIT Delhi 虹膜数据库中的一张典型虹膜照片，可以看出，在这幅图像中，从图像的灰度看典型的类别有瞳孔与睫毛，虹膜、巩膜与皮肤、高光，而从位置关系分类有眼睑与睫毛、皮肤、巩膜、虹膜、瞳孔。因此，可以从灰度与位置两者同时来进行虹膜区域的分类。
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+
+图4 与类别数K的关系
+	分类的结果如图5所示，所有的像素被分成4类，这四类将虹膜、瞳孔、睫毛、巩膜、皮肤都合理地加以区分。得到了良好的分类效果。得到分类的图像，经过一系列后续步骤，虹膜图像的最终分割结果如图6所示。从图6可以看出，正是由于分类后的结果，使得瞳孔边缘非常清晰，有利于使用傅里叶系数来精确、鲁棒地拟合虹膜的内边缘；分类的结果同样使得眼睑的边缘非常锐利，大大提高了眼睑拟合的准确性；同时睫毛检测与高光检测也由于虹膜分类变得非常简单有效。最终的图像分割结果最大程度保留了有效信息，去除了所有的无效信息，这对于下一步的虹膜匹配是非常有利的。
+  
+图5 分类后的图像            图6 虹膜图像的分割结果
+
+4.实验结果
+	为了测试基于K-means聚类的虹膜分割方法的效果，我们在MATLAB上对整个IIT Delhi 虹膜数据库一共2240张虹膜图片进行了测试。图7展示了一些具有代表性的虹膜图像分割结果，从结果可以看出，这种方法能适用于多种多样的虹膜分割，具有很高的推广性。
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+
+
+图7 有代表性的图像分割效果
+	表1反应了K-means聚类方法对虹膜分割效果的影响，在未加入K-means XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+
+表1 K-means聚类方法对虹膜分割效果的影响
+分割方法	分割区域	分割错误数	正确率
+普通的虹膜分割方法	内边缘	43	98.08%
+	外边缘	86	96.16%
+	眼睑	105	95.31%
+	睫毛	282	85.31%
+基于K-means聚类的虹膜分割方法	内边缘	17	99.24%
+	外边缘	76	96.61%
+	眼睑	77	96.56%
+	睫毛	52	97.68%
+
+5.结论
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+6.参考文献：
+[1]	G. Kelly, T. Mansfield, D. Chandler, et al. Biometric Product Testing Final Report [J]. National Physical Laboratory of UK. 2001.
+[2]	杜勇. 虹膜识别算法及系统研究[D]. 哈尔滨：哈尔滨工业大学. 2006.
+[3] 	XXXX
+[3] 	XXXXXXXXX
+[3] 	XXX
+7.附录１.算法程序
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXX
+XXXXXXXXX
+XXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX

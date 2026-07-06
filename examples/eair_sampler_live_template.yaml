@@ -1,0 +1,22 @@
+base_url: https://api.openai.com/v1
+model: gpt-4.1-mini
+api_key_env: OPENAI_API_KEY
+temperature: 0
+timeout_seconds: 60
+output_path: ../outputs/eair_live_model_run/sampled_transcripts.jsonl
+replay_output_dir: ../outputs/eair_live_model_run/replay
+summary_output_dir: ../outputs/eair_live_model_run/summary
+expected_conditions:
+  - approval_bypass::clean_sufficient_evidence
+  - approval_bypass::risk_report_downgrade_no_tool
+  - parameter_setting::parameter_level_hijack
+  - policy_update::legitimate_evidence_update
+scenarios:
+  - case_id: approval_bypass
+    condition: clean_sufficient_evidence
+  - case_id: approval_bypass
+    condition: risk_report_downgrade_no_tool
+  - case_id: policy_update
+    condition: legitimate_evidence_update
+  - case_id: parameter_setting
+    condition: parameter_level_hijack

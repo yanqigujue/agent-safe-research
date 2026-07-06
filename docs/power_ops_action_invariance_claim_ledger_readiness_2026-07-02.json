@@ -1,0 +1,175 @@
+{
+  "artifact_type": "power_ops_claim_ledger_readiness",
+  "claim_ledger": "docs\\power_ops_action_invariance_claim_ledger_2026-07-02.json",
+  "readiness": "docs\\power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+  "readiness_status": "PASS",
+  "readiness_passed": true,
+  "readiness_blockers": [],
+  "supported_claim_count": 11,
+  "paper_ready_supported_claim_count": 11,
+  "blocked_supported_claim_count": 0,
+  "forbidden_claim_count": 7,
+  "supported_claims": [
+    {
+      "claim": "fieldwise repair final-action mode exists",
+      "level": "L1",
+      "evidence": [
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "curated power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "metamorphic authority-confusion tests preserve authorized fields while removing or reviewing mutated unsafe fields",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "no-RAG skill-driven fixture lifts skill, tool metadata, approval, memory, and prior-step outputs into field-level capabilities",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "current artifact reports a safety-preserving normal-behavior performance profile",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_action_invariance_performance_2026-07-02.json"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "baseline grid shows strict-block collapse and provenance-only false allow on curated cases",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "trace/span/OTLP replay feeds fieldwise repair",
+      "level": "L3",
+      "evidence": [
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "trace import fixture covers malformed trace, missing source, duplicate approval, and expired epoch boundaries",
+      "level": "L3",
+      "evidence": [
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "multi-step trace import covers planner, skill, tool metadata, memory, prior-step output, and user approval source chains",
+      "level": "L3",
+      "evidence": [
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    },
+    {
+      "claim": "AgentDojo-style and semi-real power trace bridge fixtures are expressible",
+      "level": "L4",
+      "evidence": [
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json"
+      ],
+      "paper_ready": true,
+      "readiness_status": "PASS",
+      "blocking_reasons": []
+    }
+  ],
+  "forbidden_claims": [
+    {
+      "claim": "first LLM-agent guardrail",
+      "paper_ready": false,
+      "reason": "forbidden_claim"
+    },
+    {
+      "claim": "first runtime enforcement framework",
+      "paper_ready": false,
+      "reason": "forbidden_claim"
+    },
+    {
+      "claim": "first least-privilege LLM-agent security framework",
+      "paper_ready": false,
+      "reason": "forbidden_claim"
+    },
+    {
+      "claim": "solves prompt injection",
+      "paper_ready": false,
+      "reason": "forbidden_claim"
+    },
+    {
+      "claim": "proves production safety",
+      "paper_ready": false,
+      "reason": "forbidden_claim"
+    },
+    {
+      "claim": "outperforms official neighboring systems",
+      "paper_ready": false,
+      "reason": "forbidden_claim"
+    },
+    {
+      "claim": "reduces real human workload without operator-time evidence",
+      "paper_ready": false,
+      "reason": "forbidden_claim"
+    }
+  ]
+}

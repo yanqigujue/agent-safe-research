@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" font-family="Arial, sans-serif">
+  <rect width="1000" height="560" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#E0F2FE"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DCFCE7"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FDE68A"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FCE7F3"/>
+    </marker>
+    <marker id="arrow-c4" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#E5E7EB"/>
+    </marker>
+  </defs>
+  <rect x="13.5" y="101.0" width="980.5" height="158.0" fill="#FAFAFA" stroke="#D4D4D8" stroke-width="1" rx="8"/>
+  <text x="21.5" y="117.0" font-size="11" fill="#999999" font-weight="bold">Contribution compression</text>
+  <rect x="86.0" y="327.0" width="860.5" height="116.0" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" rx="8"/>
+  <text x="94.0" y="343.0" font-size="11" fill="#999999" font-weight="bold">Claims now explicitly avoided</text>
+  <path d="M 212.5,180.0 L 272.5,180.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="199.5" y="162.0" width="86.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="242.5" y="174.0" font-size="10" fill="#777777" text-anchor="middle">narrow output</text>
+  <path d="M 457.5,180.0 L 527.5,180.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="437.5" y="162.0" width="110.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="492.5" y="174.0" font-size="10" fill="#777777" text-anchor="middle">externalize proof</text>
+  <path d="M 712.5,180.0 L 780.0,180.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="697.2" y="162.0" width="98.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="746.2" y="174.0" font-size="10" fill="#777777" text-anchor="middle">scope authority</text>
+  <path d="M 780.0,208.2 Q 511.5,256.7 260.0,362.7" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="487.7" y="253.1" width="56.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="515.7" y="265.1" font-size="10" fill="#777777" text-anchor="middle">boundary</text>
+  <path d="M 780.0,217.1 Q 591.6,258.5 425.0,355.7" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="569.0" y="254.4" width="56.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="597.0" y="266.4" font-size="10" fill="#777777" text-anchor="middle">boundary</text>
+  <path d="M 780.0,234.1 Q 662.5,266.5 574.7,351.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="641.9" y="261.5" width="56.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="669.9" y="273.5" font-size="10" fill="#777777" text-anchor="middle">boundary</text>
+  <path d="M 822.7,235.0 Q 745.8,272.3 712.3,351.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="728.6" y="264.7" width="56.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="756.6" y="276.7" font-size="10" fill="#777777" text-anchor="middle">boundary</text>
+  <path d="M 867.0,235.0 Q 828.8,288.7 850.0,351.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="815.6" y="272.8" width="56.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="843.6" y="284.8" font-size="10" fill="#777777" text-anchor="middle">boundary</text>
+  <rect x="37.5" y="127.5" width="175.0" height="105.0" fill="#E0F2FE" stroke="#0284C7" stroke-width="2" rx="8"/>
+  <text x="125.0" y="177.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Broad RAG Safety</text>
+  <text x="125.0" y="192.1" font-size="10" fill="#888888" text-anchor="middle">poisoning, faithfulness,
+runtime guard framing</text>
+  <rect x="272.5" y="127.5" width="185.0" height="105.0" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="365.0" y="169.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Evidence-to-Action</text>
+  <text x="365.0" y="184.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Integrity</text>
+  <text x="365.0" y="199.6" font-size="10" fill="#888888" text-anchor="middle">retrieved evidence
+supports action fields</text>
+  <rect x="527.5" y="127.5" width="185.0" height="105.0" fill="#FDE68A" stroke="#CA8A04" stroke-width="2" rx="8"/>
+  <text x="620.0" y="177.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">WarrantGuard</text>
+  <text x="620.0" y="192.1" font-size="10" fill="#888888" text-anchor="middle">proof-carrying action
+(a, W_a)</text>
+  <rect x="780.0" y="125.0" width="190.0" height="110.0" fill="#FCE7F3" stroke="#DB2777" stroke-width="2" rx="8"/>
+  <text x="875.0" y="169.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Field-Scoped</text>
+  <text x="875.0" y="184.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Evidence Capabilities</text>
+  <text x="875.0" y="199.6" font-size="10" fill="#888888" text-anchor="middle">ECap(e) bounds which
+fields evidence may govern</text>
+  <rect x="110.0" y="351.0" width="150.0" height="68.0" fill="#F1F5F9" stroke="#64748B" stroke-width="2" rx="8"/>
+  <text x="185.0" y="382.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Not just</text>
+  <text x="185.0" y="397.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">source attribution</text>
+  <rect x="275.0" y="351.0" width="150.0" height="68.0" fill="#F1F5F9" stroke="#64748B" stroke-width="2" rx="8"/>
+  <text x="350.0" y="382.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Not just</text>
+  <text x="350.0" y="397.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">access control</text>
+  <rect x="440.0" y="351.0" width="150.0" height="68.0" fill="#F1F5F9" stroke="#64748B" stroke-width="2" rx="8"/>
+  <text x="515.0" y="382.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Not just</text>
+  <text x="515.0" y="397.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">RAG faithfulness</text>
+  <rect x="605.0" y="351.0" width="150.0" height="68.0" fill="#F1F5F9" stroke="#64748B" stroke-width="2" rx="8"/>
+  <text x="680.0" y="382.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Not just</text>
+  <text x="680.0" y="397.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">plan consistency</text>
+  <rect x="767.5" y="351.0" width="155.0" height="68.0" fill="#F1F5F9" stroke="#64748B" stroke-width="2" rx="8"/>
+  <text x="845.0" y="382.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Not tool-capability</text>
+  <text x="845.0" y="397.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">laundering firstness</text>
+  <text x="500.0" y="42.0" font-size="22" fill="#0F172A" text-anchor="middle">Contribution shift: the paper object became smaller and stronger</text>
+  <text x="500.0" y="72.0" font-size="14" fill="#475569" text-anchor="middle">Current one-line hook: retrieved evidence is a bounded capability to change protected action fields.</text>
+</svg>

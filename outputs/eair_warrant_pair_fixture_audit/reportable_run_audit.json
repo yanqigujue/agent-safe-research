@@ -1,0 +1,17 @@
+{
+  "artifact_type": "eair_reportable_run_audit",
+  "reportable": true,
+  "summary_path": "outputs\\eair_warrant_pair_fixture_summary\\artifact_summary.json",
+  "manifest_paths": [
+    "outputs\\eair_warrant_pair_fixture_replay\\artifact_manifest.json"
+  ],
+  "models": [
+    "provider-live-contrast-model"
+  ],
+  "transcript_count": 2,
+  "sampling_modes": {
+    "live": 2
+  },
+  "coverage_complete": true,
+  "errors": []
+}

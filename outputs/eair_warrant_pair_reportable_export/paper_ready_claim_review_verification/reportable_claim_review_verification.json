@@ -1,0 +1,23 @@
+{
+  "artifact_type": "eair_reportable_claim_review_verification",
+  "passed": true,
+  "claims_path": "outputs\\eair_warrant_pair_reportable_export\\paper_ready_claims.json",
+  "reviewed_claims_sha256": "d2bfc12d24ef90d80061286307436905adfb0160f300fa8e0486a2dafeb80520",
+  "expected_review_manifest_payload_sha256": "dabad021e07f89323db62d1eca3e8d9698df6545f5373af7b093f632f99b5500",
+  "actual_review_manifest_payload_sha256": "dabad021e07f89323db62d1eca3e8d9698df6545f5373af7b093f632f99b5500",
+  "review_manifest_payload_sha256_matches": true,
+  "human_reviewed": true,
+  "review_status": "reviewed",
+  "reviewer": "Codex",
+  "source_claims_path": "outputs\\eair_warrant_pair_reportable_export\\reportable_claims.json",
+  "expected_source_claims_sha256": "cfde0f4166d70c58cc83e669beb21bdf77b5cc8f3faa797abcd6fc64900bf37e",
+  "actual_source_claims_sha256": "cfde0f4166d70c58cc83e669beb21bdf77b5cc8f3faa797abcd6fc64900bf37e",
+  "source_claims_sha256_matches": true,
+  "source_claim_audit_path": "outputs\\eair_warrant_pair_reportable_export\\claim_audit\\reportable_claim_citation_audit.json",
+  "expected_source_claim_audit_sha256": "949db6d16ac9ae28a6eef57d0365e41fbc937466783d5b5679ee5ff4a790e505",
+  "actual_source_claim_audit_sha256": "949db6d16ac9ae28a6eef57d0365e41fbc937466783d5b5679ee5ff4a790e505",
+  "source_claim_audit_sha256_matches": true,
+  "source_claim_audit_passed": true,
+  "source_claim_audit_failed_claim_count": 0,
+  "errors": []
+}

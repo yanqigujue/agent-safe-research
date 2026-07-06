@@ -1,0 +1,138 @@
+{
+  "artifact_type": "power_ops_evidence_bound_intro",
+  "source_skeleton": "docs/power_ops_action_invariance_readiness_bound_abstract_2026-07-02.json",
+  "source_abstract": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+  "abstract_status": "ready",
+  "intro_status": "ready",
+  "paragraph_outline": [
+    {
+      "slot": "problem",
+      "role": "Motivate field-level action invariance for supervised high-risk power-operation agents.",
+      "outline_text": "Open with the problem that strict supervision should preserve authorized work while removing invalid authority fields.",
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "gap",
+      "role": "Separate the paper from generic runtime enforcement or broad agent safety.",
+      "outline_text": "State the gap as field-scoped authority preservation under intervention, not a claim of production safety or firstness.",
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": "Keep firstness, production, workload, and official-superiority claims out."
+    },
+    {
+      "slot": "method",
+      "role": "Introduce fieldwise repair and auditable claim readiness.",
+      "outline_text": "Describe the implementation as fieldwise repair plus claim/readiness artifacts that keep each statement evidence-bound.",
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "evidence",
+      "role": "Summarize only the paper-ready evidence pool.",
+      "outline_text": "List curated, expanded, metamorphic, skill, baseline, and trace evidence without promoting the fixtures into deployment evidence.",
+      "source_claims": [
+        {
+          "claim": "curated power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+            "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "metamorphic authority-confusion tests preserve authorized fields while removing or reviewing mutated unsafe fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+            "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl"
+          ]
+        },
+        {
+          "claim": "no-RAG skill-driven fixture lifts skill, tool metadata, approval, memory, and prior-step outputs into field-level capabilities",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_skill_authority_results_2026-07-02.json",
+            "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+            "docs/power_ops_skill_authority_model_2026-07-02.md"
+          ]
+        },
+        {
+          "claim": "current artifact reports a safety-preserving normal-behavior performance profile",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_performance_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "baseline grid shows strict-block collapse and provenance-only false allow on curated cases",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "boundary",
+      "role": "End the introduction preview with explicit limitations.",
+      "outline_text": "Close the introduction preview by saying there is no production telemetry, no real operator workload reduction claim, and no official neighboring-system superiority claim.",
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": "No production telemetry; no real workload reduction; no official superiority."
+    }
+  ],
+  "forbidden_claim_hits": []
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 760" width="780" height="760" font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+  <rect width="780" height="760" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#E0F2FE"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF3C7"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DCFCE7"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#F3E8FF"/>
+    </marker>
+  </defs>
+  <rect x="196.0" y="175.0" width="388.0" height="453.0" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" rx="8"/>
+  <text x="204.0" y="191.0" font-size="13" fill="#999999" font-weight="bold">模型外部执行的 Gate</text>
+  <path d="M 390.0,164.0 L 390.0,199.0" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 390.0,271.0 L 390.0,309.0" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 390.0,381.0 L 390.0,419.0" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 390.0,491.0 L 390.0,526.0" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 347.7,588.3 L 242.7,646.0" stroke="#15803D" stroke-width="3" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 390.0,604.0 L 390.0,646.0" stroke="#B91C1C" stroke-width="3" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 432.3,588.3 L 537.3,646.0" stroke="#2563EB" stroke-width="3" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="275.0" y="96.0" width="230.0" height="68.0" fill="#E0F2FE" stroke="#0284C7" stroke-width="2" rx="8"/>
+  <text x="390.0" y="126.2" font-size="19" fill="#333333" text-anchor="middle" font-weight="bold">候选动作</text>
+  <text x="390.0" y="147.2" font-size="16" fill="#888888" text-anchor="middle">model proposed action a</text>
+  <rect x="220.0" y="199.0" width="340.0" height="72.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2" rx="8"/>
+  <text x="390.0" y="231.2" font-size="19" fill="#333333" text-anchor="middle" font-weight="bold">硬规则门控</text>
+  <text x="390.0" y="252.2" font-size="16" fill="#888888" text-anchor="middle">approval, tool, domain, parameter</text>
+  <rect x="220.0" y="309.0" width="340.0" height="72.0" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="390.0" y="341.1" font-size="19" fill="#333333" text-anchor="middle" font-weight="bold">证据充分性门控</text>
+  <text x="390.0" y="362.1" font-size="16" fill="#888888" text-anchor="middle">trusted, fresh, current, independent</text>
+  <rect x="220.0" y="419.0" width="340.0" height="72.0" fill="#F3E8FF" stroke="#9333EA" stroke-width="2" rx="8"/>
+  <text x="390.0" y="451.1" font-size="19" fill="#333333" text-anchor="middle" font-weight="bold">EAIR 风险评分</text>
+  <text x="390.0" y="472.1" font-size="16" fill="#888888" text-anchor="middle">path poison, conflict, weak support</text>
+  <polygon points="390.0,526.0 495.0,565.0 390.0,604.0 285.0,565.0" fill="#F8FAFC" stroke="#475569" stroke-width="2"/>
+  <text x="390.0" y="561.5" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">门控决策</text>
+  <text x="390.0" y="580.5" font-size="14" fill="#888888" text-anchor="middle">what should the agent do?</text>
+  <rect x="110.0" y="646.0" width="160.0" height="58.0" fill="#BBF7D0" stroke="#15803D" stroke-width="2" rx="8"/>
+  <text x="190.0" y="682.0" font-size="20" fill="#333333" text-anchor="middle" font-weight="bold">允许</text>
+  <rect x="310.0" y="646.0" width="160.0" height="58.0" fill="#FECACA" stroke="#B91C1C" stroke-width="2" rx="8"/>
+  <text x="390.0" y="682.0" font-size="20" fill="#333333" text-anchor="middle" font-weight="bold">阻断</text>
+  <rect x="505.0" y="646.0" width="170.0" height="58.0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" rx="8"/>
+  <text x="590.0" y="682.0" font-size="20" fill="#333333" text-anchor="middle" font-weight="bold">人工审批</text>
+  <text x="390.0" y="42.0" font-size="26" fill="#111827" text-anchor="middle">三层 Evidence-Action Gate</text>
+  <text x="390.0" y="72.0" font-size="14" fill="#4B5563" text-anchor="middle">高风险动作必须同时通过硬规则、证据充分性与 EAIR 风险评分。</text>
+</svg>

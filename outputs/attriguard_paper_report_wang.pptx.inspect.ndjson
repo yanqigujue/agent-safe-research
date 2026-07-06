@@ -1,0 +1,244 @@
+{"kind":"deck","id":"pr/oiv7pw","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑母版标题样式"},{"name":"body","type":"body","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"标题幻灯片","type":"title","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑母版标题样式"},{"name":"subtitle","type":"subtitle","textPreview":"单击此处编辑母版副标题样式"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"标题和内容","type":"obj","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑母版标题样式"},{"name":"2","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"节标题","type":"secHead","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑标题"},{"name":"body","type":"body","textPreview":"单击此处编辑文本"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"两栏内容","type":"twoObj","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑母版标题样式"},{"name":"2","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"},{"name":"3","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"比较","type":"twoTxTwoObj","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑母版标题样式"},{"name":"body","type":"body","textPreview":"单击此处编辑文本"},{"name":"3","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"},{"name":"body","type":"body","textPreview":"单击此处编辑文本"},{"name":"5","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout6.xml","name":"仅标题","type":"titleOnly","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑母版标题样式"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout7.xml","name":"空白","type":"blank","placeholders":[{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout8.xml","name":"图片与标题","placeholders":[{"name":"picture","type":"picture"},{"name":"body","type":"body","textPreview":"单击此处编辑母版文本样式"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"},{"name":"title","type":"title","textPreview":"单击此处编辑母版标题样式"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout9.xml","name":"竖排标题与文本","type":"vertTitleAndTx","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑标题"},{"name":"body","type":"body","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout10.xml","name":"内容","placeholders":[{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"},{"name":"6","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout11.xml","name":"末尾幻灯片","placeholders":[{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"},{"name":"title","type":"title","textPreview":"单击此处编辑标题"},{"name":"body","type":"body","textPreview":"单击此处编辑母版文本样式"}]}
+{"kind":"slide","id":"sl/2x4nap4r","slide":1,"title":"论文汇报","textShapes":8}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":1,"name":"文本框 25","text":"论文汇报","textPreview":"论文汇报","textChars":4,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":1,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":1,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":1,"text":"01 / 10","textPreview":"01 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":1,"text":"AttriGuard: 通过工具调用的因果归因抵御间接提示注入","textPreview":"AttriGuard: 通过工具调用的因果归因抵御间接提示注入","textChars":31,"textLines":1,"bbox":[100,170,1060,105]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":1,"text":"Defeating Indirect Prompt Injection in LLM Agents via Causal Attribution of Tool Invocations","textPreview":"Defeating Indirect Prompt Injection in LLM Agents via Causal Attribution of Tool Invocations","textChars":92,"textLines":1,"bbox":[104,286,1000,34]}
+{"kind":"shape","id":"sh/q1orytsv","slide":1,"bbox":[100,360,1080,1.5]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":1,"text":"论文：Yu He, Haozhe Zhu, Yiming Li, Shuo Shao, Hongwei Yao, Zhihao Liu, Zhan Qin\n机构：Zhejiang University / NTU / City University of Hong Kong\n版本：arXiv:2603.10749v2，2026-06-10","textPreview":"论文：Yu He, Haozhe Zhu, Yiming Li, Shuo Shao, Hongwei Yao, Zhihao Liu, Zhan Qin | 机构：Zhejiang University / NTU / City University of Hong Ko...","textChars":170,"textLines":3,"bbox":[105,392,720,108]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":1,"text":"汇报人\n王震潭","textPreview":"汇报人 | 王震潭","textChars":7,"textLines":2,"bbox":[905,396,210,110]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":1,"text":"一句话：不再问“外部文本像不像攻击”，而是问“这个工具调用到底是谁推动的”。","textPreview":"一句话：不再问“外部文本像不像攻击”，而是问“这个工具调用到底是谁推动的”。","textChars":38,"textLines":1,"bbox":[105,570,980,42]}
+{"kind":"image","id":"im/lszqtcj6","slide":1,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"notes","id":"nt/2x4nap4r","slide":1,"text":""}
+{"kind":"slide","id":"sl/pg3ex0nu","slide":2,"title":"背景：LLM Agent 的 IPI 风险","textShapes":19}
+{"kind":"textbox","id":"sh/7u54zido","slide":2,"name":"文本框 25","text":"背景：LLM Agent 的 IPI 风险","textPreview":"背景：LLM Agent 的 IPI 风险","textChars":21,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/psfil0rq","slide":2,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":2,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":2,"text":"02 / 10","textPreview":"02 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":2,"text":"间接提示注入（IPI）把恶意指令藏在网页、邮件、文档等工具返回内容里，Agent 为完成任务必须读取这些内容，于是可能把“数据”误当成“指令”。","textPreview":"间接提示注入（IPI）把恶意指令藏在网页、邮件、文档等工具返回内容里，Agent 为完成任务必须读取这些内容，于是可能把“数据”误当成“指令”。","textChars":72,"textLines":1,"bbox":[82,130,1080,58]}
+{"kind":"textbox","id":"sh/obm58z25","slide":2,"text":"用户任务","textPreview":"用户任务","textChars":4,"textLines":1,"bbox":[95,250,210,50]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":2,"text":"总结邮件、读取网页、办理流程","textPreview":"总结邮件、读取网页、办理流程","textChars":14,"textLines":1,"bbox":[105,315,190,80]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":2,"bbox":[315,274,8,2]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":2,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[319,257,30,34]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":2,"text":"读取外部内容","textPreview":"读取外部内容","textChars":6,"textLines":1,"bbox":[365,250,210,50]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":2,"text":"工具返回网页/邮件/API 结果","textPreview":"工具返回网页/邮件/API 结果","textChars":16,"textLines":1,"bbox":[375,315,190,80]}
+{"kind":"shape","id":"sh/al87ed8b","slide":2,"bbox":[585,274,8,2]}
+{"kind":"textbox","id":"sh/z61032ls","slide":2,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[589,257,30,34]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":2,"text":"恶意指令混入观察","textPreview":"恶意指令混入观察","textChars":8,"textLines":1,"bbox":[635,250,210,50]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":2,"text":"例如要求转发隐私或付款","textPreview":"例如要求转发隐私或付款","textChars":11,"textLines":1,"bbox":[645,315,190,80]}
+{"kind":"shape","id":"sh/xczed8v6","slide":2,"bbox":[855,274,8,2]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":2,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[859,257,30,34]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":2,"text":"越权工具调用","textPreview":"越权工具调用","textChars":6,"textLines":1,"bbox":[905,250,210,50]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":2,"text":"数据泄露、资金损失、状态被篡改","textPreview":"数据泄露、资金损失、状态被篡改","textChars":15,"textLines":1,"bbox":[915,315,190,80]}
+{"kind":"shape","id":"sh/x4nap4r6","slide":2,"bbox":[120,480,5,128]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":2,"bbox":[125,480,465,128]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":2,"text":"已有防御的共同弱点","textPreview":"已有防御的共同弱点","textChars":9,"textLines":1,"bbox":[138,494,438,28]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":2,"text":"多数方法把安全性建模为输入语义判别：识别“像攻击”的文本。问题是语言空间高维且分布会变，新的 payload 很容易绕开固定边界。","textPreview":"多数方法把安全性建模为输入语义判别：识别“像攻击”的文本。问题是语言空间高维且分布会变，新的 payload 很容易绕开固定边界。","textChars":65,"textLines":1,"bbox":[138,528,438,70]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":2,"bbox":[690,480,5,128]}
+{"kind":"shape","id":"sh/94fu18jq","slide":2,"bbox":[695,480,415,128]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":2,"text":"本文要解决的矛盾","textPreview":"本文要解决的矛盾","textChars":8,"textLines":1,"bbox":[708,494,388,28]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":2,"text":"既要允许 Agent 读取不可信内容完成任务，又要阻断不可信内容对控制流的劫持。","textPreview":"既要允许 Agent 读取不可信内容完成任务，又要阻断不可信内容对控制流的劫持。","textChars":40,"textLines":1,"bbox":[708,528,388,70]}
+{"kind":"image","id":"im/3ex0nuxc","slide":2,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"notes","id":"nt/pg3ex0nu","slide":2,"text":""}
+{"kind":"slide","id":"sl/s72x4nap","slide":3,"title":"核心洞察：从输入检测转向动作归因","textShapes":16}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":3,"name":"文本框 25","text":"核心洞察：从输入检测转向动作归因","textPreview":"核心洞察：从输入检测转向动作归因","textChars":16,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/ed8bat47","slide":3,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/7u54zido","slide":3,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":3,"text":"03 / 10","textPreview":"03 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":3,"text":"论文提出 action-level causal attribution：对每个即将执行的工具调用，判断它主要由用户意图支持，还是由不可信观察中的控制信号驱动。","textPreview":"论文提出 action-level causal attribution：对每个即将执行的工具调用，判断它主要由用户意图支持，还是由不可信观察中的控制信号驱动。","textChars":80,"textLines":1,"bbox":[82,124,1080,60]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":3,"text":"合法流程","textPreview":"合法流程","textChars":4,"textLines":1,"bbox":[116,235,420,56]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":3,"text":"攻击流程","textPreview":"攻击流程","textChars":4,"textLines":1,"bbox":[744,235,420,56]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":3,"text":"用户意图\nTu","textPreview":"用户意图 | Tu","textChars":7,"textLines":2,"bbox":[120,340,145,82]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":3,"text":"工具调用\nCt","textPreview":"工具调用 | Ct","textChars":7,"textLines":2,"bbox":[385,340,145,82]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":3,"bbox":[266,380,89,2]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":3,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[355,363,30,34]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":3,"text":"外部观察主要提供参数和证据","textPreview":"外部观察主要提供参数和证据","textChars":13,"textLines":1,"bbox":[150,450,330,36]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":3,"text":"不可信观察\nO't","textPreview":"不可信观察 | O't","textChars":9,"textLines":2,"bbox":[748,340,145,82]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":3,"text":"恶意工具调用\nC't+1","textPreview":"恶意工具调用 | C't+1","textChars":12,"textLines":2,"bbox":[1012,340,145,82]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":3,"bbox":[894,380,88,2]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":3,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[982,363,30,34]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":3,"text":"外部观察本身提供控制效果","textPreview":"外部观察本身提供控制效果","textChars":12,"textLines":1,"bbox":[778,450,340,36]}
+{"kind":"shape","id":"sh/crmhk3q5","slide":3,"bbox":[210,550,5,78]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":3,"bbox":[215,550,855,78]}
+{"kind":"textbox","id":"sh/ulwval87","slide":3,"text":"判别信号","textPreview":"判别信号","textChars":4,"textLines":1,"bbox":[228,564,828,28]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":3,"text":"如果削弱外部观察的“控制力”后，一个工具调用仍然出现，它更可能是用户任务所需；如果消失或大幅改变，它更可能是注入驱动。","textPreview":"如果削弱外部观察的“控制力”后，一个工具调用仍然出现，它更可能是用户任务所需；如果消失或大幅改变，它更可能是注入驱动。","textChars":59,"textLines":1,"bbox":[228,598,828,20]}
+{"kind":"image","id":"im/f6dcbulw","slide":3,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"notes","id":"nt/s72x4nap","slide":3,"text":""}
+{"kind":"slide","id":"sl/val87ed8","slide":4,"title":"AttriGuard：并行反事实测试工具调用","textShapes":9}
+{"kind":"textbox","id":"sh/al87ed8b","slide":4,"name":"文本框 25","text":"AttriGuard：并行反事实测试工具调用","textPreview":"AttriGuard：并行反事实测试工具调用","textChars":22,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":4,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":4,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":4,"text":"04 / 10","textPreview":"04 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"shape","id":"sh/psfil0rq","slide":4,"bbox":[100,548,5,72]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":4,"bbox":[105,548,295,72]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":4,"text":"Original run","textPreview":"Original run","textChars":12,"textLines":1,"bbox":[118,562,268,28]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":4,"text":"正常执行分支使用完整观察，产出高质量工具参数。","textPreview":"正常执行分支使用完整观察，产出高质量工具参数。","textChars":23,"textLines":1,"bbox":[118,596,268,14]}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":4,"bbox":[490,548,5,72]}
+{"kind":"shape","id":"sh/wval87ed","slide":4,"bbox":[495,548,313,72]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":4,"text":"Shadow run","textPreview":"Shadow run","textChars":10,"textLines":1,"bbox":[508,562,286,28]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":4,"text":"影子分支同步历史，只替换为控制削弱后的观察。","textPreview":"影子分支同步历史，只替换为控制削弱后的观察。","textChars":22,"textLines":1,"bbox":[508,596,286,14]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":4,"bbox":[898,548,5,72]}
+{"kind":"shape","id":"sh/n29gr2p8","slide":4,"bbox":[903,548,255,72]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":4,"text":"Gate","textPreview":"Gate","textChars":4,"textLines":1,"bbox":[916,562,228,28]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":4,"text":"比较两边工具调用；不“存活”的调用被阻断。","textPreview":"比较两边工具调用；不“存活”的调用被阻断。","textChars":21,"textLines":1,"bbox":[916,596,228,14]}
+{"kind":"image","id":"im/18jqh0fe","slide":4,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"image","id":"im/8nqxs72x","slide":4,"name":"","bbox":[72,122.01,1136,395.98]}
+{"kind":"notes","id":"nt/val87ed8","slide":4,"text":""}
+{"kind":"slide","id":"sl/mlkjm1cf","slide":5,"title":"算法：在执行前给每个工具调用过闸","textShapes":19}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":5,"name":"文本框 25","text":"算法：在执行前给每个工具调用过闸","textPreview":"算法：在执行前给每个工具调用过闸","textChars":16,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":5,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":5,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":5,"text":"05 / 10","textPreview":"05 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"textbox","id":"sh/sji5snel","slide":5,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[94,128,46,46]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":5,"text":"基础 Agent 先提出动作","textPreview":"基础 Agent 先提出动作","textChars":14,"textLines":1,"bbox":[160,126,320,30]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":5,"text":"在当前历史 Ht 下生成响应 Rt 和工具调用集合 Ct。","textPreview":"在当前历史 Ht 下生成响应 Rt 和工具调用集合 Ct。","textChars":29,"textLines":1,"bbox":[160,160,900,42]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":5,"bbox":[116,176,2,42]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":5,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[94,222,46,46]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":5,"text":"削弱新增观察的控制力","textPreview":"削弱新增观察的控制力","textChars":10,"textLines":1,"bbox":[160,220,320,30]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":5,"text":"对上一轮外部观察做层级 attenuation，并缓存为影子观察历史。","textPreview":"对上一轮外部观察做层级 attenuation，并缓存为影子观察历史。","textChars":35,"textLines":1,"bbox":[160,254,900,42]}
+{"kind":"shape","id":"sh/hoza1gvy","slide":5,"bbox":[116,270,2,42]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":5,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[94,316,46,46]}
+{"kind":"textbox","id":"sh/wval87ed","slide":5,"text":"Teacher-forced shadow replay","textPreview":"Teacher-forced shadow replay","textChars":28,"textLines":1,"bbox":[160,314,320,30]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":5,"text":"影子上下文复用原动作历史，只替换观察历史，避免轨迹漂移混淆归因。","textPreview":"影子上下文复用原动作历史，只替换观察历史，避免轨迹漂移混淆归因。","textChars":32,"textLines":1,"bbox":[160,348,900,42]}
+{"kind":"shape","id":"sh/epkzupwb","slide":5,"bbox":[116,364,2,42]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[94,410,46,46]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":5,"text":"Fuzzy survival test","textPreview":"Fuzzy survival test","textChars":19,"textLines":1,"bbox":[160,408,320,30]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":5,"text":"按函数名、规范化参数和任务一致性判断 proposed call 是否存活。","textPreview":"按函数名、规范化参数和任务一致性判断 proposed call 是否存活。","textChars":38,"textLines":1,"bbox":[160,442,900,42]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":5,"bbox":[116,458,2,42]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[94,504,46,46]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":5,"text":"执行或阻断","textPreview":"执行或阻断","textChars":5,"textLines":1,"bbox":[160,502,320,30]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":5,"text":"存活则执行；失败则返回 IPI warning，并让 Agent 继续原任务。","textPreview":"存活则执行；失败则返回 IPI warning，并让 Agent 继续原任务。","textChars":39,"textLines":1,"bbox":[160,536,900,42]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":5,"text":"关键点：AttriGuard 不要求理解“攻击文本长什么样”，而是把即将执行的动作放进反事实条件下复验。","textPreview":"关键点：AttriGuard 不要求理解“攻击文本长什么样”，而是把即将执行的动作放进反事实条件下复验。","textChars":52,"textLines":1,"bbox":[120,620,990,46]}
+{"kind":"image","id":"im/1gvy90je","slide":5,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"notes","id":"nt/mlkjm1cf","slide":5,"text":""}
+{"kind":"slide","id":"sl/58z25kb6","slide":6,"title":"三个组件：让归因既稳定又不过度阻断","textShapes":19}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":6,"name":"文本框 25","text":"三个组件：让归因既稳定又不过度阻断","textPreview":"三个组件：让归因既稳定又不过度阻断","textChars":17,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":6,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/9knih4by","slide":6,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":6,"text":"06 / 10","textPreview":"06 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":6,"bbox":[85,145,5,165]}
+{"kind":"shape","id":"sh/xczed8v6","slide":6,"bbox":[90,145,335,165]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":6,"text":"1. Teacher-forced replay","textPreview":"1. Teacher-forced replay","textChars":24,"textLines":1,"bbox":[103,159,308,28]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":6,"text":"固定原执行历史中的动作，只改变观察视图。这样主/影子分支差异主要来自观察控制力，而不是 Agent 随机规划漂移。","textPreview":"固定原执行历史中的动作，只改变观察视图。这样主/影子分支差异主要来自观察控制力，而不是 Agent 随机规划漂移。","textChars":57,"textLines":1,"bbox":[103,193,308,107]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":6,"bbox":[470,145,5,165]}
+{"kind":"shape","id":"sh/x4nap4r6","slide":6,"bbox":[475,145,335,165]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":6,"text":"2. Hierarchical attenuation","textPreview":"2. Hierarchical attenuation","textChars":27,"textLines":1,"bbox":[488,159,308,28]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":6,"text":"逐层削弱三类控制通道：结构化可执行外观、第二人称/指令式语气、因果说服脚手架。","textPreview":"逐层削弱三类控制通道：结构化可执行外观、第二人称/指令式语气、因果说服脚手架。","textChars":39,"textLines":1,"bbox":[488,193,308,107]}
+{"kind":"shape","id":"sh/q1orytsv","slide":6,"bbox":[855,145,5,165]}
+{"kind":"shape","id":"sh/65wjudg7","slide":6,"bbox":[860,145,335,165]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":6,"text":"3. Fuzzy survival","textPreview":"3. Fuzzy survival","textChars":17,"textLines":1,"bbox":[873,159,308,28]}
+{"kind":"textbox","id":"sh/obm58z25","slide":6,"text":"先比函数名，再比规范化参数；若参数不同，用轻量 LLM judge 判断是否仍服务用户任务。","textPreview":"先比函数名，再比规范化参数；若参数不同，用轻量 LLM judge 判断是否仍服务用户任务。","textChars":46,"textLines":1,"bbox":[873,193,308,107]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":6,"text":"层级控制削弱（λ 越大越严格）","textPreview":"层级控制削弱（λ 越大越严格）","textChars":15,"textLines":1,"bbox":[90,360,470,32]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":6,"text":"Tflat","textPreview":"Tflat","textChars":5,"textLines":1,"bbox":[105,410,90,40]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":6,"text":"结构扁平化","textPreview":"结构扁平化","textChars":5,"textLines":1,"bbox":[220,412,170,30]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":6,"text":"{amount:100,to:X} → “金额为 100，收款方为 X”","textPreview":"{amount:100,to:X} → “金额为 100，收款方为 X”","textChars":36,"textLines":1,"bbox":[392,414,650,34]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":6,"text":"T3p","textPreview":"T3p","textChars":3,"textLines":1,"bbox":[105,480,90,40]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":6,"text":"第三人称改写","textPreview":"第三人称改写","textChars":6,"textLines":1,"bbox":[220,482,170,30]}
+{"kind":"textbox","id":"sh/z61032ls","slide":6,"text":"“你应该发送报告” → “文本称报告应被发送”","textPreview":"“你应该发送报告” → “文本称报告应被发送”","textChars":23,"textLines":1,"bbox":[392,484,650,34]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":6,"text":"Tdecaus","textPreview":"Tdecaus","textChars":7,"textLines":1,"bbox":[105,550,90,40]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":6,"text":"削弱因果脚手架","textPreview":"削弱因果脚手架","textChars":7,"textLines":1,"bbox":[220,552,170,30]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":6,"text":"“因为...所以必须...” → 中性陈述相关性","textPreview":"“因为...所以必须...” → 中性陈述相关性","textChars":24,"textLines":1,"bbox":[392,554,650,34]}
+{"kind":"image","id":"im/5sneloj2","slide":6,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"notes","id":"nt/58z25kb6","slide":6,"text":""}
+{"kind":"slide","id":"sl/0z61032l","slide":7,"title":"实验设置：模型、基准、攻击与指标","textShapes":13}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":7,"name":"文本框 25","text":"实验设置：模型、基准、攻击与指标","textPreview":"实验设置：模型、基准、攻击与指标","textChars":16,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":7,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":7,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":7,"text":"07 / 10","textPreview":"07 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":7,"text":"模型","textPreview":"模型","textChars":2,"textLines":1,"bbox":[75,145,245,54]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":7,"text":"Gemini-2.5 Flash\nGPT-4.1-mini\nQwen3-32B\nLlama3.3-70B","textPreview":"Gemini-2.5 Flash | GPT-4.1-mini | Qwen3-32B | Llama3.3-70B","textChars":52,"textLines":4,"bbox":[75,210,245,230]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":7,"text":"基准","textPreview":"基准","textChars":2,"textLines":1,"bbox":[370,145,245,54]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":7,"text":"AgentDojo：workspace / Slack / travel / banking\nAgent Security Bench：补充测试","textPreview":"AgentDojo：workspace / Slack / travel / banking | Agent Security Bench：补充测试","textChars":72,"textLines":2,"bbox":[370,210,245,230]}
+{"kind":"textbox","id":"sh/z61032ls","slide":7,"text":"攻击","textPreview":"攻击","textChars":2,"textLines":1,"bbox":[665,145,245,54]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":7,"text":"IgnorePrevious\nCombined\nImportantMessages\nToolKnowledge\n另含 adaptive optimization attack","textPreview":"IgnorePrevious | Combined | ImportantMessages | ToolKnowledge | 另含 adaptive optimization attack","textChars":87,"textLines":5,"bbox":[665,210,245,230]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":7,"text":"指标","textPreview":"指标","textChars":2,"textLines":1,"bbox":[960,145,245,54]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":7,"text":"BU：干净任务完成率\nUA：有攻击时仍完成用户任务\nASR：攻击成功率，越低越好","textPreview":"BU：干净任务完成率 | UA：有攻击时仍完成用户任务 | ASR：攻击成功率，越低越好","textChars":40,"textLines":3,"bbox":[960,210,245,230]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":7,"text":"对比基线：13 种 SOTA 防御，覆盖检测型、提示型、训练型、系统隔离型。","textPreview":"对比基线：13 种 SOTA 防御，覆盖检测型、提示型、训练型、系统隔离型。","textChars":38,"textLines":1,"bbox":[105,500,970,36]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":7,"text":"研究问题 RQ1-RQ5：有效性、相对 SOTA 的安全-可用性权衡、开销、组件贡献、自适应攻击鲁棒性。","textPreview":"研究问题 RQ1-RQ5：有效性、相对 SOTA 的安全-可用性权衡、开销、组件贡献、自适应攻击鲁棒性。","textChars":52,"textLines":1,"bbox":[105,550,970,46]}
+{"kind":"image","id":"im/xs72x4na","slide":7,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"notes","id":"nt/0z61032l","slide":7,"text":""}
+{"kind":"slide","id":"sl/fu18jqh0","slide":8,"title":"主要结果：静态攻击下 ASR 归零，BU 基本保留","textShapes":12}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":8,"name":"文本框 25","text":"主要结果：静态攻击下 ASR 归零，BU 基本保留","textPreview":"主要结果：静态攻击下 ASR 归零，BU 基本保留","textChars":25,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/obm58z25","slide":8,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":8,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/7u54zido","slide":8,"text":"08 / 10","textPreview":"08 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":8,"text":"0%","textPreview":"0%","textChars":2,"textLines":1,"bbox":[895,154,185,88]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":8,"text":"AgentDojo 四类静态攻击中，AttriGuard 在主要实验里将 ASR 压到 0%，图中空柱表示 0 而不是缺失数据。","textPreview":"AgentDojo 四类静态攻击中，AttriGuard 在主要实验里将 ASR 压到 0%，图中空柱表示 0 而不是缺失数据。","textChars":64,"textLines":1,"bbox":[850,255,330,96]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":8,"text":"BU 保持可比","textPreview":"BU 保持可比","textChars":7,"textLines":1,"bbox":[850,394,300,54]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":8,"text":"Figure 3 显示干净任务完成率没有明显退化；表 1 中 AttriGuard 在两个模型的平均 ASR 均为 0%。","textPreview":"Figure 3 显示干净任务完成率没有明显退化；表 1 中 AttriGuard 在两个模型的平均 ASR 均为 0%。","textChars":61,"textLines":1,"bbox":[850,468,330,88]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":8,"text":"图源：paper Figure 2/3；表 1 对比了 10 个主要基线 + AttriGuard。","textPreview":"图源：paper Figure 2/3；表 1 对比了 10 个主要基线 + AttriGuard。","textChars":50,"textLines":1,"bbox":[74,635,940,24]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":8,"bbox":[58,462,560,190]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":8,"text":"BU（Benign Utility）","textPreview":"BU（Benign Utility）","textChars":18,"textLines":1,"bbox":[74,488,230,46]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":8,"text":"Figure 3 的含义：在干净输入上，AttriGuard 的任务完成率与无防御基线整体接近；主要异常是 Llama3.3-70B 在 Travel 场景下降明显，论文将其归因于复杂工具链和模型随机性。","textPreview":"Figure 3 的含义：在干净输入上，AttriGuard 的任务完成率与无防御基线整体接近；主要异常是 Llama3.3-70B 在 Travel 场景下降明显，论文将其归因于复杂工具链和模型随机性。","textChars":102,"textLines":1,"bbox":[324,480,430,105]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":8,"text":"结论：安全收益主要来自 ASR 归零，而不是牺牲 BU 换安全。","textPreview":"结论：安全收益主要来自 ASR 归零，而不是牺牲 BU 换安全。","textChars":32,"textLines":1,"bbox":[78,598,690,32]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":8,"bbox":[60,636,760,34]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":8,"text":"图源：paper Figure 2/3；表 1 对比了 10 个主要基线 + AttriGuard。","textPreview":"图源：paper Figure 2/3；表 1 对比了 10 个主要基线 + AttriGuard。","textChars":50,"textLines":1,"bbox":[74,640,700,22]}
+{"kind":"image","id":"im/u54zidon","slide":8,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"image","id":"im/nqxs72x4","slide":8,"name":"","bbox":[65.16,122,759.68,326]}
+{"kind":"image","id":"im/cbulwval","slide":8,"name":"","bbox":[110.29,480,357.42,150]}
+{"kind":"notes","id":"nt/fu18jqh0","slide":8,"text":""}
+{"kind":"slide","id":"sl/qh0fepkz","slide":9,"title":"成本与自适应攻击：更像“中等开销的强闸门”","textShapes":12}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":9,"name":"文本框 25","text":"成本与自适应攻击：更像“中等开销的强闸门”","textPreview":"成本与自适应攻击：更像“中等开销的强闸门”","textChars":21,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":9,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":9,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":9,"text":"09 / 10","textPreview":"09 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":9,"bbox":[80,470,5,110]}
+{"kind":"shape","id":"sh/s72x4nap","slide":9,"bbox":[85,470,405,110]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":9,"text":"开销","textPreview":"开销","textChars":2,"textLines":1,"bbox":[98,484,378,28]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":9,"text":"Gemini / Llama 上端到端延迟约 32.40s / 41.22s，明显高于无防御，但远低于严格隔离类系统的百秒级开销。","textPreview":"Gemini / Llama 上端到端延迟约 32.40s / 41.22s，明显高于无防御，但远低于严格隔离类系统的百秒级开销。","textChars":65,"textLines":1,"bbox":[98,518,378,52]}
+{"kind":"shape","id":"sh/hoza1gvy","slide":9,"bbox":[545,606,5,70]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":9,"bbox":[550,606,565,70]}
+{"kind":"textbox","id":"sh/wval87ed","slide":9,"text":"自适应鲁棒性","textPreview":"自适应鲁棒性","textChars":6,"textLines":1,"bbox":[563,620,538,28]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":9,"text":"在白盒优化攻击下，AttriGuard adaptive ASR 为 6.56%（Gemini）和 9.84%（Llama），强基线常升至 29%-82%。","textPreview":"在白盒优化攻击下，AttriGuard adaptive ASR 为 6.56%（Gemini）和 9.84%（Llama），强基线常升至 29%-82%。","textChars":78,"textLines":1,"bbox":[563,654,538,12]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":9,"bbox":[520,362,645,292]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":9,"text":"白盒自适应攻击","textPreview":"白盒自适应攻击","textChars":7,"textLines":1,"bbox":[545,385,245,46]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":9,"text":"Gemini\n6.56%","textPreview":"Gemini | 6.56%","textChars":12,"textLines":2,"bbox":[545,450,160,94]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":9,"text":"Llama\n9.84%","textPreview":"Llama | 9.84%","textChars":11,"textLines":2,"bbox":[725,450,160,94]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":9,"text":"Table 5: AttriGuard 在 adaptive optimization attack 下仍保持个位数 ASR；PIGuard / PromptArmor / MELON 等静态表现强的基线会显著退化。","textPreview":"Table 5: AttriGuard 在 adaptive optimization attack 下仍保持个位数 ASR；PIGuard / PromptArmor / MELON 等静态表现强的基线会显著退化。","textChars":108,"textLines":1,"bbox":[910,438,220,104]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":9,"text":"查询预算 200 → 500：AttriGuard ASR 仍为 6.56%（Gemini），说明失败不只是搜索预算不足。","textPreview":"查询预算 200 → 500：AttriGuard ASR 仍为 6.56%（Gemini），说明失败不只是搜索预算不足。","textChars":61,"textLines":1,"bbox":[545,575,585,58]}
+{"kind":"shape","id":"sh/twra5gbq","slide":9,"bbox":[520,636,650,34]}
+{"kind":"shape","id":"sh/jqh0fepk","slide":9,"bbox":[520,636,570,42]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":9,"bbox":[520,664,600,32]}
+{"kind":"shape","id":"sh/0bi9s36h","slide":9,"bbox":[540,688,565,28]}
+{"kind":"image","id":"im/65wjudg7","slide":9,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"image","id":"im/h0fepkzu","slide":9,"name":"","bbox":[82,132.84,410,308.32]}
+{"kind":"image","id":"im/sfil0rqd","slide":9,"name":"","bbox":[624.92,130,410.16,210]}
+{"kind":"image","id":"im/ixczed8v","slide":9,"name":"","bbox":[636,390,392,200]}
+{"kind":"notes","id":"nt/qh0fepkz","slide":9,"text":""}
+{"kind":"slide","id":"sl/29gr2p8n","slide":10,"title":"局限、评价与课堂讨论点","textShapes":13}
+{"kind":"textbox","id":"sh/fyxobm58","slide":10,"name":"文本框 25","text":"局限、评价与课堂讨论点","textPreview":"局限、评价与课堂讨论点","textChars":11,"textLines":1,"bbox":[145,34,960,58]}
+{"kind":"shape","id":"sh/xs72x4na","slide":10,"bbox":[146,94,168,4]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":10,"text":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textPreview":"He et al., AttriGuard, arXiv:2603.10749v2 (2026)","textChars":48,"textLines":1,"bbox":[78,676,620,24]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":10,"text":"10 / 10","textPreview":"10 / 10","textChars":7,"textLines":1,"bbox":[1120,676,90,24]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":10,"text":"作者明确承认：AttriGuard 不是形式化可证明鲁棒的方案，而是一个实用的运行时归因闸门。","textPreview":"作者明确承认：AttriGuard 不是形式化可证明鲁棒的方案，而是一个实用的运行时归因闸门。","textChars":47,"textLines":1,"bbox":[92,128,980,42]}
+{"kind":"shape","id":"sh/gvy90je9","slide":10,"bbox":[95,210,5,145]}
+{"kind":"shape","id":"sh/9gr2p8nq","slide":10,"bbox":[100,210,325,145]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":10,"text":"局限 1：长链路误报","textPreview":"局限 1：长链路误报","textChars":10,"textLines":1,"bbox":[113,224,298,28]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":10,"text":"多步、工具密集的良性任务中，每个合法调用都要通过局部反事实测试，随机性和参数差异会累积。","textPreview":"多步、工具密集的良性任务中，每个合法调用都要通过局部反事实测试，随机性和参数差异会累积。","textChars":44,"textLines":1,"bbox":[113,258,298,87]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":10,"bbox":[475,210,5,145]}
+{"kind":"shape","id":"sh/94fu18jq","slide":10,"bbox":[480,210,325,145]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":10,"text":"局限 2：依赖辅助 LLM","textPreview":"局限 2：依赖辅助 LLM","textChars":13,"textLines":1,"bbox":[493,224,298,28]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":10,"text":"控制削弱由提示式重写实现，可能受辅助模型更新影响；未来可用微调/偏好优化稳定该模块。","textPreview":"控制削弱由提示式重写实现，可能受辅助模型更新影响；未来可用微调/偏好优化稳定该模块。","textChars":42,"textLines":1,"bbox":[493,258,298,87]}
+{"kind":"shape","id":"sh/bulwval8","slide":10,"bbox":[855,210,5,145]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":10,"bbox":[860,210,325,145]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":10,"text":"局限 3：适用边界","textPreview":"局限 3：适用边界","textChars":9,"textLines":1,"bbox":[873,224,298,28]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":10,"text":"当用户明确授权外部内容决定关键动作，或代码/结构化 schema 中内容与控制难分时，因果归因会更难。","textPreview":"当用户明确授权外部内容决定关键动作，或代码/结构化 schema 中内容与控制难分时，因果归因会更难。","textChars":51,"textLines":1,"bbox":[873,258,298,87]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":10,"text":"我的评价","textPreview":"我的评价","textChars":4,"textLines":1,"bbox":[110,430,150,50]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":10,"text":"这篇工作的价值在于把防御问题从“文本分类”换成“动作归因”，对未知 payload 更有泛化希望；但它把一次执行变成带影子分支的运行时系统，工程成本和交互延迟是落地时必须处理的问题。","textPreview":"这篇工作的价值在于把防御问题从“文本分类”换成“动作归因”，对未知 payload 更有泛化希望；但它把一次执行变成带影子分支的运行时系统，工程成本和交互延迟是落地时必须处理的问题。","textChars":91,"textLines":1,"bbox":[285,425,850,78]}
+{"kind":"textbox","id":"sh/tovahoza","slide":10,"text":"讨论问题：如果把“阻断”改成“用户确认”，能否在长链路任务里取得更好的安全-可用性折中？","textPreview":"讨论问题：如果把“阻断”改成“用户确认”，能否在长链路任务里取得更好的安全-可用性折中？","textChars":44,"textLines":1,"bbox":[135,565,1000,62]}
+{"kind":"image","id":"im/fa9w3m94","slide":10,"name":"图片 1","bbox":[16.6,-2.67,110.4,110.4]}
+{"kind":"notes","id":"nt/29gr2p8n","slide":10,"text":""}

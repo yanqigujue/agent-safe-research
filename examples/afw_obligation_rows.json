@@ -1,0 +1,107 @@
+{
+  "schema_version": "afw-obligation-rows-v0.1",
+  "created": "2026-07-01",
+  "purpose": "Rows testing obligation propagation and discharge for action-field authority warrants.",
+  "rows": [
+    {
+      "row_id": "OBLIGATION-SCAN-DISCHARGE",
+      "source": {
+        "source_id": "patch_writer_skill",
+        "source_type": "skill",
+        "description": "A repository-writing skill output carries a static-scan obligation."
+      },
+      "enforce_obligations": true,
+      "capability": {
+        "semantic_roles": ["repository_write_authority"],
+        "fields": ["data_write_scope"],
+        "operations": ["write_file"],
+        "data_scope": ["current_repository"],
+        "effect_scope": ["filesystem_write"],
+        "delegation_scope": [],
+        "obligations": [{"name": "requires_static_scan", "mode": "must_discharge"}]
+      },
+      "legal_consumption": {
+        "field": "data_write_scope",
+        "operation": "write_file",
+        "value": "write_scanned_patch",
+        "attributed_source_id": "patch_writer_skill",
+        "carried_obligations": ["requires_static_scan"],
+        "discharged_obligations": ["requires_static_scan"],
+        "need": {
+          "required_role": "repository_write_authority",
+          "data_scope": "current_repository",
+          "effect_scope": "filesystem_write"
+        }
+      },
+      "laundered_consumption": {
+        "field": "data_write_scope",
+        "operation": "write_file",
+        "value": "write_unscanned_patch",
+        "attributed_source_id": "patch_writer_skill",
+        "carried_obligations": [],
+        "discharged_obligations": [],
+        "need": {
+          "required_role": "repository_write_authority",
+          "data_scope": "current_repository",
+          "effect_scope": "filesystem_write"
+        }
+      },
+      "nearest_neighbor_objection": ["skill_permission_style", "proof_carrying_skill", "policy_propagation"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "A source may cover role and scope while still failing because its inherited obligation is neither carried nor discharged."
+      }
+    },
+    {
+      "row_id": "OBLIGATION-DLP-DISCHARGE",
+      "source": {
+        "source_id": "external_send_approval",
+        "source_type": "user_approval",
+        "description": "A user approval authorizes external send only if the DLP gate is satisfied."
+      },
+      "enforce_obligations": true,
+      "capability": {
+        "semantic_roles": ["approval_for_external_send"],
+        "fields": ["side_effect"],
+        "operations": ["external_send"],
+        "data_scope": ["current_document"],
+        "effect_scope": ["external_send"],
+        "delegation_scope": [],
+        "obligations": [{"name": "requires_dlp_scan", "mode": "must_discharge"}]
+      },
+      "legal_consumption": {
+        "field": "side_effect",
+        "operation": "external_send",
+        "value": "send_after_dlp_scan",
+        "attributed_source_id": "external_send_approval",
+        "carried_obligations": ["requires_dlp_scan"],
+        "discharged_obligations": ["requires_dlp_scan"],
+        "need": {
+          "required_role": "approval_for_external_send",
+          "data_scope": "current_document",
+          "effect_scope": "external_send"
+        }
+      },
+      "laundered_consumption": {
+        "field": "side_effect",
+        "operation": "external_send",
+        "value": "send_without_dlp_scan",
+        "attributed_source_id": "external_send_approval",
+        "carried_obligations": [],
+        "discharged_obligations": [],
+        "need": {
+          "required_role": "approval_for_external_send",
+          "data_scope": "current_document",
+          "effect_scope": "external_send"
+        }
+      },
+      "nearest_neighbor_objection": ["consent_integrity", "intent_governed_authorization", "policy_propagation"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "The approval covers role and scope, but the external send is blocked because its inherited DLP obligation is not carried or discharged."
+      }
+    }
+  ]
+}

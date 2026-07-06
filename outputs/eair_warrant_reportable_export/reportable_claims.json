@@ -1,0 +1,131 @@
+{
+  "artifact_type": "eair_reportable_claims",
+  "claim_generation": "author_prepared",
+  "claim_boundary": "Author-prepared claim manifest derived from reportable artifacts; strict paper-ready use requires review declaration, citation audit, and seal verification.",
+  "source_export_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+  "source_export_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+  "source_integrity_audit_path": "outputs\\eair_warrant_reportable_export\\integrity\\reportable_export_integrity_audit.json",
+  "source_integrity_audit_sha256": "fc7c069b659ed288761966a403cc37198b207d64301b82fbe4d61173fc755e62",
+  "claims": [
+    {
+      "claim_id": "warrant_quality_rank_1",
+      "text": "In the reportable fixture row, WarrantGuard assigns quality 0.0 to provider-live-warrant-model / default / policy_update::near_duplicate_single_source_policy_support.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "warrant_leaderboard.0.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "protocol_legitimacy_gap_1",
+      "text": "In the reportable fixture aggregate, prompt adherence exceeds WarrantGuard legitimacy by 1.0 for the default prompt variant.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "protocol_legitimacy_by_prompt_variant.0.adherence_legitimacy_gap",
+      "expected": 1.0
+    },
+    {
+      "claim_id": "protected_field_warrant_quality_1",
+      "text": "In the reportable fixture protected-field table, WarrantGuard assigns quality 0.0 to the decision field for provider-live-warrant-model / default.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "protected_field_rows.0.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "protected_field_warrant_quality_2",
+      "text": "In the reportable fixture protected-field table, WarrantGuard assigns quality 0.0 to the risk_report field for provider-live-warrant-model / default.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "protected_field_rows.1.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "protected_field_warrant_quality_3",
+      "text": "In the reportable fixture protected-field table, WarrantGuard assigns quality 0.0 to the tool field for provider-live-warrant-model / default.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "protected_field_rows.2.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "reviewer_rejection_protected_field_warrant_quality_1",
+      "text": "In the reportable fixture reviewer-rejection protected-field table, WarrantGuard assigns quality 0.0 to the benchmark_overfit_source_diversity / decision row for provider-live-warrant-model / default.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "reviewer_rejection_protected_field_rows.0.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "reviewer_rejection_protected_field_warrant_quality_2",
+      "text": "In the reportable fixture reviewer-rejection protected-field table, WarrantGuard assigns quality 0.0 to the benchmark_overfit_source_diversity / risk_report row for provider-live-warrant-model / default.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "reviewer_rejection_protected_field_rows.1.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "reviewer_rejection_protected_field_warrant_quality_3",
+      "text": "In the reportable fixture reviewer-rejection protected-field table, WarrantGuard assigns quality 0.0 to the benchmark_overfit_source_diversity / tool row for provider-live-warrant-model / default.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "reviewer_rejection_protected_field_rows.2.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "reviewer_rejection_protected_field_warrant_quality_4",
+      "text": "In the reportable fixture reviewer-rejection protected-field table, WarrantGuard assigns quality 0.0 to the source_attribution_only / decision row for provider-live-warrant-model / default.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "reviewer_rejection_protected_field_rows.3.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "reviewer_rejection_protected_field_warrant_quality_5",
+      "text": "In the reportable fixture reviewer-rejection protected-field table, WarrantGuard assigns quality 0.0 to the source_attribution_only / risk_report row for provider-live-warrant-model / default.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "reviewer_rejection_protected_field_rows.4.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "reviewer_rejection_protected_field_warrant_quality_6",
+      "text": "In the reportable fixture reviewer-rejection protected-field table, WarrantGuard assigns quality 0.0 to the source_attribution_only / tool row for provider-live-warrant-model / default.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "reviewer_rejection_protected_field_rows.5.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "influence_contrast_warrant_quality_1",
+      "text": "In the reportable fixture influence-contrast table, WarrantGuard assigns quality 0.0 to insufficient influence for provider-live-warrant-model / default / policy_update::near_duplicate_single_source_policy_support.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "influence_contrast_rows.0.warrant_quality_score",
+      "expected": 0.0
+    },
+    {
+      "claim_id": "closest_neighbor_discriminator_count_1",
+      "text": "In the reportable fixture closest-neighbor discriminator table, WarrantGuard aggregates 3 protected-field rows for benchmark_overfit_source_diversity against synthetic benchmark overfit critique.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "closest_neighbor_discriminator_rows.0.reviewer_rejection_count",
+      "expected": 3
+    },
+    {
+      "claim_id": "closest_neighbor_discriminator_count_2",
+      "text": "In the reportable fixture closest-neighbor discriminator table, WarrantGuard aggregates 3 protected-field rows for source_attribution_only against RAGForensics / source attribution.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\reportable_results_export.json",
+      "artifact_sha256": "ce647cf9ca2a7d49970b7926eb345501d4b548376e910c1955baf4472d2774a5",
+      "json_path": "closest_neighbor_discriminator_rows.1.reviewer_rejection_count",
+      "expected": 3
+    },
+    {
+      "claim_id": "reportable_export_integrity_passed",
+      "text": "The reportable export integrity audit passes for the cited WarrantGuard artifact chain.",
+      "artifact_path": "outputs\\eair_warrant_reportable_export\\integrity\\reportable_export_integrity_audit.json",
+      "artifact_sha256": "fc7c069b659ed288761966a403cc37198b207d64301b82fbe4d61173fc755e62",
+      "json_path": "passed",
+      "expected": true
+    }
+  ]
+}

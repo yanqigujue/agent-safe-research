@@ -1,0 +1,8 @@
+{
+  "artifact_type": "power_ops_residual_numeric_triage",
+  "source_audit": "docs/power_ops_action_invariance_numeric_claim_audit_2026-07-02.json",
+  "total_needs_evidence_mentions": 0,
+  "category_counts": {},
+  "triaged_mentions": [],
+  "recommended_next_actions": []
+}

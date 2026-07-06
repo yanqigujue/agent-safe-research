@@ -1,0 +1,515 @@
+{
+  "artifact_type": "eair_live_runbook",
+  "claim_boundary": "Runbook only records the planned live-provider workflow; it is not live-model evidence.",
+  "config_path": "examples/eair_prompt_protocol_matrix_live_template.yaml",
+  "model": "gpt-4.1-mini",
+  "api_key_env": "OPENAI_API_KEY",
+  "output_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\sampled_transcripts.jsonl",
+  "replay_output_dir": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\replay",
+  "summary_output_dir": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\summary",
+  "manifest_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\replay\\artifact_manifest.json",
+  "expected_conditions": [
+    "approval_bypass::hijack_evidence_support",
+    "approval_bypass::poison_exposure_no_action_influence",
+    "approval_bypass::risk_report_downgrade_no_tool",
+    "dispatch_control::insufficient_evidence_dangerous_decision",
+    "parameter_setting::parameter_level_hijack",
+    "policy_update::legitimate_evidence_update",
+    "policy_update::near_duplicate_single_source_policy_support",
+    "policy_update::stale_trusted_policy_support"
+  ],
+  "scenario_count": 8,
+  "prompt_variants": [
+    "legacy_action_only",
+    "proof_carrying",
+    "proof_carrying_strict"
+  ],
+  "prompt_variant_count": 3,
+  "planned_transcript_count": 24,
+  "condition_threat_model_rows": [
+    {
+      "condition": "approval_bypass::hijack_evidence_support",
+      "protected_action_fields": [
+        "decision",
+        "requires_human_approval",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "legitimate_influence_separation",
+        "counter_evidence_exposure"
+      ],
+      "reviewer_rejections_answered": [
+        "source_attribution_only",
+        "planguard_attriguard_novelty",
+        "pcaa_certificate_not_evidence_warrant"
+      ]
+    },
+    {
+      "condition": "approval_bypass::poison_exposure_no_action_influence",
+      "protected_action_fields": [
+        "decision",
+        "requires_human_approval",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "legitimate_influence_separation",
+        "sufficient_support"
+      ],
+      "reviewer_rejections_answered": [
+        "pre_rhe_false_positive",
+        "source_attribution_only"
+      ]
+    },
+    {
+      "condition": "approval_bypass::risk_report_downgrade_no_tool",
+      "protected_action_fields": [
+        "risk_report",
+        "risk_level",
+        "requires_human_approval"
+      ],
+      "warrant_obligations": [
+        "risk_report_claim_support",
+        "hard_policy_constraints"
+      ],
+      "reviewer_rejections_answered": [
+        "access_control_only",
+        "rag_faithfulness_only"
+      ]
+    },
+    {
+      "condition": "dispatch_control::insufficient_evidence_dangerous_decision",
+      "protected_action_fields": [
+        "decision",
+        "tool",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "sufficient_support"
+      ],
+      "reviewer_rejections_answered": [
+        "access_control_only",
+        "rag_faithfulness_only",
+        "pcaa_certificate_not_evidence_warrant"
+      ]
+    },
+    {
+      "condition": "parameter_setting::parameter_level_hijack",
+      "protected_action_fields": [
+        "parameters",
+        "risk_level",
+        "risk_report",
+        "requires_human_approval"
+      ],
+      "warrant_obligations": [
+        "parameter_claim_support",
+        "hard_policy_constraints",
+        "counter_evidence_exposure"
+      ],
+      "reviewer_rejections_answered": [
+        "rag_faithfulness_misses_action_parameter_risk",
+        "access_control_only"
+      ]
+    },
+    {
+      "condition": "policy_update::legitimate_evidence_update",
+      "protected_action_fields": [
+        "decision",
+        "tool",
+        "risk_level",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "fresh_current_support",
+        "source_diverse_support"
+      ],
+      "reviewer_rejections_answered": [
+        "attribution_only_overblocks_legitimate_influence"
+      ]
+    },
+    {
+      "condition": "policy_update::near_duplicate_single_source_policy_support",
+      "protected_action_fields": [
+        "decision",
+        "tool",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "source_diverse_support"
+      ],
+      "reviewer_rejections_answered": [
+        "source_attribution_only",
+        "benchmark_overfit_source_diversity"
+      ]
+    },
+    {
+      "condition": "policy_update::stale_trusted_policy_support",
+      "protected_action_fields": [
+        "decision",
+        "tool",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "fresh_current_support"
+      ],
+      "reviewer_rejections_answered": [
+        "rag_faithfulness_only",
+        "source_attribution_only",
+        "pcaa_certificate_not_evidence_warrant"
+      ]
+    }
+  ],
+  "reviewer_rejection_coverage": {
+    "access_control_only": 3,
+    "attribution_only_overblocks_legitimate_influence": 1,
+    "benchmark_overfit_source_diversity": 1,
+    "pcaa_certificate_not_evidence_warrant": 3,
+    "planguard_attriguard_novelty": 1,
+    "pre_rhe_false_positive": 1,
+    "rag_faithfulness_misses_action_parameter_risk": 1,
+    "rag_faithfulness_only": 3,
+    "source_attribution_only": 4
+  },
+  "closest_neighbor_discriminator_plan": [
+    {
+      "reviewer_rejection": "access_control_only",
+      "closest_neighbor": "AIRGuard / access-control guards",
+      "conditions": [
+        "approval_bypass::risk_report_downgrade_no_tool",
+        "dispatch_control::insufficient_evidence_dangerous_decision",
+        "parameter_setting::parameter_level_hijack"
+      ],
+      "protected_action_fields": [
+        "decision",
+        "parameters",
+        "requires_human_approval",
+        "risk_level",
+        "risk_report",
+        "tool"
+      ],
+      "warrant_obligations": [
+        "counter_evidence_exposure",
+        "hard_policy_constraints",
+        "parameter_claim_support",
+        "risk_report_claim_support",
+        "sufficient_support"
+      ],
+      "warrantguard_discriminator": "authorized actions whose evidence warrant is insufficient, stale, source-collapsed, or conflicted",
+      "claim_boundary": "planned_discriminator_not_live_result"
+    },
+    {
+      "reviewer_rejection": "attribution_only_overblocks_legitimate_influence",
+      "closest_neighbor": "AttriGuard / attribution-only guards",
+      "conditions": [
+        "policy_update::legitimate_evidence_update"
+      ],
+      "protected_action_fields": [
+        "decision",
+        "risk_level",
+        "risk_report",
+        "tool"
+      ],
+      "warrant_obligations": [
+        "fresh_current_support",
+        "source_diverse_support"
+      ],
+      "warrantguard_discriminator": "legitimate evidence influence that should be allowed when the warrant is sufficient",
+      "claim_boundary": "planned_discriminator_not_live_result"
+    },
+    {
+      "reviewer_rejection": "benchmark_overfit_source_diversity",
+      "closest_neighbor": "synthetic benchmark overfit critique",
+      "conditions": [
+        "policy_update::near_duplicate_single_source_policy_support"
+      ],
+      "protected_action_fields": [
+        "decision",
+        "risk_report",
+        "tool"
+      ],
+      "warrant_obligations": [
+        "source_diverse_support"
+      ],
+      "warrantguard_discriminator": "source-diversity failures separated from clean sufficient-evidence controls",
+      "claim_boundary": "planned_discriminator_not_live_result"
+    },
+    {
+      "reviewer_rejection": "pcaa_certificate_not_evidence_warrant",
+      "closest_neighbor": "PCAA / Proof-Carrying Agent Actions",
+      "conditions": [
+        "approval_bypass::hijack_evidence_support",
+        "dispatch_control::insufficient_evidence_dangerous_decision",
+        "policy_update::stale_trusted_policy_support"
+      ],
+      "protected_action_fields": [
+        "decision",
+        "requires_human_approval",
+        "risk_report",
+        "tool"
+      ],
+      "warrant_obligations": [
+        "counter_evidence_exposure",
+        "fresh_current_support",
+        "legitimate_influence_separation",
+        "sufficient_support"
+      ],
+      "warrantguard_discriminator": "certificate-shaped actions whose evidence warrant fails sufficiency, freshness, source-diversity, or conflict obligations",
+      "claim_boundary": "planned_discriminator_not_live_result"
+    },
+    {
+      "reviewer_rejection": "planguard_attriguard_novelty",
+      "closest_neighbor": "PlanGuard / AttriGuard",
+      "conditions": [
+        "approval_bypass::hijack_evidence_support"
+      ],
+      "protected_action_fields": [
+        "decision",
+        "requires_human_approval",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "counter_evidence_exposure",
+        "legitimate_influence_separation"
+      ],
+      "warrantguard_discriminator": "plan-consistent or attributable actions that still lack admissible evidence warrants",
+      "claim_boundary": "planned_discriminator_not_live_result"
+    },
+    {
+      "reviewer_rejection": "pre_rhe_false_positive",
+      "closest_neighbor": "PRE / RHE poison-exposure baselines",
+      "conditions": [
+        "approval_bypass::poison_exposure_no_action_influence"
+      ],
+      "protected_action_fields": [
+        "decision",
+        "requires_human_approval",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "legitimate_influence_separation",
+        "sufficient_support"
+      ],
+      "warrantguard_discriminator": "poison retrieved without action influence should not force a block",
+      "claim_boundary": "planned_discriminator_not_live_result"
+    },
+    {
+      "reviewer_rejection": "rag_faithfulness_misses_action_parameter_risk",
+      "closest_neighbor": "RAGChecker / ARES / RAG faithfulness",
+      "conditions": [
+        "parameter_setting::parameter_level_hijack"
+      ],
+      "protected_action_fields": [
+        "parameters",
+        "requires_human_approval",
+        "risk_level",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "counter_evidence_exposure",
+        "hard_policy_constraints",
+        "parameter_claim_support"
+      ],
+      "warrantguard_discriminator": "faithful text can still ground unsafe action parameters or risk metadata",
+      "claim_boundary": "planned_discriminator_not_live_result"
+    },
+    {
+      "reviewer_rejection": "rag_faithfulness_only",
+      "closest_neighbor": "RAGChecker / ARES / RAG faithfulness",
+      "conditions": [
+        "approval_bypass::risk_report_downgrade_no_tool",
+        "dispatch_control::insufficient_evidence_dangerous_decision",
+        "policy_update::stale_trusted_policy_support"
+      ],
+      "protected_action_fields": [
+        "decision",
+        "requires_human_approval",
+        "risk_level",
+        "risk_report",
+        "tool"
+      ],
+      "warrant_obligations": [
+        "fresh_current_support",
+        "hard_policy_constraints",
+        "risk_report_claim_support",
+        "sufficient_support"
+      ],
+      "warrantguard_discriminator": "faithful support can be stale, insufficient, or unsafe for protected action fields",
+      "claim_boundary": "planned_discriminator_not_live_result"
+    },
+    {
+      "reviewer_rejection": "source_attribution_only",
+      "closest_neighbor": "RAGForensics / source attribution",
+      "conditions": [
+        "approval_bypass::hijack_evidence_support",
+        "approval_bypass::poison_exposure_no_action_influence",
+        "policy_update::near_duplicate_single_source_policy_support",
+        "policy_update::stale_trusted_policy_support"
+      ],
+      "protected_action_fields": [
+        "decision",
+        "requires_human_approval",
+        "risk_report",
+        "tool"
+      ],
+      "warrant_obligations": [
+        "counter_evidence_exposure",
+        "fresh_current_support",
+        "legitimate_influence_separation",
+        "source_diverse_support",
+        "sufficient_support"
+      ],
+      "warrantguard_discriminator": "attributed evidence still needs sufficiency, freshness, source diversity, and low conflict",
+      "claim_boundary": "planned_discriminator_not_live_result"
+    }
+  ],
+  "commands": [
+    {
+      "name": "live_preflight_doctor",
+      "command": "formaltrust eair-doctor-live-run --config examples/eair_prompt_protocol_matrix_live_template.yaml --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\live_preflight"
+    },
+    {
+      "name": "live_config_check",
+      "command": "formaltrust eair-check-live-config --config examples/eair_prompt_protocol_matrix_live_template.yaml"
+    },
+    {
+      "name": "provider_sampling_and_replay",
+      "command": "formaltrust eair-sample --config examples/eair_prompt_protocol_matrix_live_template.yaml"
+    },
+    {
+      "name": "prompt_adherence_audit",
+      "command": "formaltrust eair-audit-prompt-adherence --transcripts C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\sampled_transcripts.jsonl --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\prompt_adherence"
+    },
+    {
+      "name": "protocol_legitimacy_table",
+      "command": "formaltrust eair-export-protocol-legitimacy-table --adherence C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\prompt_adherence\\prompt_adherence_audit.json --summary C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\summary\\artifact_summary.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\protocol_legitimacy"
+    },
+    {
+      "name": "verify_replay_manifest",
+      "command": "formaltrust eair-verify-artifact --manifest C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\replay\\artifact_manifest.json"
+    },
+    {
+      "name": "coverage_gated_summary",
+      "command": "formaltrust eair-summarize-artifacts --manifest C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\replay\\artifact_manifest.json --expected-condition approval_bypass::hijack_evidence_support --expected-condition approval_bypass::poison_exposure_no_action_influence --expected-condition approval_bypass::risk_report_downgrade_no_tool --expected-condition dispatch_control::insufficient_evidence_dangerous_decision --expected-condition parameter_setting::parameter_level_hijack --expected-condition policy_update::legitimate_evidence_update --expected-condition policy_update::near_duplicate_single_source_policy_support --expected-condition policy_update::stale_trusted_policy_support --require-complete-coverage --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\summary"
+    },
+    {
+      "name": "reportability_audit",
+      "command": "formaltrust eair-audit-reportable-run --manifest C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\replay\\artifact_manifest.json --summary C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\summary\\artifact_summary.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\reportability"
+    },
+    {
+      "name": "paper_table_export",
+      "command": "formaltrust eair-export-reportable-results --summary C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\summary\\artifact_summary.json --audit C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\reportability\\reportable_run_audit.json --protocol-legitimacy C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\protocol_legitimacy\\protocol_legitimacy_table.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables"
+    },
+    {
+      "name": "reportable_export_integrity_audit",
+      "command": "formaltrust eair-audit-reportable-export --export C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\reportable_results_export.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\integrity"
+    },
+    {
+      "name": "reportable_claim_template",
+      "command": "formaltrust eair-write-reportable-claim-template --export C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\reportable_results_export.json --integrity-audit C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\integrity\\reportable_export_integrity_audit.json --output C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\reportable_claims.json"
+    },
+    {
+      "name": "reportable_claim_citation_audit",
+      "command": "formaltrust eair-audit-reportable-claims --claims C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\reportable_claims.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\claim_audit"
+    },
+    {
+      "name": "reportable_claim_bundle_seal",
+      "command": "formaltrust eair-seal-reportable-claim-bundle --claims C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\reportable_claims.json --claim-audit C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\claim_audit\\reportable_claim_citation_audit.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\bundle_seal"
+    },
+    {
+      "name": "reportable_claim_bundle_seal_verification",
+      "command": "formaltrust eair-verify-reportable-claim-bundle-seal --seal C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\bundle_seal\\reportable_claim_bundle_seal.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\bundle_seal\\verification"
+    },
+    {
+      "name": "paper_ready_claim_review_declaration",
+      "command": "formaltrust eair-record-reportable-claim-review --claims C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\reportable_claims.json --claim-audit C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\claim_audit\\reportable_claim_citation_audit.json --reviewer REVIEWER_ID --review-note \"Reviewed claim text and cited artifact values.\" --output C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claims.json"
+    },
+    {
+      "name": "paper_ready_claim_review_verification",
+      "command": "formaltrust eair-verify-reportable-claim-review --claims C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claims.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claim_review_verification"
+    },
+    {
+      "name": "paper_ready_claim_citation_audit",
+      "command": "formaltrust eair-audit-reportable-claims --claims C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claims.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claim_audit --require-reviewed"
+    },
+    {
+      "name": "paper_ready_claim_bundle_seal",
+      "command": "formaltrust eair-seal-reportable-claim-bundle --claims C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claims.json --claim-audit C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claim_audit\\reportable_claim_citation_audit.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claim_bundle_seal --require-reviewed"
+    },
+    {
+      "name": "paper_ready_claim_bundle_seal_verification",
+      "command": "formaltrust eair-verify-reportable-claim-bundle-seal --seal C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claim_bundle_seal\\reportable_claim_bundle_seal.json --output-dir C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\paper_ready_claim_bundle_seal\\verification --require-reviewed"
+    }
+  ],
+  "required_artifacts": [
+    "sampled_transcripts.jsonl",
+    "live_run_doctor.json",
+    "live_run_doctor.md",
+    "secret_value_recorded",
+    "artifact_manifest.json",
+    "structured_action_transcript_replay_results.json",
+    "structured_action_transcript_replay_report.md",
+    "prompt_adherence_audit.json",
+    "prompt_adherence_audit.csv",
+    "prompt_adherence_audit.md",
+    "protocol_legitimacy_table.json",
+    "protocol_legitimacy_table.csv",
+    "protocol_legitimacy_table.md",
+    "protocol_legitimacy_by_prompt_variant.json",
+    "protocol_legitimacy_by_prompt_variant.csv",
+    "protocol_legitimacy_by_prompt_variant.md",
+    "artifact_summary.json",
+    "artifact_summary_influence_contrast_table.json",
+    "artifact_summary_influence_contrast_table.csv",
+    "artifact_summary_influence_contrast_table.md",
+    "artifact_summary_by_model_prompt_condition.csv",
+    "artifact_summary_by_model_prompt_protected_field.json",
+    "artifact_summary_by_model_prompt_protected_field.csv",
+    "artifact_summary_by_model_prompt_protected_field.md",
+    "artifact_summary_warrant_leaderboard.json",
+    "artifact_summary_coverage.csv",
+    "reportable_run_audit.json",
+    "reportable_run_audit.md",
+    "reportable_results_export.json",
+    "reportable_model_condition_table.csv",
+    "reportable_model_condition_table.md",
+    "reportable_warrant_leaderboard.json",
+    "reportable_protected_field_table.json",
+    "reportable_protected_field_table.csv",
+    "reportable_protected_field_table.md",
+    "reportable_reviewer_rejection_protected_field_table.json",
+    "reportable_reviewer_rejection_protected_field_table.csv",
+    "reportable_reviewer_rejection_protected_field_table.md",
+    "reportable_influence_contrast_table.json",
+    "reportable_influence_contrast_table.csv",
+    "reportable_influence_contrast_table.md",
+    "reportable_influence_contrast_pair_table.json",
+    "reportable_influence_contrast_pair_table.csv",
+    "reportable_influence_contrast_pair_table.md",
+    "reportable_closest_neighbor_discriminator_table.json",
+    "reportable_closest_neighbor_discriminator_table.csv",
+    "reportable_closest_neighbor_discriminator_table.md",
+    "reportable_protocol_legitimacy_table.json",
+    "reportable_protocol_legitimacy_table.csv",
+    "reportable_protocol_legitimacy_table.md",
+    "reportable_protocol_legitimacy_by_prompt_variant.json",
+    "reportable_protocol_legitimacy_by_prompt_variant.csv",
+    "reportable_protocol_legitimacy_by_prompt_variant.md",
+    "reportable_export_integrity_audit.json",
+    "reportable_export_integrity_audit.md",
+    "reportable_claims.json",
+    "reportable_claim_citation_audit.json",
+    "reportable_claim_citation_audit.md",
+    "reportable_claim_bundle_seal.json",
+    "reportable_claim_bundle_seal.md",
+    "reportable_claim_bundle_seal_verification.json",
+    "reportable_claim_bundle_seal_verification.md",
+    "paper_ready_claims.json",
+    "paper_ready_claim_review_verification/reportable_claim_review_verification.json",
+    "paper_ready_claim_review_verification/reportable_claim_review_verification.md",
+    "paper_ready_claim_audit/reportable_claim_citation_audit.json",
+    "paper_ready_claim_audit/reportable_claim_citation_audit.md",
+    "paper_ready_claim_bundle_seal/reportable_claim_bundle_seal.json",
+    "paper_ready_claim_bundle_seal/reportable_claim_bundle_seal.md",
+    "paper_ready_claim_bundle_seal/verification/reportable_claim_bundle_seal_verification.json",
+    "paper_ready_claim_bundle_seal/verification/reportable_claim_bundle_seal_verification.md"
+  ]
+}

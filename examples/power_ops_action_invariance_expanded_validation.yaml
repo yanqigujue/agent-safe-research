@@ -1,0 +1,21 @@
+experiment_name: power-ops-action-invariance-expanded-validation
+dataset_path: data/power_ops_action_invariance_expanded_cases.jsonl
+output_dir: ../runs
+graph:
+  nodes:
+    - name: capguard
+      node_id: guardrail.afw_capguard
+      config:
+        runtime_final_action_mode: fieldwise_repair
+    - name: evaluate
+      node_id: evaluate.afw_runtime
+      config:
+        min_behmatch: 0.8
+        require_no_false_allow: true
+  edges:
+    - from: START
+      to: capguard
+    - from: capguard
+      to: evaluate
+    - from: evaluate
+      to: END

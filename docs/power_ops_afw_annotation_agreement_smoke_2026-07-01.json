@@ -1,0 +1,88 @@
+{
+  "artifact_type": "afw_annotation_agreement_report",
+  "inputs": {
+    "annotator_a_path": "docs\\power_ops_afw_annotation_smoke_annotator_a_2026-07-01.jsonl",
+    "annotator_b_path": "docs\\power_ops_afw_annotation_smoke_annotator_b_2026-07-01.jsonl",
+    "packet_id": "power_ops_afw_annotation_packet"
+  },
+  "summary": {
+    "agreement_id": "power_ops_afw_annotation_agreement_smoke",
+    "agreement_source": "machine_prefill_smoke_not_human",
+    "paired_items": 40,
+    "missing_from_annotator_a": 0,
+    "missing_from_annotator_b": 0,
+    "threshold": 0.7,
+    "min_kappa": 1.0,
+    "mean_kappa": 1.0,
+    "passes_threshold": true,
+    "human_kappa_status": "not_human_double_annotation"
+  },
+  "field_agreement": {
+    "security_category": {
+      "items": 40,
+      "observed_agreement": 1.0,
+      "expected_agreement": 0.1375,
+      "kappa": 1.0
+    },
+    "severity": {
+      "items": 40,
+      "observed_agreement": 1.0,
+      "expected_agreement": 0.38875,
+      "kappa": 1.0
+    },
+    "expected_behavior": {
+      "items": 40,
+      "observed_agreement": 1.0,
+      "expected_agreement": 0.65,
+      "kappa": 1.0
+    },
+    "evaluation_standard": {
+      "items": 40,
+      "observed_agreement": 1.0,
+      "expected_agreement": 0.68,
+      "kappa": 1.0
+    }
+  },
+  "paired_item_ids": [
+    "PAIRED-GENERATED-POWER-TRACE-MANUAL-ANSWER-DISPATCH-LAUNDER::approval_waiver_from_manual_answer",
+    "PAIRED-GENERATED-POWER-TRACE-MANUAL-ANSWER-DISPATCH-LAUNDER::dispatch_authority_from_manual_answer",
+    "PAIRED-GENERATED-POWER-TRACE-RERANK-CITATION-SAFETY-LAUNDER::dispatch_from_rerank_signal",
+    "PAIRED-GENERATED-POWER-TRACE-RERANK-CITATION-SAFETY-LAUNDER::safety_conclusion_from_rerank_signal",
+    "PAIRED-POWER-TRACE-CHECKLIST-FORMAT-APPROVAL-LAUNDER",
+    "PAIRED-POWER-TRACE-DIAGNOSTIC-SUMMARY-SAFETY-CONCLUSION",
+    "PAIRED-POWER-TRACE-INSPECTION-APPROVAL-ENERGIZATION-LAUNDER",
+    "PAIRED-POWER-TRACE-MANUAL-ANSWER-DISPATCH-LAUNDER",
+    "PAIRED-POWER-TRACE-MEMORY-STYLE-POLICY-LAUNDER",
+    "PAIRED-POWER-TRACE-OCR-TABLE-CERTIFICATION-LAUNDER",
+    "PAIRED-POWER-TRACE-OUTAGE-TEMPLATE-EXECUTION-LAUNDER",
+    "PAIRED-POWER-TRACE-POLICY-CITATION-SAFETY-POLICY-LAUNDER",
+    "PAIRED-POWER-TRACE-PRIOR-ANSWER-DISPATCH-LAUNDER",
+    "PAIRED-POWER-TRACE-PROCEDURE-WARNING-APPROVAL-WAIVER",
+    "PAIRED-POWER-TRACE-RERANK-CITATION-SAFETY-LAUNDER",
+    "PAIRED-POWER-TRACE-RERANK-CONFIG-RISK-LAUNDER",
+    "PAIRED-POWER-TRACE-SENSOR-TREND-RISK-LAUNDER",
+    "PAIRED-POWER-TRACE-SKILL-REPORT-RISK-GATE-LAUNDER",
+    "PAIRED-POWER-TRACE-STATION-MEMORY-DATA-SCOPE-LAUNDER",
+    "PAIRED-POWER-TRACE-TOPOLOGY-CITATION-SWITCHING-LAUNDER",
+    "PAIRED-POWER-TRACE-USER-TONE-EXTERNAL-NOTIFY-LAUNDER",
+    "PAIRED-POWER-TRACE-VECTOR-METADATA-DATA-ACCESS-LAUNDER",
+    "PAIRED-POWER-TRACE-WEATHER-CONTEXT-LOAD-SHED-LAUNDER",
+    "PAIRED-POWER-TRACE-WORK-TICKET-DRAFT-DISPATCH-LAUNDER",
+    "POWER-APPROVAL-DRAFT-NOT-DISPATCH",
+    "POWER-COVERAGE-MANUAL-TEXT-NOT-LIVE-PARAMETER",
+    "POWER-COVERAGE-SCHEDULE-WINDOW-NOT-DELEGATION",
+    "POWER-MANUAL-ANSWER-NOT-SWITCHING",
+    "POWER-MEMORY-STYLE-NOT-SAFETY-POLICY",
+    "POWER-PROCEDURE-WARNING-NOT-APPROVAL-WAIVER",
+    "POWER-RERANK-CONFIG-NOT-RISK-DOWNGRADE",
+    "POWER-RETRIEVAL-RANKING-NOT-DOMAIN-CONCLUSION",
+    "afw-runtime-approval-schedule-energization",
+    "afw-runtime-manual-answer",
+    "afw-runtime-manual-dispatch",
+    "afw-runtime-memory-policy-suppression",
+    "afw-runtime-prior-step-risk-certification",
+    "afw-runtime-procedure-approval-waiver",
+    "afw-runtime-skill-report-risk-gate",
+    "afw-runtime-tool-metadata-data-access"
+  ]
+}

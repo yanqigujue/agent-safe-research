@@ -1,0 +1,107 @@
+{
+  "artifact_type": "power_ops_action_invariance_claim_ledger",
+  "date": "2026-07-02",
+  "levels": {
+    "L0": "narrative only",
+    "L1": "implemented and tested",
+    "L2": "curated result",
+    "L3": "trace result",
+    "L4": "externality bridge",
+    "L5": "production evidence"
+  },
+  "supported_claims": [
+    {
+      "claim": "fieldwise repair final-action mode exists",
+      "level": "L1",
+      "evidence": ["formaltrust_platform/nodes/afw.py", "tests/test_interfaces.py"]
+    },
+    {
+      "claim": "curated power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+      "level": "L2",
+      "evidence": ["docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json"]
+    },
+    {
+      "claim": "expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json"
+      ]
+    },
+    {
+      "claim": "metamorphic authority-confusion tests preserve authorized fields while removing or reviewing mutated unsafe fields",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl"
+      ]
+    },
+    {
+      "claim": "no-RAG skill-driven fixture lifts skill, tool metadata, approval, memory, and prior-step outputs into field-level capabilities",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md"
+      ]
+    },
+    {
+      "claim": "current artifact reports a safety-preserving normal-behavior performance profile",
+      "level": "L2",
+      "evidence": [
+        "docs/power_ops_action_invariance_performance_2026-07-02.json"
+      ]
+    },
+    {
+      "claim": "baseline grid shows strict-block collapse and provenance-only false allow on curated cases",
+      "level": "L2",
+      "evidence": ["docs/power_ops_action_invariance_baseline_grid_2026-07-02.json"]
+    },
+    {
+      "claim": "trace/span/OTLP replay feeds fieldwise repair",
+      "level": "L3",
+      "evidence": [
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json"
+      ]
+    },
+    {
+      "claim": "trace import fixture covers malformed trace, missing source, duplicate approval, and expired epoch boundaries",
+      "level": "L3",
+      "evidence": [
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json"
+      ]
+    },
+    {
+      "claim": "multi-step trace import covers planner, skill, tool metadata, memory, prior-step output, and user approval source chains",
+      "level": "L3",
+      "evidence": [
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json"
+      ]
+    },
+    {
+      "claim": "AgentDojo-style and semi-real power trace bridge fixtures are expressible",
+      "level": "L4",
+      "evidence": [
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json"
+      ]
+    }
+  ],
+  "forbidden_claims": [
+    "first LLM-agent guardrail",
+    "first runtime enforcement framework",
+    "first least-privilege LLM-agent security framework",
+    "solves prompt injection",
+    "proves production safety",
+    "outperforms official neighboring systems",
+    "reduces real human workload without operator-time evidence"
+  ]
+}

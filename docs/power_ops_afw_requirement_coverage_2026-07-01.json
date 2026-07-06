@@ -1,0 +1,249 @@
+{
+  "artifact_type": "afw_requirement_coverage",
+  "source_inputs": {
+    "screenshot": "electric power equipment operations RAG QA production scene",
+    "pdf": "实施方案_v2.0(1).pdf"
+  },
+  "summary": {
+    "total_requirements": 10,
+    "supported": 4,
+    "partial": 6,
+    "missing": 0
+  },
+  "requirements": [
+    {
+      "id": "REQ-FORMAL-MODEL",
+      "requirement": "形式化建模",
+      "note": "PDF要求TCE/FormalTrust形式化建模；AFW补充字段授权形式化切片。",
+      "status": "supported",
+      "evidence_paths": [
+        "docs/power_ops_afw_formal_model_2026-07-01.md",
+        "docs/action_field_authority_warrant_calculus_2026-07-01.md",
+        "docs/power_ops_afw_trace_adapter_formal_mapping_2026-07-01.md"
+      ],
+      "existing_evidence_paths": [
+        "docs/power_ops_afw_formal_model_2026-07-01.md",
+        "docs/action_field_authority_warrant_calculus_2026-07-01.md",
+        "docs/power_ops_afw_trace_adapter_formal_mapping_2026-07-01.md"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {}
+    },
+    {
+      "id": "REQ-TEST-FRAMEWORK",
+      "requirement": "插件式测评/攻击测试框架",
+      "note": "PDF要求插件式攻击测试框架；当前已有FormalTrust节点、runtime evaluator、trace adapter和suite runner。",
+      "status": "supported",
+      "evidence_paths": [
+        "docs/power_ops_afw_test_framework_2026-07-01.md",
+        "formaltrust_platform/nodes/afw.py",
+        "formaltrust_platform/experiments/afw_runtime_suite.py",
+        "tests/test_afw_bench.py"
+      ],
+      "existing_evidence_paths": [
+        "docs/power_ops_afw_test_framework_2026-07-01.md",
+        "formaltrust_platform/nodes/afw.py",
+        "formaltrust_platform/experiments/afw_runtime_suite.py",
+        "tests/test_afw_bench.py"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {}
+    },
+    {
+      "id": "REQ-POWER-RAG-SCENE",
+      "requirement": "电力设备运维知识库RAG问答场景",
+      "note": "截图要求上传设备手册/规程、检索片段、rerank、生成回答；当前AFW样本覆盖该RAG场景中的字段授权洗白风险。",
+      "status": "supported",
+      "evidence_paths": [
+        "docs/power_ops_afw_test_samples_2026-07-01.md",
+        "examples/afw_power_ops_rag_rows.json",
+        "examples/afw_power_ops_trace_scenarios.json"
+      ],
+      "existing_evidence_paths": [
+        "docs/power_ops_afw_test_samples_2026-07-01.md",
+        "examples/afw_power_ops_rag_rows.json",
+        "examples/afw_power_ops_trace_scenarios.json"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {}
+    },
+    {
+      "id": "REQ-K1-BEHMATCH-80",
+      "requirement": "安全攸关行为一致率>=80%",
+      "note": "PDF要求安全相关行为一致率>=80%；当前AFW all-config runtime suite在字段授权切片上达到mean_afw_behmatch=1.0。",
+      "status": "supported",
+      "evidence_paths": [
+        "docs/power_ops_afw_runtime_all_configs_suite_report_2026-07-01.json",
+        "docs/power_ops_afw_runtime_all_configs_suite_report_2026-07-01.md"
+      ],
+      "existing_evidence_paths": [
+        "docs/power_ops_afw_runtime_all_configs_suite_report_2026-07-01.json",
+        "docs/power_ops_afw_runtime_all_configs_suite_report_2026-07-01.md"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {
+        "mean_afw_behmatch": 1.0,
+        "total_cases": 27,
+        "passed_cases": 27
+      }
+    },
+    {
+      "id": "REQ-POWER-ATTACK-TAXONOMY",
+      "requirement": "电力专项攻击分类",
+      "note": "PDF列出领域混淆、权限伪造、术语误用、规程规避、RAG中毒等专项攻击；当前AFW覆盖字段授权洗白相关子集。",
+      "status": "partial",
+      "evidence_paths": [
+        "examples/afw_boundary_role_rows.json",
+        "examples/afw_power_ops_rag_rows.json",
+        "docs/power_ops_afw_coverage_matrix_2026-07-01.md"
+      ],
+      "existing_evidence_paths": [
+        "examples/afw_boundary_role_rows.json",
+        "examples/afw_power_ops_rag_rows.json",
+        "docs/power_ops_afw_coverage_matrix_2026-07-01.md"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {}
+    },
+    {
+      "id": "REQ-DATASET-CONSTRUCTION",
+      "requirement": "测试数据集建设",
+      "note": "PDF规划通用安全集+自建电力集，并要求四要素标注和Kappa>=0.7；当前已有AFW专项子集，尚非完整1050/800/700规模数据集。",
+      "status": "partial",
+      "evidence_paths": [
+        "docs/power_ops_afw_test_samples_2026-07-01.md",
+        "docs/power_ops_afw_dataset_annotation_audit_2026-07-01.md",
+        "docs/power_ops_afw_dataset_annotation_audit_2026-07-01.json",
+        "docs/power_ops_afw_annotation_packet_2026-07-01.json",
+        "docs/power_ops_afw_annotation_packet_2026-07-01.jsonl",
+        "docs/power_ops_afw_annotation_agreement_smoke_2026-07-01.md",
+        "docs/power_ops_afw_annotation_agreement_smoke_2026-07-01.json",
+        "examples/afw_power_ops_rag_rows.json",
+        "examples/data/afw_runtime_power_ops_cases.jsonl"
+      ],
+      "existing_evidence_paths": [
+        "docs/power_ops_afw_test_samples_2026-07-01.md",
+        "docs/power_ops_afw_dataset_annotation_audit_2026-07-01.md",
+        "docs/power_ops_afw_dataset_annotation_audit_2026-07-01.json",
+        "docs/power_ops_afw_annotation_packet_2026-07-01.json",
+        "docs/power_ops_afw_annotation_packet_2026-07-01.jsonl",
+        "docs/power_ops_afw_annotation_agreement_smoke_2026-07-01.md",
+        "docs/power_ops_afw_annotation_agreement_smoke_2026-07-01.json",
+        "examples/afw_power_ops_rag_rows.json",
+        "examples/data/afw_runtime_power_ops_cases.jsonl"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {
+        "total_audited_items": 40,
+        "fully_labeled_items": 40,
+        "kappa_status": "pending_human_double_annotation",
+        "dataset_scale_status": "afw_specialized_subset_not_full_pdf_scale",
+        "annotation_packet_items": 40,
+        "agreement_smoke_min_kappa": 1.0,
+        "human_kappa_status": "not_human_double_annotation"
+      }
+    },
+    {
+      "id": "REQ-DEFENSE-CLOSED-LOOP",
+      "requirement": "测评-定位-防护-再测评闭环",
+      "note": "PDF要求轻量防护与闭环验证；当前CapGuard可将未授权字段改写为human approval并进入runtime evaluator，但尚未完成完整防护前后大基准实验。",
+      "status": "partial",
+      "evidence_paths": [
+        "formaltrust_platform/nodes/afw.py",
+        "examples/afw_runtime_validation.yaml",
+        "docs/power_ops_afw_current_results_2026-07-01.md",
+        "docs/power_ops_afw_defense_loop_report_2026-07-01.md",
+        "docs/power_ops_afw_defense_loop_report_2026-07-01.json"
+      ],
+      "existing_evidence_paths": [
+        "formaltrust_platform/nodes/afw.py",
+        "examples/afw_runtime_validation.yaml",
+        "docs/power_ops_afw_current_results_2026-07-01.md",
+        "docs/power_ops_afw_defense_loop_report_2026-07-01.md",
+        "docs/power_ops_afw_defense_loop_report_2026-07-01.json"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {
+        "k2_min_risk_discovery_lift": 0.125,
+        "k3_min_safety_issue_reduction": 1.0,
+        "k4_utility_preservation": 1.0,
+        "general_ability_drop": 0.0,
+        "passes_proxy_gates": true,
+        "claim_scope": "afw_power_ops_subset_proxy_not_project_level"
+      }
+    },
+    {
+      "id": "REQ-K2-K3-K4-PROJECT-METRICS",
+      "requirement": "K2/K3/K4项目级指标",
+      "note": "PDF要求风险发掘提升>=10%、安全问题降低>=20%、通用能力下降<=10%；当前报告有AFW-subset proxy，尚非项目全量指标。",
+      "status": "partial",
+      "evidence_paths": [
+        "docs/power_ops_afw_runtime_all_configs_suite_report_2026-07-01.json",
+        "docs/power_ops_afw_defense_loop_report_2026-07-01.json",
+        "docs/action_field_authority_warrant_claim_firewall_2026-07-01.md"
+      ],
+      "existing_evidence_paths": [
+        "docs/power_ops_afw_runtime_all_configs_suite_report_2026-07-01.json",
+        "docs/power_ops_afw_defense_loop_report_2026-07-01.json",
+        "docs/action_field_authority_warrant_claim_firewall_2026-07-01.md"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {
+        "false_allow_fields": 0,
+        "false_block_fields": 0,
+        "prevented_fields": 21,
+        "k2_min_risk_discovery_lift": 0.125,
+        "k3_min_safety_issue_reduction": 1.0,
+        "k4_utility_preservation": 1.0
+      }
+    },
+    {
+      "id": "REQ-PRODUCTION-DEPLOYMENT",
+      "requirement": "生产部署与多模型链路",
+      "note": "截图强调embedding、generation、rerank多模型链路和生产显存/API约束；当前AFW验证了运行时trace与字段授权，尚未接真实embedding/rerank/generation服务。",
+      "status": "partial",
+      "evidence_paths": [
+        "examples/afw_power_ops_production_chain.yaml",
+        "docs/power_ops_afw_production_chain_report_2026-07-01.md",
+        "docs/power_ops_afw_production_chain_report_2026-07-01.json",
+        "examples/afw_trace_adapter_otlp_runtime_validation.yaml",
+        "examples/afw_trace_adapter_otlp_envelope_runtime_validation.yaml",
+        "docs/power_ops_afw_implementation_scheme_2026-07-01.md"
+      ],
+      "existing_evidence_paths": [
+        "examples/afw_power_ops_production_chain.yaml",
+        "docs/power_ops_afw_production_chain_report_2026-07-01.md",
+        "docs/power_ops_afw_production_chain_report_2026-07-01.json",
+        "examples/afw_trace_adapter_otlp_runtime_validation.yaml",
+        "examples/afw_trace_adapter_otlp_envelope_runtime_validation.yaml",
+        "docs/power_ops_afw_implementation_scheme_2026-07-01.md"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {
+        "required_model_roles_covered": true,
+        "rag_flow_contains_guardrail": true,
+        "memory_budget_passes": true,
+        "api_compatibility_passes": true,
+        "production_readiness_status": "manifest_validated_not_live_deployment"
+      }
+    },
+    {
+      "id": "REQ-FINAL-DELIVERABLES",
+      "requirement": "技术报告、原型系统、论文、专利、软著",
+      "note": "PDF列出最终交付物；当前AFW已有研究文档、可运行原型切片和论文材料，尚非完整结题交付包。",
+      "status": "partial",
+      "evidence_paths": [
+        "docs/power_ops_afw_deliverables_index_2026-07-01.md",
+        "docs/action_field_authority_warrant_research_summary_2026-07-01.md",
+        "docs/action_field_authority_warrant_claim_firewall_2026-07-01.md"
+      ],
+      "existing_evidence_paths": [
+        "docs/power_ops_afw_deliverables_index_2026-07-01.md",
+        "docs/action_field_authority_warrant_research_summary_2026-07-01.md",
+        "docs/action_field_authority_warrant_claim_firewall_2026-07-01.md"
+      ],
+      "missing_evidence_paths": [],
+      "metric_evidence": {}
+    }
+  ]
+}

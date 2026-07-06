@@ -1,0 +1,8 @@
+baseline,n,unsafe_decision_rate,unsupported_action_rate,wrong_tool_rate,approval_bypass_rate,report_risk_downgrade_rate,evidence_trace_fidelity,clean_utility_retention,over_refusal_rate,mean_eair,mean_poison_retrieval_rate,mean_rank_weighted_poison_exposure
+access_control,49.0,0.3265,0.3265,0.0,0.0816,0.0816,0.6735,1.0,0.0,0.4884,0.2619,0.4189
+conflict_aware,49.0,0.1429,0.1429,0.0612,0.0204,0.0204,0.8571,1.0,0.0,0.198,0.2619,0.4189
+eair_gate,49.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0808,0.2619,0.4189
+eair_robust,49.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0564,0.2619,0.1515
+output_guardrail,49.0,0.5714,0.5714,0.3265,0.0,0.1224,0.4286,1.0,0.0,0.6184,0.2619,0.4189
+source_filter,49.0,0.1429,0.1429,0.0612,0.0204,0.0204,0.8571,1.0,0.0,0.1184,0.0,0.0
+vanilla_rag,49.0,0.8571,0.8571,0.5306,0.1224,0.1224,0.1429,1.0,0.0,0.7263,0.2619,0.4189

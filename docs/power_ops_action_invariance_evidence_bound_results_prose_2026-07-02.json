@@ -1,0 +1,364 @@
+{
+  "artifact_type": "power_ops_evidence_bound_results_prose",
+  "source_results_outline": "docs/power_ops_action_invariance_evidence_bound_results_outline_2026-07-02.json",
+  "paper_section": "§5 Results and Analysis",
+  "results_prose_status": "ready",
+  "paragraph_count": 7,
+  "results_text": "The curated fieldwise-repair row is the first §5 result paragraph: it is framed as field preservation for authorized fields and removal of unauthorized fields, with the claim bounded to the fieldwise-repair result JSON and its fully supported table row.\n\nThe expanded, metamorphic, and skill-authority fixtures extend the regression surface across larger case coverage, authority-confusion mutations, and no-RAG skill-driven multi-source authority without turning those fixtures into deployment evidence.\n\nThe baseline-grid paragraph should compare coarse intervention behavior with the fieldwise repair frame: strict blocking captures conservative collapse, provenance-only captures unsafe preservation, and fieldwise repair remains a bounded artifact result.\n\nThe performance paragraph treats performance as safety-preserving normal behavior under the current fixtures, not as wall-clock latency, human workload reduction, or production operator efficiency.\n\nThe trace paragraph groups trace replay, span/OTLP replay, and trace import as fixture evidence that external action records can feed the same fieldwise repair analysis; it does not claim production telemetry.\n\nThe multi-step trace paragraph reports source-chain coverage for planner outputs, skills, tool metadata, memory, prior-step output, and user approval as local fixture evidence for multi-source authority accounting.\n\nThe results section closes by keeping every empirical statement inside the current curated, bridge, and trace-fixture boundary: no production telemetry, no official neighboring-system superiority claim, no real workload reduction, and no wall-clock latency claim.",
+  "paragraphs": [
+    {
+      "slot": "fieldwise_repair_result",
+      "text": "The curated fieldwise-repair row is the first §5 result paragraph: it is framed as field preservation for authorized fields and removal of unauthorized fields, with the claim bounded to the fieldwise-repair result JSON and its fully supported table row.",
+      "evidence_paths": [
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json"
+      ],
+      "table_refs": [
+        {
+          "table": "Current Result",
+          "row_label": "fieldwise-repair",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+          "supported_metrics": [
+            "Passed",
+            "Whole-action block rate",
+            "Executable repair success",
+            "Repair frame validity"
+          ]
+        }
+      ],
+      "source_claims": [
+        {
+          "claim": "curated power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "expanded_metamorphic_skill_results",
+      "text": "The expanded, metamorphic, and skill-authority fixtures extend the regression surface across larger case coverage, authority-confusion mutations, and no-RAG skill-driven multi-source authority without turning those fixtures into deployment evidence.",
+      "evidence_paths": [
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl"
+      ],
+      "table_refs": [
+        {
+          "table": "Current Result",
+          "row_label": "expanded-fieldwise",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+          "supported_metrics": [
+            "Passed",
+            "Whole-action block rate",
+            "Executable repair success",
+            "Repair frame validity"
+          ]
+        },
+        {
+          "table": "Current Result",
+          "row_label": "metamorphic",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+          "supported_metrics": [
+            "Passed",
+            "Whole-action block rate",
+            "Executable repair success",
+            "Repair frame validity"
+          ]
+        },
+        {
+          "table": "Current Result",
+          "row_label": "skill-authority",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_skill_authority_results_2026-07-02.json",
+          "supported_metrics": [
+            "Passed",
+            "Whole-action block rate",
+            "Executable repair success",
+            "Repair frame validity"
+          ]
+        }
+      ],
+      "source_claims": [
+        {
+          "claim": "expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+            "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "metamorphic authority-confusion tests preserve authorized fields while removing or reviewing mutated unsafe fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+            "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "baseline_grid",
+      "text": "The baseline-grid paragraph should compare coarse intervention behavior with the fieldwise repair frame: strict blocking captures conservative collapse, provenance-only captures unsafe preservation, and fieldwise repair remains a bounded artifact result.",
+      "evidence_paths": [
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json"
+      ],
+      "table_refs": [
+        {
+          "table": "Baseline Grid",
+          "row_label": "strict-block",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+          "supported_metrics": [
+            "Authorized final preservation",
+            "Unauthorized final removal",
+            "Whole-action block",
+            "Executable invariance",
+            "False allow fields"
+          ]
+        },
+        {
+          "table": "Baseline Grid",
+          "row_label": "fieldwise-decision-only",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+          "supported_metrics": [
+            "Authorized final preservation",
+            "Unauthorized final removal",
+            "Whole-action block",
+            "Executable invariance",
+            "False allow fields"
+          ]
+        },
+        {
+          "table": "Baseline Grid",
+          "row_label": "provenance-only",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+          "supported_metrics": [
+            "Authorized final preservation",
+            "Unauthorized final removal",
+            "Whole-action block",
+            "Executable invariance",
+            "False allow fields"
+          ]
+        },
+        {
+          "table": "Baseline Grid",
+          "row_label": "fieldwise-repair",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+          "supported_metrics": [
+            "Authorized final preservation",
+            "Unauthorized final removal",
+            "Whole-action block",
+            "Executable invariance",
+            "False allow fields"
+          ]
+        }
+      ],
+      "source_claims": [
+        {
+          "claim": "baseline grid shows strict-block collapse and provenance-only false allow on curated cases",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "performance_profile",
+      "text": "The performance paragraph treats performance as safety-preserving normal behavior under the current fixtures, not as wall-clock latency, human workload reduction, or production operator efficiency.",
+      "evidence_paths": [
+        "docs/power_ops_action_invariance_performance_2026-07-02.json"
+      ],
+      "table_refs": [
+        {
+          "table": "Performance Profile",
+          "row_label": "expanded-fieldwise",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_performance_2026-07-02.json",
+          "supported_metrics": [
+            "Normal preservation",
+            "Safety removal",
+            "Whole-action block",
+            "Latency proxy",
+            "Audit compression"
+          ]
+        },
+        {
+          "table": "Performance Profile",
+          "row_label": "metamorphic",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_performance_2026-07-02.json",
+          "supported_metrics": [
+            "Normal preservation",
+            "Safety removal",
+            "Whole-action block",
+            "Latency proxy",
+            "Audit compression"
+          ]
+        },
+        {
+          "table": "Performance Profile",
+          "row_label": "skill-authority",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_performance_2026-07-02.json",
+          "supported_metrics": [
+            "Normal preservation",
+            "Safety removal",
+            "Whole-action block",
+            "Latency proxy",
+            "Audit compression"
+          ]
+        }
+      ],
+      "source_claims": [
+        {
+          "claim": "current artifact reports a safety-preserving normal-behavior performance profile",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_performance_2026-07-02.json"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "trace_replay_and_import",
+      "text": "The trace paragraph groups trace replay, span/OTLP replay, and trace import as fixture evidence that external action records can feed the same fieldwise repair analysis; it does not claim production telemetry.",
+      "evidence_paths": [
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json"
+      ],
+      "table_refs": [
+        {
+          "table": "Current Result",
+          "row_label": "trace-repair",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+          "supported_metrics": [
+            "Passed",
+            "Whole-action block rate",
+            "Executable repair success",
+            "Repair frame validity"
+          ]
+        },
+        {
+          "table": "Current Result",
+          "row_label": "span-otlp-repair",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+          "supported_metrics": [
+            "Passed",
+            "Whole-action block rate",
+            "Executable repair success",
+            "Repair frame validity"
+          ]
+        },
+        {
+          "table": "Current Result",
+          "row_label": "trace-import",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_trace_import_results_2026-07-02.json",
+          "supported_metrics": [
+            "Passed",
+            "Whole-action block rate",
+            "Executable repair success",
+            "Repair frame validity"
+          ]
+        }
+      ],
+      "source_claims": [
+        {
+          "claim": "trace/span/OTLP replay feeds fieldwise repair",
+          "level": "L3",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+            "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "trace import fixture covers malformed trace, missing source, duplicate approval, and expired epoch boundaries",
+          "level": "L3",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_trace_import_contract_2026-07-02.md",
+            "docs/power_ops_trace_import_results_2026-07-02.json",
+            "examples/data/power_ops_trace_import_fixture.json"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "multi_step_source_chain",
+      "text": "The multi-step trace paragraph reports source-chain coverage for planner outputs, skills, tool metadata, memory, prior-step output, and user approval as local fixture evidence for multi-source authority accounting.",
+      "evidence_paths": [
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json"
+      ],
+      "table_refs": [
+        {
+          "table": "Current Result",
+          "row_label": "multistep-trace-import",
+          "status": "fully_supported",
+          "source_artifact": "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+          "supported_metrics": [
+            "Passed",
+            "Whole-action block rate",
+            "Executable repair success",
+            "Repair frame validity"
+          ]
+        }
+      ],
+      "source_claims": [
+        {
+          "claim": "multi-step trace import covers planner, skill, tool metadata, memory, prior-step output, and user approval source chains",
+          "level": "L3",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+            "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+            "examples/data/power_ops_multistep_trace_import_fixture.json",
+            "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+            "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+            "examples/data/power_ops_planner_skill_tool_memory_fixture.json"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "claim_boundary",
+      "text": "The results section closes by keeping every empirical statement inside the current curated, bridge, and trace-fixture boundary: no production telemetry, no official neighboring-system superiority claim, no real workload reduction, and no wall-clock latency claim.",
+      "evidence_paths": [],
+      "table_refs": [],
+      "source_claims": [],
+      "limitation_reason": "No production telemetry; no wall-clock latency claim; no real workload reduction; no official neighboring-system superiority claim."
+    }
+  ],
+  "forbidden_claim_hits": []
+}

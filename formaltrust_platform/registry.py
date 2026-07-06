@@ -35,7 +35,27 @@ class NodeRegistry:
     @classmethod
     def with_builtins(cls) -> "NodeRegistry":
         registry = cls()
+        from formaltrust_platform.nodes.afw import (
+            afw_capguard_node,
+            afw_runtime_evaluator_node,
+            afw_trace_adapter_node,
+        )
         from formaltrust_platform.nodes.attacks import template_attack_node
+        from formaltrust_platform.nodes.eair_bench import (
+            eair_bench_agent_node,
+            eair_bench_evaluator_node,
+            eair_bench_retrieval_node,
+            eair_case_robustness_sweep_node,
+            eair_claim_extraction_noise_node,
+            eair_evidence_sufficiency_node,
+            eair_full_gate_node,
+            eair_hard_gate_node,
+            eair_retrieval_perturbation_node,
+            eair_robustness_sweep_node,
+            eair_robustness_summary_node,
+            eair_soft_score_node,
+            eair_structured_action_json_node,
+        )
         from formaltrust_platform.nodes.evaluators import rule_evaluator_node
         from formaltrust_platform.nodes.guardrails import (
             input_noop_guardrail_node,
@@ -45,11 +65,27 @@ class NodeRegistry:
 
         for builtin in (
             template_attack_node,
+            afw_trace_adapter_node,
+            afw_capguard_node,
+            afw_runtime_evaluator_node,
             input_noop_guardrail_node,
             output_noop_guardrail_node,
             mock_model_node,
             openai_compatible_model_node,
             rule_evaluator_node,
+            eair_bench_retrieval_node,
+            eair_retrieval_perturbation_node,
+            eair_claim_extraction_noise_node,
+            eair_bench_agent_node,
+            eair_structured_action_json_node,
+            eair_hard_gate_node,
+            eair_evidence_sufficiency_node,
+            eair_soft_score_node,
+            eair_full_gate_node,
+            eair_bench_evaluator_node,
+            eair_robustness_summary_node,
+            eair_robustness_sweep_node,
+            eair_case_robustness_sweep_node,
         ):
             registry.register(builtin)
         return registry

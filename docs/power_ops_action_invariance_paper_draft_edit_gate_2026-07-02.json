@@ -1,0 +1,17 @@
+{
+  "artifact_type": "power_ops_paper_draft_edit_gate",
+  "draft_path": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.json",
+  "paragraph_map_path": "docs/power_ops_action_invariance_claim_to_paragraph_map_2026-07-02.json",
+  "paragraph_packets_path": "docs/power_ops_action_invariance_paragraph_evidence_packets_2026-07-02.json",
+  "gate_status": "PASS",
+  "passed": true,
+  "blockers": [],
+  "stale_artifacts": [],
+  "stale_artifact_count": 0,
+  "current_draft_content_sha256": "123f5e9e8eb13b43f3bfb5d1c86c88c44f3427971c2651972f9d0bd36a7c96b1",
+  "map_recorded_draft_content_sha256": "123f5e9e8eb13b43f3bfb5d1c86c88c44f3427971c2651972f9d0bd36a7c96b1",
+  "draft_map_hash_matches": true,
+  "current_paragraph_map_sha256": "3c24742adc3ec6522ad717fd722f6ae00d600b0a8b39ded06d999b5e75b472b0",
+  "packet_recorded_paragraph_map_sha256": "3c24742adc3ec6522ad717fd722f6ae00d600b0a8b39ded06d999b5e75b472b0",
+  "packet_map_hash_matches": true
+}

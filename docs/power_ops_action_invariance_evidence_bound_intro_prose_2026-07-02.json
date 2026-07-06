@@ -1,0 +1,133 @@
+{
+  "artifact_type": "power_ops_evidence_bound_intro_prose",
+  "source_intro_outline": "docs/power_ops_action_invariance_evidence_bound_intro_2026-07-02.json",
+  "intro_prose_status": "ready",
+  "paragraph_count": 5,
+  "intro_text": "Strict supervision of high-risk power-operation LLM agents should not collapse every mixed-authority action into a full block; it should preserve authorized work while removing invalid authority fields.\n\nThe current paper therefore frames the problem as field-scoped authority preservation under intervention, not as a firstness, production-safety, or generic agent-security claim.\n\nOur artifact instantiates this boundary through fieldwise repair and a readiness-linked claim ledger that keeps each writing claim tied to evidence.\n\nThe current paper-ready pool covers curated, expanded, metamorphic, skill, baseline, and trace evidence, while treating these fixtures as bounded evaluation artifacts.\n\nWe explicitly leave production telemetry, real operator workload reduction, and official neighboring-system superiority outside the current claim set.",
+  "paragraphs": [
+    {
+      "slot": "problem",
+      "text": "Strict supervision of high-risk power-operation LLM agents should not collapse every mixed-authority action into a full block; it should preserve authorized work while removing invalid authority fields.",
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "gap",
+      "text": "The current paper therefore frames the problem as field-scoped authority preservation under intervention, not as a firstness, production-safety, or generic agent-security claim.",
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": "Keep firstness, production, workload, and official-superiority claims out."
+    },
+    {
+      "slot": "method",
+      "text": "Our artifact instantiates this boundary through fieldwise repair and a readiness-linked claim ledger that keeps each writing claim tied to evidence.",
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "evidence",
+      "text": "The current paper-ready pool covers curated, expanded, metamorphic, skill, baseline, and trace evidence, while treating these fixtures as bounded evaluation artifacts.",
+      "source_claims": [
+        {
+          "claim": "curated power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+            "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "metamorphic authority-confusion tests preserve authorized fields while removing or reviewing mutated unsafe fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+            "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl"
+          ]
+        },
+        {
+          "claim": "no-RAG skill-driven fixture lifts skill, tool metadata, approval, memory, and prior-step outputs into field-level capabilities",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_skill_authority_results_2026-07-02.json",
+            "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+            "docs/power_ops_skill_authority_model_2026-07-02.md"
+          ]
+        },
+        {
+          "claim": "current artifact reports a safety-preserving normal-behavior performance profile",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_performance_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "baseline grid shows strict-block collapse and provenance-only false allow on curated cases",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "boundary",
+      "text": "We explicitly leave production telemetry, real operator workload reduction, and official neighboring-system superiority outside the current claim set.",
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": "No production telemetry; no real workload reduction; no official superiority."
+    }
+  ],
+  "forbidden_claim_hits": []
+}

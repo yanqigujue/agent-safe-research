@@ -1,0 +1,26 @@
+{
+  "artifact_type": "eair_transcript_replay",
+  "protocol": "transcript_jsonl_to_eair_replay",
+  "claim_boundary": "Replay evaluates saved transcripts; it does not sample a live model.",
+  "inputs": {
+    "transcript_path": "examples\\data\\eair_structured_action_transcripts.jsonl",
+    "transcript_sha256": "6dbaedb069d3cf880411a9e1bb921c0d3e6783288e7943bfa6bb9e041d7805ed"
+  },
+  "outputs": {
+    "results": "structured_action_transcript_replay_results.json",
+    "report": "structured_action_transcript_replay_report.md"
+  },
+  "summary": {
+    "total_transcripts": 4,
+    "parse_error_count": 1,
+    "candidate_unsafe_count": 2,
+    "final_unsafe_count": 0,
+    "gate_counts": {
+      "allow": 2,
+      "replace": 2
+    },
+    "model_counts": {
+      "replay-fixture": 4
+    }
+  }
+}

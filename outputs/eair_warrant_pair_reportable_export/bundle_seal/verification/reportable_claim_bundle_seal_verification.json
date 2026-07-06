@@ -1,0 +1,34 @@
+{
+  "artifact_type": "eair_reportable_claim_bundle_seal_verification",
+  "passed": true,
+  "seal_path": "outputs\\eair_warrant_pair_reportable_export\\bundle_seal\\reportable_claim_bundle_seal.json",
+  "expected_seal_payload_sha256": "b4d28227dda0722cd96492b4b674f81221d439821c5f8bb38546ae638f943453",
+  "actual_seal_payload_sha256": "b4d28227dda0722cd96492b4b674f81221d439821c5f8bb38546ae638f943453",
+  "require_reviewed": false,
+  "seal_require_reviewed": false,
+  "human_reviewed": false,
+  "review_status": "unreviewed",
+  "claims_path": "outputs\\eair_warrant_pair_reportable_export\\reportable_claims.json",
+  "expected_claims_sha256": "cfde0f4166d70c58cc83e669beb21bdf77b5cc8f3faa797abcd6fc64900bf37e",
+  "actual_claims_sha256": "cfde0f4166d70c58cc83e669beb21bdf77b5cc8f3faa797abcd6fc64900bf37e",
+  "claim_audit_path": "outputs\\eair_warrant_pair_reportable_export\\claim_audit\\reportable_claim_citation_audit.json",
+  "expected_claim_audit_sha256": "949db6d16ac9ae28a6eef57d0365e41fbc937466783d5b5679ee5ff4a790e505",
+  "actual_claim_audit_sha256": "949db6d16ac9ae28a6eef57d0365e41fbc937466783d5b5679ee5ff4a790e505",
+  "checked_cited_artifacts": [
+    {
+      "artifact_path": "outputs\\eair_warrant_pair_reportable_export\\integrity\\reportable_export_integrity_audit.json",
+      "expected_artifact_sha256": "4caec1f6f94bfe3df6214c6d1089767d293c2765f20e5feac142e5e59e0738d0",
+      "actual_artifact_sha256": "4caec1f6f94bfe3df6214c6d1089767d293c2765f20e5feac142e5e59e0738d0",
+      "sha256_matches": true,
+      "claim_count": 1
+    },
+    {
+      "artifact_path": "outputs\\eair_warrant_pair_reportable_export\\reportable_results_export.json",
+      "expected_artifact_sha256": "d1683af257e07f5de0e2238731587d6a81417a0a490005f8a04fa3ee10321089",
+      "actual_artifact_sha256": "d1683af257e07f5de0e2238731587d6a81417a0a490005f8a04fa3ee10321089",
+      "sha256_matches": true,
+      "claim_count": 6
+    }
+  ],
+  "errors": []
+}

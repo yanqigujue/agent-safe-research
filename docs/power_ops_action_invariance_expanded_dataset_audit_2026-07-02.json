@@ -1,0 +1,102 @@
+{
+  "artifact_type": "power_ops_action_invariance_dataset_audit",
+  "dataset_path": "examples\\data\\power_ops_action_invariance_expanded_cases.jsonl",
+  "total_cases": 18,
+  "case_shape_counts": {
+    "candidate_action": 18,
+    "afw_source_events": 18,
+    "afw_consumptions": 18,
+    "afw_oracle": 18,
+    "action_invariance_oracle": 18
+  },
+  "oracle_covered_cases": 18,
+  "oracle_coverage_rate": 1.0,
+  "source_type_counts": {
+    "evidence": 6,
+    "skill": 2,
+    "tool_metadata": 3,
+    "memory": 2,
+    "prior_step_output": 2,
+    "user_approval": 7
+  },
+  "gate_decision_counts": {
+    "block": 14,
+    "abstain": 4
+  },
+  "field_counts": {
+    "answer": 8,
+    "side_effect": 1,
+    "risk_report": 4,
+    "risk_level": 2,
+    "citation": 3,
+    "data_read_scope": 1,
+    "equipment_certification": 2,
+    "dispatch_order": 1,
+    "switching_operation": 2,
+    "public_publish": 3,
+    "external_publish": 1,
+    "approval_waiver": 2,
+    "external_export": 2,
+    "dispatch": 1,
+    "control_command": 1,
+    "work_order": 1,
+    "diagnosis": 1
+  },
+  "required_role_counts": {
+    "manual_answer_authority": 1,
+    "dispatch_operation_authority": 2,
+    "report_formatting_skill": 1,
+    "risk_assessment_authority": 2,
+    "retrieval_index_metadata": 1,
+    "data_access_authority": 1,
+    "answer_style_personalization": 2,
+    "safety_policy_authority": 1,
+    "prior_step_descriptive_analysis": 2,
+    "equipment_certification_authority": 2,
+    "approval_for_inspection_schedule": 1,
+    "energization_authority": 1,
+    "public_publish_authority": 2,
+    "procedure_for_safety_warning": 1,
+    "approval_waiver_authority": 2,
+    "procedure_answer_authority": 2,
+    "approval_for_public_publish": 2,
+    "tool_metadata_citation_authority": 2,
+    "approval_for_external_export": 2,
+    "outage_summary_authority": 1,
+    "incident_report_formatting_skill": 1,
+    "grid_control_authority": 1,
+    "work_order_drafting_authority": 1,
+    "switching_authority": 1,
+    "checklist_answer_authority": 1
+  },
+  "tag_counts": {
+    "afw": 18,
+    "power_ops": 18,
+    "action_invariance": 18,
+    "fieldwise": 1,
+    "skill": 2,
+    "tool_metadata": 3,
+    "memory": 2,
+    "prior_step_output": 2,
+    "user_approval": 2,
+    "temporal": 1,
+    "procedure": 1,
+    "counter_authority": 3,
+    "abstain": 4,
+    "expanded": 8,
+    "dispatch": 1,
+    "obligation": 1
+  },
+  "severity_counts": {
+    "low": 5,
+    "critical": 6,
+    "medium": 3,
+    "high": 2
+  },
+  "risk_level_counts": {
+    "high": 14,
+    "critical": 4
+  },
+  "authorized_fields": 18,
+  "unauthorized_fields": 18
+}

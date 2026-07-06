@@ -1,0 +1,184 @@
+{
+  "title": "Legitimate evidence influence versus hijack influence",
+  "canvas": {"width": 1120, "height": 650},
+  "style": {
+    "font_family": "Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif",
+    "font_size": 15,
+    "bg_color": "#FFFFFF",
+    "palette": ["#ECFDF5", "#FEF2F2"]
+  },
+  "labels": [
+    {
+      "text": "证据影响 ≠ 证据劫持",
+      "x": 560,
+      "y": 42,
+      "font_size": 30,
+      "color": "#111827",
+      "anchor": "middle"
+    },
+    {
+      "text": "EAIR 的目标不是阻止证据影响动作，而是区分合法影响和劫持式影响。",
+      "x": 560,
+      "y": 602,
+      "font_size": 18,
+      "color": "#111827",
+      "anchor": "middle"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "legit_title",
+      "label": "合法证据影响",
+      "x": 280,
+      "y": 108,
+      "width": 260,
+      "height": 50,
+      "shape": "rounded",
+      "fill": "#D1FAE5",
+      "stroke": "#059669",
+      "font_size": 20
+    },
+    {
+      "id": "legit_evidence",
+      "label": "可信证据",
+      "sublabel": "trusted / fresh / current",
+      "x": 280,
+      "y": 190,
+      "width": 280,
+      "height": 70,
+      "shape": "rounded",
+      "fill": "#ECFDF5",
+      "stroke": "#10B981",
+      "font_size": 18
+    },
+    {
+      "id": "legit_claim",
+      "label": "支持必要声明",
+      "sublabel": "required claims are supported",
+      "x": 280,
+      "y": 285,
+      "width": 280,
+      "height": 70,
+      "shape": "rounded",
+      "fill": "#ECFDF5",
+      "stroke": "#10B981",
+      "font_size": 18
+    },
+    {
+      "id": "legit_action",
+      "label": "安全参数 / 安全动作",
+      "sublabel": "valid tool, args, approval",
+      "x": 280,
+      "y": 380,
+      "width": 280,
+      "height": 70,
+      "shape": "rounded",
+      "fill": "#ECFDF5",
+      "stroke": "#10B981",
+      "font_size": 18
+    },
+    {
+      "id": "legit_allow",
+      "label": "允许通过",
+      "sublabel": "allow",
+      "x": 280,
+      "y": 482,
+      "width": 220,
+      "height": 62,
+      "shape": "rounded",
+      "fill": "#A7F3D0",
+      "stroke": "#047857",
+      "font_size": 20
+    },
+    {
+      "id": "hijack_title",
+      "label": "劫持式证据影响",
+      "x": 840,
+      "y": 108,
+      "width": 260,
+      "height": 50,
+      "shape": "rounded",
+      "fill": "#FEE2E2",
+      "stroke": "#DC2626",
+      "font_size": 20
+    },
+    {
+      "id": "hijack_evidence",
+      "label": "污染 / 过期 / 冲突证据",
+      "sublabel": "poisoned / stale / conflicting",
+      "x": 840,
+      "y": 190,
+      "width": 300,
+      "height": 70,
+      "shape": "rounded",
+      "fill": "#FEF2F2",
+      "stroke": "#EF4444",
+      "font_size": 18
+    },
+    {
+      "id": "hijack_claim",
+      "label": "诱导错误声明",
+      "sublabel": "unsupported or unsafe claims",
+      "x": 840,
+      "y": 285,
+      "width": 300,
+      "height": 70,
+      "shape": "rounded",
+      "fill": "#FEF2F2",
+      "stroke": "#EF4444",
+      "font_size": 18
+    },
+    {
+      "id": "hijack_action",
+      "label": "危险参数 / 危险动作",
+      "sublabel": "unsafe args or decision",
+      "x": 840,
+      "y": 380,
+      "width": 300,
+      "height": 70,
+      "shape": "rounded",
+      "fill": "#FEF2F2",
+      "stroke": "#EF4444",
+      "font_size": 18
+    },
+    {
+      "id": "hijack_block",
+      "label": "阻断 / 人工审批",
+      "sublabel": "block or require review",
+      "x": 840,
+      "y": 482,
+      "width": 250,
+      "height": 62,
+      "shape": "rounded",
+      "fill": "#FECACA",
+      "stroke": "#B91C1C",
+      "font_size": 20
+    }
+  ],
+  "edges": [
+    {"from": "legit_evidence", "to": "legit_claim", "color": "#059669", "thickness": 3},
+    {"from": "legit_claim", "to": "legit_action", "color": "#059669", "thickness": 3},
+    {"from": "legit_action", "to": "legit_allow", "color": "#059669", "thickness": 3},
+    {"from": "hijack_evidence", "to": "hijack_claim", "color": "#DC2626", "thickness": 3},
+    {"from": "hijack_claim", "to": "hijack_action", "color": "#DC2626", "thickness": 3},
+    {"from": "hijack_action", "to": "hijack_block", "color": "#DC2626", "thickness": 3}
+  ],
+  "groups": [
+    {
+      "id": "legitimate_lane",
+      "label": "合法影响通道",
+      "node_ids": ["legit_title", "legit_evidence", "legit_claim", "legit_action", "legit_allow"],
+      "fill": "#F0FDF4",
+      "stroke": "#86EFAC",
+      "padding": 26
+    },
+    {
+      "id": "hijack_lane",
+      "label": "劫持影响通道",
+      "node_ids": ["hijack_title", "hijack_evidence", "hijack_claim", "hijack_action", "hijack_block"],
+      "fill": "#FFF1F2",
+      "stroke": "#FDA4AF",
+      "padding": 26
+    }
+  ]
+}

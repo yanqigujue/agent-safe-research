@@ -1,0 +1,111 @@
+{
+  "artifact_type": "power_ops_action_invariance_performance_profile",
+  "suite_count": 3,
+  "baseline_count": 4,
+  "suite_profiles": {
+    "power_ops_action_invariance_expanded": {
+      "suite_id": "power_ops_action_invariance_expanded",
+      "artifact_path": "docs\\power_ops_action_invariance_expanded_results_2026-07-02.json",
+      "total_cases": 18,
+      "normal_behavior_preservation": 1.0,
+      "safety_removal": 1.0,
+      "whole_action_block_rate": 0.0,
+      "review_burden_fields_per_case": 1.0,
+      "auto_executable_field_ratio": 0.5,
+      "audit_compression": 0.5,
+      "latency_proxy_units": 36
+    },
+    "power_ops_action_invariance_metamorphic": {
+      "suite_id": "power_ops_action_invariance_metamorphic",
+      "artifact_path": "docs\\power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+      "total_cases": 4,
+      "normal_behavior_preservation": 1.0,
+      "safety_removal": 1.0,
+      "whole_action_block_rate": 0.0,
+      "review_burden_fields_per_case": 1.0,
+      "auto_executable_field_ratio": 0.5,
+      "audit_compression": 0.6875,
+      "latency_proxy_units": 8
+    },
+    "power_ops_skill_authority": {
+      "suite_id": "power_ops_skill_authority",
+      "artifact_path": "docs\\power_ops_skill_authority_results_2026-07-02.json",
+      "total_cases": 8,
+      "normal_behavior_preservation": 1.0,
+      "safety_removal": 1.0,
+      "whole_action_block_rate": 0.0,
+      "review_burden_fields_per_case": 1.0,
+      "auto_executable_field_ratio": 0.5,
+      "audit_compression": 0.5,
+      "latency_proxy_units": 16
+    }
+  },
+  "baseline_profiles": {
+    "strict_block": {
+      "name": "strict_block",
+      "artifact_path": "docs\\power_ops_action_invariance_baseline_grid_2026-07-02.json",
+      "total_cases": 10,
+      "normal_behavior_preservation": 0.0,
+      "safety_removal": 1.0,
+      "whole_action_block_rate": 1.0,
+      "executable_action_invariance_rate": 0.0,
+      "false_allow_rate": 0.0,
+      "latency_proxy_units": 20,
+      "safety_preserving_normal_score": 0.0
+    },
+    "fieldwise_decision_only": {
+      "name": "fieldwise_decision_only",
+      "artifact_path": "docs\\power_ops_action_invariance_baseline_grid_2026-07-02.json",
+      "total_cases": 10,
+      "normal_behavior_preservation": 0.0,
+      "safety_removal": 1.0,
+      "whole_action_block_rate": 1.0,
+      "executable_action_invariance_rate": 0.0,
+      "false_allow_rate": 0.0,
+      "latency_proxy_units": 20,
+      "safety_preserving_normal_score": 0.0
+    },
+    "provenance_only": {
+      "name": "provenance_only",
+      "artifact_path": "docs\\power_ops_action_invariance_baseline_grid_2026-07-02.json",
+      "total_cases": 10,
+      "normal_behavior_preservation": 1.0,
+      "safety_removal": 0.0,
+      "whole_action_block_rate": 0.0,
+      "executable_action_invariance_rate": 0.0,
+      "false_allow_rate": 1.0,
+      "latency_proxy_units": 20,
+      "safety_preserving_normal_score": 0.0
+    },
+    "fieldwise_repair": {
+      "name": "fieldwise_repair",
+      "artifact_path": "docs\\power_ops_action_invariance_baseline_grid_2026-07-02.json",
+      "total_cases": 10,
+      "normal_behavior_preservation": 1.0,
+      "safety_removal": 1.0,
+      "whole_action_block_rate": 0.0,
+      "executable_action_invariance_rate": 1.0,
+      "false_allow_rate": 0.0,
+      "latency_proxy_units": 20,
+      "safety_preserving_normal_score": 1.0
+    }
+  },
+  "best_baseline_for_normal_behavior": {
+    "name": "fieldwise_repair",
+    "artifact_path": "docs\\power_ops_action_invariance_baseline_grid_2026-07-02.json",
+    "total_cases": 10,
+    "normal_behavior_preservation": 1.0,
+    "safety_removal": 1.0,
+    "whole_action_block_rate": 0.0,
+    "executable_action_invariance_rate": 1.0,
+    "false_allow_rate": 0.0,
+    "latency_proxy_units": 20,
+    "safety_preserving_normal_score": 1.0
+  },
+  "interpretation": {
+    "normal_behavior_preservation": "authorized final-field preservation",
+    "safety_removal": "unauthorized final-field removal",
+    "latency_proxy_units": "runtime field checks; not wall-clock latency",
+    "audit_compression": "mean witness compression ratio"
+  }
+}

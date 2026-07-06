@@ -1,0 +1,70 @@
+{
+  "title": "Power-Ops Action Invariance Architecture",
+  "canvas": {"width": 1320, "height": 660},
+  "style": {
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_size": 14,
+    "bg_color": "#FFFFFF",
+    "palette": ["#E0F2FE", "#DCFCE7", "#FEF3C7", "#FCE7F3", "#EDE9FE", "#FEE2E2", "#F1F5F9"]
+  },
+  "labels": [
+    {
+      "text": "Field-Level Action Invariance under Strict Supervision",
+      "x": 660,
+      "y": 42,
+      "font_size": 26,
+      "color": "#111827",
+      "anchor": "middle"
+    },
+    {
+      "text": "CapGuard checks whether each action field is covered by a valid capability, then repairs only invalid fields.",
+      "x": 660,
+      "y": 72,
+      "font_size": 15,
+      "color": "#4B5563",
+      "anchor": "middle"
+    },
+    {
+      "text": "Decision rule: allow field f only if Cap(x) covers Need(s,f) across role, field, operation, data, effect, delegation, time, and obligations.",
+      "x": 660,
+      "y": 600,
+      "font_size": 14,
+      "color": "#374151",
+      "anchor": "middle"
+    }
+  ],
+  "nodes": [
+    {"id": "rag", "label": "RAG Docs", "sublabel": "retrieved evidence", "x": 105, "y": 160, "width": 150, "height": 68, "shape": "rounded", "fill": "#E0F2FE", "stroke": "#0284C7"},
+    {"id": "skill", "label": "Skill Output", "sublabel": "manifest + result", "x": 105, "y": 245, "width": 150, "height": 68, "shape": "rounded", "fill": "#DCFCE7", "stroke": "#16A34A"},
+    {"id": "tool", "label": "Tool Metadata", "sublabel": "tool authority", "x": 105, "y": 330, "width": 150, "height": 68, "shape": "rounded", "fill": "#FEF3C7", "stroke": "#D97706"},
+    {"id": "memory", "label": "Memory", "sublabel": "stored context", "x": 105, "y": 415, "width": 150, "height": 68, "shape": "rounded", "fill": "#EDE9FE", "stroke": "#7C3AED"},
+    {"id": "approval", "label": "Approval", "sublabel": "operator intent", "x": 105, "y": 500, "width": 150, "height": 68, "shape": "rounded", "fill": "#FCE7F3", "stroke": "#DB2777"},
+
+    {"id": "cap", "label": "Cap(x)", "sublabel": "capability extraction", "x": 325, "y": 330, "width": 170, "height": 88, "shape": "rounded", "fill": "#F8FAFC", "stroke": "#334155", "font_size": 17},
+    {"id": "action", "label": "Agent Action", "sublabel": "answer, dispatch,\npublish, approval flag", "x": 545, "y": 250, "width": 180, "height": 90, "shape": "rounded", "fill": "#E0F2FE", "stroke": "#2563EB", "font_size": 17},
+    {"id": "need", "label": "Need(s,f)", "sublabel": "field-level authority demand", "x": 545, "y": 410, "width": 180, "height": 88, "shape": "rounded", "fill": "#FEF3C7", "stroke": "#D97706", "font_size": 17},
+    {"id": "guard", "label": "CapGuard", "sublabel": "coverage check", "x": 765, "y": 330, "width": 180, "height": 92, "shape": "rounded", "fill": "#DCFCE7", "stroke": "#16A34A", "font_size": 18},
+    {"id": "decisions", "label": "Field Decisions", "sublabel": "allow / block / abstain", "x": 985, "y": 250, "width": 180, "height": 86, "shape": "rounded", "fill": "#F1F5F9", "stroke": "#64748B", "font_size": 17},
+    {"id": "repair", "label": "Fieldwise Repair", "sublabel": "preserve valid fields;\nremove invalid frame", "x": 985, "y": 410, "width": 190, "height": 92, "shape": "rounded", "fill": "#EDE9FE", "stroke": "#7C3AED", "font_size": 17},
+    {"id": "final", "label": "Final Action", "sublabel": "auto-executable fields", "x": 1220, "y": 250, "width": 170, "height": 82, "shape": "rounded", "fill": "#DCFCE7", "stroke": "#15803D", "font_size": 17},
+    {"id": "review", "label": "Review Queue", "sublabel": "partial human review", "x": 1220, "y": 410, "width": 170, "height": 82, "shape": "rounded", "fill": "#FEE2E2", "stroke": "#DC2626", "font_size": 17}
+  ],
+  "edges": [
+    {"from": "rag", "to": "cap", "label": "lift"},
+    {"from": "skill", "to": "cap", "label": "lift"},
+    {"from": "tool", "to": "cap", "label": "lift"},
+    {"from": "memory", "to": "cap", "label": "lift"},
+    {"from": "approval", "to": "cap", "label": "lift"},
+    {"from": "action", "to": "need", "label": "decompose"},
+    {"from": "cap", "to": "guard", "label": "coverage"},
+    {"from": "need", "to": "guard", "label": "demand"},
+    {"from": "guard", "to": "decisions", "label": "decide"},
+    {"from": "decisions", "to": "repair", "label": "repair frame"},
+    {"from": "repair", "to": "final", "label": "allow"},
+    {"from": "repair", "to": "review", "label": "block/abstain"}
+  ],
+  "groups": [
+    {"id": "inputs", "label": "Authority-bearing sources", "node_ids": ["rag", "skill", "tool", "memory", "approval"], "fill": "#FAFAFA", "stroke": "#D4D4D8", "padding": 22},
+    {"id": "runtime", "label": "AFW runtime path", "node_ids": ["cap", "action", "need", "guard", "decisions", "repair", "final", "review"], "fill": "#FFFFFF", "stroke": "#CBD5E1", "padding": 28}
+  ]
+}

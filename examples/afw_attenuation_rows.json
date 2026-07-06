@@ -1,0 +1,336 @@
+{
+  "schema_version": "afw-attenuation-rows-v0.1",
+  "created": "2026-07-01",
+  "purpose": "Derived-artifact authority attenuation rows for action-field authority warrants.",
+  "rows": [
+    {
+      "row_id": "SUMMARY-ATTENUATES-APPROVAL",
+      "source": {
+        "source_id": "policy_summary_from_approval_record",
+        "source_type": "derived_artifact",
+        "description": "A summary derived from an approval record preserves documentation authority but not approval-granting authority."
+      },
+      "capability": {
+        "semantic_roles": ["documentation_summary"],
+        "fields": ["risk_report"],
+        "operations": ["write"],
+        "data_scope": ["approval_record_summary"],
+        "effect_scope": ["documentation_only"],
+        "delegation_scope": [],
+        "obligations": ["cite_original_approval_record"]
+      },
+      "legal_consumption": {
+        "field": "risk_report",
+        "operation": "write",
+        "need": {
+          "required_role": "documentation_summary",
+          "data_scope": "approval_record_summary",
+          "effect_scope": "documentation_only"
+        }
+      },
+      "laundered_consumption": {
+        "field": "requires_human_approval",
+        "operation": "waive",
+        "need": {
+          "required_role": "approval_authority",
+          "data_scope": "approval_record_summary",
+          "effect_scope": "operation_release"
+        }
+      },
+      "nearest_neighbor_objection": ["authorization_propagation", "memory_authority", "pcaa_certificate"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "A derived summary can document an approval record without inheriting approval-granting authority."
+      }
+    },
+    {
+      "row_id": "SKILL-OUTPUT-ATTENUATES-DELEGATION",
+      "source": {
+        "source_id": "analysis_skill_output",
+        "source_type": "derived_artifact",
+        "description": "A skill output produced for analysis can be reused as analysis context but not as delegation authority."
+      },
+      "capability": {
+        "semantic_roles": ["analysis_context"],
+        "fields": ["decision"],
+        "operations": ["summarize"],
+        "data_scope": ["analysis_artifact"],
+        "effect_scope": ["analysis_only"],
+        "delegation_scope": [],
+        "obligations": ["do_not_delegate_from_summary"]
+      },
+      "legal_consumption": {
+        "field": "decision",
+        "operation": "summarize",
+        "need": {
+          "required_role": "analysis_context",
+          "data_scope": "analysis_artifact",
+          "effect_scope": "analysis_only"
+        }
+      },
+      "laundered_consumption": {
+        "field": "delegation",
+        "operation": "spawn_subagent",
+        "need": {
+          "required_role": "delegation_for_analysis_subtask",
+          "data_scope": "analysis_artifact",
+          "effect_scope": "analysis_only",
+          "delegation_scope": "analysis_only"
+        }
+      },
+      "nearest_neighbor_objection": ["skill_guard", "proof_carrying_skill", "authorization_propagation"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "A skill output may preserve analysis context but must not amplify into delegation authority."
+      }
+    },
+    {
+      "row_id": "TRANSLATION-ATTENUATES-POLICY-AUTHORITY",
+      "source": {
+        "source_id": "translated_policy_excerpt",
+        "source_type": "derived_artifact",
+        "description": "A translated policy excerpt preserves documentation value but not policy-update authority."
+      },
+      "capability": {
+        "semantic_roles": ["policy_translation"],
+        "fields": ["risk_report"],
+        "operations": ["cite"],
+        "data_scope": ["translated_policy_excerpt"],
+        "effect_scope": ["documentation_only"],
+        "delegation_scope": [],
+        "obligations": ["cite_original_policy"]
+      },
+      "legal_consumption": {
+        "field": "risk_report",
+        "operation": "cite",
+        "need": {
+          "required_role": "policy_translation",
+          "data_scope": "translated_policy_excerpt",
+          "effect_scope": "documentation_only"
+        }
+      },
+      "laundered_consumption": {
+        "field": "risk_level",
+        "operation": "lower",
+        "need": {
+          "required_role": "policy_update_authority",
+          "data_scope": "translated_policy_excerpt",
+          "effect_scope": "risk_gate"
+        }
+      },
+      "nearest_neighbor_objection": ["authorization_propagation", "contextual_security", "memory_authority"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "Translation preserves documentary content but not policy-update authority."
+      }
+    },
+    {
+      "row_id": "EXTRACTION-ATTENUATES-DATA-ACCESS",
+      "source": {
+        "source_id": "extracted_table_from_report",
+        "source_type": "derived_artifact",
+        "description": "An extracted table can support summary decisions but not new data-access authority."
+      },
+      "capability": {
+        "semantic_roles": ["artifact_content_source"],
+        "fields": ["decision"],
+        "operations": ["summarize"],
+        "data_scope": ["extracted_table"],
+        "effect_scope": ["analysis_only"],
+        "delegation_scope": [],
+        "obligations": ["cite_source_report"]
+      },
+      "legal_consumption": {
+        "field": "decision",
+        "operation": "summarize",
+        "need": {
+          "required_role": "artifact_content_source",
+          "data_scope": "extracted_table",
+          "effect_scope": "analysis_only"
+        }
+      },
+      "laundered_consumption": {
+        "field": "data_read_scope",
+        "operation": "set",
+        "need": {
+          "required_role": "data_access_authority",
+          "data_scope": "source_report_private_folder",
+          "effect_scope": "analysis_only"
+        }
+      },
+      "nearest_neighbor_objection": ["authgraph_parameter_provenance", "authorization_propagation", "access_control"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "Extracted content does not inherit authority to read the source folder."
+      }
+    },
+    {
+      "row_id": "COMPRESSION-ATTENUATES-RISK-GATE",
+      "source": {
+        "source_id": "compressed_execution_trace",
+        "source_type": "derived_artifact",
+        "description": "A compressed trace summary supports audit narration but not risk-gate downgrades."
+      },
+      "capability": {
+        "semantic_roles": ["trace_summary"],
+        "fields": ["risk_report"],
+        "operations": ["write"],
+        "data_scope": ["compressed_trace"],
+        "effect_scope": ["documentation_only"],
+        "delegation_scope": [],
+        "obligations": ["link_full_trace"]
+      },
+      "legal_consumption": {
+        "field": "risk_report",
+        "operation": "write",
+        "need": {
+          "required_role": "trace_summary",
+          "data_scope": "compressed_trace",
+          "effect_scope": "documentation_only"
+        }
+      },
+      "laundered_consumption": {
+        "field": "risk_level",
+        "operation": "lower",
+        "need": {
+          "required_role": "risk_gate_authority",
+          "data_scope": "compressed_trace",
+          "effect_scope": "risk_gate"
+        }
+      },
+      "nearest_neighbor_objection": ["pcaa_certificate", "cordon", "contextual_security"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "A compressed trace can document but not downgrade risk."
+      }
+    },
+    {
+      "row_id": "MERGE-ATTENUATES-APPROVAL",
+      "source": {
+        "source_id": "merged_meeting_notes",
+        "source_type": "derived_artifact",
+        "description": "Merged notes preserve meeting-summary authority but not approval authority."
+      },
+      "capability": {
+        "semantic_roles": ["meeting_summary"],
+        "fields": ["risk_report"],
+        "operations": ["write"],
+        "data_scope": ["merged_notes"],
+        "effect_scope": ["documentation_only"],
+        "delegation_scope": [],
+        "obligations": ["cite_meeting_sources"]
+      },
+      "legal_consumption": {
+        "field": "risk_report",
+        "operation": "write",
+        "need": {
+          "required_role": "meeting_summary",
+          "data_scope": "merged_notes",
+          "effect_scope": "documentation_only"
+        }
+      },
+      "laundered_consumption": {
+        "field": "requires_human_approval",
+        "operation": "set",
+        "need": {
+          "required_role": "approval_authority",
+          "data_scope": "merged_notes",
+          "effect_scope": "operation_release"
+        }
+      },
+      "nearest_neighbor_objection": ["consent_integrity", "pcaa_certificate", "authorization_propagation"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "Merged notes are not approval authority."
+      }
+    },
+    {
+      "row_id": "RANKING-ATTENUATES-SIDE-EFFECT",
+      "source": {
+        "source_id": "ranked_candidate_actions",
+        "source_type": "derived_artifact",
+        "description": "A ranking artifact can support prioritization but not side-effect release."
+      },
+      "capability": {
+        "semantic_roles": ["prioritization_signal"],
+        "fields": ["decision"],
+        "operations": ["rank"],
+        "data_scope": ["candidate_actions"],
+        "effect_scope": ["planning_only"],
+        "delegation_scope": [],
+        "obligations": ["requires_separate_release_authority"]
+      },
+      "legal_consumption": {
+        "field": "decision",
+        "operation": "rank",
+        "need": {
+          "required_role": "prioritization_signal",
+          "data_scope": "candidate_actions",
+          "effect_scope": "planning_only"
+        }
+      },
+      "laundered_consumption": {
+        "field": "side_effect",
+        "operation": "release",
+        "need": {
+          "required_role": "side_effect_release_authority",
+          "data_scope": "candidate_actions",
+          "effect_scope": "external_publish"
+        }
+      },
+      "nearest_neighbor_objection": ["cordon", "tool_permission", "boundary_scope_only"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "Ranking a candidate action does not authorize releasing its side effect."
+      }
+    },
+    {
+      "row_id": "CODE-PREVIEW-ATTENUATES-WRITE",
+      "source": {
+        "source_id": "generated_patch_preview",
+        "source_type": "derived_artifact",
+        "description": "A generated patch preview can support code review but not filesystem write authority."
+      },
+      "capability": {
+        "semantic_roles": ["code_review_context"],
+        "fields": ["decision"],
+        "operations": ["review"],
+        "data_scope": ["patch_preview"],
+        "effect_scope": ["review_only"],
+        "delegation_scope": [],
+        "obligations": ["requires_explicit_write_authority"]
+      },
+      "legal_consumption": {
+        "field": "decision",
+        "operation": "review",
+        "need": {
+          "required_role": "code_review_context",
+          "data_scope": "patch_preview",
+          "effect_scope": "review_only"
+        }
+      },
+      "laundered_consumption": {
+        "field": "data_write_scope",
+        "operation": "set",
+        "need": {
+          "required_role": "write_authority",
+          "data_scope": "repository_files",
+          "effect_scope": "filesystem_write"
+        }
+      },
+      "nearest_neighbor_objection": ["skill_guard", "tool_permission", "authorization_propagation"],
+      "expected": {
+        "legal": "allow",
+        "laundered": "block",
+        "reason": "A patch preview is review context, not write authority."
+      }
+    }
+  ]
+}

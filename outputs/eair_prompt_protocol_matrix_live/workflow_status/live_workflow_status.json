@@ -1,0 +1,205 @@
+{
+  "artifact_type": "eair_live_workflow_status",
+  "overall_status": "blocked",
+  "blocked_stage": "live_preflight",
+  "config_path": "examples/eair_prompt_protocol_matrix_live_template.yaml",
+  "model": "gpt-4.1-mini",
+  "api_key_env": "OPENAI_API_KEY",
+  "api_key_env_present": false,
+  "secret_value_recorded": false,
+  "scenario_count": 8,
+  "prompt_variants": [
+    "legacy_action_only",
+    "proof_carrying",
+    "proof_carrying_strict"
+  ],
+  "prompt_variant_count": 3,
+  "planned_transcript_count": 24,
+  "condition_threat_model_rows": [
+    {
+      "condition": "approval_bypass::hijack_evidence_support",
+      "protected_action_fields": [
+        "decision",
+        "requires_human_approval",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "legitimate_influence_separation",
+        "counter_evidence_exposure"
+      ],
+      "reviewer_rejections_answered": [
+        "source_attribution_only",
+        "planguard_attriguard_novelty",
+        "pcaa_certificate_not_evidence_warrant"
+      ]
+    },
+    {
+      "condition": "approval_bypass::poison_exposure_no_action_influence",
+      "protected_action_fields": [
+        "decision",
+        "requires_human_approval",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "legitimate_influence_separation",
+        "sufficient_support"
+      ],
+      "reviewer_rejections_answered": [
+        "pre_rhe_false_positive",
+        "source_attribution_only"
+      ]
+    },
+    {
+      "condition": "approval_bypass::risk_report_downgrade_no_tool",
+      "protected_action_fields": [
+        "risk_report",
+        "risk_level",
+        "requires_human_approval"
+      ],
+      "warrant_obligations": [
+        "risk_report_claim_support",
+        "hard_policy_constraints"
+      ],
+      "reviewer_rejections_answered": [
+        "access_control_only",
+        "rag_faithfulness_only"
+      ]
+    },
+    {
+      "condition": "dispatch_control::insufficient_evidence_dangerous_decision",
+      "protected_action_fields": [
+        "decision",
+        "tool",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "sufficient_support"
+      ],
+      "reviewer_rejections_answered": [
+        "access_control_only",
+        "rag_faithfulness_only",
+        "pcaa_certificate_not_evidence_warrant"
+      ]
+    },
+    {
+      "condition": "parameter_setting::parameter_level_hijack",
+      "protected_action_fields": [
+        "parameters",
+        "risk_level",
+        "risk_report",
+        "requires_human_approval"
+      ],
+      "warrant_obligations": [
+        "parameter_claim_support",
+        "hard_policy_constraints",
+        "counter_evidence_exposure"
+      ],
+      "reviewer_rejections_answered": [
+        "rag_faithfulness_misses_action_parameter_risk",
+        "access_control_only"
+      ]
+    },
+    {
+      "condition": "policy_update::legitimate_evidence_update",
+      "protected_action_fields": [
+        "decision",
+        "tool",
+        "risk_level",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "fresh_current_support",
+        "source_diverse_support"
+      ],
+      "reviewer_rejections_answered": [
+        "attribution_only_overblocks_legitimate_influence"
+      ]
+    },
+    {
+      "condition": "policy_update::near_duplicate_single_source_policy_support",
+      "protected_action_fields": [
+        "decision",
+        "tool",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "source_diverse_support"
+      ],
+      "reviewer_rejections_answered": [
+        "source_attribution_only",
+        "benchmark_overfit_source_diversity"
+      ]
+    },
+    {
+      "condition": "policy_update::stale_trusted_policy_support",
+      "protected_action_fields": [
+        "decision",
+        "tool",
+        "risk_report"
+      ],
+      "warrant_obligations": [
+        "fresh_current_support"
+      ],
+      "reviewer_rejections_answered": [
+        "rag_faithfulness_only",
+        "source_attribution_only",
+        "pcaa_certificate_not_evidence_warrant"
+      ]
+    }
+  ],
+  "reviewer_rejection_coverage": {
+    "access_control_only": 3,
+    "attribution_only_overblocks_legitimate_influence": 1,
+    "benchmark_overfit_source_diversity": 1,
+    "pcaa_certificate_not_evidence_warrant": 3,
+    "planguard_attriguard_novelty": 1,
+    "pre_rhe_false_positive": 1,
+    "rag_faithfulness_misses_action_parameter_risk": 1,
+    "rag_faithfulness_only": 3,
+    "source_attribution_only": 4
+  },
+  "stages": {
+    "live_preflight": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\live_preflight\\live_run_doctor.json",
+      "errors": [
+        "environment variable 'OPENAI_API_KEY' is not set"
+      ]
+    },
+    "sampling": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\sampled_transcripts.jsonl",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\sampled_transcripts.jsonl"
+      ]
+    },
+    "replay_manifest": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\replay\\artifact_manifest.json",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\replay\\artifact_manifest.json"
+      ]
+    },
+    "coverage_summary": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\summary\\artifact_summary.json",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\summary\\artifact_summary.json"
+      ]
+    },
+    "reportability": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\reportability\\reportable_run_audit.json",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\reportability\\reportable_run_audit.json"
+      ]
+    },
+    "paper_table_export": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\reportable_model_condition_table.csv",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_prompt_protocol_matrix_live\\paper_tables\\reportable_model_condition_table.csv"
+      ]
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "title": "Three-layer EAIR gate",
+  "canvas": {"width": 780, "height": 760},
+  "style": {
+    "font_family": "Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif",
+    "font_size": 15,
+    "bg_color": "#FFFFFF",
+    "palette": ["#E0F2FE", "#FEF3C7", "#DCFCE7", "#F3E8FF"]
+  },
+  "labels": [
+    {
+      "text": "三层 Evidence-Action Gate",
+      "x": 390,
+      "y": 42,
+      "font_size": 26,
+      "color": "#111827",
+      "anchor": "middle"
+    },
+    {
+      "text": "高风险动作必须同时通过硬规则、证据充分性与 EAIR 风险评分。",
+      "x": 390,
+      "y": 72,
+      "font_size": 14,
+      "color": "#4B5563",
+      "anchor": "middle"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "candidate",
+      "label": "候选动作",
+      "sublabel": "model proposed action a",
+      "x": 390,
+      "y": 130,
+      "width": 230,
+      "height": 68,
+      "shape": "rounded",
+      "fill": "#E0F2FE",
+      "stroke": "#0284C7",
+      "font_size": 19
+    },
+    {
+      "id": "hard",
+      "label": "硬规则门控",
+      "sublabel": "approval, tool, domain, parameter",
+      "x": 390,
+      "y": 235,
+      "width": 340,
+      "height": 72,
+      "shape": "rounded",
+      "fill": "#FEF3C7",
+      "stroke": "#D97706",
+      "font_size": 19
+    },
+    {
+      "id": "sufficient",
+      "label": "证据充分性门控",
+      "sublabel": "trusted, fresh, current, independent",
+      "x": 390,
+      "y": 345,
+      "width": 340,
+      "height": 72,
+      "shape": "rounded",
+      "fill": "#DCFCE7",
+      "stroke": "#16A34A",
+      "font_size": 19
+    },
+    {
+      "id": "risk",
+      "label": "EAIR 风险评分",
+      "sublabel": "path poison, conflict, weak support",
+      "x": 390,
+      "y": 455,
+      "width": 340,
+      "height": 72,
+      "shape": "rounded",
+      "fill": "#F3E8FF",
+      "stroke": "#9333EA",
+      "font_size": 19
+    },
+    {
+      "id": "decision",
+      "label": "门控决策",
+      "sublabel": "what should the agent do?",
+      "x": 390,
+      "y": 565,
+      "width": 210,
+      "height": 78,
+      "shape": "diamond",
+      "fill": "#F8FAFC",
+      "stroke": "#475569",
+      "font_size": 17
+    },
+    {
+      "id": "allow",
+      "label": "允许",
+      "x": 190,
+      "y": 675,
+      "width": 160,
+      "height": 58,
+      "shape": "rounded",
+      "fill": "#BBF7D0",
+      "stroke": "#15803D",
+      "font_size": 20
+    },
+    {
+      "id": "block",
+      "label": "阻断",
+      "x": 390,
+      "y": 675,
+      "width": 160,
+      "height": 58,
+      "shape": "rounded",
+      "fill": "#FECACA",
+      "stroke": "#B91C1C",
+      "font_size": 20
+    },
+    {
+      "id": "review",
+      "label": "人工审批",
+      "x": 590,
+      "y": 675,
+      "width": 170,
+      "height": 58,
+      "shape": "rounded",
+      "fill": "#DBEAFE",
+      "stroke": "#2563EB",
+      "font_size": 20
+    }
+  ],
+  "edges": [
+    {"from": "candidate", "to": "hard", "color": "#475569", "thickness": 2},
+    {"from": "hard", "to": "sufficient", "color": "#475569", "thickness": 2},
+    {"from": "sufficient", "to": "risk", "color": "#475569", "thickness": 2},
+    {"from": "risk", "to": "decision", "color": "#475569", "thickness": 2},
+    {"from": "decision", "to": "allow", "color": "#15803D", "thickness": 3},
+    {"from": "decision", "to": "block", "color": "#B91C1C", "thickness": 3},
+    {"from": "decision", "to": "review", "color": "#2563EB", "thickness": 3}
+  ],
+  "groups": [
+    {
+      "id": "gate_stack",
+      "label": "模型外部执行的 Gate",
+      "node_ids": ["hard", "sufficient", "risk", "decision"],
+      "fill": "#F8FAFC",
+      "stroke": "#CBD5E1",
+      "padding": 24
+    }
+  ]
+}

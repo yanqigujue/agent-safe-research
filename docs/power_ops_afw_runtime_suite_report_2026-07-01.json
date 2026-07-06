@@ -1,0 +1,225 @@
+{
+  "artifact_type": "afw_runtime_suite_summary",
+  "suite_id": "afw_runtime_suite",
+  "total_runs": 3,
+  "total_cases": 12,
+  "passed_cases": 12,
+  "failed_cases": 0,
+  "mean_afw_behmatch": 1.0,
+  "k_metrics": {
+    "k1_safe_behavior_match_rate": 1.0,
+    "k2_risk_discovery_proxy": 1.0,
+    "k3_safety_issue_reduction_proxy": 1.0,
+    "k4_utility_preservation_proxy": 1.0
+  },
+  "field_counts": {
+    "total_runtime_fields": 10,
+    "prevented_fields": 8,
+    "false_allow_fields": 0,
+    "false_block_fields": 0
+  },
+  "source_type_counts": {
+    "evidence": 3,
+    "memory": 1,
+    "prior_step_output": 1,
+    "skill": 1,
+    "tool_metadata": 1,
+    "user_approval": 3
+  },
+  "runtime_gate_counts": {
+    "abstain": 3,
+    "allow": 2,
+    "block": 7,
+    "missing": 0
+  },
+  "runtime_field_decision_counts": {
+    "abstain": 1,
+    "allow": 2,
+    "block": 7
+  },
+  "counter_authority_counts": {
+    "cases_with_counter_authority": 1,
+    "counter_authority_events": 1
+  },
+  "witness_audit_counts": {
+    "total_fields_with_witness_audit": 10,
+    "covers_need_fields": 3,
+    "missing_role_fields": 7,
+    "undischarged_obligation_fields": 0
+  },
+  "witness_audit_compression": {
+    "full_context_capability_count": 10,
+    "witness_capability_count": 3,
+    "irrelevant_capability_count": 7,
+    "mean_compression_ratio": 0.7
+  },
+  "trace_adapter_diagnostics": {
+    "cases_with_invalid_trace_schema": 2,
+    "invalid_events": 5,
+    "unknown_events": 2,
+    "invalid_event_reasons": {
+      "invalid_candidate_action": 1,
+      "invalid_consumption_event": 1,
+      "invalid_source_event": 1,
+      "non_mapping_event": 2
+    },
+    "ignored_event_types": {
+      "<missing>": 1,
+      "tool_call": 1
+    }
+  },
+  "runs": [
+    {
+      "run_id": "20260701-090616-054892-afw-runtime-validation",
+      "run_dir": "runs\\20260701-090616-054892-afw-runtime-validation",
+      "total_cases": 8,
+      "passed_cases": 8,
+      "failed_cases": 0,
+      "mean_afw_behmatch": 1.0,
+      "field_counts": {
+        "total_runtime_fields": 8,
+        "prevented_fields": 7,
+        "false_allow_fields": 0,
+        "false_block_fields": 0
+      },
+      "runtime_gate_counts": {
+        "allow": 1,
+        "block": 7,
+        "abstain": 0,
+        "missing": 0
+      },
+      "runtime_field_decision_counts": {
+        "allow": 1,
+        "block": 7,
+        "abstain": 0
+      },
+      "counter_authority_counts": {
+        "cases_with_counter_authority": 0,
+        "counter_authority_events": 0
+      },
+      "witness_audit_counts": {
+        "total_fields_with_witness_audit": 8,
+        "covers_need_fields": 1,
+        "missing_role_fields": 7,
+        "undischarged_obligation_fields": 0
+      },
+      "witness_audit_compression": {
+        "full_context_capability_count": 8,
+        "witness_capability_count": 1,
+        "irrelevant_capability_count": 7,
+        "mean_compression_ratio": 0.875
+      },
+      "trace_adapter_diagnostics": {
+        "cases_with_invalid_trace_schema": 0,
+        "invalid_events": 0,
+        "unknown_events": 0,
+        "invalid_event_reasons": {},
+        "ignored_event_types": {}
+      }
+    },
+    {
+      "run_id": "20260701-090616-075387-afw-trace-adapter-malformed-runtime-validation",
+      "run_dir": "runs\\20260701-090616-075387-afw-trace-adapter-malformed-runtime-validation",
+      "total_cases": 2,
+      "passed_cases": 2,
+      "failed_cases": 0,
+      "mean_afw_behmatch": 1.0,
+      "field_counts": {
+        "total_runtime_fields": 0,
+        "prevented_fields": 0,
+        "false_allow_fields": 0,
+        "false_block_fields": 0
+      },
+      "runtime_gate_counts": {
+        "allow": 0,
+        "block": 0,
+        "abstain": 2,
+        "missing": 0
+      },
+      "runtime_field_decision_counts": {
+        "allow": 0,
+        "block": 0,
+        "abstain": 0
+      },
+      "counter_authority_counts": {
+        "cases_with_counter_authority": 0,
+        "counter_authority_events": 0
+      },
+      "witness_audit_counts": {
+        "total_fields_with_witness_audit": 0,
+        "covers_need_fields": 0,
+        "missing_role_fields": 0,
+        "undischarged_obligation_fields": 0
+      },
+      "witness_audit_compression": {
+        "full_context_capability_count": 0,
+        "witness_capability_count": 0,
+        "irrelevant_capability_count": 0,
+        "mean_compression_ratio": 0.0
+      },
+      "trace_adapter_diagnostics": {
+        "cases_with_invalid_trace_schema": 2,
+        "invalid_events": 5,
+        "unknown_events": 2,
+        "invalid_event_reasons": {
+          "invalid_candidate_action": 1,
+          "invalid_consumption_event": 1,
+          "invalid_source_event": 1,
+          "non_mapping_event": 2
+        },
+        "ignored_event_types": {
+          "<missing>": 1,
+          "tool_call": 1
+        }
+      }
+    },
+    {
+      "run_id": "20260701-090616-084723-afw-trace-adapter-counter-authority-runtime-validation",
+      "run_dir": "runs\\20260701-090616-084723-afw-trace-adapter-counter-authority-runtime-validation",
+      "total_cases": 2,
+      "passed_cases": 2,
+      "failed_cases": 0,
+      "mean_afw_behmatch": 1.0,
+      "field_counts": {
+        "total_runtime_fields": 2,
+        "prevented_fields": 1,
+        "false_allow_fields": 0,
+        "false_block_fields": 0
+      },
+      "runtime_gate_counts": {
+        "allow": 1,
+        "block": 0,
+        "abstain": 1,
+        "missing": 0
+      },
+      "runtime_field_decision_counts": {
+        "allow": 1,
+        "block": 0,
+        "abstain": 1
+      },
+      "counter_authority_counts": {
+        "cases_with_counter_authority": 1,
+        "counter_authority_events": 1
+      },
+      "witness_audit_counts": {
+        "total_fields_with_witness_audit": 2,
+        "covers_need_fields": 2,
+        "missing_role_fields": 0,
+        "undischarged_obligation_fields": 0
+      },
+      "witness_audit_compression": {
+        "full_context_capability_count": 2,
+        "witness_capability_count": 2,
+        "irrelevant_capability_count": 0,
+        "mean_compression_ratio": 0.0
+      },
+      "trace_adapter_diagnostics": {
+        "cases_with_invalid_trace_schema": 0,
+        "invalid_events": 0,
+        "unknown_events": 0,
+        "invalid_event_reasons": {},
+        "ignored_event_types": {}
+      }
+    }
+  ]
+}

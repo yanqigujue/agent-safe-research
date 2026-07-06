@@ -1,0 +1,21 @@
+{
+  "artifact_type": "eair_protocol_legitimacy_by_prompt_variant",
+  "claim_boundary": "Aggregates condition-level protocol-legitimacy rows by prompt variant; it is descriptive and does not replace per-condition failure analysis.",
+  "source_artifact_type": "eair_protocol_legitimacy_table",
+  "total_rows": 1,
+  "rows": [
+    {
+      "prompt_variant": "default",
+      "row_count": 1,
+      "total_transcripts": 1,
+      "prompt_adherence_total": 1,
+      "prompt_adherence_compliant_count": 1,
+      "prompt_adherence_noncompliant_count": 0,
+      "prompt_adherence_rate": 1.0,
+      "warrant_quality_score": 0.0,
+      "adherence_legitimacy_gap": 1.0,
+      "high_gap_count": 1,
+      "warrant_error_category_counts_json": "{\"decision_support\": 1}"
+    }
+  ]
+}

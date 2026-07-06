@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 650" width="1120" height="650" font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+  <rect width="1120" height="650" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#ECFDF5"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF2F2"/>
+    </marker>
+  </defs>
+  <rect x="114.0" y="57.0" width="332.0" height="482.0" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1" rx="8"/>
+  <text x="122.0" y="73.0" font-size="13" fill="#999999" font-weight="bold">合法影响通道</text>
+  <rect x="664.0" y="57.0" width="352.0" height="482.0" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="1" rx="8"/>
+  <text x="672.0" y="73.0" font-size="13" fill="#999999" font-weight="bold">劫持影响通道</text>
+  <path d="M 280.0,225.0 L 280.0,250.0" stroke="#059669" stroke-width="3" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 280.0,320.0 L 280.0,345.0" stroke="#059669" stroke-width="3" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 280.0,415.0 L 280.0,451.0" stroke="#059669" stroke-width="3" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 840.0,225.0 L 840.0,250.0" stroke="#DC2626" stroke-width="3" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 840.0,320.0 L 840.0,345.0" stroke="#DC2626" stroke-width="3" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 840.0,415.0 L 840.0,451.0" stroke="#DC2626" stroke-width="3" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="150.0" y="83.0" width="260.0" height="50.0" fill="#D1FAE5" stroke="#059669" stroke-width="2" rx="8"/>
+  <text x="280.0" y="115.0" font-size="20" fill="#333333" text-anchor="middle" font-weight="bold">合法证据影响</text>
+  <rect x="140.0" y="155.0" width="280.0" height="70.0" fill="#ECFDF5" stroke="#10B981" stroke-width="2" rx="8"/>
+  <text x="280.0" y="186.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">可信证据</text>
+  <text x="280.0" y="206.3" font-size="15" fill="#888888" text-anchor="middle">trusted / fresh / current</text>
+  <rect x="140.0" y="250.0" width="280.0" height="70.0" fill="#ECFDF5" stroke="#10B981" stroke-width="2" rx="8"/>
+  <text x="280.0" y="281.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">支持必要声明</text>
+  <text x="280.0" y="301.3" font-size="15" fill="#888888" text-anchor="middle">required claims are supported</text>
+  <rect x="140.0" y="345.0" width="280.0" height="70.0" fill="#ECFDF5" stroke="#10B981" stroke-width="2" rx="8"/>
+  <text x="280.0" y="376.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">安全参数 / 安全动作</text>
+  <text x="280.0" y="396.3" font-size="15" fill="#888888" text-anchor="middle">valid tool, args, approval</text>
+  <rect x="170.0" y="451.0" width="220.0" height="62.0" fill="#A7F3D0" stroke="#047857" stroke-width="2" rx="8"/>
+  <text x="280.0" y="478.0" font-size="20" fill="#333333" text-anchor="middle" font-weight="bold">允许通过</text>
+  <text x="280.0" y="500.0" font-size="17" fill="#888888" text-anchor="middle">allow</text>
+  <rect x="710.0" y="83.0" width="260.0" height="50.0" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="8"/>
+  <text x="840.0" y="115.0" font-size="20" fill="#333333" text-anchor="middle" font-weight="bold">劫持式证据影响</text>
+  <rect x="690.0" y="155.0" width="300.0" height="70.0" fill="#FEF2F2" stroke="#EF4444" stroke-width="2" rx="8"/>
+  <text x="840.0" y="186.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">污染 / 过期 / 冲突证据</text>
+  <text x="840.0" y="206.3" font-size="15" fill="#888888" text-anchor="middle">poisoned / stale / conflicting</text>
+  <rect x="690.0" y="250.0" width="300.0" height="70.0" fill="#FEF2F2" stroke="#EF4444" stroke-width="2" rx="8"/>
+  <text x="840.0" y="281.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">诱导错误声明</text>
+  <text x="840.0" y="301.3" font-size="15" fill="#888888" text-anchor="middle">unsupported or unsafe claims</text>
+  <rect x="690.0" y="345.0" width="300.0" height="70.0" fill="#FEF2F2" stroke="#EF4444" stroke-width="2" rx="8"/>
+  <text x="840.0" y="376.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">危险参数 / 危险动作</text>
+  <text x="840.0" y="396.3" font-size="15" fill="#888888" text-anchor="middle">unsafe args or decision</text>
+  <rect x="715.0" y="451.0" width="250.0" height="62.0" fill="#FECACA" stroke="#B91C1C" stroke-width="2" rx="8"/>
+  <text x="840.0" y="478.0" font-size="20" fill="#333333" text-anchor="middle" font-weight="bold">阻断 / 人工审批</text>
+  <text x="840.0" y="500.0" font-size="17" fill="#888888" text-anchor="middle">block or require review</text>
+  <text x="560.0" y="42.0" font-size="30" fill="#111827" text-anchor="middle">证据影响 ≠ 证据劫持</text>
+  <text x="560.0" y="602.0" font-size="18" fill="#111827" text-anchor="middle">EAIR 的目标不是阻止证据影响动作，而是区分合法影响和劫持式影响。</text>
+</svg>

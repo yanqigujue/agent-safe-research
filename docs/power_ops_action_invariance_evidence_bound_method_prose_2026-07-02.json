@@ -1,0 +1,146 @@
+{
+  "artifact_type": "power_ops_evidence_bound_method_prose",
+  "source_method_outline": "docs/power_ops_action_invariance_evidence_bound_method_outline_2026-07-02.json",
+  "paper_section": "§3 Formal Model and CapGuard",
+  "method_prose_status": "ready",
+  "paragraph_count": 6,
+  "method_text": "We model each agent source as a capability object Cap(x) and each action field as an authority need Need(s,f), so authorization is checked at field granularity rather than at the whole-action level.\n\nA capability covers a field only when role, field, operation, data scope, effect scope, delegation scope, time scope, and required obligations all match.\n\nFor each field, CapGuard records a Minimal Authority Witness when coverage exists; otherwise the field decision becomes abstain or block depending on counter-authority and evidence completeness.\n\nThe repair target is ActionInvariant(a,a'): preserve allowed fields, prevent unauthorized fields, and implement Repair(a) as keep allowed fields plus remove, block, or route the rest.\n\nThe implementation binds these objects to existing FormalTrust metadata and metrics, including afw_source_events, afw_consumptions, candidate_action, afw_runtime_field_results, witness_audit, and final_action.\n\nThis method section is bounded to the local artifact and benchmark slice: no production telemetry, no real workload-reduction claim, and no official neighboring-system superiority claim.",
+  "paragraphs": [
+    {
+      "slot": "formal_objects",
+      "text": "We model each agent source as a capability object Cap(x) and each action field as an authority need Need(s,f), so authorization is checked at field granularity rather than at the whole-action level.",
+      "formal_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#1. Objects (Cap(x), Need(s, f))",
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§3 Formal Model and CapGuard"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "coverage_rule",
+      "text": "A capability covers a field only when role, field, operation, data scope, effect scope, delegation scope, time scope, and required obligations all match.",
+      "formal_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#2. Coverage (Covers(c, n), obligations_satisfied)"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "minimal_witness_decision",
+      "text": "For each field, CapGuard records a Minimal Authority Witness when coverage exists; otherwise the field decision becomes abstain or block depending on counter-authority and evidence completeness.",
+      "formal_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#3. Minimal Authority Witness (MinimalWitness)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#4. Decision Rule (FieldDecision)"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "repair_invariance",
+      "text": "The repair target is ActionInvariant(a,a'): preserve allowed fields, prevent unauthorized fields, and implement Repair(a) as keep allowed fields plus remove, block, or route the rest.",
+      "formal_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#5. Action Invariance (ActionInvariant)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#6. Conservative Collapse (strict_block_collapse_rate)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#9. Claim Boundary (Repair(a))"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        },
+        {
+          "claim": "curated power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+            "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "implementation_binding",
+      "text": "The implementation binds these objects to existing FormalTrust metadata and metrics, including afw_source_events, afw_consumptions, candidate_action, afw_runtime_field_results, witness_audit, and final_action.",
+      "formal_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#8. Current Implementation Binding (metrics[, afw_runtime_field_results)"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "claim_boundary",
+      "text": "This method section is bounded to the local artifact and benchmark slice: no production telemetry, no real workload-reduction claim, and no official neighboring-system superiority claim.",
+      "formal_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#9. Claim Boundary (live deployment safety, human-label agreement)"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": "No production telemetry; no real workload reduction; no official neighboring-system superiority."
+    }
+  ],
+  "forbidden_claim_hits": []
+}

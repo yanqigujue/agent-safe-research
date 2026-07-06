@@ -1,0 +1,112 @@
+{
+  "artifact_type": "power_ops_evidence_bound_related_work_outline",
+  "source_lit_review": "docs/power_ops_action_invariance_lit_review_2026-07-02.md",
+  "source_novelty_firewall": "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md",
+  "paper_section": "§2 Related Work and Novelty Boundary",
+  "related_work_outline_status": "ready",
+  "neighbor_count": 9,
+  "related_work_outline": [
+    {
+      "slot": "runtime_enforcement_neighbors",
+      "paragraph_goal": "Position AgentSpec and formal-security-agent work as broad runtime enforcement neighbors that already cover general constraint monitoring.",
+      "neighbor_papers": [
+        "AgentSpec",
+        "AI Agents with Formal Security Guarantees"
+      ],
+      "pressure": "Blocks broad runtime-enforcement novelty.",
+      "safe_delta": "Field-level action invariance studies source-to-field authority coverage inside a candidate action, not a general policy DSL.",
+      "claim_boundary": "Do not present the artifact as a generic agent runtime monitor.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Closest Work Table (AgentSpec,Formal Security)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Closest Prior Work Delta (AgentSpec)"
+      ]
+    },
+    {
+      "slot": "prompt_injection_privilege_neighbors",
+      "paragraph_goal": "Group AgentVisor, AgentSentry, and CaMeL as privilege separation, continuation, and capability-style prompt-injection neighbors.",
+      "neighbor_papers": [
+        "AgentVisor",
+        "AgentSentry",
+        "CaMeL"
+      ],
+      "pressure": "Blocks broad prompt-injection and semantic-privilege claims.",
+      "safe_delta": "The current artifact repairs structured action fields after authority decisions and records witnesses for preserved fields.",
+      "claim_boundary": "Use these systems as close neighbors, not as failure cases.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Closest Work Table (AgentVisor,AgentSentry,CaMeL)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Closest Prior Work Delta (AgentVisor,AgentSentry,CaMeL)"
+      ]
+    },
+    {
+      "slot": "least_privilege_capability_neighbors",
+      "paragraph_goal": "Position ToolPrivBench and RACG as closest least-privilege and capability minimization neighbors.",
+      "neighbor_papers": [
+        "ToolPrivBench",
+        "RACG"
+      ],
+      "pressure": "Blocks simple least-privilege tool or capability-minimization novelty.",
+      "safe_delta": "Those neighbors reason about tool choice or exposure; this slice checks whether each field in an already formed action is justified by its source authority.",
+      "claim_boundary": "Do not sell field repair as the first least-privilege agent method.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Closest Work Table (ToolPrivBench,RACG)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Closest Prior Work Delta (ToolPrivBench,RACG)"
+      ]
+    },
+    {
+      "slot": "over_conservatism_neighbors",
+      "paragraph_goal": "Treat over-conservatism as established motivation through InjecGuard, AgentSentry, and AgentVisor.",
+      "neighbor_papers": [
+        "InjecGuard",
+        "AgentSentry",
+        "AgentVisor"
+      ],
+      "pressure": "Blocks claiming that over-defense itself is newly discovered.",
+      "safe_delta": "The measurable object here is authorized final-field loss under intervention, not benign-prompt false positives.",
+      "claim_boundary": "Use over-conservatism as motivation only.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Landscape Summary (over-defense,conservative blocking)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Core Claims (C2,C5)"
+      ]
+    },
+    {
+      "slot": "action_invariance_delta",
+      "paragraph_goal": "State the paper's defensible delta as field-level action invariance with authority witnesses and repair-frame validity.",
+      "neighbor_papers": [
+        "AgentSpec",
+        "AgentVisor",
+        "AgentSentry",
+        "CaMeL",
+        "ToolPrivBench",
+        "RACG"
+      ],
+      "pressure": "Reviewers may collapse the idea into generic guardrails or capability security.",
+      "safe_delta": "The safe claim is field-level action invariance: preserve authorized fields, remove invalid fields, and expose why each preserved field is allowed.",
+      "claim_boundary": "Limit empirical language to the current curated and trace-backed artifacts.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Positioning Takeaway (field-level action invariance)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Defensible Contribution Statement (field-level,repair)"
+      ]
+    },
+    {
+      "slot": "claim_boundary",
+      "paragraph_goal": "End related work by naming unsupported claims before moving into the formal model.",
+      "neighbor_papers": [
+        "AgentDojo",
+        "AgentSpec",
+        "AgentVisor",
+        "AgentSentry",
+        "CaMeL",
+        "ToolPrivBench",
+        "RACG"
+      ],
+      "pressure": "Unsupported superiority or deployment-safety language would overstate the artifact.",
+      "safe_delta": "",
+      "claim_boundary": "No production telemetry, no official neighboring-system superiority, no generic agent-security firstness, and no real workload-reduction claim.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Unsafe Headlines (Unsafe headlines)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Claim Boundary For Paper Draft (Forbidden)"
+      ]
+    }
+  ],
+  "forbidden_claim_hits": []
+}

@@ -1,0 +1,103 @@
+{
+  "artifact_type": "power_ops_evidence_bound_limitations_prose",
+  "source_limitations_outline": "docs/power_ops_action_invariance_evidence_bound_limitations_outline_2026-07-02.json",
+  "paper_section": "§6 Limitations and Next Experiments",
+  "limitations_prose_status": "ready",
+  "paragraph_count": 6,
+  "limitations_text": "The current trace evidence remains fixture, bridge, span, OTLP, and import evidence. It supports local replay and import behavior, but production telemetry and live deployment safety remain outside the supported claim set.\n\nThe current performance profile is a safety-preserving normal-behavior profile with a field-check proxy. It is not a wall-clock latency measurement and should not be read as a speed result.\n\nThe artifact has no operator-time study or human-subject workload measurement. Any real workload-reduction statement remains an excluded claim until reviewer-burden or operator-time evidence exists.\n\nThe AgentDojo-style and semi-real bridge fixtures show that the interface can express neighboring benchmark shapes. They do not establish official benchmark superiority.\n\nThe paper should not frame the artifact as a generic firstness, general runtime enforcement, least-privilege, or prompt-injection solution. The defensible scope is field-level action invariance with authority witnesses and repair validity.\n\nThe next experiments follow directly from the excluded-claim binding: collect reviewed traces, measure wall-clock timing, run operator workload studies, and run official benchmark comparisons under pre-registered rules.",
+  "paragraphs": [
+    {
+      "slot": "production_trace_gap",
+      "text": "The current trace evidence remains fixture, bridge, span, OTLP, and import evidence. It supports local replay and import behavior, but production telemetry and live deployment safety remain outside the supported claim set.",
+      "excluded_claims": [
+        "proves production safety"
+      ],
+      "excluded_claim_count": 1,
+      "future_work": [
+        "Collect reviewed real or semi-real multi-step power-agent traces before any production-safety claim."
+      ],
+      "source_refs": [
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json#forbidden_claims"
+      ]
+    },
+    {
+      "slot": "latency_gap",
+      "text": "The current performance profile is a safety-preserving normal-behavior profile with a field-check proxy. It is not a wall-clock latency measurement and should not be read as a speed result.",
+      "excluded_claims": [],
+      "excluded_claim_count": 0,
+      "future_work": [
+        "Measure wall-clock latency with runtime instrumentation before reporting speed claims."
+      ],
+      "source_refs": [
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json#latency_proxy_units"
+      ]
+    },
+    {
+      "slot": "operator_workload_gap",
+      "text": "The artifact has no operator-time study or human-subject workload measurement. Any real workload-reduction statement remains an excluded claim until reviewer-burden or operator-time evidence exists.",
+      "excluded_claims": [
+        "reduces real human workload without operator-time evidence"
+      ],
+      "excluded_claim_count": 1,
+      "future_work": [
+        "Run operator-time or reviewer-burden studies before any real workload-reduction claim."
+      ],
+      "source_refs": [
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json#forbidden_claims"
+      ]
+    },
+    {
+      "slot": "official_benchmark_gap",
+      "text": "The AgentDojo-style and semi-real bridge fixtures show that the interface can express neighboring benchmark shapes. They do not establish official benchmark superiority.",
+      "excluded_claims": [
+        "outperforms official neighboring systems"
+      ],
+      "excluded_claim_count": 1,
+      "future_work": [
+        "Run official external benchmarks and pre-register comparison rules before any superiority claim."
+      ],
+      "source_refs": [
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json#forbidden_claims"
+      ]
+    },
+    {
+      "slot": "forbidden_firstness_security_claims",
+      "text": "The paper should not frame the artifact as a generic firstness, general runtime enforcement, least-privilege, or prompt-injection solution. The defensible scope is field-level action invariance with authority witnesses and repair validity.",
+      "excluded_claims": [
+        "first LLM-agent guardrail",
+        "first runtime enforcement framework",
+        "first least-privilege LLM-agent security framework",
+        "solves prompt injection"
+      ],
+      "excluded_claim_count": 4,
+      "future_work": [
+        "Keep novelty phrased as field-level action invariance with authority witnesses and repair validity."
+      ],
+      "source_refs": [
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json#forbidden_claims",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Forbidden"
+      ]
+    },
+    {
+      "slot": "next_experiments",
+      "text": "The next experiments follow directly from the excluded-claim binding: collect reviewed traces, measure wall-clock timing, run operator workload studies, and run official benchmark comparisons under pre-registered rules.",
+      "excluded_claims": [],
+      "excluded_claim_count": 0,
+      "future_work": [
+        "Collect reviewed traces.",
+        "Measure wall-clock latency.",
+        "Run operator workload studies.",
+        "Run official benchmark comparisons."
+      ],
+      "source_refs": [
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json#checks"
+      ]
+    }
+  ],
+  "forbidden_claim_hits": []
+}

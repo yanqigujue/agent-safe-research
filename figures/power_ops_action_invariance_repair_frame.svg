@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" width="1280" height="620" font-family="Arial, Helvetica, sans-serif">
+  <rect width="1280" height="620" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DBEAFE"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DCFCE7"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF3C7"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEE2E2"/>
+    </marker>
+    <marker id="arrow-c4" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#EDE9FE"/>
+    </marker>
+    <marker id="arrow-c5" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#F1F5F9"/>
+    </marker>
+  </defs>
+  <rect x="255.0" y="151.0" width="190.0" height="328.0" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" rx="8"/>
+  <text x="263.0" y="167.0" font-size="12" fill="#999999" font-weight="bold">Candidate fields</text>
+  <rect x="946.0" y="170.0" width="238.0" height="290.0" fill="#FAFAFA" stroke="#D4D4D8" stroke-width="1" rx="8"/>
+  <text x="954.0" y="186.0" font-size="12" fill="#999999" font-weight="bold">Final-action outcome</text>
+  <path d="M 228.2,272.0 L 288.2,239.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="237.7" y="237.5" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="258.2" y="249.5" font-size="11" fill="#777777" text-anchor="middle">field</text>
+  <path d="M 245.0,315.0 L 275.0,315.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="239.5" y="297.0" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="260.0" y="309.0" font-size="11" fill="#777777" text-anchor="middle">field</text>
+  <path d="M 228.2,358.0 L 288.2,391.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="237.7" y="356.5" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="258.2" y="368.5" font-size="11" fill="#777777" text-anchor="middle">field</text>
+  <path d="M 422.6,239.0 L 490.0,270.5" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="435.8" y="236.8" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="456.3" y="248.8" font-size="11" fill="#777777" text-anchor="middle">allow</text>
+  <path d="M 425.0,315.0 L 490.0,315.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="437.0" y="297.0" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="457.5" y="309.0" font-size="11" fill="#777777" text-anchor="middle">allow</text>
+  <path d="M 422.6,391.0 L 490.0,359.5" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="435.8" y="357.2" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="456.3" y="369.2" font-size="11" fill="#777777" text-anchor="middle">block</text>
+  <path d="M 585.0,197.0 L 585.0,269.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="564.5" y="215.0" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="585.0" y="227.0" font-size="11" fill="#777777" text-anchor="middle">audit</text>
+  <path d="M 680.0,315.0 L 715.0,315.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="663.8" y="297.0" width="67.4" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="697.5" y="309.0" font-size="11" fill="#777777" text-anchor="middle">decisions</text>
+  <path d="M 905.0,285.2 L 970.0,264.8" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="907.1" y="257.0" width="60.8" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="937.5" y="269.0" font-size="11" fill="#777777" text-anchor="middle">preserve</text>
+  <path d="M 905.0,344.8 L 970.0,365.2" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="917.0" y="337.0" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="937.5" y="349.0" font-size="11" fill="#777777" text-anchor="middle">route</text>
+  <rect x="55.0" y="272.0" width="190.0" height="86.0" fill="#F1F5F9" stroke="#475569" stroke-width="2" rx="8"/>
+  <text x="150.0" y="311.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">Original Action</text>
+  <text x="150.0" y="331.3" font-size="15" fill="#888888" text-anchor="middle">mixed valid + invalid fields</text>
+  <rect x="275.0" y="171.0" width="150.0" height="68.0" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="350.0" y="201.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">answer</text>
+  <text x="350.0" y="217.9" font-size="11" fill="#888888" text-anchor="middle">valid: report text</text>
+  <rect x="275.0" y="281.0" width="150.0" height="68.0" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="350.0" y="311.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">schedule</text>
+  <text x="350.0" y="327.9" font-size="11" fill="#888888" text-anchor="middle">valid: maintenance slot</text>
+  <rect x="275.0" y="391.0" width="150.0" height="68.0" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="8"/>
+  <text x="350.0" y="421.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">dispatch</text>
+  <text x="350.0" y="437.9" font-size="11" fill="#888888" text-anchor="middle">invalid: role mismatch</text>
+  <rect x="490.0" y="269.0" width="190.0" height="92.0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" rx="8"/>
+  <text x="585.0" y="311.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">Fieldwise Check</text>
+  <text x="585.0" y="331.3" font-size="15" fill="#888888" text-anchor="middle">coverage + obligation + time</text>
+  <rect x="480.0" y="123.0" width="210.0" height="74.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2" rx="8"/>
+  <text x="585.0" y="156.6" font-size="16" fill="#333333" text-anchor="middle" font-weight="bold">Minimal Witness</text>
+  <text x="585.0" y="174.6" font-size="13" fill="#888888" text-anchor="middle">which capabilities support each field</text>
+  <rect x="715.0" y="269.0" width="190.0" height="92.0" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2" rx="8"/>
+  <text x="810.0" y="311.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">Repair Frame</text>
+  <text x="810.0" y="331.3" font-size="15" fill="#888888" text-anchor="middle">edit only invalid authority frame</text>
+  <rect x="970.0" y="194.0" width="190.0" height="82.0" fill="#DCFCE7" stroke="#15803D" stroke-width="2" rx="8"/>
+  <text x="1065.0" y="231.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">Executable Final</text>
+  <text x="1065.0" y="251.3" font-size="15" fill="#888888" text-anchor="middle">answer + schedule preserved</text>
+  <rect x="970.0" y="354.0" width="190.0" height="82.0" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="8"/>
+  <text x="1065.0" y="391.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">Partial Review</text>
+  <text x="1065.0" y="411.3" font-size="15" fill="#888888" text-anchor="middle">dispatch field only</text>
+  <text x="640.0" y="42.0" font-size="26" fill="#111827" text-anchor="middle">Repair-Frame Action Invariance</text>
+  <text x="640.0" y="72.0" font-size="15" fill="#4B5563" text-anchor="middle">Strict supervision should not collapse a mixed action when some fields are still valid.</text>
+  <text x="640.0" y="570.0" font-size="14" fill="#374151" text-anchor="middle">Invariant: valid_authority(f) =&gt; final_action[f] = original_action[f]; invalid_authority(f) =&gt; final_action omits f or routes f to review.</text>
+</svg>

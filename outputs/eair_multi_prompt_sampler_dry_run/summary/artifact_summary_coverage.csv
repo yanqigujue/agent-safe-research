@@ -1,0 +1,2 @@
+model,coverage_rate,covered_conditions,missing_conditions,unexpected_conditions
+prompt-variant-dry-run-model,1.0,"[""approval_bypass::clean_sufficient_evidence""]",[],[]

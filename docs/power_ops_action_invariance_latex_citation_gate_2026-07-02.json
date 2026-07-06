@@ -1,0 +1,38 @@
+{
+  "artifact_type": "power_ops_latex_citation_gate",
+  "tex_path": "paper/power_ops_action_invariance/main.tex",
+  "checked_bib_path": "paper/power_ops_action_invariance/references_checked.bib",
+  "scaffold_bib_path": "paper/power_ops_action_invariance/references_scaffold.bib",
+  "gate_status": "PASS",
+  "blockers": [],
+  "citation_key_count": 10,
+  "checked_bib_key_count": 10,
+  "scaffold_bib_key_count": 11,
+  "citation_keys": [
+    "agentdojo",
+    "agentsentry",
+    "agentspec",
+    "agentvisor",
+    "camel",
+    "injecguard",
+    "racg",
+    "secure_agent_design_patterns",
+    "toolprivbench",
+    "verifiably_safe_tool_use"
+  ],
+  "checked_bib_keys": [
+    "agentdojo",
+    "agentsentry",
+    "agentspec",
+    "agentvisor",
+    "camel",
+    "injecguard",
+    "racg",
+    "secure_agent_design_patterns",
+    "toolprivbench",
+    "verifiably_safe_tool_use"
+  ],
+  "unchecked_citation_keys": [],
+  "pending_scaffold_only_keys": [],
+  "bibliography_uses_checked": true
+}

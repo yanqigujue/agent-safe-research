@@ -1,0 +1,46 @@
+{
+  "artifact_type": "power_ops_evidence_bound_conclusion",
+  "conclusion_status": "ready",
+  "blockers": [],
+  "paper_ready_supported_claim_count": 11,
+  "forbidden_claim_count": 7,
+  "draft_section_count": 8,
+  "paragraph_count": 4,
+  "paragraphs": [
+    {
+      "slot": "takeaway",
+      "text": "The main takeaway is field-level action invariance: strict supervision can preserve authorized power-operation action fields while removing or routing fields whose authority needs are not covered.",
+      "source_paths": [
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json"
+      ]
+    },
+    {
+      "slot": "supported_evidence",
+      "text": "The current paper-ready claim set supports the final-action repair mode, curated and expanded power-operation fixtures, metamorphic authority-confusion tests, skill-driven multi-source authority, baseline comparisons, safety-preserving normal-behavior profiles, and trace replay or planner-chain import checks.",
+      "source_paths": [
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ]
+    },
+    {
+      "slot": "scope_boundary",
+      "text": "The conclusion inherits the limitation boundary: production telemetry, deployment safety, wall-clock latency, operator workload reduction, and official benchmark superiority remain outside the current supported claim set.",
+      "source_paths": [
+        "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json"
+      ]
+    },
+    {
+      "slot": "next_work",
+      "text": "The next empirical step is to collect reviewed traces, measure timing, run operator workload studies, and compare on official benchmarks under pre-registered rules.",
+      "source_paths": [
+        "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json"
+      ]
+    }
+  ],
+  "conclusion_text": "The main takeaway is field-level action invariance: strict supervision can preserve authorized power-operation action fields while removing or routing fields whose authority needs are not covered.\n\nThe current paper-ready claim set supports the final-action repair mode, curated and expanded power-operation fixtures, metamorphic authority-confusion tests, skill-driven multi-source authority, baseline comparisons, safety-preserving normal-behavior profiles, and trace replay or planner-chain import checks.\n\nThe conclusion inherits the limitation boundary: production telemetry, deployment safety, wall-clock latency, operator workload reduction, and official benchmark superiority remain outside the current supported claim set.\n\nThe next empirical step is to collect reviewed traces, measure timing, run operator workload studies, and compare on official benchmarks under pre-registered rules.",
+  "forbidden_claim_hits": []
+}

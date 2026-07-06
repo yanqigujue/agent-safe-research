@@ -1,0 +1,70 @@
+{
+  "artifact_type": "power_ops_action_invariance_dataset_audit",
+  "dataset_path": "examples\\data\\power_ops_skill_authority_cases.jsonl",
+  "total_cases": 8,
+  "case_shape_counts": {
+    "candidate_action": 8,
+    "afw_source_events": 8,
+    "afw_consumptions": 8,
+    "afw_oracle": 8,
+    "action_invariance_oracle": 8
+  },
+  "oracle_covered_cases": 8,
+  "oracle_coverage_rate": 1.0,
+  "source_type_counts": {
+    "skill": 4,
+    "tool_metadata": 1,
+    "user_approval": 1,
+    "memory": 1,
+    "prior_step_output": 1
+  },
+  "gate_decision_counts": {
+    "block": 8
+  },
+  "field_counts": {
+    "risk_report": 1,
+    "risk_level": 3,
+    "answer": 1,
+    "dispatch": 2,
+    "switching_operation": 2,
+    "dispatch_order": 1,
+    "tool_arguments": 1,
+    "public_publish": 2,
+    "approval_waiver": 1,
+    "risk_report_style": 1,
+    "plan_note": 1
+  },
+  "required_role_counts": {
+    "report_formatting_skill": 1,
+    "risk_assessment_authority": 3,
+    "incident_summary_skill": 1,
+    "dispatch_operation_authority": 2,
+    "switching_authority": 2,
+    "dispatch_preparation_skill": 1,
+    "tool_schema_authority": 1,
+    "public_communication_authority": 1,
+    "approval_public_publish_authority": 1,
+    "approval_waiver_authority": 1,
+    "memory_preference_authority": 1,
+    "planner_suggestion_role": 1
+  },
+  "tag_counts": {
+    "afw": 8,
+    "power_ops": 8,
+    "action_invariance": 8,
+    "skill_driven": 8,
+    "no_rag": 8
+  },
+  "severity_counts": {
+    "medium": 4,
+    "critical": 8,
+    "low": 3,
+    "high": 1
+  },
+  "risk_level_counts": {
+    "high": 5,
+    "critical": 3
+  },
+  "authorized_fields": 8,
+  "unauthorized_fields": 8
+}

@@ -1,0 +1,120 @@
+{
+  "title": "Claim Readiness Ladder",
+  "canvas": {"width": 1000, "height": 520},
+  "style": {
+    "font_family": "Arial, sans-serif",
+    "font_size": 13,
+    "bg_color": "#FFFFFF",
+    "palette": ["#DCFCE7", "#DBEAFE", "#FEF3C7", "#F1F5F9", "#FEE2E2"]
+  },
+  "nodes": [
+    {
+      "id": "l0",
+      "label": "L0\nDesign",
+      "sublabel": "method, threat model,\nclaim-safe kernels",
+      "x": 120,
+      "y": 235,
+      "width": 155,
+      "height": 105,
+      "shape": "rounded",
+      "fill": "#DCFCE7",
+      "stroke": "#16A34A"
+    },
+    {
+      "id": "l1",
+      "label": "L1\nFixture chain",
+      "sublabel": "reportable export,\nreviewed claims, seal",
+      "x": 310,
+      "y": 235,
+      "width": 160,
+      "height": 105,
+      "shape": "rounded",
+      "fill": "#DBEAFE",
+      "stroke": "#2563EB"
+    },
+    {
+      "id": "l2",
+      "label": "L2\nDeterministic pilot",
+      "sublabel": "dry-run contrast,\nsame-evidence laundering",
+      "x": 505,
+      "y": 235,
+      "width": 170,
+      "height": 105,
+      "shape": "rounded",
+      "fill": "#FEF3C7",
+      "stroke": "#D97706"
+    },
+    {
+      "id": "l3",
+      "label": "L3\nLive rows",
+      "sublabel": "blocked at live_preflight\nOPENAI_API_KEY missing",
+      "x": 705,
+      "y": 235,
+      "width": 175,
+      "height": 105,
+      "shape": "rounded",
+      "fill": "#F1F5F9",
+      "stroke": "#64748B"
+    },
+    {
+      "id": "l4",
+      "label": "L4\nLive pair claim",
+      "sublabel": "same model x prompt\nlegitimate vs hijack",
+      "x": 895,
+      "y": 235,
+      "width": 165,
+      "height": 105,
+      "shape": "rounded",
+      "fill": "#FEE2E2",
+      "stroke": "#DC2626"
+    },
+    {
+      "id": "current",
+      "label": "Current safe boundary",
+      "sublabel": "write L0-L2 only;\ndo not promote to live claims",
+      "x": 505,
+      "y": 405,
+      "width": 265,
+      "height": 80,
+      "shape": "rounded",
+      "fill": "#FFFFFF",
+      "stroke": "#0F172A"
+    }
+  ],
+  "edges": [
+    {"from": "l0", "to": "l1", "label": "artifactize"},
+    {"from": "l1", "to": "l2", "label": "pilot"},
+    {"from": "l2", "to": "l3", "label": "needs provider"},
+    {"from": "l3", "to": "l4", "label": "needs pair + seal"},
+    {"from": "current", "to": "l2", "style": "dashed", "label": "supported"},
+    {"from": "current", "to": "l3", "style": "dashed", "label": "blocked"}
+  ],
+  "groups": [
+    {
+      "id": "ladder",
+      "label": "Claim readiness ladder",
+      "node_ids": ["l0", "l1", "l2", "l3", "l4"],
+      "fill": "#FAFAFA",
+      "stroke": "#D4D4D8",
+      "padding": 24
+    }
+  ],
+  "labels": [
+    {
+      "text": "What can be claimed now, and what is still blocked",
+      "x": 500,
+      "y": 42,
+      "font_size": 22,
+      "color": "#0F172A",
+      "anchor": "middle"
+    },
+    {
+      "text": "The project has strong design and artifact evidence, but no live-provider behavior claim yet.",
+      "x": 500,
+      "y": 72,
+      "font_size": 14,
+      "color": "#475569",
+      "anchor": "middle"
+    }
+  ]
+}

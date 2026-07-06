@@ -1,0 +1,1177 @@
+{
+  "artifact_type": "power_ops_paragraph_evidence_packets",
+  "paragraph_map_path": "docs/power_ops_action_invariance_claim_to_paragraph_map_2026-07-02.json",
+  "paragraph_map_content_sha256": "3c24742adc3ec6522ad717fd722f6ae00d600b0a8b39ded06d999b5e75b472b0",
+  "draft_content_sha256": "123f5e9e8eb13b43f3bfb5d1c86c88c44f3427971c2651972f9d0bd36a7c96b1",
+  "packet_status": "PASS",
+  "passed": true,
+  "blockers": [],
+  "paragraph_count": 41,
+  "claim_packet_count": 11,
+  "source_only_row_count": 11,
+  "source_only_packet_count": 3,
+  "reviewer_packet_count": 14,
+  "audit_compression_ratio": 0.658537,
+  "needs_stronger_binding_count": 0,
+  "boundary_only_source_row_count": 7,
+  "forbidden_claim_hits": [],
+  "claim_packets": [
+    {
+      "claim": "fieldwise repair final-action mode exists",
+      "level": "L1",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "firstness_excluded"
+          ]
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 3,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 5,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "related_work",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_related_work_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "method",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "method",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "method",
+          "paragraph_index": 3,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "method",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "method",
+          "paragraph_index": 5,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "method",
+          "paragraph_index": 6,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        }
+      ],
+      "evidence_refs": [
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Closest Work Table (AgentVisor,AgentSentry,CaMeL)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Closest Prior Work Delta (AgentVisor,AgentSentry,CaMeL)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#1. Objects (Cap(x), Need(s, f))",
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§3 Formal Model and CapGuard",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#2. Coverage (Covers(c, n), obligations_satisfied)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#3. Minimal Authority Witness (MinimalWitness)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#4. Decision Rule (FieldDecision)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#5. Action Invariance (ActionInvariant)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#6. Conservative Collapse (strict_block_collapse_rate)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#9. Claim Boundary (Repair(a))",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#8. Current Implementation Binding (metrics[, afw_runtime_field_results)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#9. Claim Boundary (live deployment safety, human-label agreement)",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded",
+        "firstness_excluded"
+      ],
+      "paragraph_count": 14,
+      "evidence_ref_count": 40
+    },
+    {
+      "claim": "baseline grid shows strict-block collapse and provenance-only false allow on curated cases",
+      "level": "L2",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded"
+          ]
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 3,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 3,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded"
+      ],
+      "paragraph_count": 6,
+      "evidence_ref_count": 28
+    },
+    {
+      "claim": "curated power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+      "level": "L2",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "related_work",
+          "paragraph_index": 5,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_related_work_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "method",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded"
+          ]
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 3,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 7,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded",
+            "latency_excluded"
+          ]
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Positioning Takeaway (field-level action invariance)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Defensible Contribution Statement (field-level,repair)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#5. Action Invariance (ActionInvariant)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#6. Conservative Collapse (strict_block_collapse_rate)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#9. Claim Boundary (Repair(a))",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded",
+        "latency_excluded"
+      ],
+      "paragraph_count": 9,
+      "evidence_ref_count": 33
+    },
+    {
+      "claim": "current artifact reports a safety-preserving normal-behavior performance profile",
+      "level": "L2",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": [
+            "operator_workload_excluded",
+            "latency_excluded"
+          ]
+        },
+        {
+          "slot": "limitations",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+          "boundary_flags": [
+            "latency_excluded"
+          ]
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json#latency_proxy_units",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded",
+        "latency_excluded"
+      ],
+      "paragraph_count": 5,
+      "evidence_ref_count": 30
+    },
+    {
+      "claim": "expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+      "level": "L2",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "method",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded"
+          ]
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#5. Action Invariance (ActionInvariant)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#6. Conservative Collapse (strict_block_collapse_rate)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#9. Claim Boundary (Repair(a))",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded"
+      ],
+      "paragraph_count": 7,
+      "evidence_ref_count": 31
+    },
+    {
+      "claim": "metamorphic authority-confusion tests preserve authorized fields while removing or reviewing mutated unsafe fields",
+      "level": "L2",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded"
+      ],
+      "paragraph_count": 4,
+      "evidence_ref_count": 28
+    },
+    {
+      "claim": "no-RAG skill-driven fixture lifts skill, tool metadata, approval, memory, and prior-step outputs into field-level capabilities",
+      "level": "L2",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "introduction",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded"
+      ],
+      "paragraph_count": 5,
+      "evidence_ref_count": 28
+    },
+    {
+      "claim": "multi-step trace import covers planner, skill, tool metadata, memory, prior-step output, and user approval source chains",
+      "level": "L3",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 6,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded"
+      ],
+      "paragraph_count": 5,
+      "evidence_ref_count": 28
+    },
+    {
+      "claim": "trace import fixture covers malformed trace, missing source, duplicate approval, and expired epoch boundaries",
+      "level": "L3",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": []
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 5,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded"
+      ],
+      "paragraph_count": 3,
+      "evidence_ref_count": 25
+    },
+    {
+      "claim": "trace/span/OTLP replay feeds fieldwise repair",
+      "level": "L3",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "evaluation_setup",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded"
+          ]
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 5,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded"
+          ]
+        },
+        {
+          "slot": "limitations",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded"
+          ]
+        },
+        {
+          "slot": "conclusion",
+          "paragraph_index": 2,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+          "boundary_flags": []
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json#forbidden_claims",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded"
+      ],
+      "paragraph_count": 5,
+      "evidence_ref_count": 30
+    },
+    {
+      "claim": "AgentDojo-style and semi-real power trace bridge fixtures are expressible",
+      "level": "L4",
+      "paper_ready": true,
+      "paragraph_refs": [
+        {
+          "slot": "abstract",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded"
+          ]
+        },
+        {
+          "slot": "results",
+          "paragraph_index": 7,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded",
+            "operator_workload_excluded",
+            "official_superiority_excluded",
+            "latency_excluded"
+          ]
+        },
+        {
+          "slot": "limitations",
+          "paragraph_index": 1,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+          "boundary_flags": [
+            "production_telemetry_excluded"
+          ]
+        },
+        {
+          "slot": "limitations",
+          "paragraph_index": 4,
+          "source_path": "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+          "boundary_flags": [
+            "official_superiority_excluded"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json",
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py",
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl",
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_performance_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json",
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json",
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json#forbidden_claims"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded",
+        "latency_excluded"
+      ],
+      "paragraph_count": 4,
+      "evidence_ref_count": 27
+    }
+  ],
+  "source_only_audit_rows": [
+    {
+      "slot": "related_work",
+      "paragraph_index": 1,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_related_work_prose_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Closest Work Table (AgentSpec,Formal Security)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Closest Prior Work Delta (AgentSpec)"
+      ],
+      "boundary_flags": [],
+      "resolution": "related_work_context",
+      "paragraph_text": "AgentSpec and formal-security-agent work already establish broad runtime enforcement and formal monitoring as neighboring territory. We therefore frame this paper around a narrower object: field-level action invariance inside a structured candidate action."
+    },
+    {
+      "slot": "related_work",
+      "paragraph_index": 3,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_related_work_prose_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Closest Work Table (ToolPrivBench,RACG)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Closest Prior Work Delta (ToolPrivBench,RACG)"
+      ],
+      "boundary_flags": [],
+      "resolution": "related_work_context",
+      "paragraph_text": "ToolPrivBench and RACG make least privilege and capability minimization close neighbors. The distinction here is below tool exposure: after a mixed action is formed, each field must still be justified by the authority of its source."
+    },
+    {
+      "slot": "related_work",
+      "paragraph_index": 4,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_related_work_prose_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Landscape Summary (over-defense,conservative blocking)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Core Claims (C2,C5)"
+      ],
+      "boundary_flags": [],
+      "resolution": "related_work_context",
+      "paragraph_text": "InjecGuard, AgentSentry, and AgentVisor already motivate over-defense and security utility tradeoffs. We use that motivation only to define a measurable failure mode: authorized final-field loss under strict intervention."
+    },
+    {
+      "slot": "related_work",
+      "paragraph_index": 6,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_related_work_prose_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_lit_review_2026-07-02.md#Unsafe Headlines (Unsafe headlines)",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Claim Boundary For Paper Draft (Forbidden)"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded",
+        "firstness_excluded"
+      ],
+      "resolution": "boundary_only",
+      "paragraph_text": "The related-work boundary is explicit. The current artifact does not use production telemetry, does not make an official neighboring-system superiority claim, does not claim generic agent-security firstness, and does not claim real workload reduction."
+    },
+    {
+      "slot": "evaluation_setup",
+      "paragraph_index": 5,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_table_evidence_binding_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [],
+      "resolution": "evaluation_audit_context",
+      "paragraph_text": "Table evidence binding currently marks 21 table rows as fully supported, while the assembled draft audit reports source-link completeness 1.000 and text match rate 1.000."
+    },
+    {
+      "slot": "evaluation_setup",
+      "paragraph_index": 6,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_table_evidence_binding_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded",
+        "latency_excluded"
+      ],
+      "resolution": "boundary_only",
+      "paragraph_text": "This setup supports fixture-level evaluation claims only: it does not claim production telemetry, wall-clock latency, operator workload reduction, or official benchmark superiority."
+    },
+    {
+      "slot": "limitations",
+      "paragraph_index": 3,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json#forbidden_claims"
+      ],
+      "boundary_flags": [
+        "operator_workload_excluded"
+      ],
+      "resolution": "boundary_only",
+      "paragraph_text": "The artifact has no operator-time study or human-subject workload measurement. Any real workload-reduction statement remains an excluded claim until reviewer-burden or operator-time evidence exists."
+    },
+    {
+      "slot": "limitations",
+      "paragraph_index": 5,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json#forbidden_claims",
+        "docs/power_ops_action_invariance_novelty_firewall_2026-07-02.md#Forbidden"
+      ],
+      "boundary_flags": [
+        "firstness_excluded",
+        "prompt_injection_solution_excluded"
+      ],
+      "resolution": "boundary_only",
+      "paragraph_text": "The paper should not frame the artifact as a generic firstness, general runtime enforcement, least-privilege, or prompt-injection solution. The defensible scope is field-level action invariance with authority witnesses and repair validity."
+    },
+    {
+      "slot": "limitations",
+      "paragraph_index": 6,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§6 Limitations and Next Experiments",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json#checks"
+      ],
+      "boundary_flags": [
+        "operator_workload_excluded"
+      ],
+      "resolution": "boundary_only",
+      "paragraph_text": "The next experiments follow directly from the excluded-claim binding: collect reviewed traces, measure wall-clock timing, run operator workload studies, and run official benchmark comparisons under pre-registered rules."
+    },
+    {
+      "slot": "conclusion",
+      "paragraph_index": 3,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_claim_readiness_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "production_telemetry_excluded",
+        "operator_workload_excluded",
+        "official_superiority_excluded",
+        "latency_excluded"
+      ],
+      "resolution": "boundary_only",
+      "paragraph_text": "The conclusion inherits the limitation boundary: production telemetry, deployment safety, wall-clock latency, operator workload reduction, and official benchmark superiority remain outside the current supported claim set."
+    },
+    {
+      "slot": "conclusion",
+      "paragraph_index": 4,
+      "source_path": "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+      "evidence_refs": [
+        "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+        "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json"
+      ],
+      "boundary_flags": [
+        "operator_workload_excluded"
+      ],
+      "resolution": "boundary_only",
+      "paragraph_text": "The next empirical step is to collect reviewed traces, measure timing, run operator workload studies, and compare on official benchmarks under pre-registered rules."
+    }
+  ]
+}

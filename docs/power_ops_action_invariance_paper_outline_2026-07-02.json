@@ -1,0 +1,249 @@
+{
+  "artifact_type": "power_ops_paper_artifact_map",
+  "title": "Field-Level Action Invariance for Power-Operation LLM Agents",
+  "venue": "ICLR",
+  "paper_type": "method + empirical artifact",
+  "date": "2026-07-02",
+  "one_sentence_contribution": "Strict supervision for high-risk power-operation agents should preserve authorized action fields while removing only fields whose authority needs are not covered by source-derived capabilities.",
+  "section_plan": [
+    {
+      "section": "§0 Abstract",
+      "goal": "State the action-invariance problem, the fieldwise authority method, and the strongest bounded result.",
+      "evidence_role": "Summarize L1-L4 evidence without promoting it to production evidence."
+    },
+    {
+      "section": "§1 Introduction",
+      "goal": "Motivate conservative collapse under strict supervision in power-operation agents.",
+      "evidence_role": "Use safe claims and forbidden-claim boundary from the claim ledger."
+    },
+    {
+      "section": "§2 Related Work and Novelty Boundary",
+      "goal": "Position against attribution-only, access-control-only, RAG faithfulness, and generic agent guardrails.",
+      "evidence_role": "Use the claim ledger to avoid firstness or official-baseline superiority claims."
+    },
+    {
+      "section": "§3 Formal Model and CapGuard",
+      "goal": "Define Cap(x), Need(s,f), field coverage, minimal authority witnesses, and repair-frame invariance.",
+      "evidence_role": "Map implementation claims to FormalTrust nodes and tests."
+    },
+    {
+      "section": "§4 Test Framework and Power-Ops Benchmark Slice",
+      "goal": "Describe curated, expanded, metamorphic, skill-driven, trace, and bridge fixtures.",
+      "evidence_role": "Bind each fixture to dataset/YAML/report artifacts."
+    },
+    {
+      "section": "§5 Results and Analysis",
+      "goal": "Report field preservation, unsafe-field removal, over-conservatism, performance profile, and trace-import behavior.",
+      "evidence_role": "Use result JSON files as the source for every numeric claim."
+    },
+    {
+      "section": "§6 Limitations and Next Experiments",
+      "goal": "State missing production trace, wall-clock latency, operator workload, and official benchmark gaps.",
+      "evidence_role": "Keep future work separated from supported claims."
+    }
+  ],
+  "claims_evidence_matrix": [
+    {
+      "claim": "fieldwise repair final-action mode exists",
+      "level": "L1",
+      "section": "§3 Formal Model and CapGuard",
+      "evidence": [
+        "formaltrust_platform/nodes/afw.py",
+        "tests/test_interfaces.py"
+      ],
+      "safe_use": "Use with the stated evidence level."
+    },
+    {
+      "claim": "curated power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+      "level": "L2",
+      "section": "§5 Results and Analysis",
+      "evidence": [
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json"
+      ],
+      "safe_use": "Use with the stated evidence level."
+    },
+    {
+      "claim": "expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+      "level": "L2",
+      "section": "§5 Results and Analysis",
+      "evidence": [
+        "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json"
+      ],
+      "safe_use": "Use with the stated evidence level."
+    },
+    {
+      "claim": "metamorphic authority-confusion tests preserve authorized fields while removing or reviewing mutated unsafe fields",
+      "level": "L2",
+      "section": "§5 Results and Analysis",
+      "evidence": [
+        "docs/power_ops_action_invariance_metamorphic_tests_2026-07-02.json",
+        "examples/data/power_ops_action_invariance_metamorphic_cases.jsonl"
+      ],
+      "safe_use": "Use with the stated evidence level."
+    },
+    {
+      "claim": "no-RAG skill-driven fixture lifts skill, tool metadata, approval, memory, and prior-step outputs into field-level capabilities",
+      "level": "L2",
+      "section": "§5 Results and Analysis",
+      "evidence": [
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_skill_authority_model_2026-07-02.md"
+      ],
+      "safe_use": "Use with the stated evidence level."
+    },
+    {
+      "claim": "current artifact reports a safety-preserving normal-behavior performance profile",
+      "level": "L2",
+      "section": "§5 Results and Analysis",
+      "evidence": [
+        "docs/power_ops_action_invariance_performance_2026-07-02.json"
+      ],
+      "safe_use": "Use as normal-behavior preservation profile; latency is only a proxy."
+    },
+    {
+      "claim": "baseline grid shows strict-block collapse and provenance-only false allow on curated cases",
+      "level": "L2",
+      "section": "§5 Results and Analysis",
+      "evidence": [
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json"
+      ],
+      "safe_use": "Use as ablation evidence on curated cases only."
+    },
+    {
+      "claim": "trace/span/OTLP replay feeds fieldwise repair",
+      "level": "L3",
+      "section": "§5 Results and Analysis",
+      "evidence": [
+        "docs/power_ops_action_invariance_trace_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_span_otlp_repair_results_2026-07-02.json"
+      ],
+      "safe_use": "Use with the stated evidence level."
+    },
+    {
+      "claim": "trace import fixture covers malformed trace, missing source, duplicate approval, and expired epoch boundaries",
+      "level": "L3",
+      "section": "§5 Results and Analysis",
+      "evidence": [
+        "docs/power_ops_trace_import_contract_2026-07-02.md",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "examples/data/power_ops_trace_import_fixture.json"
+      ],
+      "safe_use": "Use as L3 trace-fixture evidence, not production telemetry."
+    },
+    {
+      "claim": "multi-step trace import covers planner, skill, tool metadata, memory, prior-step output, and user approval source chains",
+      "level": "L3",
+      "section": "§5 Results and Analysis",
+      "evidence": [
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_multistep_trace_import_fixture.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_runtime_report_2026-07-02.json",
+        "examples/data/power_ops_planner_skill_tool_memory_fixture.json"
+      ],
+      "safe_use": "Use as L3 trace-fixture evidence, not production telemetry."
+    },
+    {
+      "claim": "AgentDojo-style and semi-real power trace bridge fixtures are expressible",
+      "level": "L4",
+      "section": "§6 Limitations and Next Experiments",
+      "evidence": [
+        "docs/power_ops_action_invariance_agentdojo_style_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_semireal_trace_results_2026-07-02.json"
+      ],
+      "safe_use": "Use as bridge evidence, not official benchmark superiority."
+    }
+  ],
+  "evidence_level_counts": {
+    "L1": 1,
+    "L2": 6,
+    "L3": 3,
+    "L4": 1
+  },
+  "figure_plan": [
+    {
+      "id": "Fig. 1",
+      "type": "Architecture",
+      "description": "Cap/Need/CapGuard field-level authorization path for power-operation agent actions.",
+      "data_source": "figures/power_ops_action_invariance_architecture.svg",
+      "priority": "HIGH"
+    },
+    {
+      "id": "Fig. 2",
+      "type": "Repair frame",
+      "description": "Action-invariance repair: preserve authorized fields and remove unauthorized fields.",
+      "data_source": "figures/power_ops_action_invariance_repair_frame.svg",
+      "priority": "HIGH"
+    },
+    {
+      "id": "Fig. 3",
+      "type": "Evidence ladder",
+      "description": "Claim boundary ladder from implementation to production evidence.",
+      "data_source": "figures/power_ops_action_invariance_result_ladder.svg",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "Table 1",
+      "type": "Main result table",
+      "description": "Curated, expanded, metamorphic, skill, trace, and trace-import results.",
+      "data_source": "docs/power_ops_action_invariance_figure_table_package_2026-07-02.md",
+      "priority": "HIGH"
+    },
+    {
+      "id": "Table 2",
+      "type": "Over-conservatism profile",
+      "description": "Normal behavior preservation versus unsafe-field removal and whole-action blocking.",
+      "data_source": "docs/power_ops_action_invariance_performance_2026-07-02.json",
+      "priority": "HIGH"
+    }
+  ],
+  "result_artifacts": [
+    {
+      "path": "docs\\power_ops_action_invariance_performance_2026-07-02.json",
+      "artifact_type": "power_ops_action_invariance_performance_profile",
+      "suite_id": null,
+      "total_cases": null,
+      "key_readback": "suite_count=3; baseline_count=4; best_baseline=fieldwise_repair"
+    },
+    {
+      "path": "docs\\power_ops_trace_import_results_2026-07-02.json",
+      "artifact_type": "power_ops_trace_import_summary",
+      "suite_id": "power_ops_trace_import",
+      "total_cases": 4,
+      "key_readback": "boundary_count=4; boundary_case_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000"
+    },
+    {
+      "path": "docs\\power_ops_multistep_trace_import_results_2026-07-02.json",
+      "artifact_type": "power_ops_trace_import_summary",
+      "suite_id": "power_ops_multistep_trace_import",
+      "total_cases": 1,
+      "key_readback": "boundary_count=1; boundary_case_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000"
+    },
+    {
+      "path": "docs\\power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+      "artifact_type": "power_ops_planner_skill_tool_memory_summary",
+      "suite_id": "power_ops_planner_skill_tool_memory",
+      "total_cases": 2,
+      "key_readback": "cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_action_block_rate=0.000"
+    }
+  ],
+  "claim_ledger_path": "docs/power_ops_action_invariance_claim_ledger_2026-07-02.json",
+  "forbidden_claims": [
+    "first LLM-agent guardrail",
+    "first runtime enforcement framework",
+    "first least-privilege LLM-agent security framework",
+    "solves prompt injection",
+    "proves production safety",
+    "outperforms official neighboring systems",
+    "reduces real human workload without operator-time evidence"
+  ],
+  "next_steps": [
+    "Draft LaTeX sections from this outline.",
+    "Add real or semi-real multi-step trace import before any production-trace claim.",
+    "Measure wall-clock latency; current latency remains a field-check proxy.",
+    "Run official external benchmarks before any superiority claim."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "artifact_type": "power_ops_latex_compile_audit",
+  "compile_status": "blocked_missing_toolchain",
+  "passed": false,
+  "tex_path": "paper\\power_ops_action_invariance\\main.tex",
+  "tex_exists": true,
+  "pdf_path": "paper\\power_ops_action_invariance\\main.pdf",
+  "pdf_exists": false,
+  "toolchain_available": false,
+  "tool_candidates": [
+    "latexmk",
+    "pdflatex",
+    "xelatex"
+  ],
+  "selected_tool": "",
+  "command": [],
+  "returncode": null,
+  "stdout_tail": "",
+  "stderr_tail": "",
+  "blockers": [
+    "No LaTeX toolchain found; checked latexmk, pdflatex, xelatex"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "artifact_type": "eair_reportable_results_export_blocked",
+  "reportable": false,
+  "summary_path": "outputs\\eair_sampler_complete_dry_run\\summary\\artifact_summary.json",
+  "audit_path": "outputs\\eair_sampler_complete_dry_run\\reportability\\reportable_run_audit.json",
+  "errors": [
+    "reportability audit did not pass"
+  ]
+}

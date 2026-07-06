@@ -1,0 +1,54 @@
+{
+  "artifact_type": "eair_live_workflow_status",
+  "overall_status": "blocked",
+  "blocked_stage": "live_preflight",
+  "config_path": "examples/eair_sampler_live_template.yaml",
+  "model": "gpt-4.1-mini",
+  "api_key_env": "OPENAI_API_KEY",
+  "api_key_env_present": false,
+  "secret_value_recorded": false,
+  "stages": {
+    "live_preflight": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\live_preflight\\live_run_doctor.json",
+      "errors": [
+        "environment variable 'OPENAI_API_KEY' is not set"
+      ]
+    },
+    "sampling": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\sampled_transcripts.jsonl",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\sampled_transcripts.jsonl"
+      ]
+    },
+    "replay_manifest": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\replay\\artifact_manifest.json",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\replay\\artifact_manifest.json"
+      ]
+    },
+    "coverage_summary": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\summary\\artifact_summary.json",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\summary\\artifact_summary.json"
+      ]
+    },
+    "reportability": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\reportability\\reportable_run_audit.json",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\reportability\\reportable_run_audit.json"
+      ]
+    },
+    "paper_table_export": {
+      "passed": false,
+      "artifact_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\paper_tables\\reportable_model_condition_table.csv",
+      "errors": [
+        "missing artifact: C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\eair_live_model_run\\paper_tables\\reportable_model_condition_table.csv"
+      ]
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "title": "Contribution Shift",
+  "canvas": {"width": 1000, "height": 560},
+  "style": {
+    "font_family": "Arial, sans-serif",
+    "font_size": 13,
+    "bg_color": "#FFFFFF",
+    "palette": ["#E0F2FE", "#DCFCE7", "#FDE68A", "#FCE7F3", "#E5E7EB"]
+  },
+  "nodes": [
+    {
+      "id": "broad",
+      "label": "Broad RAG Safety",
+      "sublabel": "poisoning, faithfulness,\nruntime guard framing",
+      "x": 125,
+      "y": 180,
+      "width": 175,
+      "height": 105,
+      "shape": "rounded",
+      "fill": "#E0F2FE",
+      "stroke": "#0284C7"
+    },
+    {
+      "id": "eair",
+      "label": "Evidence-to-Action\nIntegrity",
+      "sublabel": "retrieved evidence\nsupports action fields",
+      "x": 365,
+      "y": 180,
+      "width": 185,
+      "height": 105,
+      "shape": "rounded",
+      "fill": "#DCFCE7",
+      "stroke": "#16A34A"
+    },
+    {
+      "id": "warrant",
+      "label": "WarrantGuard",
+      "sublabel": "proof-carrying action\n(a, W_a)",
+      "x": 620,
+      "y": 180,
+      "width": 185,
+      "height": 105,
+      "shape": "rounded",
+      "fill": "#FDE68A",
+      "stroke": "#CA8A04"
+    },
+    {
+      "id": "cap",
+      "label": "Field-Scoped\nEvidence Capabilities",
+      "sublabel": "ECap(e) bounds which\nfields evidence may govern",
+      "x": 875,
+      "y": 180,
+      "width": 190,
+      "height": 110,
+      "shape": "rounded",
+      "fill": "#FCE7F3",
+      "stroke": "#DB2777"
+    },
+    {
+      "id": "attrib",
+      "label": "Not just\nsource attribution",
+      "x": 185,
+      "y": 385,
+      "width": 150,
+      "height": 68,
+      "shape": "rounded",
+      "fill": "#F1F5F9",
+      "stroke": "#64748B"
+    },
+    {
+      "id": "access",
+      "label": "Not just\naccess control",
+      "x": 350,
+      "y": 385,
+      "width": 150,
+      "height": 68,
+      "shape": "rounded",
+      "fill": "#F1F5F9",
+      "stroke": "#64748B"
+    },
+    {
+      "id": "faith",
+      "label": "Not just\nRAG faithfulness",
+      "x": 515,
+      "y": 385,
+      "width": 150,
+      "height": 68,
+      "shape": "rounded",
+      "fill": "#F1F5F9",
+      "stroke": "#64748B"
+    },
+    {
+      "id": "plan",
+      "label": "Not just\nplan consistency",
+      "x": 680,
+      "y": 385,
+      "width": 150,
+      "height": 68,
+      "shape": "rounded",
+      "fill": "#F1F5F9",
+      "stroke": "#64748B"
+    },
+    {
+      "id": "toolcap",
+      "label": "Not tool-capability\nlaundering firstness",
+      "x": 845,
+      "y": 385,
+      "width": 155,
+      "height": 68,
+      "shape": "rounded",
+      "fill": "#F1F5F9",
+      "stroke": "#64748B"
+    }
+  ],
+  "edges": [
+    {"from": "broad", "to": "eair", "label": "narrow output"},
+    {"from": "eair", "to": "warrant", "label": "externalize proof"},
+    {"from": "warrant", "to": "cap", "label": "scope authority"},
+    {"from": "cap", "to": "attrib", "style": "dashed", "curve": true, "label": "boundary"},
+    {"from": "cap", "to": "access", "style": "dashed", "curve": true, "label": "boundary"},
+    {"from": "cap", "to": "faith", "style": "dashed", "curve": true, "label": "boundary"},
+    {"from": "cap", "to": "plan", "style": "dashed", "curve": true, "label": "boundary"},
+    {"from": "cap", "to": "toolcap", "style": "dashed", "curve": true, "label": "boundary"}
+  ],
+  "groups": [
+    {
+      "id": "claim",
+      "label": "Contribution compression",
+      "node_ids": ["broad", "eair", "warrant", "cap"],
+      "fill": "#FAFAFA",
+      "stroke": "#D4D4D8",
+      "padding": 24
+    },
+    {
+      "id": "negative",
+      "label": "Claims now explicitly avoided",
+      "node_ids": ["attrib", "access", "faith", "plan", "toolcap"],
+      "fill": "#F8FAFC",
+      "stroke": "#CBD5E1",
+      "padding": 24
+    }
+  ],
+  "labels": [
+    {
+      "text": "Contribution shift: the paper object became smaller and stronger",
+      "x": 500,
+      "y": 42,
+      "font_size": 22,
+      "color": "#0F172A",
+      "anchor": "middle"
+    },
+    {
+      "text": "Current one-line hook: retrieved evidence is a bounded capability to change protected action fields.",
+      "x": 500,
+      "y": 72,
+      "font_size": 14,
+      "color": "#475569",
+      "anchor": "middle"
+    }
+  ]
+}

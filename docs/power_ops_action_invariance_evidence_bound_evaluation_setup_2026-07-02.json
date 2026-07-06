@@ -1,0 +1,66 @@
+{
+  "artifact_type": "power_ops_evidence_bound_evaluation_setup",
+  "evaluation_setup_status": "ready",
+  "blockers": [],
+  "expanded_case_count": 18,
+  "baseline_case_count": 10,
+  "baseline_count": 4,
+  "trace_import_case_count": 4,
+  "multistep_trace_case_count": 1,
+  "planner_chain_case_count": 2,
+  "fully_supported_table_rows": 21,
+  "paragraph_count": 6,
+  "paragraphs": [
+    {
+      "slot": "benchmark_scope",
+      "text": "We evaluate field-level action invariance with a bounded power-operation setup: a 10-case curated baseline grid, an 18-case expanded suite, and trace replay fixtures that are treated as audit inputs rather than production telemetry.",
+      "source_paths": [
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_trace_import_results_2026-07-02.json"
+      ]
+    },
+    {
+      "slot": "dataset_and_cases",
+      "text": "The expanded dataset audit reports 18 cases with oracle coverage 1.000 across source types evidence, memory, prior_step_output, skill, tool_metadata, user_approval; this is the current dataset boundary for section 4.",
+      "source_paths": [
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json"
+      ]
+    },
+    {
+      "slot": "baselines",
+      "text": "The 10-case curated baseline grid compares 4 modes: strict-block, fieldwise-decision-only, provenance-only, and fieldwise-repair.",
+      "source_paths": [
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json"
+      ]
+    },
+    {
+      "slot": "trace_imports",
+      "text": "The trace-import path contributes 4 trace-import boundary cases and 1 multi-step source-chain case, plus 2 planner-skill-tool-memory cases; these fixtures check malformed, missing-source, duplicate-approval, expired-epoch, and multi-source import behavior.",
+      "source_paths": [
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json"
+      ]
+    },
+    {
+      "slot": "metrics_and_audits",
+      "text": "Table evidence binding currently marks 21 table rows as fully supported, while the assembled draft audit reports source-link completeness 1.000 and text match rate 1.000.",
+      "source_paths": [
+        "docs/power_ops_action_invariance_table_evidence_binding_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ]
+    },
+    {
+      "slot": "claim_boundary",
+      "text": "This setup supports fixture-level evaluation claims only: it does not claim production telemetry, wall-clock latency, operator workload reduction, or official benchmark superiority.",
+      "source_paths": [
+        "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+        "docs/power_ops_action_invariance_table_evidence_binding_2026-07-02.json",
+        "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json"
+      ]
+    }
+  ],
+  "evaluation_setup_text": "We evaluate field-level action invariance with a bounded power-operation setup: a 10-case curated baseline grid, an 18-case expanded suite, and trace replay fixtures that are treated as audit inputs rather than production telemetry.\n\nThe expanded dataset audit reports 18 cases with oracle coverage 1.000 across source types evidence, memory, prior_step_output, skill, tool_metadata, user_approval; this is the current dataset boundary for section 4.\n\nThe 10-case curated baseline grid compares 4 modes: strict-block, fieldwise-decision-only, provenance-only, and fieldwise-repair.\n\nThe trace-import path contributes 4 trace-import boundary cases and 1 multi-step source-chain case, plus 2 planner-skill-tool-memory cases; these fixtures check malformed, missing-source, duplicate-approval, expired-epoch, and multi-source import behavior.\n\nTable evidence binding currently marks 21 table rows as fully supported, while the assembled draft audit reports source-link completeness 1.000 and text match rate 1.000.\n\nThis setup supports fixture-level evaluation claims only: it does not claim production telemetry, wall-clock latency, operator workload reduction, or official benchmark superiority.",
+  "forbidden_claim_hits": []
+}

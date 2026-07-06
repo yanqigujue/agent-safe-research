@@ -1,0 +1,4 @@
+prompt_variant,row_count,total_transcripts,prompt_adherence_total,prompt_adherence_compliant_count,prompt_adherence_noncompliant_count,prompt_adherence_rate,warrant_quality_score,adherence_legitimacy_gap,high_gap_count,warrant_error_category_counts_json
+legacy_action_only,3,3,3,3,0,1.0,0.0,1.0,3,{}
+proof_carrying,3,3,3,3,0,1.0,0.6667,0.3333,1,"{""decision_support"": 1, ""hard_gate"": 1}"
+proof_carrying_strict,3,3,3,3,0,1.0,0.6667,0.3333,1,"{""decision_support"": 1, ""hard_gate"": 1}"

@@ -1,0 +1,146 @@
+{
+  "artifact_type": "afw_production_chain_report",
+  "inputs": {
+    "manifest_path": "examples\\afw_power_ops_production_chain.yaml"
+  },
+  "summary": {
+    "scenario": "power_equipment_ops_kb_qa",
+    "model_roles_present": [
+      "embedding",
+      "generation",
+      "rerank"
+    ],
+    "required_model_roles_covered": true,
+    "rag_flow_contains_guardrail": true,
+    "estimated_model_memory_gb": 20.0,
+    "max_total_model_memory_gb": 22.0,
+    "gpu_memory_gb": 24.0,
+    "memory_budget_passes": true,
+    "api_compatibility_passes": true,
+    "concurrency_target": 32,
+    "production_readiness_status": "manifest_validated_not_live_deployment"
+  },
+  "checks": {
+    "required_model_roles": {
+      "embedding": true,
+      "generation": true,
+      "rerank": true
+    },
+    "api_compatibility": {
+      "embedding": "embeddings",
+      "generation": "chat_completions",
+      "rerank": "rerank"
+    },
+    "rag_flow": [
+      "document_upload",
+      "embedding_retrieval",
+      "rerank",
+      "generation",
+      "afw_capguard",
+      "evaluate_afw_runtime"
+    ],
+    "memory": {
+      "estimated_model_memory_gb": 20.0,
+      "max_total_model_memory_gb": 22.0,
+      "gpu_memory_gb": 24.0,
+      "passes": true
+    }
+  },
+  "models": {
+    "embedding": {
+      "role": "embedding",
+      "provider": "local",
+      "model_id": "bge-large-zh-v1.5",
+      "api": "embeddings",
+      "estimated_memory_gb": 2,
+      "input": "uploaded_manual_chunks",
+      "output": "vector_index"
+    },
+    "rerank": {
+      "role": "rerank",
+      "provider": "local",
+      "model_id": "bge-reranker-large",
+      "api": "rerank",
+      "estimated_memory_gb": 4,
+      "input": "retrieved_fragments",
+      "output": "ranked_fragments"
+    },
+    "generation": {
+      "role": "generation",
+      "provider": "local",
+      "model_id": "qwen2.5-7b-instruct",
+      "api": "chat_completions",
+      "estimated_memory_gb": 14,
+      "input": "ranked_fragments",
+      "output": "answer_or_action_field"
+    }
+  },
+  "constraints": {
+    "max_total_model_memory_gb": 22,
+    "require_embedding_model": true,
+    "require_rerank_model": true,
+    "require_generation_model": true,
+    "require_afw_guardrail": true,
+    "require_api_compatibility": true
+  },
+  "manifest": {
+    "schema_version": "afw-production-chain-v0.1",
+    "scenario": "power_equipment_ops_kb_qa",
+    "description": "Electric power equipment operations RAG QA chain with AFW field-authority guardrail.",
+    "deployment_mode": "local_openai_compatible",
+    "concurrency": {
+      "target_concurrent_operators": 32,
+      "peak_concurrent_operators": 64
+    },
+    "hardware": {
+      "gpu_count": 1,
+      "gpu_memory_gb": 24,
+      "api_mode": "local_openai_compatible"
+    },
+    "models": {
+      "embedding": {
+        "role": "embedding",
+        "provider": "local",
+        "model_id": "bge-large-zh-v1.5",
+        "api": "embeddings",
+        "estimated_memory_gb": 2,
+        "input": "uploaded_manual_chunks",
+        "output": "vector_index"
+      },
+      "rerank": {
+        "role": "rerank",
+        "provider": "local",
+        "model_id": "bge-reranker-large",
+        "api": "rerank",
+        "estimated_memory_gb": 4,
+        "input": "retrieved_fragments",
+        "output": "ranked_fragments"
+      },
+      "generation": {
+        "role": "generation",
+        "provider": "local",
+        "model_id": "qwen2.5-7b-instruct",
+        "api": "chat_completions",
+        "estimated_memory_gb": 14,
+        "input": "ranked_fragments",
+        "output": "answer_or_action_field"
+      }
+    },
+    "rag_flow": [
+      "document_upload",
+      "embedding_retrieval",
+      "rerank",
+      "generation",
+      "afw_capguard",
+      "evaluate_afw_runtime"
+    ],
+    "constraints": {
+      "max_total_model_memory_gb": 22,
+      "require_embedding_model": true,
+      "require_rerank_model": true,
+      "require_generation_model": true,
+      "require_afw_guardrail": true,
+      "require_api_compatibility": true
+    }
+  }
+}

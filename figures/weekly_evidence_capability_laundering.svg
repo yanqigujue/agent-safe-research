@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 590" width="1000" height="590" font-family="Arial, sans-serif">
+  <rect width="1000" height="590" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DBEAFE"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#D1FAE5"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEE2E2"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF3C7"/>
+    </marker>
+    <marker id="arrow-c4" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#E0E7FF"/>
+    </marker>
+  </defs>
+  <rect x="22.5" y="54.0" width="972.5" height="482.0" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" rx="8"/>
+  <text x="30.5" y="70.0" font-size="11" fill="#999999" font-weight="bold">Evidence-capability laundering test</text>
+  <path d="M 222.5,250.0 L 270.0,250.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="188.2" y="232.0" width="116.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="246.2" y="244.0" font-size="10" fill="#777777" text-anchor="middle">carries capability</text>
+  <path d="M 500.0,212.3 L 570.0,189.4" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="495.0" y="182.9" width="80.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="535.0" y="194.9" font-size="10" fill="#777777" text-anchor="middle">within scope</text>
+  <path d="M 500.0,287.7 L 552.5,304.9" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="483.2" y="278.3" width="86.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="526.2" y="290.3" font-size="10" fill="#777777" text-anchor="middle">outside scope</text>
+  <path d="M 759.2,194.0 L 834.5,228.9" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="777.8" y="193.4" width="38.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="796.8" y="205.4" font-size="10" fill="#777777" text-anchor="middle">check</text>
+  <path d="M 795.8,289.0 L 834.5,271.1" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="796.2" y="262.1" width="38.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="815.2" y="274.1" font-size="10" fill="#777777" text-anchor="middle">check</text>
+  <path d="M 880.0,206.0 L 880.0,151.0" stroke="#059669" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="861.0" y="160.5" width="38.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="880.0" y="172.5" font-size="10" fill="#777777" text-anchor="middle">allow</text>
+  <path d="M 880.0,294.0 L 880.0,429.0" stroke="#DC2626" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="858.0" y="343.5" width="44.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="880.0" y="355.5" font-size="10" fill="#777777" text-anchor="middle">reject</text>
+  <rect x="47.5" y="200.0" width="175.0" height="100.0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" rx="8"/>
+  <text x="135.0" y="239.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Same trusted</text>
+  <text x="135.0" y="254.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">policy evidence</text>
+  <text x="135.0" y="269.6" font-size="10" fill="#888888" text-anchor="middle">signed, current,
+relevant to routing</text>
+  <rect x="270.0" y="192.5" width="230.0" height="115.0" fill="#E0E7FF" stroke="#4F46E5" stroke-width="2" rx="8"/>
+  <text x="385.0" y="247.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">ECap(e)</text>
+  <text x="385.0" y="262.1" font-size="10" fill="#888888" text-anchor="middle">allowed field: route_to_simulation
+force: routing support
+time/provenance/conflict scoped</text>
+  <rect x="570.0" y="116.0" width="210.0" height="78.0" fill="#D1FAE5" stroke="#059669" stroke-width="2" rx="8"/>
+  <text x="675.0" y="152.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Valid consumption</text>
+  <text x="675.0" y="167.1" font-size="10" fill="#888888" text-anchor="middle">route_to_simulation = true</text>
+  <rect x="552.5" y="289.0" width="245.0" height="112.0" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="8"/>
+  <text x="675.0" y="342.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Laundered consumption</text>
+  <text x="675.0" y="357.1" font-size="10" fill="#888888" text-anchor="middle">requires_human_approval = false
+risk_level = low
+risk_report = safe_no_review</text>
+  <polygon points="880.0,206.0 967.5,250.0 880.0,294.0 792.5,250.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="880.0" y="247.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">WarrantGuard</text>
+  <text x="880.0" y="262.1" font-size="10" fill="#888888" text-anchor="middle">ValidField(f, a, W_a, K_q)</text>
+  <rect x="795.0" y="79.0" width="170.0" height="72.0" fill="#ECFDF5" stroke="#10B981" stroke-width="2" rx="8"/>
+  <text x="880.0" y="112.0" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Execute or route</text>
+  <text x="880.0" y="127.0" font-size="10" fill="#888888" text-anchor="middle">field is in scope</text>
+  <rect x="790.0" y="429.0" width="180.0" height="82.0" fill="#FFF1F2" stroke="#E11D48" stroke-width="2" rx="8"/>
+  <text x="880.0" y="459.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Block / replace</text>
+  <text x="880.0" y="474.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">with review</text>
+  <text x="880.0" y="489.6" font-size="10" fill="#888888" text-anchor="middle">field is out of scope</text>
+  <text x="500.0" y="42.0" font-size="22" fill="#0F172A" text-anchor="middle">New failure mode: evidence valid for one field is laundered into another field</text>
+  <text x="500.0" y="72.0" font-size="14" fill="#475569" text-anchor="middle">The deterministic row policy_update::same_evidence_field_capability_laundering pins this distinction.</text>
+  <text x="500.0" y="565.0" font-size="14" fill="#334155" text-anchor="middle">This is evidence authority over action fields, not borrowed tool execution privilege.</text>
+</svg>

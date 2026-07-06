@@ -1,0 +1,23 @@
+{
+  "artifact_type": "eair_reportable_protocol_legitimacy_by_prompt_variant",
+  "reportable": true,
+  "claim_boundary": "Prompt-level aggregate of reportable protocol-legitimacy rows; inspect condition rows for failures.",
+  "protocol_legitimacy_path": "outputs\\eair_warrant_live_fixture_protocol_legitimacy\\protocol_legitimacy_table.json",
+  "protocol_legitimacy_sha256": "317d7ef211ab083cf91b85a12c9ba537f99d753a4ea29ad0eee850b0939fb6f4",
+  "total_rows": 1,
+  "rows": [
+    {
+      "prompt_variant": "default",
+      "row_count": 1,
+      "total_transcripts": 1,
+      "prompt_adherence_total": 1,
+      "prompt_adherence_compliant_count": 1,
+      "prompt_adherence_noncompliant_count": 0,
+      "prompt_adherence_rate": 1.0,
+      "warrant_quality_score": 0.0,
+      "adherence_legitimacy_gap": 1.0,
+      "high_gap_count": 1,
+      "warrant_error_category_counts_json": "{\"decision_support\": 1}"
+    }
+  ]
+}

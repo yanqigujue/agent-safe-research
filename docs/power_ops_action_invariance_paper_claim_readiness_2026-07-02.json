@@ -1,0 +1,80 @@
+{
+  "artifact_type": "power_ops_paper_claim_readiness",
+  "passed": true,
+  "status": "PASS",
+  "blockers": [],
+  "checks": {
+    "numeric_claim_audit": {
+      "passed": true,
+      "source": "docs\\power_ops_action_invariance_numeric_claim_audit_2026-07-02.json",
+      "unsupported_numeric_claim_count": 0,
+      "ignored_context_number_count": 113,
+      "supported_numeric_claim_count": 32,
+      "supported_by_table_binding_numeric_claim_count": 108,
+      "supported_by_context_rule_numeric_claim_count": 30,
+      "blockers": [],
+      "summary": "unsupported_numeric_claim_count=0"
+    },
+    "table_evidence_binding": {
+      "passed": true,
+      "source": "docs\\power_ops_action_invariance_table_evidence_binding_2026-07-02.json",
+      "unsupported_row_count": 0,
+      "fully_supported_row_count": 20,
+      "table_count": 3,
+      "blockers": [],
+      "summary": "unsupported_row_count=0"
+    },
+    "residual_numeric_triage": {
+      "passed": true,
+      "source": "docs\\power_ops_action_invariance_residual_numeric_triage_2026-07-02.json",
+      "total_needs_evidence_mentions": 0,
+      "category_counts": {},
+      "blockers": [],
+      "summary": "needs_evidence=0; parser_extension=0; rewrite_needed=0"
+    },
+    "forbidden_claim_scan": {
+      "passed": true,
+      "artifact_count": 34,
+      "artifact_paths": [
+        "docs/power_ops_action_invariance_draft_skeleton_2026-07-02.json",
+        "docs/power_ops_action_invariance_prose_draft_2026-07-02.json",
+        "docs/power_ops_action_invariance_readiness_bound_abstract_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_intro_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_method_outline_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_related_work_outline_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_related_work_prose_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_results_outline_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_limitations_outline_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+        "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.json",
+        "docs\\power_ops_action_invariance_readiness_bound_abstract_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_intro_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_method_outline_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_related_work_outline_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_related_work_prose_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_results_outline_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_limitations_outline_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json",
+        "docs\\power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.json",
+        "docs\\power_ops_action_invariance_claim_to_paragraph_map_2026-07-02.json",
+        "docs\\power_ops_action_invariance_paragraph_evidence_packets_2026-07-02.json"
+      ],
+      "forbidden_claim_hit_count": 0,
+      "hits": [],
+      "blockers": [],
+      "summary": "forbidden_claim_hit_count=0"
+    }
+  }
+}

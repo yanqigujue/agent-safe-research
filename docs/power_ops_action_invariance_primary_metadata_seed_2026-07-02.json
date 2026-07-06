@@ -1,0 +1,113 @@
+{
+  "artifact_type": "power_ops_primary_citation_metadata_seed",
+  "source_policy": "Primary-source metadata seed. Promote a record only when title, authors, year, source URL, and scaffold title alignment are present. Do not fill missing OpenReview metadata from memory.",
+  "records": [
+    {
+      "key": "agentspec",
+      "title": "AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents",
+      "authors": ["Haoyu Wang", "Christopher M. Poskitt", "Jun Sun"],
+      "year": "2025",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2503.18666",
+      "eprint": "2503.18666",
+      "source_refs": ["https://arxiv.org/abs/2503.18666"]
+    },
+    {
+      "key": "agentvisor",
+      "title": "AgentVisor: Defending LLM Agents Against Prompt Injection via Semantic Virtualization",
+      "authors": ["Zonghao Ying", "Haozheng Wang", "Jiangfan Liu", "Quanchen Zou", "Aishan Liu", "Jian Yang", "Yaodong Yang", "Xianglong Liu"],
+      "year": "2026",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2604.24118",
+      "eprint": "2604.24118",
+      "source_refs": ["https://arxiv.org/abs/2604.24118"]
+    },
+    {
+      "key": "agentsentry",
+      "title": "AgentSentry: Mitigating Indirect Prompt Injection in LLM Agents via Temporal Causal Diagnostics and Context Purification",
+      "authors": ["Tian Zhang", "Yiwei Xu", "Juan Wang", "Keyan Guo", "Xiaoyang Xu", "Bowen Xiao", "Quanlong Guan", "Jinlin Fan", "Jiawei Liu", "Zhiquan Liu", "Hongxin Hu"],
+      "year": "2026",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2602.22724",
+      "eprint": "2602.22724",
+      "source_refs": ["https://arxiv.org/abs/2602.22724"]
+    },
+    {
+      "key": "camel",
+      "title": "Defeating Prompt Injections by Design",
+      "authors": ["Edoardo Debenedetti", "Ilia Shumailov", "Tianqi Fan", "Jamie Hayes", "Nicholas Carlini", "Daniel Fabian", "Christoph Kern", "Chongyang Shi", "Andreas Terzis", "Florian Tram\u00e8r"],
+      "year": "2025",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2503.18813",
+      "eprint": "2503.18813",
+      "source_refs": ["https://arxiv.org/abs/2503.18813"]
+    },
+    {
+      "key": "secure_agent_design_patterns",
+      "title": "Design Patterns for Securing LLM Agents against Prompt Injections",
+      "authors": ["Luca Beurer-Kellner", "Beat Buesser", "Ana-Maria Cre\u0163u", "Edoardo Debenedetti", "Daniel Dobos", "Daniel Fabian", "Marc Fischer", "David Froelicher", "Kathrin Grosse", "Daniel Naeff", "Ezinwanne Ozoani", "Andrew Paverd", "Florian Tram\u00e8r", "V\u00e1clav Volhejn"],
+      "year": "2025",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2506.08837",
+      "eprint": "2506.08837",
+      "source_refs": ["https://arxiv.org/abs/2506.08837"]
+    },
+    {
+      "key": "verifiably_safe_tool_use",
+      "title": "Towards Verifiably Safe Tool Use for LLM Agents",
+      "authors": ["Aarya Doshi", "Yining Hong", "Congying Xu", "Eunsuk Kang", "Alexandros Kapravelos", "Christian K\u00e4stner"],
+      "year": "2026",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2601.08012",
+      "eprint": "2601.08012",
+      "source_refs": ["https://arxiv.org/abs/2601.08012"]
+    },
+    {
+      "key": "toolprivbench",
+      "title": "When Lower Privileges Suffice: Investigating Over-Privileged Tool Selection in LLM Agents",
+      "authors": ["Kaiyue Yang", "Yuyan Bu", "Jingwei Yi", "Yuchi Wang", "Biyu Zhou", "Juntao Dai", "Songlin Hu", "Yaodong Yang"],
+      "year": "2026",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2606.20023",
+      "eprint": "2606.20023",
+      "source_refs": ["https://arxiv.org/abs/2606.20023"]
+    },
+    {
+      "key": "racg",
+      "title": "Capability Minimization as a Safety Primitive: Risk-Aware Causal Gating for Least-Privilege LLM Agents",
+      "authors": ["Laxmipriya Ganesh Iyer", "Rahul Suresh Babu"],
+      "year": "2026",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2606.13884",
+      "eprint": "2606.13884",
+      "source_refs": ["https://arxiv.org/abs/2606.13884"]
+    },
+    {
+      "key": "agentdojo",
+      "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "authors": ["Edoardo Debenedetti", "Jie Zhang", "Mislav Balunovi\u0107", "Luca Beurer-Kellner", "Marc Fischer", "Florian Tram\u00e8r"],
+      "year": "2024",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2406.13352",
+      "eprint": "2406.13352",
+      "source_refs": ["https://arxiv.org/abs/2406.13352"]
+    },
+    {
+      "key": "injecguard",
+      "title": "InjecGuard: Benchmarking and Mitigating Over-defense in Prompt Injection Guardrail Models",
+      "authors": ["Hao Li", "Xiaogeng Liu"],
+      "year": "2024",
+      "source": "arxiv_abs",
+      "url": "https://arxiv.org/abs/2410.22770",
+      "eprint": "2410.22770",
+      "source_refs": ["https://arxiv.org/abs/2410.22770"]
+    }
+  ],
+  "pending_records": [
+    {
+      "key": "formal_security_agents",
+      "reason": "OpenReview page/search was not enough to confirm author and year metadata for checked BibTeX in this pass.",
+      "url": "https://openreview.net/forum?id=c6jNHPksiZ"
+    }
+  ]
+}

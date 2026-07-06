@@ -1,0 +1,9 @@
+{
+  "artifact_type": "eair_reportable_influence_contrast_pair_table",
+  "reportable": true,
+  "claim_boundary": "Legitimate-vs-hijack pair rows are emitted only when the same model and prompt variant have both a legitimate influence row and a hijack influence row after reportability passes.",
+  "summary_path": "outputs\\eair_warrant_live_fixture_summary\\artifact_summary.json",
+  "audit_path": "outputs\\eair_warrant_live_fixture_audit\\reportable_run_audit.json",
+  "total_rows": 0,
+  "rows": []
+}

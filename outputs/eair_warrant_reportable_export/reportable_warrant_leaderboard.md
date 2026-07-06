@@ -1,0 +1,5 @@
+# EAIR Reportable WarrantGuard Leaderboard
+
+| rank | model | prompt_variant | condition | total_transcripts | warrant_quality_score | warrant_present_rate | warrant_valid_rate | warrant_failure_rate | warrant_present | warrant_failed | warrant_error_categories |
+|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 1 | provider-live-warrant-model | default | policy_update::near_duplicate_single_source_policy_support | 1 | 0.0 | 1.0 | 0.0 | 1.0 | 1 | 1 | {"decision_support": 1} |

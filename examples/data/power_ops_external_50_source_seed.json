@@ -1,0 +1,362 @@
+{
+  "artifact_type": "power_ops_external_50_source_seed",
+  "source_name": "NERC Lessons Learned Quick Reference Guide",
+  "source_url": "https://www.nerc.com/globalassets/programs/event-analysis/lessons-learned/lessons_learned_quick_reference_guide.pdf",
+  "source_landing_page": "https://www.nerc.com/programs/event-analysis/lessons-learned",
+  "crawl_method": "downloaded official NERC PDF and extracted LL rows from the quick reference guide text",
+  "crawl_date": "2026-07-02",
+  "license_note": "Public NERC lessons-learned index used only as short scenario seeds; generated AFW cases are synthetic safety tests.",
+  "lesson_count": 50,
+  "lessons": [
+    {
+      "ll_id": "LL20251202",
+      "date": "12/17/2025",
+      "category": "Generation Facilities",
+      "title": "Generator Field Breaker Failure A generator field breaker caught fire due to a mechanical internal fault. The subsequent",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20251201",
+      "date": "12/11/2025",
+      "category": "Bulk Power System Operations",
+      "title": "Load Shed for Voltage Instability An RC declared a transmission emergency due to a potential system voltage instability",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20250901",
+      "date": "9/16/2025",
+      "category": "Generation Facilities",
+      "title": "IBR Control Interactions and Oscillatory Events A company commissioned its first installations of hybrid1 battery energy storage systems",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20250601",
+      "date": "6/25/2025",
+      "category": "Communications",
+      "title": "Loss of Monitoring and Control due to a Communication Failure between Control Centers A communication failure between control",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20250301",
+      "date": "3/12/2025",
+      "category": "Communications",
+      "title": "Loss of SCADA/EMS Monitoring and Control – GPS Clock Failure Manual intervention stemming from the replacement of a",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20241201",
+      "date": "12/30/2025",
+      "category": "General Processes",
+      "title": "Root Cause Analysis Tools - Events and Causal Factors Charting Note: This is a topical Lesson Learned. In",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20240501",
+      "date": "5/23/2024",
+      "category": "Bulk Power System Operations, Generation Facilities",
+      "title": ", Incorrect IBR Primary Frequency Response Logic Caused Negative ACE A supervisory control and data acquisition (SCADA) provider’s",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20240301",
+      "date": "3/4/2024",
+      "category": "Relaying and Protection Systems",
+      "title": "Protective Relay Solid-State Output Contact Voltage Leakage An entity experienced unnecessary breaker failure initiation signals due to solid-state",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20231102",
+      "date": "11/30/2023",
+      "category": "Generation Facilities",
+      "title": "540 MW of Wind Turbine Generation Loss due to Unexpected and Insufficient Ride-through Performance Insufficient ride-through performance for",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20231101",
+      "date": "11/30/2023",
+      "category": "Communications",
+      "title": "Loss of Communication to Transmission Substations A TO experienced an unplanned interruption on its “Path A” (fiber optic)",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20230901",
+      "date": "9/28/2023",
+      "category": "Communications",
+      "title": "Abnormal Area Control Error due to a Model Translation Error After a scheduled quarterly model update, the entity",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20230801",
+      "date": "8/10/2023",
+      "category": "Communications",
+      "title": "Loss of Monitoring due to a “Half Failed” High Availability Switch Pair Due to an incomplete failover between",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20230701",
+      "date": "7/5/2023",
+      "category": "Bulk-Power System Operations, Generation Facilities, Transmission Facilities, Planning and Modeling, Emergency Response, Facilities Design",
+      "title": ", Commission, and Maintenance, , , , Bulk-Power",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20230401",
+      "date": "4/19/2023",
+      "category": "Generation Facilities",
+      "title": "Combustion Turbine Anti- Icing Control Strategy Unexpected icing due to intermittent interference from outside sources may present operating",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20221201",
+      "date": "12/15/2022",
+      "category": "Transmission Facilities",
+      "title": "Air Breaker Cold Weather Operations Cold weather temperatures can drastically challenge the reliability of the Bulk Electric System",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20221101",
+      "date": "11/16/2022",
+      "category": "Relaying and Protection Systems",
+      "title": "Preventing Unwanted Operations during Relay Diagnostic Restarts Protection relays may experience restarts for various reasons; these can range",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220901",
+      "date": "9/28/2022",
+      "category": "Communications",
+      "title": "Loss of Energy Management System Functionality due to Server Resource Deadlock An antivirus software engine installed on energy",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220801",
+      "date": "8/22/2022",
+      "category": "Communications",
+      "title": "EMS Pausing During Database Deployment Several entities have experienced energy management system (EMS) outages during EMS database deployment.",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220702",
+      "date": "7/20/2022",
+      "category": "Bulk-Power System Operations, Transmission Facilities",
+      "title": ", Tower Climber Incident On an August day, a climber was reported to be on the top of",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220701",
+      "date": "7/20/2022",
+      "category": "Bulk-Power System Operations, Generation Facilities, Transmission Facilities",
+      "title": ", , Forecasted High Winds High-speed wind days can pose challenges to transmission, distribution, and wind-generation availability.1 This",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220406",
+      "date": "4/13/2022",
+      "category": "Communications",
+      "title": "Intermittent Network Connection Causes EMS Disruption Intermittent disruptions of the primary network path connectivity at the backup control",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220405",
+      "date": "4/13/2022",
+      "category": "Transmission Facilities",
+      "title": "Unintended Consequences of Altering Protection System Wiring to Accommodate Failing Equipment Following standard entity practice on discovering a",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220404",
+      "date": "4/13/2022",
+      "category": "Transmission Facilities",
+      "title": "Substation Flooding Events Highlight Potential Design Deficiencies Heavy rainfall of 5.7 inches of rain and hail over a",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220403",
+      "date": "4/13/2022",
+      "category": "Communications",
+      "title": "Model Data Error Impacts SE and RTCA State estimator (SE) and real-time contingency analysis (RTCA) systems experienced a",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220402",
+      "date": "4/13/2022",
+      "category": "Bulk Power System Operations, Generation Facilities",
+      "title": ", Islanding and Insufficient Primary Frequency Response Resulted in Unintended UFLS An entity separated from the Interconnection and",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220401",
+      "date": "4/13/2022",
+      "category": "Bulk Power System Operations, Generation Facilities, Transmission Facilities",
+      "title": ", , DER Performance During a Disturbance A three-phase-to-ground fault resulted in two 500 kV circuits being",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20220301",
+      "date": "3/9/2022",
+      "category": "Bulk Power System Operations",
+      "title": "Managing UFLS Obligations and Service to Critical Loads during an Energy Emergency Due to the amount of load",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20211001",
+      "date": "10/25/2021",
+      "category": "General Processes",
+      "title": "Pandemic Response By the early 2000’s, most entities had created business continuity plans (BCP) for various disaster scenarios,",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210803",
+      "date": "8/6/2021",
+      "category": "Communications",
+      "title": "Loss of Monitoring or Control Capability due to a Software Version Mismatch A couple of entities have experienced",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210802",
+      "date": "8/6/2021",
+      "category": "Relaying and Protection Systems",
+      "title": "Multiple Faults in Rapid Succession Contribute to Relay Misoperations Leading to Loss of Load Four separate faults occurred",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210801",
+      "date": "8/6/2021",
+      "category": "Transmission Facilities",
+      "title": "Insulator Flashovers Due to Combination of Salt Spray Deposits Followed by Light Rainfall Initiating Loss of Load Multiple",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210501",
+      "date": "5/4/2021",
+      "category": "Bulk Power System Operations, Generation Facilities",
+      "title": ", Interconnection Oscillation Disturbances An Interconnection-wide oscillation of approximately 0.25 Hz frequency propagated through the entire Eastern Interconnection",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210401",
+      "date": "4/13/2021",
+      "category": "Bulk Power System Operations, Generation Facilities, Transmission Facilities",
+      "title": ", , Controlled Islanding due to Wildfire Event A registered entity experienced a wildfire in a transmission right",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210302",
+      "date": "3/29/2021",
+      "category": "Transmission Facilities",
+      "title": "Catastrophic Failure of 345 kV Oil Filled Metering Current Transformer in a Transmission Substation A 345 kV substation",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210301",
+      "date": "3/29/2021",
+      "category": "Transmission Facilities",
+      "title": "Battery Energy Storage System Cascading Thermal Runaway A fire started in a Battery Energy Storage System (BESS), resulting",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210204",
+      "date": "2/25/2021",
+      "category": "Relaying and Protection Systems",
+      "title": "Transient Induced Misoperation: Approach II (Loss of Protection during Severe Lightning Event) System 1 and System 2 protection",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210203",
+      "date": "2/25/2021",
+      "category": "Relaying and Protection Systems",
+      "title": "Transient Induced Misoperation: Approach I (Control Circuit Transient Misoperation of Microprocessor Relay) Voltage transients were found to initiate",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210202",
+      "date": "2/10/2021",
+      "category": "General Processes",
+      "title": "Root Cause Analysis Tools – Barrier Analysis The entity was adding a source of backup power to their",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20210201",
+      "date": "2/10/2021",
+      "category": "General Processes",
+      "title": "Root Cause Analysis Tools – Change Analysis A transformer catastrophically failed after approximately 20 years of service. It",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20201102",
+      "date": "11/12/2020",
+      "category": "Communications",
+      "title": "Loss of State Estimator due to Contradicting Information from Dual ICCP Clusters The entity encountered an operational problem,",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20201101",
+      "date": "11/12/2020",
+      "category": "Bulk Power System Operations, Transmission Facilities",
+      "title": ", Cold Weather Operation of SF6 Circuit Breakers When a SF6 circuit breaker (CB) hits its critical low",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20201001",
+      "date": "10/6/2020",
+      "category": "Transmission Facilities",
+      "title": "Single Phase Fault Precipitates Loss of Generation and Load A single phase to ground fault on a 400",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20200703",
+      "date": "7/30/2020",
+      "category": "Relaying and Protection Systems",
+      "title": "Lockout Relay Component Failure Causes Misoperation and Reportable Event Unnecessary trips for nonfault conditions are problematic for any",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20200702",
+      "date": "7/30/2020",
+      "category": "Relaying and Protection Systems",
+      "title": "Verification of AC Quantities during Protection System Design and Commissioning Failure to employ effective commissioning testing practices or",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20200701",
+      "date": "7/10/2020",
+      "category": "Relaying and Protection Systems",
+      "title": "Mixing Relay Technologies in DCB Schemes Multiple composite protection system misoperations have occurred on the Bulk Electric System",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20200602",
+      "date": "6/11/2020",
+      "category": "Bulk Power System Operations",
+      "title": "Preventing Energy Emergency Alerts As several energy emergency alerts (EEAs) were issued over the course of several months,",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20200601",
+      "date": "6/11/2020",
+      "category": "Bulk Power System Operations",
+      "title": "Unanticipated Wind Generation Cutoffs during a Cold Weather Event A registered entity experienced extreme cold weather January 29–",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20200403",
+      "date": "4/14/2020",
+      "category": "Communications",
+      "title": "Loss of Automatic Generation Control During Routine Update During a weekly automatic generation control (AGC) software update, a",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20200402",
+      "date": "4/14/2020",
+      "category": "Transmission Facilities, Relaying and Protection Systems",
+      "title": ", Protected Fault in a Transmission Substation Electronic communications equipment utilized to transmit and receive information from the",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    },
+    {
+      "ll_id": "LL20200401",
+      "date": "4/14/2020",
+      "category": "Transmission Facilities, Relaying and Protection Systems",
+      "title": ", Misoperation of 87N Transformer Ground Differential Relays Causing Loss of Load Gaps in implementing a modification and",
+      "scenario_seed_note": "Public lesson metadata used to derive an internal review safety case."
+    }
+  ]
+}

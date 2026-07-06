@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" font-family="Arial, sans-serif">
+  <rect width="1000" height="420" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DBEAFE"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#D1FAE5"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF3C7"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#EDE9FE"/>
+    </marker>
+    <marker id="arrow-c4" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FFE4E6"/>
+    </marker>
+  </defs>
+  <rect x="9.5" y="124.5" width="971.0" height="161.0" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" rx="8"/>
+  <text x="17.5" y="140.5" font-size="11" fill="#999999" font-weight="bold">Main weekly arc</text>
+  <path d="M 192.5,205.0 L 227.5,205.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="176.0" y="187.0" width="68.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="210.0" y="199.0" font-size="10" fill="#777777" text-anchor="middle">specialize</text>
+  <path d="M 382.5,205.0 L 417.5,205.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="366.0" y="187.0" width="68.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="400.0" y="199.0" font-size="10" fill="#777777" text-anchor="middle">discipline</text>
+  <path d="M 572.5,205.0 L 607.5,205.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="562.0" y="187.0" width="56.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="590.0" y="199.0" font-size="10" fill="#777777" text-anchor="middle">compress</text>
+  <path d="M 762.5,205.0 L 797.5,205.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="755.0" y="187.0" width="50.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="780.0" y="199.0" font-size="10" fill="#777777" text-anchor="middle">sharpen</text>
+  <rect x="37.5" y="152.5" width="155.0" height="105.0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" rx="8"/>
+  <text x="115.0" y="194.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Jun 20</text>
+  <text x="115.0" y="209.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Evidence Factory</text>
+  <text x="115.0" y="224.6" font-size="10" fill="#888888" text-anchor="middle">sampler, replay,
+reportability, runbook</text>
+  <rect x="227.5" y="152.5" width="155.0" height="105.0" fill="#D1FAE5" stroke="#059669" stroke-width="2" rx="8"/>
+  <text x="305.0" y="194.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Jun 21</text>
+  <text x="305.0" y="209.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">WarrantGuard</text>
+  <text x="305.0" y="224.6" font-size="10" fill="#888888" text-anchor="middle">(a, W_a), diagnostics,
+prompt matrix</text>
+  <rect x="417.5" y="152.5" width="155.0" height="105.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2" rx="8"/>
+  <text x="495.0" y="194.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Jun 22</text>
+  <text x="495.0" y="209.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Claim Discipline</text>
+  <text x="495.0" y="224.6" font-size="10" fill="#888888" text-anchor="middle">claim ladder,
+nearest-neighbor boundary</text>
+  <rect x="607.5" y="152.5" width="155.0" height="105.0" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2" rx="8"/>
+  <text x="685.0" y="194.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Jun 22</text>
+  <text x="685.0" y="209.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Method Spine</text>
+  <text x="685.0" y="224.6" font-size="10" fill="#888888" text-anchor="middle">threat rows,
+formalism, front matter</text>
+  <rect x="797.5" y="152.5" width="155.0" height="105.0" fill="#FFE4E6" stroke="#E11D48" stroke-width="2" rx="8"/>
+  <text x="875.0" y="194.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Latest</text>
+  <text x="875.0" y="209.6" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Sharp Object</text>
+  <text x="875.0" y="224.6" font-size="10" fill="#888888" text-anchor="middle">field-scoped evidence
+capabilities</text>
+  <text x="500.0" y="42.0" font-size="22" fill="#0F172A" text-anchor="middle">This week: from broad RAG-agent safety to field-scoped evidence capabilities</text>
+  <text x="500.0" y="72.0" font-size="14" fill="#475569" text-anchor="middle">Each step removed a broader claim and kept the executable artifact boundary tighter.</text>
+  <text x="500.0" y="360.0" font-size="14" fill="#334155" text-anchor="middle">Key outputs: paper kernels, reportable artifact chain, live matrix contract, deterministic same-evidence laundering row.</text>
+</svg>

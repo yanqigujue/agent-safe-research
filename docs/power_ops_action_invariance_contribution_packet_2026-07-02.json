@@ -1,0 +1,84 @@
+{
+  "artifact_type": "power_ops_contribution_packet",
+  "packet_status": "ready",
+  "safe_headline": "Field-level action invariance for power-operation agents: preserve authorized fields, remove unsupported fields, and keep every paper claim evidence-bound.",
+  "claim_count": 3,
+  "forbidden_headline_count": 0,
+  "forbidden_headline_hits": [],
+  "all_claims_have_code_evidence": true,
+  "all_claims_have_result_evidence": true,
+  "all_claims_have_boundary": true,
+  "claims": [
+    {
+      "claim_id": "C1_field_level_authority_witness",
+      "short_claim": "The method checks authority at the action-field level and records the minimal capability evidence behind preserved fields.",
+      "why_it_matters": "This narrows runtime supervision from whole-action refusal to auditable field-level authority coverage.",
+      "formal_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_claim_to_paragraph_map_2026-07-02.md"
+      ],
+      "code_paths": [
+        "formaltrust_platform/experiments/power_ops_action_invariance.py",
+        "formaltrust_platform/nodes/afw.py"
+      ],
+      "evidence_paths": [
+        "docs/power_ops_action_invariance_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_claim_to_paragraph_map_2026-07-02.json",
+        "docs/power_ops_action_invariance_paragraph_evidence_packets_2026-07-02.json"
+      ],
+      "boundary_tags": [
+        "not_generic_agent_guardrail_firstness",
+        "not_production_telemetry"
+      ]
+    },
+    {
+      "claim_id": "C2_fieldwise_action_invariance",
+      "short_claim": "Under strict intervention, fieldwise repair preserves authorized final-action fields while removing unauthorized fields.",
+      "why_it_matters": "This directly targets over-conservatism: safe fields remain executable instead of being lost in whole-action blocking.",
+      "formal_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md",
+        "docs/power_ops_action_invariance_repair_validity_2026-07-02.md"
+      ],
+      "code_paths": [
+        "formaltrust_platform/experiments/power_ops_action_invariance.py",
+        "formaltrust_platform/experiments/power_ops_action_invariance_baselines.py"
+      ],
+      "evidence_paths": [
+        "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json",
+        "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+        "docs/power_ops_action_invariance_table_evidence_binding_2026-07-02.json"
+      ],
+      "boundary_tags": [
+        "fixture_level_result",
+        "not_operator_workload_reduction",
+        "not_wall_clock_latency"
+      ]
+    },
+    {
+      "claim_id": "C3_non_rag_authority_sources",
+      "short_claim": "The authority abstraction can consume skill manifests, tool metadata, memory, prior-step outputs, and approvals, not only RAG documents.",
+      "why_it_matters": "This lets the same action-invariance check apply to skill-driven agents where retrieval is absent or secondary.",
+      "formal_refs": [
+        "docs/power_ops_skill_authority_model_2026-07-02.md",
+        "docs/power_ops_trace_import_contract_2026-07-02.md"
+      ],
+      "code_paths": [
+        "formaltrust_platform/experiments/power_ops_trace_import.py",
+        "formaltrust_platform/experiments/power_ops_planner_skill_tool_memory.py",
+        "formaltrust_platform/experiments/power_ops_action_invariance.py"
+      ],
+      "evidence_paths": [
+        "docs/power_ops_skill_authority_results_2026-07-02.json",
+        "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+        "docs/power_ops_trace_import_results_2026-07-02.json",
+        "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+        "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json"
+      ],
+      "boundary_tags": [
+        "not_rag_only",
+        "not_deployment_claim",
+        "not_official_benchmark_superiority"
+      ]
+    }
+  ]
+}

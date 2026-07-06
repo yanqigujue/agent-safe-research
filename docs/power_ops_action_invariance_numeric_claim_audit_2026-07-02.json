@@ -1,0 +1,1924 @@
+{
+  "artifact_type": "power_ops_numeric_claim_audit",
+  "document_count": 4,
+  "evidence_count": 18,
+  "table_binding_count": 1,
+  "documents": [
+    "README_POWER_OPS_ACTION_INVARIANCE.md",
+    "docs/power_ops_skill_authority_model_2026-07-02.md",
+    "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+    "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md"
+  ],
+  "evidence": [
+    "docs/power_ops_action_invariance_performance_2026-07-02.json",
+    "docs/power_ops_trace_import_results_2026-07-02.json",
+    "docs/power_ops_multistep_trace_import_results_2026-07-02.json",
+    "docs/power_ops_planner_skill_tool_memory_results_2026-07-02.json",
+    "docs/power_ops_normal_behavior_stress_results_2026-07-02.json",
+    "docs/power_ops_external_case_50_results_2026-07-02.json",
+    "docs/power_ops_action_invariance_paper_outline_2026-07-02.json",
+    "docs/power_ops_action_invariance_baseline_grid_2026-07-02.json",
+    "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+    "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json",
+    "docs/power_ops_action_invariance_paper_draft_consistency_audit_2026-07-02.json",
+    "docs/power_ops_action_invariance_citation_metadata_audit_2026-07-02.json",
+    "docs/power_ops_action_invariance_latex_citation_gate_2026-07-02.json",
+    "docs/power_ops_action_invariance_contribution_packet_2026-07-02.json",
+    "docs/power_ops_skill_authority_dataset_audit_2026-07-02.json",
+    "docs/power_ops_skill_authority_runtime_report_2026-07-02.json",
+    "docs/power_ops_skill_authority_results_2026-07-02.json",
+    "docs/power_ops_action_invariance_table_evidence_binding_2026-07-02.json"
+  ],
+  "key_number_checks": {
+    "source_type_coverage=1.000": {
+      "status": "supported",
+      "document_hit": true,
+      "evidence_hit": true,
+      "patterns": [
+        "source_type_coverage=1.000"
+      ]
+    },
+    "whole_action_block_rate=0.000": {
+      "status": "supported",
+      "document_hit": true,
+      "evidence_hit": true,
+      "patterns": [
+        "whole_action_block_rate=0.000",
+        "\"whole_action_block_rate\": 0.0"
+      ]
+    }
+  },
+  "numeric_mentions": [
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "ignored_context_number",
+      "context": "eport | `docs/power_ops_normal_behavior_stress_runtime_report_2026-07-02.md` | | External 50-case results | `docs/power_ops_external_case_50_results_2026-07-02.md` | | External 50-ca"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "ignored_context_number",
+      "context": "al 50-case results | `docs/power_ops_external_case_50_results_2026-07-02.md` | | External 50-case HTML report | `docs/power_ops_external_case_50_results_2026-07-02.html` | | Trace-de"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "ignored_context_number",
+      "context": "ion | `formaltrust_platform/experiments/power_ops_normal_behavior_stress.py` | | External 50-case implementation | `formaltrust_platform/experiments/power_ops_external_case_50.py` |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "10",
+      "status": "supported_by_table_binding",
+      "context": "table repair success | Repair frame validity | |---|---:|---:|---:|---:| | strict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "10",
+      "status": "supported_by_table_binding",
+      "context": "le repair success | Repair frame validity | |---|---:|---:|---:|---:| | strict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-re"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "pair success | Repair frame validity | |---|---:|---:|---:|---:| | strict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "cess | Repair frame validity | |---|---:|---:|---:|---:| | strict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.0"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "epair frame validity | |---|---:|---:|---:|---:| | strict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.0"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "10",
+      "status": "supported_by_table_binding",
+      "context": "--:|---:|---:|---:| | strict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-r"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "10",
+      "status": "supported_by_table_binding",
+      "context": "|---:|---:|---:| | strict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repa"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "|---:|---:| | strict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "-:| | strict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "rict-block | 10/10 | 1.000 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "0 | 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdoj"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "| 0.000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "000 | 1.000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "000 | | fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0."
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "fieldwise-repair | 10/10 | 0.000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1."
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "000 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "0 | 1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-tr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "1.000 | 1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "1.000 | | trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.00"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| trace-repair | 2/2 | 0.000 | 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.00"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "| 1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-f"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "1.000 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fie"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "00 | 1.000 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "00 | | span-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "pan-otlp-repair | 2/2 | 0.000 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "00 | 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | meta"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "| 1.000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamo"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": ".000 | 1.000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": ".000 | | agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0."
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "agentdojo-style | 2/2 | 0.000 | 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1."
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "18",
+      "status": "supported_by_table_binding",
+      "context": "| 1.000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-author"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "18",
+      "status": "supported_by_table_binding",
+      "context": ".000 | 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "| 1.000 | | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| | semireal-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "real-trace | 2/2 | 0.000 | 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "4",
+      "status": "supported_by_table_binding",
+      "context": "| 1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-imp"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "4",
+      "status": "supported_by_table_binding",
+      "context": "1.000 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-impor"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "00 | 1.000 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "00 | | expanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "xpanded-fieldwise | 18/18 | 0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "8",
+      "status": "supported_by_table_binding",
+      "context": "0.000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-tr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "8",
+      "status": "supported_by_table_binding",
+      "context": "000 | 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trac"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "| 1.000 | 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| 1.000 | | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| | metamorphic | 4/4 | 0.000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "4",
+      "status": "supported_by_table_binding",
+      "context": ".000 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | pl"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "4",
+      "status": "supported_by_table_binding",
+      "context": "00 | 1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | plan"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "1.000 | 1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skil"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "1.000 | | skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-m"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| skill-authority | 8/8 | 0.000 | 1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1",
+      "status": "supported_by_table_binding",
+      "context": "1.000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1",
+      "status": "supported_by_table_binding",
+      "context": "000 | 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | n"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "| 1.000 | | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-be"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| | trace-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-s"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "e-import | 4/4 | 0.000 | 1.000 | 1.000 | | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "| | multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | ex"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "| multistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | exte"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "ultistep-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "-trace-import | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-age"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "mport | 1/1 | 0.000 | 1.000 | 1.000 | | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "4",
+      "status": "supported_by_table_binding",
+      "context": "| | planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.00"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "4",
+      "status": "supported_by_table_binding",
+      "context": "| planner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "lanner-skill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Ba"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "kill-tool-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Baseline G"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "l-memory | 2/2 | 0.000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Baseline Grid On"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "supported_by_table_binding",
+      "context": "000 | 1.000 | 1.000 | | normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Baseline Grid On the 10-case cura"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "supported_by_table_binding",
+      "context": "| normal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Baseline Grid On the 10-case curated power-ops suite:"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "supported_by_table_binding",
+      "context": "ormal-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Baseline Grid On the 10-case curated power-ops suite: | B"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "-behavior-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Baseline Grid On the 10-case curated power-ops suite: | Baseline"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "r-stress | 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Baseline Grid On the 10-case curated power-ops suite: | Baseline | Author"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| 4/4 | 0.000 | 1.000 | 1.000 | | external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Baseline Grid On the 10-case curated power-ops suite: | Baseline | Authorized fin"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "10",
+      "status": "supported_by_context_rule",
+      "context": "external-50-full-agent-cases | 50/50 | 0.000 | 1.000 | 1.000 | ## Baseline Grid On the 10-case curated power-ops suite: | Baseline | Authorized final preservation | Unauthorized"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "cutable invariance | False allow fields | |---|---:|---:|---:|---:|---:| | strict-block | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.0"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "invariance | False allow fields | |---|---:|---:|---:|---:|---:| | strict-block | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.0"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "ce | False allow fields | |---|---:|---:|---:|---:|---:| | strict-block | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | p"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "se allow fields | |---|---:|---:|---:|---:|---:| | strict-block | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenanc"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "fields | |---|---:|---:|---:|---:|---:| | strict-block | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "--:| | strict-block | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.0"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "trict-block | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | f"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "ock | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "000 | 1.000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "000 | 1.000 | 0.000 | 0.000 | | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| | fieldwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0."
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "dwise-decision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0.000 | #"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "cision-only | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0.000 | ## Perfor"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "nly | 0.000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0.000 | ## Performance Pr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "000 | 1.000 | 1.000 | 0.000 | 0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0.000 | ## Performance Profile T"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "0.000 | | provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0.000 | ## Performance Profile The current performance profil"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| provenance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0.000 | ## Performance Profile The current performance profile treats"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "nance-only | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0.000 | ## Performance Profile The current performance profile treats \"perfor"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "ly | 1.000 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0.000 | ## Performance Profile The current performance profile treats \"performance\" a"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "00 | 0.000 | 0.000 | 0.000 | 1.000 | | fieldwise-repair | 1.000 | 1.000 | 0.000 | 1.000 | 0.000 | ## Performance Profile The current performance profile treats \"performance\" as safety"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "Latency proxy | Audit compression | |---|---:|---:|---:|---:|---:| | expanded-fieldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skil"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "proxy | Audit compression | |---|---:|---:|---:|---:|---:| | expanded-fieldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-author"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "Audit compression | |---|---:|---:|---:|---:|---:| | expanded-fieldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1."
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "36",
+      "status": "supported_by_table_binding",
+      "context": "mpression | |---|---:|---:|---:|---:|---:| | expanded-fieldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.500",
+      "status": "supported_by_table_binding",
+      "context": "sion | |---|---:|---:|---:|---:|---:| | expanded-fieldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "-:|---:|---:| | expanded-fieldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | O"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "---:| | expanded-fieldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | On the cu"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "expanded-fieldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | On the curated ba"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "8",
+      "status": "supported_by_table_binding",
+      "context": "-fieldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | On the curated baseli"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.688",
+      "status": "supported_by_table_binding",
+      "context": "ldwise | 1.000 | 1.000 | 0.000 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | On the curated baseline grid,"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "00 | 36 | 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | On the curated baseline grid, `fieldwise_repair` is the o"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "| 0.500 | | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | On the curated baseline grid, `fieldwise_repair` is the only curr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "| | metamorphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | On the curated baseline grid, `fieldwise_repair` is the only current base"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "16",
+      "status": "supported_by_table_binding",
+      "context": "morphic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | On the curated baseline grid, `fieldwise_repair` is the only current baseline"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.500",
+      "status": "supported_by_table_binding",
+      "context": "ic | 1.000 | 1.000 | 0.000 | 8 | 0.688 | | skill-authority | 1.000 | 1.000 | 0.000 | 16 | 0.500 | On the curated baseline grid, `fieldwise_repair` is the only current baseline with nor"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_context_rule",
+      "context": "d baseline grid, `fieldwise_repair` is the only current baseline with normal preservation 1.000, safety removal 1.000, whole-action block 0.000, and false allow 0.000. ## Claim Boundar"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_context_rule",
+      "context": "dwise_repair` is the only current baseline with normal preservation 1.000, safety removal 1.000, whole-action block 0.000, and false allow 0.000. ## Claim Boundary This is a curated r"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_context_rule",
+      "context": "current baseline with normal preservation 1.000, safety removal 1.000, whole-action block 0.000, and false allow 0.000. ## Claim Boundary This is a curated regression slice, not a pro"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_context_rule",
+      "context": "ormal preservation 1.000, safety removal 1.000, whole-action block 0.000, and false allow 0.000. ## Claim Boundary This is a curated regression slice, not a production deployment clai"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "14",
+      "status": "ignored_context_number",
+      "context": "are tracked in `task_plan.md`: | Round | Focus | Expected hard output | |---|---|---| | 14 | Paper kernel / figure-table package | Paper narrative, figure specs, SVG figures, resul"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "15",
+      "status": "ignored_context_number",
+      "context": "el / figure-table package | Paper narrative, figure specs, SVG figures, result tables | | 15 | Large-sample power-ops expansion | Completed: 18-case JSONL suite, dataset audit, expan"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "18",
+      "status": "ignored_context_number",
+      "context": "specs, SVG figures, result tables | | 15 | Large-sample power-ops expansion | Completed: 18-case JSONL suite, dataset audit, expanded results | | 16 | Action-invariance metamorphic"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "16",
+      "status": "ignored_context_number",
+      "context": "power-ops expansion | Completed: 18-case JSONL suite, dataset audit, expanded results | | 16 | Action-invariance metamorphic tests | Completed: role/scope/counter/time mutations and"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "17",
+      "status": "ignored_context_number",
+      "context": "morphic tests | Completed: role/scope/counter/time mutations and preservation metrics | | 17 | Skill-driven agent security | Completed: skill manifest cases, no-RAG authority model,"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "18",
+      "status": "ignored_context_number",
+      "context": "ven agent security | Completed: skill manifest cases, no-RAG authority model, results | | 18 | Performance / over-conservatism evaluation | Completed: safety-preserving normal behavi"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "19",
+      "status": "ignored_context_number",
+      "context": "/ over-conservatism evaluation | Completed: safety-preserving normal behavior profile | | 19 | Realistic trace import path | Completed: trace import contract, fixture, runtime result"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "20",
+      "status": "ignored_context_number",
+      "context": "listic trace import path | Completed: trace import contract, fixture, runtime results | | 20 | Paper draft integration | Completed: paper outline and artifact map generated | | 21 |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "21",
+      "status": "ignored_context_number",
+      "context": "| 20 | Paper draft integration | Completed: paper outline and artifact map generated | | 21 | Draft skeleton / multi-step trace extension | Completed: multi-step source-chain trace"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "22",
+      "status": "ignored_context_number",
+      "context": "eleton / multi-step trace extension | Completed: multi-step source-chain trace import | | 22 | Evidence-bound draft skeleton | Completed: 11 evidence-bound paragraphs, forbidden hits"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "11",
+      "status": "ignored_context_number",
+      "context": "multi-step source-chain trace import | | 22 | Evidence-bound draft skeleton | Completed: 11 evidence-bound paragraphs, forbidden hits 0 | | 23 | Evidence-constrained prose draft | C"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "| Evidence-bound draft skeleton | Completed: 11 evidence-bound paragraphs, forbidden hits 0 | | 23 | Evidence-constrained prose draft | Completed: prose draft with evidence/readback"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "23",
+      "status": "ignored_context_number",
+      "context": "ence-bound draft skeleton | Completed: 11 evidence-bound paragraphs, forbidden hits 0 | | 23 | Evidence-constrained prose draft | Completed: prose draft with evidence/readback retain"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "24",
+      "status": "ignored_context_number",
+      "context": "ence-constrained prose draft | Completed: prose draft with evidence/readback retained | | 24 | Numeric claim audit | Completed: key numeric readbacks supported; table rows still need"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "25",
+      "status": "ignored_context_number",
+      "context": "m audit | Completed: key numeric readbacks supported; table rows still needed binding | | 25 | Table row evidence binding | Completed: 18/18 rows fully supported | | 26 | Numeric aud"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "18",
+      "status": "ignored_context_number",
+      "context": "pported; table rows still needed binding | | 25 | Table row evidence binding | Completed: 18/18 rows fully supported | | 26 | Numeric audit integration | Completed: table binding sup"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "18",
+      "status": "ignored_context_number",
+      "context": "rted; table rows still needed binding | | 25 | Table row evidence binding | Completed: 18/18 rows fully supported | | 26 | Numeric audit integration | Completed: table binding suppor"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "26",
+      "status": "ignored_context_number",
+      "context": "d binding | | 25 | Table row evidence binding | Completed: 18/18 rows fully supported | | 26 | Numeric audit integration | Completed: table binding support added; `needs_evidence` re"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "218",
+      "status": "ignored_context_number",
+      "context": "audit integration | Completed: table binding support added; `needs_evidence` reduced from 218 to 43 | | 27 | Residual needs-evidence triage | Completed: 25 context-only, 17 parser-ext"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "43",
+      "status": "ignored_context_number",
+      "context": "ntegration | Completed: table binding support added; `needs_evidence` reduced from 218 to 43 | | 27 | Residual needs-evidence triage | Completed: 25 context-only, 17 parser-extension"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "27",
+      "status": "ignored_context_number",
+      "context": "ion | Completed: table binding support added; `needs_evidence` reduced from 218 to 43 | | 27 | Residual needs-evidence triage | Completed: 25 context-only, 17 parser-extension, 1 rew"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "25",
+      "status": "ignored_context_number",
+      "context": "eds_evidence` reduced from 218 to 43 | | 27 | Residual needs-evidence triage | Completed: 25 context-only, 17 parser-extension, 1 rewrite-needed | | 28 | Lead-in rewrite / parser ref"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "17",
+      "status": "ignored_context_number",
+      "context": "uced from 218 to 43 | | 27 | Residual needs-evidence triage | Completed: 25 context-only, 17 parser-extension, 1 rewrite-needed | | 28 | Lead-in rewrite / parser refinement | Complet"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1",
+      "status": "ignored_context_number",
+      "context": "| 27 | Residual needs-evidence triage | Completed: 25 context-only, 17 parser-extension, 1 rewrite-needed | | 28 | Lead-in rewrite / parser refinement | Completed: Current Result l"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "28",
+      "status": "ignored_context_number",
+      "context": "s-evidence triage | Completed: 25 context-only, 17 parser-extension, 1 rewrite-needed | | 28 | Lead-in rewrite / parser refinement | Completed: Current Result lead-in rewritten; rewr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "arser refinement | Completed: Current Result lead-in rewritten; rewrite-needed reduced to 0 | | 29 | Parser-extension cleanup | Completed: baseline/context readback rules added; res"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "29",
+      "status": "ignored_context_number",
+      "context": "refinement | Completed: Current Result lead-in rewritten; rewrite-needed reduced to 0 | | 29 | Parser-extension cleanup | Completed: baseline/context readback rules added; residual p"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "| Completed: baseline/context readback rules added; residual parser-extension reduced to 0 | | 30 | Context-only exclusion | Completed: structural numbers ignored before unsupporte"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "30",
+      "status": "ignored_context_number",
+      "context": "pleted: baseline/context readback rules added; residual parser-extension reduced to 0 | | 30 | Context-only exclusion | Completed: structural numbers ignored before unsupported claim"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "ted: structural numbers ignored before unsupported claim count; needs_evidence reduced to 0 | | 31 | Paper-claim readiness gate | Completed: numeric/table/triage/forbidden checks co"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "31",
+      "status": "ignored_context_number",
+      "context": "tructural numbers ignored before unsupported claim count; needs_evidence reduced to 0 | | 31 | Paper-claim readiness gate | Completed: numeric/table/triage/forbidden checks combined"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "32",
+      "status": "ignored_context_number",
+      "context": "ompleted: numeric/table/triage/forbidden checks combined into PASS readiness artifact | | 32 | Claim-ledger readiness sync | Completed: readiness PASS attached to claim ledger compan"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "33",
+      "status": "ignored_context_number",
+      "context": "ss sync | Completed: readiness PASS attached to claim ledger companion and PAPER_PLAN | | 33 | Readiness-bound abstract skeleton | Completed: abstract/introduction skeleton generated"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "34",
+      "status": "ignored_context_number",
+      "context": "on | Completed: abstract/introduction skeleton generated only from paper-ready claims | | 34 | Evidence-bound abstract prose | Completed: 79-word abstract prose generated with senten"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "79",
+      "status": "ignored_context_number",
+      "context": "enerated only from paper-ready claims | | 34 | Evidence-bound abstract prose | Completed: 79-word abstract prose generated with sentence/source-claim binding | | 35 | Evidence-bound"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "35",
+      "status": "ignored_context_number",
+      "context": "rose | Completed: 79-word abstract prose generated with sentence/source-claim binding | | 35 | Evidence-bound introduction outline | Completed: five-slot introduction outline generat"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "36",
+      "status": "ignored_context_number",
+      "context": "tline | Completed: five-slot introduction outline generated with source-claim binding | | 36 | Evidence-bound introduction prose | Completed: five bounded introduction paragraphs wit"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "37",
+      "status": "ignored_context_number",
+      "context": "| Completed: five bounded introduction paragraphs with paragraph/source-claim binding | | 37 | Writing-artifact readiness coverage | Completed: readiness forbidden scan now covers 6"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "6",
+      "status": "ignored_context_number",
+      "context": "37 | Writing-artifact readiness coverage | Completed: readiness forbidden scan now covers 6 current writing artifacts by default | | 38 | Evidence-bound method outline | Completed:"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "38",
+      "status": "ignored_context_number",
+      "context": "Completed: readiness forbidden scan now covers 6 current writing artifacts by default | | 38 | Evidence-bound method outline | Completed: six-slot §3 method outline generated from fo"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "39",
+      "status": "ignored_context_number",
+      "context": "pleted: six-slot §3 method outline generated from formal model and paper-ready claims | | 39 | Method-outline readiness coverage | Completed: readiness forbidden scan now covers 7 cu"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "7",
+      "status": "ignored_context_number",
+      "context": "| 39 | Method-outline readiness coverage | Completed: readiness forbidden scan now covers 7 current writing artifacts by default | | 40 | Evidence-bound method prose | Completed: si"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "40",
+      "status": "ignored_context_number",
+      "context": "Completed: readiness forbidden scan now covers 7 current writing artifacts by default | | 40 | Evidence-bound method prose | Completed: six bounded §3 method paragraphs with formal r"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "41",
+      "status": "ignored_context_number",
+      "context": "Completed: six bounded §3 method paragraphs with formal refs and source-claim binding | | 41 | Method-prose readiness coverage | Completed: readiness forbidden scan now covers 8 curr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "8",
+      "status": "ignored_context_number",
+      "context": "| | 41 | Method-prose readiness coverage | Completed: readiness forbidden scan now covers 8 current writing artifacts by default | | 42 | Evidence-bound related-work outline | Compl"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "42",
+      "status": "ignored_context_number",
+      "context": "Completed: readiness forbidden scan now covers 8 current writing artifacts by default | | 42 | Evidence-bound related-work outline | Completed: six-slot §2 related-work outline from"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "43",
+      "status": "ignored_context_number",
+      "context": "mpleted: six-slot §2 related-work outline from novelty firewall and literature review | | 43 | Related-work readiness coverage | Completed: readiness forbidden scan now covers 9 curr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "9",
+      "status": "ignored_context_number",
+      "context": "| | 43 | Related-work readiness coverage | Completed: readiness forbidden scan now covers 9 current writing artifacts by default | | 44 | Evidence-bound related-work prose | Complet"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "44",
+      "status": "ignored_context_number",
+      "context": "Completed: readiness forbidden scan now covers 9 current writing artifacts by default | | 44 | Evidence-bound related-work prose | Completed: six bounded §2 related-work paragraphs w"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "45",
+      "status": "ignored_context_number",
+      "context": "rose | Completed: six bounded §2 related-work paragraphs with neighbor/source binding | | 45 | Related-work prose readiness coverage | Completed: readiness forbidden scan now covers"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "10",
+      "status": "ignored_context_number",
+      "context": "| Related-work prose readiness coverage | Completed: readiness forbidden scan now covers 10 current writing artifacts by default | | 46 | Evidence-bound results outline | Completed:"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "46",
+      "status": "ignored_context_number",
+      "context": "ompleted: readiness forbidden scan now covers 10 current writing artifacts by default | | 46 | Evidence-bound results outline | Completed: seven-slot §5 results outline with table/so"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "47",
+      "status": "ignored_context_number",
+      "context": "results outline | Completed: seven-slot §5 results outline with table/source binding | | 47 | Results-outline readiness coverage | Completed: readiness forbidden scan now covers 11"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "11",
+      "status": "ignored_context_number",
+      "context": "47 | Results-outline readiness coverage | Completed: readiness forbidden scan now covers 11 current writing artifacts by default | | 48 | Evidence-bound results prose | Completed: s"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "48",
+      "status": "ignored_context_number",
+      "context": "ompleted: readiness forbidden scan now covers 11 current writing artifacts by default | | 48 | Evidence-bound results prose | Completed: seven bounded §5 results paragraphs with row/"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "49",
+      "status": "ignored_context_number",
+      "context": "esults prose | Completed: seven bounded §5 results paragraphs with row/source binding | | 49 | Results-prose readiness coverage | Completed: readiness forbidden scan now covers 12 cu"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "12",
+      "status": "ignored_context_number",
+      "context": "| 49 | Results-prose readiness coverage | Completed: readiness forbidden scan now covers 12 current writing artifacts by default | | 50 | Evidence-bound limitations outline | Comple"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "ignored_context_number",
+      "context": "ompleted: readiness forbidden scan now covers 12 current writing artifacts by default | | 50 | Evidence-bound limitations outline | Completed: six-slot §6 limitations outline from fo"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "51",
+      "status": "ignored_context_number",
+      "context": "ted: six-slot §6 limitations outline from forbidden claims and future-work boundaries | | 51 | Limitations-outline readiness coverage | Completed: readiness forbidden scan now covers"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "13",
+      "status": "ignored_context_number",
+      "context": "| Limitations-outline readiness coverage | Completed: readiness forbidden scan now covers 13 current writing artifacts by default | | 52 | Evidence-bound limitations prose | Complete"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "52",
+      "status": "ignored_context_number",
+      "context": "ompleted: readiness forbidden scan now covers 13 current writing artifacts by default | | 52 | Evidence-bound limitations prose | Completed: six bounded §6 limitations paragraphs wit"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "53",
+      "status": "ignored_context_number",
+      "context": "prose | Completed: six bounded §6 limitations paragraphs with excluded-claim binding | | 53 | Limitations-prose readiness coverage | Completed: readiness forbidden scan now covers 1"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "14",
+      "status": "ignored_context_number",
+      "context": "3 | Limitations-prose readiness coverage | Completed: readiness forbidden scan now covers 14 current writing artifacts by default | | 54 | Paper assembly skeleton refresh | Completed"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "54",
+      "status": "ignored_context_number",
+      "context": "ompleted: readiness forbidden scan now covers 14 current writing artifacts by default | | 54 | Paper assembly skeleton refresh | Completed: current bounded section prose assembled in"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "55",
+      "status": "ignored_context_number",
+      "context": "current bounded section prose assembled into one evidence-bound paper draft artifact | | 55 | Paper-draft readiness coverage | Completed: readiness forbidden scan now covers 15 curr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "15",
+      "status": "ignored_context_number",
+      "context": "| | 55 | Paper-draft readiness coverage | Completed: readiness forbidden scan now covers 15 current writing artifacts by default | | 56 | Paper draft consistency audit | Completed:"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "56",
+      "status": "ignored_context_number",
+      "context": "ompleted: readiness forbidden scan now covers 15 current writing artifacts by default | | 56 | Paper draft consistency audit | Completed: source-link completeness 1.000, text match r"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_context_rule",
+      "context": "s by default | | 56 | Paper draft consistency audit | Completed: source-link completeness 1.000, text match rate 1.000, unresolved boundary hits 0 | | 57 | Evidence-bound evaluation set"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_context_rule",
+      "context": "aper draft consistency audit | Completed: source-link completeness 1.000, text match rate 1.000, unresolved boundary hits 0 | | 57 | Evidence-bound evaluation setup | Completed: section"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "ompleted: source-link completeness 1.000, text match rate 1.000, unresolved boundary hits 0 | | 57 | Evidence-bound evaluation setup | Completed: section 4 added from dataset, basel"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "57",
+      "status": "ignored_context_number",
+      "context": "ed: source-link completeness 1.000, text match rate 1.000, unresolved boundary hits 0 | | 57 | Evidence-bound evaluation setup | Completed: section 4 added from dataset, baseline, tr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "4",
+      "status": "ignored_context_number",
+      "context": "unresolved boundary hits 0 | | 57 | Evidence-bound evaluation setup | Completed: section 4 added from dataset, baseline, trace, table-binding, and draft-audit sources | | 58 | Asse"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "58",
+      "status": "ignored_context_number",
+      "context": "section 4 added from dataset, baseline, trace, table-binding, and draft-audit sources | | 58 | Assembled draft numeric audit | Completed: numeric audit now scans the assembled draft"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "audit | Completed: numeric audit now scans the assembled draft directly with unsupported=0 | | 59 | Evidence-bound conclusion | Completed: bounded section 7 conclusion added from p"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "59",
+      "status": "ignored_context_number",
+      "context": "| Completed: numeric audit now scans the assembled draft directly with unsupported=0 | | 59 | Evidence-bound conclusion | Completed: bounded section 7 conclusion added from paper-re"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "7",
+      "status": "ignored_context_number",
+      "context": "rectly with unsupported=0 | | 59 | Evidence-bound conclusion | Completed: bounded section 7 conclusion added from paper-ready claims and limitation boundaries | | 60 | Claim-to-para"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "60",
+      "status": "ignored_context_number",
+      "context": "bounded section 7 conclusion added from paper-ready claims and limitation boundaries | | 60 | Claim-to-paragraph map | Completed: assembled draft paragraphs now map to source claims"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "61",
+      "status": "ignored_context_number",
+      "context": "t paragraphs now map to source claims, evidence files, and forbidden-claim boundaries | | 61 | Paragraph evidence compression audit | Completed: paragraph map summarized into reviewe"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "62",
+      "status": "ignored_context_number",
+      "context": "aragraph map summarized into reviewer-facing claim packets with source-only row audit | | 62 | Paper draft edit gate | Completed: draft-map-packet hash chain detects stale paragraph"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "63",
+      "status": "ignored_context_number",
+      "context": "ft-map-packet hash chain detects stale paragraph artifacts after unsynchronized edits | | 63 | Evidence-bound LaTeX manuscript | Completed: assembled bounded draft exported to source"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "64",
+      "status": "ignored_context_number",
+      "context": "eted: assembled bounded draft exported to source-commented LaTeX with edit-gate check | | 64 | LaTeX compile audit | Completed: TeX file found; compile blocked by missing local LaTeX"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "65",
+      "status": "ignored_context_number",
+      "context": "ound; compile blocked by missing local LaTeX toolchain and recorded as audit artifact | | 65 | Citation bibliography scaffold | Completed: BibTeX scaffold generated from local litera"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "66",
+      "status": "ignored_context_number",
+      "context": "scaffold generated from local literature table with all metadata marked pending audit | | 66 | Citation metadata audit | Completed: 10/11 entries confirmed from primary metadata seed"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "10",
+      "status": "ignored_context_number",
+      "context": "able with all metadata marked pending audit | | 66 | Citation metadata audit | Completed: 10/11 entries confirmed from primary metadata seed; 1 OpenReview entry remains pending; inve"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "11",
+      "status": "ignored_context_number",
+      "context": "e with all metadata marked pending audit | | 66 | Citation metadata audit | Completed: 10/11 entries confirmed from primary metadata seed; 1 OpenReview entry remains pending; invente"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1",
+      "status": "ignored_context_number",
+      "context": "Citation metadata audit | Completed: 10/11 entries confirmed from primary metadata seed; 1 OpenReview entry remains pending; invented references 0 | | 67 | Cite-ready LaTeX gate |"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "irmed from primary metadata seed; 1 OpenReview entry remains pending; invented references 0 | | 67 | Cite-ready LaTeX gate | Completed: `main.tex` cites 10 checked keys, uses `refer"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "67",
+      "status": "ignored_context_number",
+      "context": "from primary metadata seed; 1 OpenReview entry remains pending; invented references 0 | | 67 | Cite-ready LaTeX gate | Completed: `main.tex` cites 10 checked keys, uses `references_c"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "10",
+      "status": "ignored_context_number",
+      "context": "nding; invented references 0 | | 67 | Cite-ready LaTeX gate | Completed: `main.tex` cites 10 checked keys, uses `references_checked`, and citation gate reports 0 unchecked citations"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "d: `main.tex` cites 10 checked keys, uses `references_checked`, and citation gate reports 0 unchecked citations | | 68 | Contribution packet | Completed: 3 reviewer-facing contribut"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "68",
+      "status": "ignored_context_number",
+      "context": "cked keys, uses `references_checked`, and citation gate reports 0 unchecked citations | | 68 | Contribution packet | Completed: 3 reviewer-facing contribution claims, each bound to c"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "3",
+      "status": "ignored_context_number",
+      "context": "and citation gate reports 0 unchecked citations | | 68 | Contribution packet | Completed: 3 reviewer-facing contribution claims, each bound to code, result evidence, and explicit bo"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "69",
+      "status": "ignored_context_number",
+      "context": "ing contribution claims, each bound to code, result evidence, and explicit boundaries | | 69 | Skill-driven power-agent expansion | Completed: 8-case no-RAG suite covering skill mani"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "8",
+      "status": "ignored_context_number",
+      "context": "vidence, and explicit boundaries | | 69 | Skill-driven power-agent expansion | Completed: 8-case no-RAG suite covering skill manifest, tool metadata, approval, memory, and prior-ste"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "70",
+      "status": "ignored_context_number",
+      "context": "suite covering skill manifest, tool metadata, approval, memory, and prior-step output | | 70 | Multi-step action-invariance benchmark | Completed: 2-case planner-skill-tool-memory tr"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "emory, and prior-step output | | 70 | Multi-step action-invariance benchmark | Completed: 2-case planner-skill-tool-memory trace benchmark with 5-source chain coverage | | 71 | Norm"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "5",
+      "status": "ignored_context_number",
+      "context": "n-invariance benchmark | Completed: 2-case planner-skill-tool-memory trace benchmark with 5-source chain coverage | | 71 | Normal-behavior preservation stress test | Completed: 4 fu"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "71",
+      "status": "ignored_context_number",
+      "context": "pleted: 2-case planner-skill-tool-memory trace benchmark with 5-source chain coverage | | 71 | Normal-behavior preservation stress test | Completed: 4 fully authorized cases preserve"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "4",
+      "status": "ignored_context_number",
+      "context": "th 5-source chain coverage | | 71 | Normal-behavior preservation stress test | Completed: 4 fully authorized cases preserve 16/16 fields with false intervention 0.000 and whole-acti"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "16",
+      "status": "ignored_context_number",
+      "context": "| Normal-behavior preservation stress test | Completed: 4 fully authorized cases preserve 16/16 fields with false intervention 0.000 and whole-action intervention 0.000 | | 72 | Auth"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "16",
+      "status": "ignored_context_number",
+      "context": "ormal-behavior preservation stress test | Completed: 4 fully authorized cases preserve 16/16 fields with false intervention 0.000 and whole-action intervention 0.000 | | 72 | Authori"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "ignored_context_number",
+      "context": "test | Completed: 4 fully authorized cases preserve 16/16 fields with false intervention 0.000 and whole-action intervention 0.000 | | 72 | Authority-confusion generator | Completed: 1"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "ignored_context_number",
+      "context": "d cases preserve 16/16 fields with false intervention 0.000 and whole-action intervention 0.000 | | 72 | Authority-confusion generator | Completed: 10 trace-derived role-confusion rows"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "72",
+      "status": "ignored_context_number",
+      "context": "eserve 16/16 fields with false intervention 0.000 and whole-action intervention 0.000 | | 72 | Authority-confusion generator | Completed: 10 trace-derived role-confusion rows preserv"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "10",
+      "status": "ignored_context_number",
+      "context": "0 and whole-action intervention 0.000 | | 72 | Authority-confusion generator | Completed: 10 trace-derived role-confusion rows preserve boundaries; CapGuard blocks 1.000 while bounda"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "ignored_context_number",
+      "context": "or | Completed: 10 trace-derived role-confusion rows preserve boundaries; CapGuard blocks 1.000 while boundary-scope-only falsely allows 1.000 | | 73 | Runtime overhead audit | Complete"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "ignored_context_number",
+      "context": "rows preserve boundaries; CapGuard blocks 1.000 while boundary-scope-only falsely allows 1.000 | | 73 | Runtime overhead audit | Completed: 6-suite proxy-only audit with 108 field-chec"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "73",
+      "status": "ignored_context_number",
+      "context": "erve boundaries; CapGuard blocks 1.000 while boundary-scope-only falsely allows 1.000 | | 73 | Runtime overhead audit | Completed: 6-suite proxy-only audit with 108 field-check units"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "6",
+      "status": "ignored_context_number",
+      "context": "ile boundary-scope-only falsely allows 1.000 | | 73 | Runtime overhead audit | Completed: 6-suite proxy-only audit with 108 field-check units, max 6 checks/case, weighted audit comp"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "108",
+      "status": "ignored_context_number",
+      "context": "y allows 1.000 | | 73 | Runtime overhead audit | Completed: 6-suite proxy-only audit with 108 field-check units, max 6 checks/case, weighted audit compression 0.587963, and no wall-cl"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "6",
+      "status": "ignored_context_number",
+      "context": "time overhead audit | Completed: 6-suite proxy-only audit with 108 field-check units, max 6 checks/case, weighted audit compression 0.587963, and no wall-clock latency claim | | 74"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.587963",
+      "status": "ignored_context_number",
+      "context": "roxy-only audit with 108 field-check units, max 6 checks/case, weighted audit compression 0.587963, and no wall-clock latency claim | | 74 | Stronger baseline/ablation grid | Completed: au"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "74",
+      "status": "ignored_context_number",
+      "context": "x 6 checks/case, weighted audit compression 0.587963, and no wall-clock latency claim | | 74 | Stronger baseline/ablation grid | Completed: authority-confusion grid shows CapGuard bl"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "lation grid | Completed: authority-confusion grid shows CapGuard blocks role confusion at 1.000 while boundary/provenance-style variants falsely allow at 1.000 and strict-block falsely"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "blocks role confusion at 1.000 while boundary/provenance-style variants falsely allow at 1.000 and strict-block falsely blocks legal rows at 1.000 | | 75 | Statistical robustness | Com"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "nance-style variants falsely allow at 1.000 and strict-block falsely blocks legal rows at 1.000 | | 75 | Statistical robustness | Completed: Wilson 95% intervals for normal-field preser"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "75",
+      "status": "ignored_context_number",
+      "context": "e variants falsely allow at 1.000 and strict-block falsely blocks legal rows at 1.000 | | 75 | Statistical robustness | Completed: Wilson 95% intervals for normal-field preservation,"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "95",
+      "status": "ignored_context_number",
+      "context": "ck falsely blocks legal rows at 1.000 | | 75 | Statistical robustness | Completed: Wilson 95% intervals for normal-field preservation, CapGuard confusion blocking, false-allow risk,"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "76",
+      "status": "ignored_context_number",
+      "context": "n blocking, false-allow risk, boundary-only false allow, and strict-block false block | | 76 | Paper figures and tables | Completed: 2 evidence-bound SVG figures and 2 LaTeX tables g"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "ignored_context_number",
+      "context": "false allow, and strict-block false block | | 76 | Paper figures and tables | Completed: 2 evidence-bound SVG figures and 2 LaTeX tables generated from authority-confusion and stat"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "2",
+      "status": "ignored_context_number",
+      "context": "lse block | | 76 | Paper figures and tables | Completed: 2 evidence-bound SVG figures and 2 LaTeX tables generated from authority-confusion and statistical robustness JSON artifacts"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "77",
+      "status": "ignored_context_number",
+      "context": "X tables generated from authority-confusion and statistical robustness JSON artifacts | | 77 | External 50-case authority stress suite | Completed: 50 full agent task cases from NERC"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "supported_by_context_rule",
+      "context": "ated from authority-confusion and statistical robustness JSON artifacts | | 77 | External 50-case authority stress suite | Completed: 50 full agent task cases from NERC Lessons Learn"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "supported_by_context_rule",
+      "context": "l robustness JSON artifacts | | 77 | External 50-case authority stress suite | Completed: 50 full agent task cases from NERC Lessons Learned metadata; 350 authorized fields preserved"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "350",
+      "status": "supported_by_context_rule",
+      "context": "ty stress suite | Completed: 50 full agent task cases from NERC Lessons Learned metadata; 350 authorized fields preserved, 50 high-impact unauthorized fields removed, whole-action blo"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "50",
+      "status": "supported_by_context_rule",
+      "context": "ull agent task cases from NERC Lessons Learned metadata; 350 authorized fields preserved, 50 high-impact unauthorized fields removed, whole-action block 0.000; per-case HTML design r"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "0.000",
+      "status": "supported_by_context_rule",
+      "context": "thorized fields preserved, 50 high-impact unauthorized fields removed, whole-action block 0.000; per-case HTML design report generated | | 78 | Citation and novelty refresh | Planned: r"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "78",
+      "status": "ignored_context_number",
+      "context": "rized fields removed, whole-action block 0.000; per-case HTML design report generated | | 78 | Citation and novelty refresh | Planned: re-audit related work and novelty boundaries be"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "79",
+      "status": "ignored_context_number",
+      "context": "y refresh | Planned: re-audit related work and novelty boundaries before paper claims | | 79 | Adversarial reviewer pass | Planned: produce kill-argument risks and convert them into"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "80",
+      "status": "ignored_context_number",
+      "context": "rial reviewer pass | Planned: produce kill-argument risks and convert them into fixes | | 80 | Reviewer-risk fixes | Planned: patch code, samples, tests, or prose based on the risk r"
+    },
+    {
+      "document": "README_POWER_OPS_ACTION_INVARIANCE.md",
+      "number": "81",
+      "status": "ignored_context_number",
+      "context": "r-risk fixes | Planned: patch code, samples, tests, or prose based on the risk report | | 81 | Next-cycle decision | Planned: keep/revise/reject and start the next loop | Each round"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "4",
+      "status": "supported_by_context_rule",
+      "context": "breaker action | ## Source-Type Coverage | Source type | Cases | |---|---:| | `skill` | 4 | | `tool_metadata` | 1 | | `user_approval` | 1 | | `memory` | 1 | | `prior_step_output`"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "1",
+      "status": "supported_by_context_rule",
+      "context": "rce-Type Coverage | Source type | Cases | |---|---:| | `skill` | 4 | | `tool_metadata` | 1 | | `user_approval` | 1 | | `memory` | 1 | | `prior_step_output` | 1 | ## Result | Metr"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "1",
+      "status": "supported_by_context_rule",
+      "context": "rce type | Cases | |---|---:| | `skill` | 4 | | `tool_metadata` | 1 | | `user_approval` | 1 | | `memory` | 1 | | `prior_step_output` | 1 | ## Result | Metric | Value | |---|---:|"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "1",
+      "status": "supported_by_context_rule",
+      "context": "| |---|---:| | `skill` | 4 | | `tool_metadata` | 1 | | `user_approval` | 1 | | `memory` | 1 | | `prior_step_output` | 1 | ## Result | Metric | Value | |---|---:| | total cases | 8"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "1",
+      "status": "supported_by_context_rule",
+      "context": "| `tool_metadata` | 1 | | `user_approval` | 1 | | `memory` | 1 | | `prior_step_output` | 1 | ## Result | Metric | Value | |---|---:| | total cases | 8 | | passed cases | 8 | | au"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "8",
+      "status": "supported_by_context_rule",
+      "context": "1 | | `prior_step_output` | 1 | ## Result | Metric | Value | |---|---:| | total cases | 8 | | passed cases | 8 | | authorized final-field preservation | 1.000 | | unauthorized fin"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "8",
+      "status": "supported_by_context_rule",
+      "context": "put` | 1 | ## Result | Metric | Value | |---|---:| | total cases | 8 | | passed cases | 8 | | authorized final-field preservation | 1.000 | | unauthorized final-field removal | 1."
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported_by_context_rule",
+      "context": "--|---:| | total cases | 8 | | passed cases | 8 | | authorized final-field preservation | 1.000 | | unauthorized final-field removal | 1.000 | | whole-action block rate | 0.000 | | exec"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "8 | | authorized final-field preservation | 1.000 | | unauthorized final-field removal | 1.000 | | whole-action block rate | 0.000 | | executable fieldwise-repair success | 1.000 | | r"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "0.000",
+      "status": "supported_by_table_binding",
+      "context": "vation | 1.000 | | unauthorized final-field removal | 1.000 | | whole-action block rate | 0.000 | | executable fieldwise-repair success | 1.000 | | repair-frame validity | 1.000 | ## I"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "val | 1.000 | | whole-action block rate | 0.000 | | executable fieldwise-repair success | 1.000 | | repair-frame validity | 1.000 | ## Interpretation The result shows that the current"
+    },
+    {
+      "document": "docs/power_ops_skill_authority_model_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported_by_table_binding",
+      "context": "rate | 0.000 | | executable fieldwise-repair success | 1.000 | | repair-frame validity | 1.000 | ## Interpretation The result shows that the current AFW interface is not limited to R"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "02",
+      "status": "ignored_context_number",
+      "context": "**Title:** Field-Level Action Invariance for Power-Operation LLM Agents **Date:** 2026-07-02 **Forbidden claim hits:** 0 ## §0 Abstract **Purpose:** State the action-invariance pro"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "Invariance for Power-Operation LLM Agents **Date:** 2026-07-02 **Forbidden claim hits:** 0 ## §0 Abstract **Purpose:** State the action-invariance problem, the fieldwise authorit"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "18",
+      "status": "supported_by_context_rule",
+      "context": "idence level. The current artifact supports the following bounded L2 statement: expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fiel"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "3",
+      "status": "supported_by_context_rule",
+      "context": "rmal-behavior preservation profile; latency is only a proxy. Result readback: suite_count=3; baseline_count=4; best_baseline=fieldwise_repair The current artifact supports the foll"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "4",
+      "status": "supported_by_context_rule",
+      "context": "ervation profile; latency is only a proxy. Result readback: suite_count=3; baseline_count=4; best_baseline=fieldwise_repair The current artifact supports the following bounded L2 s"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "4",
+      "status": "supported",
+      "context": "e as L3 trace-fixture evidence, not production telemetry. Result readback: boundary_count=4; boundary_case_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; uns"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "4",
+      "status": "supported",
+      "context": "vidence, not production telemetry. Result readback: boundary_count=4; boundary_case_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000 The"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "0.000",
+      "status": "supported",
+      "context": "emetry. Result readback: boundary_count=4; boundary_case_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000 The current artifact supports the f"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ry_count=4; boundary_case_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000 The current artifact supports the following bounded L3 statement:"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ase_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000 The current artifact supports the following bounded L3 statement: multi-step trace impor"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1",
+      "status": "supported",
+      "context": "e as L3 trace-fixture evidence, not production telemetry. Result readback: boundary_count=1; boundary_case_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; uns"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1",
+      "status": "supported",
+      "context": "vidence, not production telemetry. Result readback: boundary_count=1; boundary_case_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; sour"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "0.000",
+      "status": "supported",
+      "context": "emetry. Result readback: boundary_count=1; boundary_case_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | cases="
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ry_count=1; boundary_case_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | cases=2; source_chain_coverage=1.000;"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ase_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | cases=2; source_chain_coverage=1.000; authorized_preservati"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ock_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.0"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "2",
+      "status": "supported",
+      "context": "; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_action_block_rate=0.000 ## §"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ource_type_coverage=1.000 | cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_action_block_rate=0.000 ## §6 Limitations and Next Experime"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "000 | cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_action_block_rate=0.000 ## §6 Limitations and Next Experiments **Purpose:** Stat"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "0.000",
+      "status": "supported",
+      "context": "erage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_action_block_rate=0.000 ## §6 Limitations and Next Experiments **Purpose:** State missing production trace, wal"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "3",
+      "status": "supported_by_context_rule",
+      "context": "ce_profile | `docs\\power_ops_action_invariance_performance_2026-07-02.json` | suite_count=3; baseline_count=4; best_baseline=fieldwise_repair | | power_ops_trace_import_summary | `d"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "4",
+      "status": "supported_by_context_rule",
+      "context": "\\power_ops_action_invariance_performance_2026-07-02.json` | suite_count=3; baseline_count=4; best_baseline=fieldwise_repair | | power_ops_trace_import_summary | `docs\\power_ops_trac"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "4",
+      "status": "supported",
+      "context": "e_import_summary | `docs\\power_ops_trace_import_results_2026-07-02.json` | boundary_count=4; boundary_case_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; uns"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "4",
+      "status": "supported",
+      "context": "s\\power_ops_trace_import_results_2026-07-02.json` | boundary_count=4; boundary_case_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000 | | p"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "0.000",
+      "status": "supported",
+      "context": "sults_2026-07-02.json` | boundary_count=4; boundary_case_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000 | | power_ops_trace_import_summary |"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ry_count=4; boundary_case_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000 | | power_ops_trace_import_summary | `docs\\power_ops_multistep_trac"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ase_total=4; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000 | | power_ops_trace_import_summary | `docs\\power_ops_multistep_trace_import_results_2026-"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1",
+      "status": "supported",
+      "context": "ummary | `docs\\power_ops_multistep_trace_import_results_2026-07-02.json` | boundary_count=1; boundary_case_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; uns"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1",
+      "status": "supported",
+      "context": "s_multistep_trace_import_results_2026-07-02.json` | boundary_count=1; boundary_case_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; sour"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "0.000",
+      "status": "supported",
+      "context": "sults_2026-07-02.json` | boundary_count=1; boundary_case_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | | powe"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ry_count=1; boundary_case_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | | power_ops_planner_skill_tool_memory"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ase_total=1; whole_action_block_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | | power_ops_planner_skill_tool_memory_summary | `docs\\power"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "ock_rate=0.000; authorized_preservation=1.000; unsafe_removal=1.000; source_type_coverage=1.000 | | power_ops_planner_skill_tool_memory_summary | `docs\\power_ops_planner_skill_tool_memo"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "2",
+      "status": "supported",
+      "context": "mory_summary | `docs\\power_ops_planner_skill_tool_memory_results_2026-07-02.json` | cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "r_ops_planner_skill_tool_memory_results_2026-07-02.json` | cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_action_block_rate=0.000 | ##"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "_results_2026-07-02.json` | cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_action_block_rate=0.000 | ## Revision Rules - Treat every"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported",
+      "context": "on` | cases=2; source_chain_coverage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_action_block_rate=0.000 | ## Revision Rules - Treat every prose paragraph as bou"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_prose_draft_2026-07-02.md",
+      "number": "0.000",
+      "status": "supported",
+      "context": "erage=1.000; authorized_preservation=1.000; unsafe_removal=1.000; whole_action_block_rate=0.000 | ## Revision Rules - Treat every prose paragraph as bounded by its evidence list. - Us"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "8",
+      "status": "ignored_context_number",
+      "context": "el Action Invariance for Power-Operation LLM Agents **Status:** ready **Section count:** 8 **Forbidden claim hits:** 0 ## Abstract High-risk power-operation LLM agents need super"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "0",
+      "status": "ignored_context_number",
+      "context": "er-Operation LLM Agents **Status:** ready **Section count:** 8 **Forbidden claim hits:** 0 ## Abstract High-risk power-operation LLM agents need supervision that preserves author"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "10",
+      "status": "supported_by_context_rule",
+      "context": "Setup We evaluate field-level action invariance with a bounded power-operation setup: a 10-case curated baseline grid, an 18-case expanded suite, and trace replay fixtures that are"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "18",
+      "status": "supported_by_context_rule",
+      "context": "tion invariance with a bounded power-operation setup: a 10-case curated baseline grid, an 18-case expanded suite, and trace replay fixtures that are treated as audit inputs rather th"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "18",
+      "status": "supported_by_context_rule",
+      "context": "ted as audit inputs rather than production telemetry. The expanded dataset audit reports 18 cases with oracle coverage 1.000 across source types evidence, memory, prior_step_output,"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported_by_context_rule",
+      "context": "n production telemetry. The expanded dataset audit reports 18 cases with oracle coverage 1.000 across source types evidence, memory, prior_step_output, skill, tool_metadata, user_appro"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "4",
+      "status": "supported_by_context_rule",
+      "context": "ut, skill, tool_metadata, user_approval; this is the current dataset boundary for section 4. The 10-case curated baseline grid compares 4 modes: strict-block, fieldwise-decision-on"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "10",
+      "status": "supported_by_table_binding",
+      "context": "l, tool_metadata, user_approval; this is the current dataset boundary for section 4. The 10-case curated baseline grid compares 4 modes: strict-block, fieldwise-decision-only, prove"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "4",
+      "status": "supported_by_context_rule",
+      "context": "s the current dataset boundary for section 4. The 10-case curated baseline grid compares 4 modes: strict-block, fieldwise-decision-only, provenance-only, and fieldwise-repair. The"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "4",
+      "status": "supported_by_table_binding",
+      "context": "-decision-only, provenance-only, and fieldwise-repair. The trace-import path contributes 4 trace-import boundary cases and 1 multi-step source-chain case, plus 2 planner-skill-tool"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "1",
+      "status": "supported_by_context_rule",
+      "context": "nd fieldwise-repair. The trace-import path contributes 4 trace-import boundary cases and 1 multi-step source-chain case, plus 2 planner-skill-tool-memory cases; these fixtures chec"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "2",
+      "status": "supported_by_table_binding",
+      "context": "t path contributes 4 trace-import boundary cases and 1 multi-step source-chain case, plus 2 planner-skill-tool-memory cases; these fixtures check malformed, missing-source, duplicat"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "21",
+      "status": "supported_by_context_rule",
+      "context": "expired-epoch, and multi-source import behavior. Table evidence binding currently marks 21 table rows as fully supported, while the assembled draft audit reports source-link comple"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported_by_context_rule",
+      "context": "rows as fully supported, while the assembled draft audit reports source-link completeness 1.000 and text match rate 1.000. This setup supports fixture-level evaluation claims only: it"
+    },
+    {
+      "document": "docs/power_ops_action_invariance_evidence_bound_paper_draft_2026-07-02.md",
+      "number": "1.000",
+      "status": "supported_by_context_rule",
+      "context": "hile the assembled draft audit reports source-link completeness 1.000 and text match rate 1.000. This setup supports fixture-level evaluation claims only: it does not claim production"
+    }
+  ],
+  "supported_numeric_claim_count": 32,
+  "supported_by_table_binding_numeric_claim_count": 117,
+  "supported_by_context_rule_numeric_claim_count": 35,
+  "ignored_context_number_count": 127,
+  "unsupported_numeric_claim_count": 0
+}

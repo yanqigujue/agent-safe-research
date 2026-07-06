@@ -1,0 +1,81 @@
+{
+  "artifact_type": "power_ops_statistical_robustness_summary",
+  "interval_method": "wilson",
+  "confidence": 0.95,
+  "interval_count": 5,
+  "normal_behavior_path": "docs/power_ops_normal_behavior_stress_results_2026-07-02.json",
+  "authority_confusion_grid_path": "docs/power_ops_authority_confusion_baseline_grid_2026-07-02.json",
+  "claim_boundary": "Wilson intervals describe this finite fixture evidence; they are not production population guarantees.",
+  "intervals": {
+    "normal_authorized_field_preservation": {
+      "label": "normal_authorized_field_preservation",
+      "point_estimate": 1.0,
+      "ci95": {
+        "method": "wilson",
+        "confidence": 0.95,
+        "successes": 16,
+        "n": 16,
+        "lower": 0.8064,
+        "upper": 1.0
+      },
+      "source_path": "docs/power_ops_normal_behavior_stress_results_2026-07-02.json",
+      "interpretation": "authorized normal fields preserved under strict supervision"
+    },
+    "capguard_confusion_block": {
+      "label": "capguard_laundering_block_rate",
+      "point_estimate": 1.0,
+      "ci95": {
+        "method": "wilson",
+        "confidence": 0.95,
+        "successes": 10,
+        "n": 10,
+        "lower": 0.7225,
+        "upper": 1.0
+      },
+      "source_path": "docs/power_ops_authority_confusion_baseline_grid_2026-07-02.json",
+      "interpretation": "trace-derived role-confusion rows blocked by role-aware CapGuard"
+    },
+    "capguard_false_allow": {
+      "label": "capguard_false_allow_rate",
+      "point_estimate": 0.0,
+      "ci95": {
+        "method": "wilson",
+        "confidence": 0.95,
+        "successes": 0,
+        "n": 10,
+        "lower": 0.0,
+        "upper": 0.2775
+      },
+      "source_path": "docs/power_ops_authority_confusion_baseline_grid_2026-07-02.json",
+      "interpretation": "trace-derived role-confusion rows falsely allowed by CapGuard"
+    },
+    "boundary_scope_only_false_allow": {
+      "label": "boundary_scope_only_false_allow_rate",
+      "point_estimate": 1.0,
+      "ci95": {
+        "method": "wilson",
+        "confidence": 0.95,
+        "successes": 10,
+        "n": 10,
+        "lower": 0.7225,
+        "upper": 1.0
+      },
+      "source_path": "docs/power_ops_authority_confusion_baseline_grid_2026-07-02.json",
+      "interpretation": "trace-derived role-confusion rows falsely allowed by boundary-only checking"
+    },
+    "strict_block_false_block": {
+      "label": "strict_block_false_block_rate",
+      "point_estimate": 1.0,
+      "ci95": {
+        "method": "wilson",
+        "confidence": 0.95,
+        "successes": 10,
+        "n": 10,
+        "lower": 0.7225,
+        "upper": 1.0
+      },
+      "source_path": "docs/power_ops_authority_confusion_baseline_grid_2026-07-02.json",
+      "interpretation": "legal rows falsely blocked by strict whole-action blocking"
+    }
+  }
+}

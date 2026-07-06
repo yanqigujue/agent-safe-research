@@ -1,0 +1,148 @@
+{
+  "artifact_type": "power_ops_evidence_bound_method_outline",
+  "source_formal_model": "docs/power_ops_action_invariance_formal_model_2026-07-02.md",
+  "source_claim_ledger_readiness": "docs/power_ops_action_invariance_claim_ledger_readiness_2026-07-02.json",
+  "source_paper_outline": "docs/power_ops_action_invariance_paper_outline_2026-07-02.json",
+  "paper_section": "§3 Formal Model and CapGuard",
+  "section_goal": "Define Cap(x), Need(s,f), field coverage, minimal authority witnesses, and repair-frame invariance.",
+  "method_outline_status": "ready",
+  "paper_ready_claim_count": 11,
+  "method_outline": [
+    {
+      "slot": "formal_objects",
+      "paragraph_goal": "Define Cap(x) for source-derived capabilities and Need(s,f) for field-level authority needs in power-operation actions.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#1. Objects (Cap(x), Need(s, f))",
+        "docs/power_ops_action_invariance_paper_outline_2026-07-02.json#§3 Formal Model and CapGuard"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "coverage_rule",
+      "paragraph_goal": "Specify Covers(c,n) across role, field, operation, data scope, effect scope, delegation scope, time scope, and obligations.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#2. Coverage (Covers(c, n), obligations_satisfied)"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "minimal_witness_decision",
+      "paragraph_goal": "Explain Minimal Authority Witness and the field decision rule: allow, abstain, or block.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#3. Minimal Authority Witness (MinimalWitness)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#4. Decision Rule (FieldDecision)"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "repair_invariance",
+      "paragraph_goal": "Define Preserve, Prevent, ActionInvariant, conservative collapse, and Repair(a) as the method's action-preservation target.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#5. Action Invariance (ActionInvariant)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#6. Conservative Collapse (strict_block_collapse_rate)",
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#9. Claim Boundary (Repair(a))"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        },
+        {
+          "claim": "curated power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_fieldwise_repair_results_2026-07-02.json"
+          ]
+        },
+        {
+          "claim": "expanded 18-case power-ops fieldwise repair preserves authorized fields and removes unauthorized fields",
+          "level": "L2",
+          "paper_ready": true,
+          "evidence": [
+            "docs/power_ops_action_invariance_expanded_results_2026-07-02.json",
+            "docs/power_ops_action_invariance_expanded_dataset_audit_2026-07-02.json"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "implementation_binding",
+      "paragraph_goal": "Map formal objects to FormalTrust runtime locations without adding new state schema fields.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#8. Current Implementation Binding (metrics[, afw_runtime_field_results)"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": ""
+    },
+    {
+      "slot": "claim_boundary",
+      "paragraph_goal": "State that the method section supports a local artifact and benchmark slice, not production telemetry or operator workload claims.",
+      "source_refs": [
+        "docs/power_ops_action_invariance_formal_model_2026-07-02.md#9. Claim Boundary (live deployment safety, human-label agreement)"
+      ],
+      "source_claims": [
+        {
+          "claim": "fieldwise repair final-action mode exists",
+          "level": "L1",
+          "paper_ready": true,
+          "evidence": [
+            "formaltrust_platform/nodes/afw.py",
+            "tests/test_interfaces.py"
+          ]
+        }
+      ],
+      "limitation_reason": "No production telemetry; no real workload reduction; no official neighboring-system superiority."
+    }
+  ],
+  "forbidden_claim_hits": []
+}

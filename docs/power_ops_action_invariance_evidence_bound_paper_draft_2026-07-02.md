@@ -1,0 +1,119 @@
+# Field-Level Action Invariance for Power-Operation LLM Agents
+
+**Status:** ready
+**Section count:** 8
+**Forbidden claim hits:** 0
+
+## Abstract
+
+High-risk power-operation LLM agents need supervision that preserves authorized action fields while removing fields without valid authority. The current artifact implements fieldwise repair as an auditable final-action mode. Paper-ready evidence covers curated and expanded power-operation cases, metamorphic authority-confusion tests, skill-driven multi-source authority, baselines, and safety-preserving normal-behavior profiles. Trace evidence covers trace/span/OTLP replay, trace-import boundaries, planner-skill-tool-memory source chains, and bridge fixtures. We keep the boundary explicit: no production telemetry, no real operator workload reduction claim, and no official neighboring-system superiority claim.
+
+<!-- source: docs/power_ops_action_invariance_evidence_bound_abstract_2026-07-02.json; status: ready; artifact: power_ops_evidence_bound_abstract -->
+
+## 1 Introduction
+
+Strict supervision of high-risk power-operation LLM agents should not collapse every mixed-authority action into a full block; it should preserve authorized work while removing invalid authority fields.
+
+The current paper therefore frames the problem as field-scoped authority preservation under intervention, not as a firstness, production-safety, or generic agent-security claim.
+
+Our artifact instantiates this boundary through fieldwise repair and a readiness-linked claim ledger that keeps each writing claim tied to evidence.
+
+The current paper-ready pool covers curated, expanded, metamorphic, skill, baseline, and trace evidence, while treating these fixtures as bounded evaluation artifacts.
+
+We explicitly leave production telemetry, real operator workload reduction, and official neighboring-system superiority outside the current claim set.
+
+<!-- source: docs/power_ops_action_invariance_evidence_bound_intro_prose_2026-07-02.json; status: ready; artifact: power_ops_evidence_bound_intro_prose -->
+
+## 2 Related Work and Novelty Boundary
+
+AgentSpec and formal-security-agent work already establish broad runtime enforcement and formal monitoring as neighboring territory. We therefore frame this paper around a narrower object: field-level action invariance inside a structured candidate action.
+
+AgentVisor, AgentSentry, and CaMeL cover semantic privilege separation, safe continuation, and capability-style prompt-injection defenses. Our positioning is that CapGuard repairs structured action fields after authority decisions and records why preserved fields remain allowed.
+
+ToolPrivBench and RACG make least privilege and capability minimization close neighbors. The distinction here is below tool exposure: after a mixed action is formed, each field must still be justified by the authority of its source.
+
+InjecGuard, AgentSentry, and AgentVisor already motivate over-defense and security utility tradeoffs. We use that motivation only to define a measurable failure mode: authorized final-field loss under strict intervention.
+
+The safe contribution is field-level action invariance with authority witnesses and repair-frame validity: preserve authorized fields, remove invalid fields, and expose the evidence that supports every preserved field.
+
+The related-work boundary is explicit. The current artifact does not use production telemetry, does not make an official neighboring-system superiority claim, does not claim generic agent-security firstness, and does not claim real workload reduction.
+
+<!-- source: docs/power_ops_action_invariance_evidence_bound_related_work_prose_2026-07-02.json; status: ready; artifact: power_ops_evidence_bound_related_work_prose -->
+
+## 3 Formal Model and CapGuard
+
+We model each agent source as a capability object Cap(x) and each action field as an authority need Need(s,f), so authorization is checked at field granularity rather than at the whole-action level.
+
+A capability covers a field only when role, field, operation, data scope, effect scope, delegation scope, time scope, and required obligations all match.
+
+For each field, CapGuard records a Minimal Authority Witness when coverage exists; otherwise the field decision becomes abstain or block depending on counter-authority and evidence completeness.
+
+The repair target is ActionInvariant(a,a'): preserve allowed fields, prevent unauthorized fields, and implement Repair(a) as keep allowed fields plus remove, block, or route the rest.
+
+The implementation binds these objects to existing FormalTrust metadata and metrics, including afw_source_events, afw_consumptions, candidate_action, afw_runtime_field_results, witness_audit, and final_action.
+
+This method section is bounded to the local artifact and benchmark slice: no production telemetry, no real workload-reduction claim, and no official neighboring-system superiority claim.
+
+<!-- source: docs/power_ops_action_invariance_evidence_bound_method_prose_2026-07-02.json; status: ready; artifact: power_ops_evidence_bound_method_prose -->
+
+## 4 Evaluation Setup
+
+We evaluate field-level action invariance with a bounded power-operation setup: a 10-case curated baseline grid, an 18-case expanded suite, and trace replay fixtures that are treated as audit inputs rather than production telemetry.
+
+The expanded dataset audit reports 18 cases with oracle coverage 1.000 across source types evidence, memory, prior_step_output, skill, tool_metadata, user_approval; this is the current dataset boundary for section 4.
+
+The 10-case curated baseline grid compares 4 modes: strict-block, fieldwise-decision-only, provenance-only, and fieldwise-repair.
+
+The trace-import path contributes 4 trace-import boundary cases and 1 multi-step source-chain case, plus 2 planner-skill-tool-memory cases; these fixtures check malformed, missing-source, duplicate-approval, expired-epoch, and multi-source import behavior.
+
+Table evidence binding currently marks 21 table rows as fully supported, while the assembled draft audit reports source-link completeness 1.000 and text match rate 1.000.
+
+This setup supports fixture-level evaluation claims only: it does not claim production telemetry, wall-clock latency, operator workload reduction, or official benchmark superiority.
+
+<!-- source: docs/power_ops_action_invariance_evidence_bound_evaluation_setup_2026-07-02.json; status: ready; artifact: power_ops_evidence_bound_evaluation_setup -->
+
+## 5 Results and Analysis
+
+The curated fieldwise-repair row is the first §5 result paragraph: it is framed as field preservation for authorized fields and removal of unauthorized fields, with the claim bounded to the fieldwise-repair result JSON and its fully supported table row.
+
+The expanded, metamorphic, and skill-authority fixtures extend the regression surface across larger case coverage, authority-confusion mutations, and no-RAG skill-driven multi-source authority without turning those fixtures into deployment evidence.
+
+The baseline-grid paragraph should compare coarse intervention behavior with the fieldwise repair frame: strict blocking captures conservative collapse, provenance-only captures unsafe preservation, and fieldwise repair remains a bounded artifact result.
+
+The performance paragraph treats performance as safety-preserving normal behavior under the current fixtures, not as wall-clock latency, human workload reduction, or production operator efficiency.
+
+The trace paragraph groups trace replay, span/OTLP replay, and trace import as fixture evidence that external action records can feed the same fieldwise repair analysis; it does not claim production telemetry.
+
+The multi-step trace paragraph reports source-chain coverage for planner outputs, skills, tool metadata, memory, prior-step output, and user approval as local fixture evidence for multi-source authority accounting.
+
+The results section closes by keeping every empirical statement inside the current curated, bridge, and trace-fixture boundary: no production telemetry, no official neighboring-system superiority claim, no real workload reduction, and no wall-clock latency claim.
+
+<!-- source: docs/power_ops_action_invariance_evidence_bound_results_prose_2026-07-02.json; status: ready; artifact: power_ops_evidence_bound_results_prose -->
+
+## 6 Limitations and Next Experiments
+
+The current trace evidence remains fixture, bridge, span, OTLP, and import evidence. It supports local replay and import behavior, but production telemetry and live deployment safety remain outside the supported claim set.
+
+The current performance profile is a safety-preserving normal-behavior profile with a field-check proxy. It is not a wall-clock latency measurement and should not be read as a speed result.
+
+The artifact has no operator-time study or human-subject workload measurement. Any real workload-reduction statement remains an excluded claim until reviewer-burden or operator-time evidence exists.
+
+The AgentDojo-style and semi-real bridge fixtures show that the interface can express neighboring benchmark shapes. They do not establish official benchmark superiority.
+
+The paper should not frame the artifact as a generic firstness, general runtime enforcement, least-privilege, or prompt-injection solution. The defensible scope is field-level action invariance with authority witnesses and repair validity.
+
+The next experiments follow directly from the excluded-claim binding: collect reviewed traces, measure wall-clock timing, run operator workload studies, and run official benchmark comparisons under pre-registered rules.
+
+<!-- source: docs/power_ops_action_invariance_evidence_bound_limitations_prose_2026-07-02.json; status: ready; artifact: power_ops_evidence_bound_limitations_prose -->
+
+## 7 Conclusion
+
+The main takeaway is field-level action invariance: strict supervision can preserve authorized power-operation action fields while removing or routing fields whose authority needs are not covered.
+
+The current paper-ready claim set supports the final-action repair mode, curated and expanded power-operation fixtures, metamorphic authority-confusion tests, skill-driven multi-source authority, baseline comparisons, safety-preserving normal-behavior profiles, and trace replay or planner-chain import checks.
+
+The conclusion inherits the limitation boundary: production telemetry, deployment safety, wall-clock latency, operator workload reduction, and official benchmark superiority remain outside the current supported claim set.
+
+The next empirical step is to collect reviewed traces, measure timing, run operator workload studies, and compare on official benchmarks under pre-registered rules.
+
+<!-- source: docs/power_ops_action_invariance_evidence_bound_conclusion_2026-07-02.json; status: ready; artifact: power_ops_evidence_bound_conclusion -->

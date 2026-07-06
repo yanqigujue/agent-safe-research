@@ -1,0 +1,63 @@
+{
+  "title": "Repair-Frame Action Invariance",
+  "canvas": {"width": 1280, "height": 620},
+  "style": {
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_size": 14,
+    "bg_color": "#FFFFFF",
+    "palette": ["#DBEAFE", "#DCFCE7", "#FEF3C7", "#FEE2E2", "#EDE9FE", "#F1F5F9"]
+  },
+  "labels": [
+    {
+      "text": "Repair-Frame Action Invariance",
+      "x": 640,
+      "y": 42,
+      "font_size": 26,
+      "color": "#111827",
+      "anchor": "middle"
+    },
+    {
+      "text": "Strict supervision should not collapse a mixed action when some fields are still valid.",
+      "x": 640,
+      "y": 72,
+      "font_size": 15,
+      "color": "#4B5563",
+      "anchor": "middle"
+    },
+    {
+      "text": "Invariant: valid_authority(f) => final_action[f] = original_action[f]; invalid_authority(f) => final_action omits f or routes f to review.",
+      "x": 640,
+      "y": 570,
+      "font_size": 14,
+      "color": "#374151",
+      "anchor": "middle"
+    }
+  ],
+  "nodes": [
+    {"id": "orig", "label": "Original Action", "sublabel": "mixed valid + invalid fields", "x": 150, "y": 315, "width": 190, "height": 86, "shape": "rounded", "fill": "#F1F5F9", "stroke": "#475569", "font_size": 18},
+    {"id": "answer", "label": "answer", "sublabel": "valid: report text", "x": 350, "y": 205, "width": 150, "height": 68, "shape": "rounded", "fill": "#DCFCE7", "stroke": "#16A34A"},
+    {"id": "schedule", "label": "schedule", "sublabel": "valid: maintenance slot", "x": 350, "y": 315, "width": 150, "height": 68, "shape": "rounded", "fill": "#DCFCE7", "stroke": "#16A34A"},
+    {"id": "dispatch", "label": "dispatch", "sublabel": "invalid: role mismatch", "x": 350, "y": 425, "width": 150, "height": 68, "shape": "rounded", "fill": "#FEE2E2", "stroke": "#DC2626"},
+    {"id": "checker", "label": "Fieldwise Check", "sublabel": "coverage + obligation + time", "x": 585, "y": 315, "width": 190, "height": 92, "shape": "rounded", "fill": "#DBEAFE", "stroke": "#2563EB", "font_size": 18},
+    {"id": "witness", "label": "Minimal Witness", "sublabel": "which capabilities support each field", "x": 585, "y": 160, "width": 210, "height": 74, "shape": "rounded", "fill": "#FEF3C7", "stroke": "#D97706", "font_size": 16},
+    {"id": "repair", "label": "Repair Frame", "sublabel": "edit only invalid authority frame", "x": 810, "y": 315, "width": 190, "height": 92, "shape": "rounded", "fill": "#EDE9FE", "stroke": "#7C3AED", "font_size": 18},
+    {"id": "final", "label": "Executable Final", "sublabel": "answer + schedule preserved", "x": 1065, "y": 235, "width": 190, "height": 82, "shape": "rounded", "fill": "#DCFCE7", "stroke": "#15803D", "font_size": 18},
+    {"id": "review", "label": "Partial Review", "sublabel": "dispatch field only", "x": 1065, "y": 395, "width": 190, "height": 82, "shape": "rounded", "fill": "#FEE2E2", "stroke": "#DC2626", "font_size": 18}
+  ],
+  "edges": [
+    {"from": "orig", "to": "answer", "label": "field"},
+    {"from": "orig", "to": "schedule", "label": "field"},
+    {"from": "orig", "to": "dispatch", "label": "field"},
+    {"from": "answer", "to": "checker", "label": "allow"},
+    {"from": "schedule", "to": "checker", "label": "allow"},
+    {"from": "dispatch", "to": "checker", "label": "block"},
+    {"from": "witness", "to": "checker", "style": "dashed", "label": "audit"},
+    {"from": "checker", "to": "repair", "label": "decisions"},
+    {"from": "repair", "to": "final", "label": "preserve"},
+    {"from": "repair", "to": "review", "label": "route"}
+  ],
+  "groups": [
+    {"id": "fields", "label": "Candidate fields", "node_ids": ["answer", "schedule", "dispatch"], "fill": "#FFFFFF", "stroke": "#CBD5E1", "padding": 20},
+    {"id": "outcomes", "label": "Final-action outcome", "node_ids": ["final", "review"], "fill": "#FAFAFA", "stroke": "#D4D4D8", "padding": 24}
+  ]
+}

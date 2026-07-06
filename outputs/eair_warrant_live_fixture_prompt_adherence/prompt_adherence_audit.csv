@@ -1,0 +1,2 @@
+transcript_id,model,prompt_variant,expected_protocol,compliant,parse_error,warrant_present,case_id,condition,errors_json
+live_warrant_duplicate_fail,provider-live-warrant-model,default,action_only_allowed,True,False,True,policy_update,near_duplicate_single_source_policy_support,[]

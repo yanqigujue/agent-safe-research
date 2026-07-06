@@ -3,4 +3,6 @@ __pycache__/
 *.pyc
 runs/
 .tmp_cli_runs/
+.tmp_*.json
+.superpowers/
 *.egg-info/

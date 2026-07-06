@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" width="1280" height="520" font-family="Arial, Helvetica, sans-serif">
+  <rect width="1280" height="520" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-main" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#374151"/>
+    </marker>
+    <marker id="arrow-muted" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#64748B"/>
+    </marker>
+    <style>
+      .title { font-size: 28px; font-weight: 700; fill: #111827; }
+      .subtitle { font-size: 15px; fill: #4B5563; }
+      .label { font-size: 12px; font-weight: 700; fill: #64748B; letter-spacing: 0; }
+      .box-title { font-size: 17px; font-weight: 700; fill: #111827; }
+      .box-line { font-size: 13px; fill: #475569; }
+      .small { font-size: 12px; fill: #475569; }
+      .formula { font-size: 17px; fill: #111827; font-weight: 700; }
+    </style>
+  </defs>
+
+  <text x="640" y="46" class="title" text-anchor="middle">WarrantGuard: Evidence Warrants for High-Risk RAG-Agent Actions</text>
+  <text x="640" y="76" class="subtitle" text-anchor="middle">A high-risk action executes only when its protected fields carry a verifiable evidence warrant.</text>
+
+  <rect x="34" y="122" width="1212" height="210" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2" rx="8"/>
+  <text x="54" y="148" class="label">EVIDENCE-WARRANT DESIGN PATTERN</text>
+
+  <rect x="70" y="174" width="214" height="100" rx="8" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+  <text x="177" y="210" class="box-title" text-anchor="middle">Retrieved Evidence</text>
+  <text x="177" y="232" class="box-line" text-anchor="middle">documents, policies, logs</text>
+  <text x="177" y="252" class="box-line" text-anchor="middle">fresh / stale / conflicting</text>
+
+  <path d="M 284 224 L 360 224" stroke="#374151" stroke-width="2.4" fill="none" marker-end="url(#arrow-main)"/>
+  <rect x="303" y="201" width="42" height="18" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="324" y="215" class="small" text-anchor="middle">emit</text>
+
+  <rect x="360" y="174" width="246" height="100" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="483" y="204" class="box-title" text-anchor="middle">Proof-Carrying Action</text>
+  <text x="483" y="227" class="box-line" text-anchor="middle">(a, W_a)</text>
+  <text x="483" y="249" class="box-line" text-anchor="middle">decision, params, approval, risk report</text>
+
+  <path d="M 606 224 L 682 224" stroke="#374151" stroke-width="2.4" fill="none" marker-end="url(#arrow-main)"/>
+  <rect x="624" y="201" width="44" height="18" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="646" y="215" class="small" text-anchor="middle">verify</text>
+
+  <rect x="682" y="174" width="254" height="100" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="809" y="203" class="box-title" text-anchor="middle">WarrantGuard</text>
+  <text x="809" y="225" class="box-line" text-anchor="middle">check evidence admissibility</text>
+  <text x="809" y="247" class="box-line" text-anchor="middle">sufficiency, freshness, diversity, conflict</text>
+
+  <path d="M 936 224 L 1012 224" stroke="#374151" stroke-width="2.4" fill="none" marker-end="url(#arrow-main)"/>
+  <rect x="956" y="201" width="38" height="18" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="975" y="215" class="small" text-anchor="middle">gate</text>
+
+  <rect x="1012" y="174" width="198" height="100" rx="8" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="1111" y="203" class="box-title" text-anchor="middle">Execution Decision</text>
+  <text x="1111" y="226" class="box-line" text-anchor="middle">execute / block</text>
+  <text x="1111" y="248" class="box-line" text-anchor="middle">replace / route to review</text>
+
+  <text x="640" y="369" class="formula" text-anchor="middle">Execute(a) iff HardGate(a,H_a)=PASS and VerifyWarrant(a,W_a,K_q)=PASS</text>
+  <text x="640" y="393" class="formula" text-anchor="middle">and CounterWarrant(a,W_a,K_q)=CLEAR</text>
+  <text x="640" y="421" class="subtitle" text-anchor="middle">W_a = protected fields + required claims + support paths + freshness + conflicts + hard action obligations</text>
+
+  <rect x="86" y="436" width="1108" height="48" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="640" y="458" class="small" text-anchor="middle">Necessary but insufficient checks: tool permission, source attribution, and answer faithfulness.</text>
+  <text x="640" y="477" class="small" text-anchor="middle">WarrantGuard asks the missing question: is this evidence admissible for each protected action field?</text>
+</svg>

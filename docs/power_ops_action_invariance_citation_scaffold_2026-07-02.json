@@ -1,0 +1,113 @@
+{
+  "artifact_type": "power_ops_citation_scaffold",
+  "lit_review_path": "docs/power_ops_action_invariance_lit_review_2026-07-02.md",
+  "scaffold_status": "ready",
+  "blockers": [],
+  "entry_count": 11,
+  "metadata_pending_count": 11,
+  "verified_source_count": 10,
+  "caution_source_count": 1,
+  "invented_reference_count": 0,
+  "entries": [
+    {
+      "key": "agentspec",
+      "title": "AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents",
+      "url": "https://arxiv.org/abs/2503.18666",
+      "status": "verified-arxiv",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "agentvisor",
+      "title": "AgentVisor: Defending LLM Agents Against Prompt Injection via Semantic Virtualization",
+      "url": "https://arxiv.org/abs/2604.24118",
+      "status": "verified-arxiv",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "agentsentry",
+      "title": "AgentSentry: Mitigating Indirect Prompt Injection in LLM Agents via Temporal Causal Diagnostics and Context Purification",
+      "url": "https://arxiv.org/abs/2602.22724",
+      "status": "verified-arxiv",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "camel",
+      "title": "Defeating Prompt Injections by Design / CaMeL",
+      "url": "https://arxiv.org/abs/2503.18813",
+      "status": "verified-arxiv",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "secure_agent_design_patterns",
+      "title": "Design Patterns for Securing LLM Agents against Prompt Injections",
+      "url": "https://arxiv.org/html/2506.08837v3",
+      "status": "verified-arxiv",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "verifiably_safe_tool_use",
+      "title": "Towards Verifiably Safe Tool Use for LLM Agents",
+      "url": "https://arxiv.org/abs/2601.08012",
+      "status": "verified-arxiv",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "toolprivbench",
+      "title": "When Lower Privileges Suffice / ToolPrivBench",
+      "url": "https://arxiv.org/abs/2606.20023",
+      "status": "verified-arxiv",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "racg",
+      "title": "Capability Minimization as a Safety Primitive / RACG",
+      "url": "https://arxiv.org/html/2606.13884v1",
+      "status": "caution",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "agentdojo",
+      "title": "AgentDojo",
+      "url": "https://arxiv.org/abs/2406.13352",
+      "status": "verified-arxiv",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "injecguard",
+      "title": "InjecGuard",
+      "url": "https://arxiv.org/abs/2410.22770",
+      "status": "verified-arxiv",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    },
+    {
+      "key": "formal_security_agents",
+      "title": "AI Agents with Formal Security Guarantees",
+      "url": "https://openreview.net/forum?id=c6jNHPksiZ",
+      "status": "verified-openreview-search",
+      "metadata_status": "pending_citation_audit",
+      "bibtex_status": "scaffold_only",
+      "source": "closest_work_table"
+    }
+  ],
+  "bibtex_text": "@misc{agentspec,\n  title = {{AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents}},\n  howpublished = {\\url{https://arxiv.org/abs/2503.18666}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-arxiv}\n}\n\n@misc{agentvisor,\n  title = {{AgentVisor: Defending LLM Agents Against Prompt Injection via Semantic Virtualization}},\n  howpublished = {\\url{https://arxiv.org/abs/2604.24118}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-arxiv}\n}\n\n@misc{agentsentry,\n  title = {{AgentSentry: Mitigating Indirect Prompt Injection in LLM Agents via Temporal Causal Diagnostics and Context Purification}},\n  howpublished = {\\url{https://arxiv.org/abs/2602.22724}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-arxiv}\n}\n\n@misc{camel,\n  title = {{Defeating Prompt Injections by Design / CaMeL}},\n  howpublished = {\\url{https://arxiv.org/abs/2503.18813}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-arxiv}\n}\n\n@misc{secure_agent_design_patterns,\n  title = {{Design Patterns for Securing LLM Agents against Prompt Injections}},\n  howpublished = {\\url{https://arxiv.org/html/2506.08837v3}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-arxiv}\n}\n\n@misc{verifiably_safe_tool_use,\n  title = {{Towards Verifiably Safe Tool Use for LLM Agents}},\n  howpublished = {\\url{https://arxiv.org/abs/2601.08012}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-arxiv}\n}\n\n@misc{toolprivbench,\n  title = {{When Lower Privileges Suffice / ToolPrivBench}},\n  howpublished = {\\url{https://arxiv.org/abs/2606.20023}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-arxiv}\n}\n\n@misc{racg,\n  title = {{Capability Minimization as a Safety Primitive / RACG}},\n  howpublished = {\\url{https://arxiv.org/html/2606.13884v1}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: caution}\n}\n\n@misc{agentdojo,\n  title = {{AgentDojo}},\n  howpublished = {\\url{https://arxiv.org/abs/2406.13352}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-arxiv}\n}\n\n@misc{injecguard,\n  title = {{InjecGuard}},\n  howpublished = {\\url{https://arxiv.org/abs/2410.22770}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-arxiv}\n}\n\n@misc{formal_security_agents,\n  title = {{AI Agents with Formal Security Guarantees}},\n  howpublished = {\\url{https://openreview.net/forum?id=c6jNHPksiZ}},\n  note = {Citation scaffold only; metadata pending citation audit; local verification status: verified-openreview-search}\n}\n"
+}

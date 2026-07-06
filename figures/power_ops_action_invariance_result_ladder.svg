@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" width="1280" height="620" font-family="Arial, Helvetica, sans-serif">
+  <rect width="1280" height="620" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DCFCE7"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DBEAFE"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF3C7"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#EDE9FE"/>
+    </marker>
+    <marker id="arrow-c4" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#F1F5F9"/>
+    </marker>
+    <marker id="arrow-c5" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEE2E2"/>
+    </marker>
+  </defs>
+  <rect x="16.0" y="205.0" width="1273.0" height="150.0" fill="#FAFAFA" stroke="#D4D4D8" stroke-width="1" rx="8"/>
+  <text x="24.0" y="221.0" font-size="12" fill="#999999" font-weight="bold">Evidence levels from claim ledger</text>
+  <rect x="241.0" y="405.0" width="838.0" height="130.0" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" rx="8"/>
+  <text x="249.0" y="421.0" font-size="12" fill="#999999" font-weight="bold">Writing boundary</text>
+  <path d="M 190.0,280.0 L 230.0,280.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="192.8" y="262.0" width="34.4" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="210.0" y="274.0" font-size="11" fill="#777777" text-anchor="middle">code</text>
+  <path d="M 400.0,280.0 L 435.0,280.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="397.0" y="262.0" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="417.5" y="274.0" font-size="11" fill="#777777" text-anchor="middle">suite</text>
+  <path d="M 615.0,280.0 L 653.0,280.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="610.2" y="262.0" width="47.6" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="634.0" y="274.0" font-size="11" fill="#777777" text-anchor="middle">replay</text>
+  <path d="M 837.0,280.0 L 876.0,280.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="832.7" y="262.0" width="47.6" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="856.5" y="274.0" font-size="11" fill="#777777" text-anchor="middle">bridge</text>
+  <path d="M 1064.0,280.0 L 1095.0,280.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="1052.4" y="262.0" width="54.2" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="1079.5" y="274.0" font-size="11" fill="#777777" text-anchor="middle">missing</text>
+  <path d="M 546.5,429.0 L 876.0,313.1" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="647.9" y="353.0" width="126.8" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="711.3" y="365.0" font-size="11" fill="#777777" text-anchor="middle">supported up to L4</text>
+  <path d="M 952.6,429.0 L 1102.2,331.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="987.1" y="362.0" width="80.6" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="1027.4" y="374.0" font-size="11" fill="#777777" text-anchor="middle">requires L5</text>
+  <rect x="40.0" y="229.0" width="150.0" height="102.0" fill="#F1F5F9" stroke="#64748B" stroke-width="2" rx="8"/>
+  <text x="115.0" y="268.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">L0</text>
+  <text x="115.0" y="284.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Narrative</text>
+  <text x="115.0" y="300.9" font-size="11" fill="#888888" text-anchor="middle">motivation and framing</text>
+  <rect x="230.0" y="229.0" width="170.0" height="102.0" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="315.0" y="268.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">L1</text>
+  <text x="315.0" y="284.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Implemented</text>
+  <text x="315.0" y="300.9" font-size="11" fill="#888888" text-anchor="middle">CapGuard repair mode
+and metrics</text>
+  <rect x="435.0" y="229.0" width="180.0" height="102.0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" rx="8"/>
+  <text x="525.0" y="268.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">L2</text>
+  <text x="525.0" y="284.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Curated Result</text>
+  <text x="525.0" y="300.9" font-size="11" fill="#888888" text-anchor="middle">10 power-ops cases
+baseline grid</text>
+  <rect x="653.0" y="229.0" width="184.0" height="102.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2" rx="8"/>
+  <text x="745.0" y="268.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">L3</text>
+  <text x="745.0" y="284.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Trace Result</text>
+  <text x="745.0" y="300.9" font-size="11" fill="#888888" text-anchor="middle">canonical trace
+span / OTLP replay</text>
+  <rect x="876.0" y="229.0" width="188.0" height="102.0" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2" rx="8"/>
+  <text x="970.0" y="268.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">L4</text>
+  <text x="970.0" y="284.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Bridge</text>
+  <text x="970.0" y="300.9" font-size="11" fill="#888888" text-anchor="middle">AgentDojo-style
+semi-real power trace</text>
+  <rect x="1095.0" y="229.0" width="170.0" height="102.0" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="8"/>
+  <text x="1180.0" y="268.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">L5</text>
+  <text x="1180.0" y="284.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Production</text>
+  <text x="1180.0" y="300.9" font-size="11" fill="#888888" text-anchor="middle">not present:
+operator workload data</text>
+  <rect x="265.0" y="429.0" width="330.0" height="82.0" fill="#FFFFFF" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="430.0" y="466.4" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Safe Paper Claim</text>
+  <text x="430.0" y="485.4" font-size="14" fill="#888888" text-anchor="middle">field-level authority witness +
+repair-frame action invariance</text>
+  <rect x="725.0" y="429.0" width="330.0" height="82.0" fill="#FFFFFF" stroke="#DC2626" stroke-width="2" rx="8"/>
+  <text x="890.0" y="466.4" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Forbidden Claim</text>
+  <text x="890.0" y="485.4" font-size="14" fill="#888888" text-anchor="middle">production safety, real workload reduction,
+or first agent guardrail</text>
+  <text x="640.0" y="42.0" font-size="25" fill="#111827" text-anchor="middle">Current Evidence Supports a Narrow Action-Invariance Claim</text>
+  <text x="640.0" y="72.0" font-size="15" fill="#4B5563" text-anchor="middle">The artifact has implementation, curated, trace, and bridge evidence; it does not yet have production evidence.</text>
+</svg>

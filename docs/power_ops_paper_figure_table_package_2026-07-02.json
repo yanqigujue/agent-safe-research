@@ -1,0 +1,46 @@
+{
+  "artifact_type": "power_ops_paper_figure_table_package",
+  "figure_dir": "figures",
+  "figure_count": 2,
+  "table_count": 2,
+  "figures": [
+    {
+      "figure_id": "fig:authority-confusion-baselines",
+      "file": "figures\\power_ops_authority_confusion_baseline_grid.svg",
+      "kind": "svg_bar_chart",
+      "caption": "Baseline behavior on trace-derived authority-confusion rows.",
+      "source_paths": [
+        "docs/power_ops_authority_confusion_baseline_grid_2026-07-02.json"
+      ]
+    },
+    {
+      "figure_id": "fig:statistical-intervals",
+      "file": "figures\\power_ops_statistical_interval_ladder.svg",
+      "kind": "svg_interval_plot",
+      "caption": "Wilson intervals for current fixture-level rates.",
+      "source_paths": [
+        "docs/power_ops_statistical_robustness_2026-07-02.json"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "tab:authority-confusion-baselines",
+      "file": "figures\\power_ops_paper_tables.tex",
+      "caption": "Authority-confusion baseline grid.",
+      "source_paths": [
+        "docs/power_ops_authority_confusion_baseline_grid_2026-07-02.json"
+      ]
+    },
+    {
+      "table_id": "tab:statistical-robustness",
+      "file": "figures\\power_ops_paper_tables.tex",
+      "caption": "Wilson 95% intervals for current fixture-level rates.",
+      "source_paths": [
+        "docs/power_ops_statistical_robustness_2026-07-02.json"
+      ]
+    }
+  ],
+  "latex_tables_path": "figures\\power_ops_paper_tables.tex",
+  "claim_boundary": "Figures and tables are evidence-bound to source JSON artifacts; they do not add new empirical claims."
+}

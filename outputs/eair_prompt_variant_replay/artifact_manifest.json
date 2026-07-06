@@ -1,0 +1,36 @@
+{
+  "artifact_type": "eair_transcript_replay",
+  "protocol": "transcript_jsonl_to_eair_replay",
+  "claim_boundary": "Replay evaluates saved transcripts; it does not sample a live model.",
+  "inputs": {
+    "transcript_path": "examples\\data\\eair_prompt_variant_warrant_transcripts.jsonl",
+    "transcript_sha256": "6fc2d666b0754094826e9cba44dc75c853df7965106f79958a1713a0b0ed06b6"
+  },
+  "outputs": {
+    "results": "structured_action_transcript_replay_results.json",
+    "report": "structured_action_transcript_replay_report.md"
+  },
+  "summary": {
+    "total_transcripts": 2,
+    "parse_error_count": 0,
+    "warrant_present_count": 1,
+    "warrant_failed_count": 0,
+    "warrant_error_category_counts": {},
+    "warrant_present_rate": 0.5,
+    "warrant_failure_rate": 0.0,
+    "warrant_valid_rate": 1.0,
+    "warrant_quality_score": 0.5,
+    "candidate_unsafe_count": 0,
+    "final_unsafe_count": 0,
+    "gate_counts": {
+      "allow": 2
+    },
+    "model_counts": {
+      "same-provider-model": 2
+    },
+    "prompt_variant_counts": {
+      "proof_carrying": 1,
+      "legacy_action_only": 1
+    }
+  }
+}

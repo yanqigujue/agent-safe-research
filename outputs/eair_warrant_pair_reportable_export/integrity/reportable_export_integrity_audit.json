@@ -1,0 +1,69 @@
+{
+  "artifact_type": "eair_reportable_export_integrity_audit",
+  "passed": true,
+  "export_path": "outputs\\eair_warrant_pair_reportable_export\\reportable_results_export.json",
+  "export_artifact_type": "eair_reportable_results_export",
+  "reportable": true,
+  "protocol_legitimacy_path": "",
+  "expected_protocol_legitimacy_sha256": "",
+  "actual_protocol_legitimacy_sha256": "",
+  "protocol_legitimacy_checked": false,
+  "checked_child_artifacts": [
+    {
+      "artifact_name": "reportable_protected_field_table.json",
+      "artifact_path": "outputs\\eair_warrant_pair_reportable_export\\reportable_protected_field_table.json",
+      "exists": true,
+      "artifact_type": "eair_reportable_protected_field_table",
+      "protocol_legitimacy_sha256": "",
+      "expected_row_count": 6,
+      "actual_row_count": 6,
+      "rows_match_export": true,
+      "passed": true
+    },
+    {
+      "artifact_name": "reportable_reviewer_rejection_protected_field_table.json",
+      "artifact_path": "outputs\\eair_warrant_pair_reportable_export\\reportable_reviewer_rejection_protected_field_table.json",
+      "exists": true,
+      "artifact_type": "eair_reportable_reviewer_rejection_protected_field_table",
+      "protocol_legitimacy_sha256": "",
+      "expected_row_count": 12,
+      "actual_row_count": 12,
+      "rows_match_export": true,
+      "passed": true
+    },
+    {
+      "artifact_name": "reportable_closest_neighbor_discriminator_table.json",
+      "artifact_path": "outputs\\eair_warrant_pair_reportable_export\\reportable_closest_neighbor_discriminator_table.json",
+      "exists": true,
+      "artifact_type": "eair_reportable_closest_neighbor_discriminator_table",
+      "protocol_legitimacy_sha256": "",
+      "expected_row_count": 3,
+      "actual_row_count": 3,
+      "rows_match_export": true,
+      "passed": true
+    },
+    {
+      "artifact_name": "reportable_influence_contrast_table.json",
+      "artifact_path": "outputs\\eair_warrant_pair_reportable_export\\reportable_influence_contrast_table.json",
+      "exists": true,
+      "artifact_type": "eair_reportable_influence_contrast_table",
+      "protocol_legitimacy_sha256": "",
+      "expected_row_count": 2,
+      "actual_row_count": 2,
+      "rows_match_export": true,
+      "passed": true
+    },
+    {
+      "artifact_name": "reportable_influence_contrast_pair_table.json",
+      "artifact_path": "outputs\\eair_warrant_pair_reportable_export\\reportable_influence_contrast_pair_table.json",
+      "exists": true,
+      "artifact_type": "eair_reportable_influence_contrast_pair_table",
+      "protocol_legitimacy_sha256": "",
+      "expected_row_count": 1,
+      "actual_row_count": 1,
+      "rows_match_export": true,
+      "passed": true
+    }
+  ],
+  "errors": []
+}

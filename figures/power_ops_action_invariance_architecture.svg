@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 660" width="1320" height="660" font-family="Arial, Helvetica, sans-serif">
+  <rect width="1320" height="660" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#E0F2FE"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DCFCE7"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF3C7"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FCE7F3"/>
+    </marker>
+    <marker id="arrow-c4" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#EDE9FE"/>
+    </marker>
+    <marker id="arrow-c5" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEE2E2"/>
+    </marker>
+    <marker id="arrow-c6" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#F1F5F9"/>
+    </marker>
+  </defs>
+  <rect x="8.0" y="104.0" width="194.0" height="452.0" fill="#FAFAFA" stroke="#D4D4D8" stroke-width="1" rx="8"/>
+  <text x="16.0" y="120.0" font-size="12" fill="#999999" font-weight="bold">Authority-bearing sources</text>
+  <rect x="212.0" y="177.0" width="1121.0" height="307.0" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" rx="8"/>
+  <text x="220.0" y="193.0" font-size="12" fill="#999999" font-weight="bold">AFW runtime path</text>
+  <path d="M 149.0,194.0 L 268.1,286.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="191.3" y="222.0" width="34.4" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="208.5" y="234.0" font-size="11" fill="#777777" text-anchor="middle">lift</text>
+  <path d="M 180.0,274.0 L 240.0,297.2" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="192.8" y="267.6" width="34.4" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="210.0" y="279.6" font-size="11" fill="#777777" text-anchor="middle">lift</text>
+  <path d="M 180.0,330.0 L 240.0,330.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="192.8" y="312.0" width="34.4" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="210.0" y="324.0" font-size="11" fill="#777777" text-anchor="middle">lift</text>
+  <path d="M 180.0,386.0 L 240.0,362.8" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="192.8" y="356.4" width="34.4" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="210.0" y="368.4" font-size="11" fill="#777777" text-anchor="middle">lift</text>
+  <path d="M 149.0,466.0 L 268.1,374.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="191.3" y="402.0" width="34.4" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="208.5" y="414.0" font-size="11" fill="#777777" text-anchor="middle">lift</text>
+  <path d="M 545.0,295.0 L 545.0,366.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="511.3" y="312.5" width="67.4" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="545.0" y="324.5" font-size="11" fill="#777777" text-anchor="middle">decompose</text>
+  <path d="M 410.0,330.0 L 675.0,330.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="512.1" y="312.0" width="60.8" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="542.5" y="324.0" font-size="11" fill="#777777" text-anchor="middle">coverage</text>
+  <path d="M 635.0,377.3 L 675.0,362.7" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="631.2" y="352.0" width="47.6" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="655.0" y="364.0" font-size="11" fill="#777777" text-anchor="middle">demand</text>
+  <path d="M 855.0,297.3 L 895.0,282.7" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="851.2" y="272.0" width="47.6" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="875.0" y="284.0" font-size="11" fill="#777777" text-anchor="middle">decide</text>
+  <path d="M 985.0,293.0 L 985.0,364.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="941.4" y="310.5" width="87.2" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="985.0" y="322.5" font-size="11" fill="#777777" text-anchor="middle">repair frame</text>
+  <path d="M 1052.6,364.0 L 1159.8,291.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="1085.7" y="309.5" width="41.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="1106.2" y="321.5" font-size="11" fill="#777777" text-anchor="middle">allow</text>
+  <path d="M 1080.0,410.0 L 1135.0,410.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="1060.6" y="392.0" width="93.8" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="1107.5" y="404.0" font-size="11" fill="#777777" text-anchor="middle">block/abstain</text>
+  <rect x="30.0" y="126.0" width="150.0" height="68.0" fill="#E0F2FE" stroke="#0284C7" stroke-width="2" rx="8"/>
+  <text x="105.0" y="156.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">RAG Docs</text>
+  <text x="105.0" y="172.9" font-size="11" fill="#888888" text-anchor="middle">retrieved evidence</text>
+  <rect x="30.0" y="211.0" width="150.0" height="68.0" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="105.0" y="241.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Skill Output</text>
+  <text x="105.0" y="257.9" font-size="11" fill="#888888" text-anchor="middle">manifest + result</text>
+  <rect x="30.0" y="296.0" width="150.0" height="68.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2" rx="8"/>
+  <text x="105.0" y="326.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Tool Metadata</text>
+  <text x="105.0" y="342.9" font-size="11" fill="#888888" text-anchor="middle">tool authority</text>
+  <rect x="30.0" y="381.0" width="150.0" height="68.0" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2" rx="8"/>
+  <text x="105.0" y="411.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Memory</text>
+  <text x="105.0" y="427.9" font-size="11" fill="#888888" text-anchor="middle">stored context</text>
+  <rect x="30.0" y="466.0" width="150.0" height="68.0" fill="#FCE7F3" stroke="#DB2777" stroke-width="2" rx="8"/>
+  <text x="105.0" y="496.9" font-size="14" fill="#333333" text-anchor="middle" font-weight="bold">Approval</text>
+  <text x="105.0" y="512.9" font-size="11" fill="#888888" text-anchor="middle">operator intent</text>
+  <rect x="240.0" y="286.0" width="170.0" height="88.0" fill="#F8FAFC" stroke="#334155" stroke-width="2" rx="8"/>
+  <text x="325.0" y="326.4" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Cap(x)</text>
+  <text x="325.0" y="345.4" font-size="14" fill="#888888" text-anchor="middle">capability extraction</text>
+  <rect x="455.0" y="205.0" width="180.0" height="90.0" fill="#E0F2FE" stroke="#2563EB" stroke-width="2" rx="8"/>
+  <text x="545.0" y="246.4" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Agent Action</text>
+  <text x="545.0" y="265.4" font-size="14" fill="#888888" text-anchor="middle">answer, dispatch,
+publish, approval flag</text>
+  <rect x="455.0" y="366.0" width="180.0" height="88.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2" rx="8"/>
+  <text x="545.0" y="406.4" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Need(s,f)</text>
+  <text x="545.0" y="425.4" font-size="14" fill="#888888" text-anchor="middle">field-level authority demand</text>
+  <rect x="675.0" y="284.0" width="180.0" height="92.0" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="765.0" y="326.3" font-size="18" fill="#333333" text-anchor="middle" font-weight="bold">CapGuard</text>
+  <text x="765.0" y="346.3" font-size="15" fill="#888888" text-anchor="middle">coverage check</text>
+  <rect x="895.0" y="207.0" width="180.0" height="86.0" fill="#F1F5F9" stroke="#64748B" stroke-width="2" rx="8"/>
+  <text x="985.0" y="246.4" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Field Decisions</text>
+  <text x="985.0" y="265.4" font-size="14" fill="#888888" text-anchor="middle">allow / block / abstain</text>
+  <rect x="890.0" y="364.0" width="190.0" height="92.0" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2" rx="8"/>
+  <text x="985.0" y="406.4" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Fieldwise Repair</text>
+  <text x="985.0" y="425.4" font-size="14" fill="#888888" text-anchor="middle">preserve valid fields;
+remove invalid frame</text>
+  <rect x="1135.0" y="209.0" width="170.0" height="82.0" fill="#DCFCE7" stroke="#15803D" stroke-width="2" rx="8"/>
+  <text x="1220.0" y="246.4" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Final Action</text>
+  <text x="1220.0" y="265.4" font-size="14" fill="#888888" text-anchor="middle">auto-executable fields</text>
+  <rect x="1135.0" y="369.0" width="170.0" height="82.0" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="8"/>
+  <text x="1220.0" y="406.4" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Review Queue</text>
+  <text x="1220.0" y="425.4" font-size="14" fill="#888888" text-anchor="middle">partial human review</text>
+  <text x="660.0" y="42.0" font-size="26" fill="#111827" text-anchor="middle">Field-Level Action Invariance under Strict Supervision</text>
+  <text x="660.0" y="72.0" font-size="15" fill="#4B5563" text-anchor="middle">CapGuard checks whether each action field is covered by a valid capability, then repairs only invalid fields.</text>
+  <text x="660.0" y="600.0" font-size="14" fill="#374151" text-anchor="middle">Decision rule: allow field f only if Cap(x) covers Need(s,f) across role, field, operation, data, effect, delegation, time, and obligations.</text>
+</svg>
