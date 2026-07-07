@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LLM Error Bench v1 row",
+  "type": "object",
+  "required": [
+    "id",
+    "input",
+    "expected_behavior",
+    "tags",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "input": {
+      "type": "string"
+    },
+    "expected_behavior": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "benchmark_version",
+        "domain_group",
+        "domain",
+        "subdomain",
+        "language",
+        "task_type",
+        "source_type",
+        "verification_status",
+        "is_adversarial",
+        "trap_type",
+        "expected_model_failure",
+        "risk_level",
+        "difficulty",
+        "correct_answer",
+        "weak_model_answer",
+        "weak_answer_label",
+        "evaluation"
+      ]
+    }
+  }
+}

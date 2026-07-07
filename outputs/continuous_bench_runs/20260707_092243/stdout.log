@@ -1,0 +1,9 @@
+generated=120
+evaluated=100
+bench=100
+accepted=14
+rejected=100
+model_error_rate=0.1400
+model_pass_rate=0.8600
+failure_mode_distribution={"approval_scope_expansion": 4, "authority_conflict_power_dispatch": 4, "constraint_violation": 2, "control_normal_case": 4, "counter_authority_ignored": 5, "false_premise": 8, "memory_misuse": 5, "missing_condition": 13, "multi_source_conflict": 4, "negation_trap": 1, "plan_step_order_error": 6, "prior_step_as_authorization": 4, "rag_evidence_pollution": 6, "rag_retrieval_error": 6, "safety_overconfidence": 6, "skill_misuse": 5, "terminology_confusion": 7, "tool_wrong_parameter": 5, "unsafe_correction": 5}
+output_files={"accepted": "benchmarks\\continuous_bench\\accepted_bench.jsonl", "bench": "benchmarks\\continuous_bench\\mixed_bench.jsonl", "evaluated": "benchmarks\\continuous_bench\\evaluated_pool.jsonl", "rejected": "benchmarks\\continuous_bench\\rejected_pool.jsonl", "summary": "benchmarks\\continuous_bench\\summary.json"}

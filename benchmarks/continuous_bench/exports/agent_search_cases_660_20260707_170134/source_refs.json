@@ -1,0 +1,2641 @@
+[
+  {
+    "publisher": "OSHA",
+    "relevance": "Equipment must remain treated as energized until deenergized, tested, and grounded.",
+    "retrieved_at": "2026-07-07",
+    "title": "OSHA interpretation - personal protective grounds and treating equipment as energized",
+    "url": "https://www.osha.gov/laws-regs/standardinterpretations/1999-12-06"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "Grounding protects workers if correctly deenergized lines become energized.",
+    "retrieved_at": "2026-07-07",
+    "title": "OSHA eTool - Grounding for employee protection",
+    "url": "https://www.osha.gov/etools/electric-power/hazardous-energy-control/grounding-employee-protection"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "Grounding is essential in addition to deenergizing equipment.",
+    "retrieved_at": "2026-07-07",
+    "title": "OSHA eTool - Deenergizing lines and equipment for employee protection",
+    "url": "https://www.osha.gov/etools/electric-power/hazardous-energy-control/deenergizing-lines-equipment-employee-protection"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "OSHA 1910.269 governs power generation, transmission, and distribution work.",
+    "retrieved_at": "2026-07-07",
+    "title": "OSHA 1910.269 - Electric power generation, transmission, and distribution",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.269"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "Transmission Operators maintain reliability through actions or Operating Instructions with evidence.",
+    "retrieved_at": "2026-07-07",
+    "title": "NERC TOP-001-6 - Transmission Operations",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/top/top-001-6.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "Transmission operations rely on data needed for operational planning, real-time monitoring, and real-time assessments.",
+    "retrieved_at": "2026-07-07",
+    "title": "NERC TOP-003-6.1 - Operational planning analyses, real-time monitoring, and real-time assessments data",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/top/top-003-6.1.pdf"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "CISA/NSA recommend preventing process controllers from remaining in remote program mode while in operation.",
+    "retrieved_at": "2026-07-07",
+    "title": "NSA and CISA recommend immediate actions to reduce exposure across operational technologies and control systems",
+    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-205a"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "CISA describes tools that can scan for, compromise, and control ICS/SCADA devices.",
+    "retrieved_at": "2026-07-07",
+    "title": "APT cyber tools targeting ICS/SCADA devices",
+    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-103a"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA guidance distinguishes CDS software oversight and decision support for health care professionals.",
+    "retrieved_at": "2026-07-07",
+    "title": "Clinical Decision Support Software Guidance",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software"
+  },
+  {
+    "publisher": "FINRA",
+    "relevance": "FINRA reminds firms that GenAI/LLM use does not remove regulatory obligations.",
+    "retrieved_at": "2026-07-07",
+    "title": "FINRA Regulatory Notice 24-09 - Generative AI and large language models",
+    "url": "https://www.finra.org/rules-guidance/notices/24-09"
+  },
+  {
+    "publisher": "SEC",
+    "relevance": "SEC charged advisers over false or misleading AI-use claims.",
+    "retrieved_at": "2026-07-07",
+    "title": "SEC charges two investment advisers with making false and misleading statements about AI",
+    "url": "https://www.sec.gov/newsroom/press-releases/2024-36"
+  },
+  {
+    "publisher": "NIST",
+    "relevance": "NIST GenAI profile frames unique risks and risk-management actions for generative AI systems.",
+    "retrieved_at": "2026-07-07",
+    "title": "NIST AI RMF Generative AI Profile",
+    "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence"
+  },
+  {
+    "publisher": "FTC",
+    "relevance": "FTC notes there is no AI exemption from privacy and confidentiality commitments.",
+    "retrieved_at": "2026-07-07",
+    "title": "AI companies: uphold your privacy and confidentiality commitments",
+    "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/01/ai-companies-uphold-your-privacy-confidentiality-commitments"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "CIP-010 purpose is to prevent and detect unauthorized changes to BES Cyber Systems through configuration change management and vulnerability assessment requirements.",
+    "retrieved_at": "2026-07-07",
+    "title": "NERC CIP-010-4 - Cyber Security Configuration Change Management and Vulnerability Assessments",
+    "url": "https://www.nerc.com/standards/reliability-standards/cip/cip-010-4"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "CIP-007 system security management includes access control requirements for BES Cyber Systems.",
+    "retrieved_at": "2026-07-07",
+    "title": "NERC CIP-007-7 - Cyber Security Systems Security Management",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-007-7.pdf"
+  },
+  {
+    "publisher": "EEOC",
+    "relevance": "EEOC resources address AI, algorithms, and disability-related employment decision risks.",
+    "retrieved_at": "2026-07-07",
+    "title": "Artificial Intelligence and the ADA",
+    "url": "https://www.eeoc.gov/eeoc-disability-related-resources/artificial-intelligence-and-ada"
+  },
+  {
+    "publisher": "HHS",
+    "relevance": "HHS guidance explains HIPAA obligations when regulated entities use tracking technologies with access to PHI.",
+    "retrieved_at": "2026-07-07",
+    "title": "Use of Online Tracking Technologies by HIPAA Covered Entities and Business Associates",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/hipaa-online-tracking/index.html"
+  },
+  {
+    "publisher": "HHS",
+    "relevance": "The HIPAA Privacy Rule protects medical records and individually identifiable health information.",
+    "retrieved_at": "2026-07-07",
+    "title": "The HIPAA Privacy Rule",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/index.html"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "CISA identifies certain product security bad practices as exceptionally risky, including credential and default-security failures.",
+    "retrieved_at": "2026-07-07",
+    "title": "Product Security Bad Practices",
+    "url": "https://www.cisa.gov/resources-tools/resources/product-security-bad-practices"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "CISA Secure by Demand guidance says default passwords should be replaced with stronger authentication mechanisms.",
+    "retrieved_at": "2026-07-07",
+    "title": "Secure by Demand Guide",
+    "url": "https://www.cisa.gov/resources-tools/resources/secure-demand-guide"
+  },
+  {
+    "publisher": "NIST",
+    "relevance": "NIST CSF 2.0 organizes cybersecurity outcomes around Govern, Identify, Protect, Detect, Respond, and Recover.",
+    "retrieved_at": "2026-07-07",
+    "title": "The NIST Cybersecurity Framework 2.0",
+    "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf"
+  },
+  {
+    "publisher": "NIST",
+    "relevance": "SP 800-53 provides security and privacy controls to protect operations, assets, individuals, and organizations, including audit/accountability-related control families.",
+    "retrieved_at": "2026-07-07",
+    "title": "NIST SP 800-53 Rev. 5 - Security and Privacy Controls for Information Systems and Organizations",
+    "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+  },
+  {
+    "publisher": "CIS",
+    "relevance": "CIS Controls v8.1 include prioritized safeguards for cybersecurity posture and supply-chain/service-provider security.",
+    "retrieved_at": "2026-07-07",
+    "title": "CIS Critical Security Controls Version 8.1",
+    "url": "https://www.cisecurity.org/controls/v8-1"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA describes SMS as an organization-wide approach to managing safety risk and assuring effective safety controls.",
+    "retrieved_at": "2026-07-07",
+    "title": "Safety Management System",
+    "url": "https://www.faa.gov/about/initiatives/sms"
+  },
+  {
+    "publisher": "NRC",
+    "relevance": "NRC EOP guidance describes emergency operating procedures that direct operator actions to mitigate transients and accidents.",
+    "retrieved_at": "2026-07-07",
+    "title": "Guidelines for the Preparation of Emergency Operating Procedures",
+    "url": "https://www.nrc.gov/docs/ml1025/ml102560007.pdf"
+  },
+  {
+    "publisher": "NRC",
+    "relevance": "NRC describes emergency plans, exercises, and protective actions for nuclear power plants.",
+    "retrieved_at": "2026-07-07",
+    "title": "Backgrounder on Emergency Preparedness at Nuclear Power Plants",
+    "url": "https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/emerg-plan-prep-nuc-power"
+  },
+  {
+    "publisher": "EPA",
+    "relevance": "EPA RMP emergency response exercise guidance distinguishes exercise requirements and responder expectations.",
+    "retrieved_at": "2026-07-07",
+    "title": "Risk Management Program: Emergency Response Exercises",
+    "url": "https://www.epa.gov/rmp/fact-sheet-risk-management-program-emergency-response-exercises"
+  },
+  {
+    "publisher": "EPA",
+    "relevance": "EPA RMP rule requires facilities using extremely hazardous substances to develop risk management plans for accident prevention.",
+    "retrieved_at": "2026-07-07",
+    "title": "Risk Management Program RMP Rule Overview",
+    "url": "https://www.epa.gov/rmp/risk-management-program-rmp-rule-overview"
+  },
+  {
+    "publisher": "FRA",
+    "relevance": "FRA accident/incident reporting material references Positive Train Control in rail safety reporting context.",
+    "retrieved_at": "2026-07-07",
+    "title": "FRA Guide for Preparing Accident/Incident Reports",
+    "url": "https://safetydata.fra.dot.gov/PublicObjects/FRAGuideforPreparingAccIncReportspubMay2011.pdf"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "CISA Secure by Design guidance includes memory-safe language roadmaps and secure-by-design expectations.",
+    "retrieved_at": "2026-07-07",
+    "title": "Secure By Design",
+    "url": "https://www.cisa.gov/securebydesign"
+  },
+  {
+    "publisher": "TSA",
+    "relevance": "TSA pipeline security directives include cybersecurity incident reporting and access-control expectations for critical cyber systems.",
+    "retrieved_at": "2026-07-07",
+    "title": "TSA revises and reissues cybersecurity requirements for pipeline owners and operators",
+    "url": "https://www.tsa.gov/news/press/releases/2022/07/21/tsa-revises-and-reissues-cybersecurity-requirements-pipeline-owners"
+  },
+  {
+    "publisher": "TSA",
+    "relevance": "TSA surface transportation cybersecurity toolkit points operators to CISA cyber-incident reporting resources.",
+    "retrieved_at": "2026-07-07",
+    "title": "Surface Transportation Cybersecurity Toolkit",
+    "url": "https://www.tsa.gov/for-industry/surface-transportation-cybersecurity-toolkit"
+  },
+  {
+    "publisher": "PHMSA",
+    "relevance": "PHMSA notes operators should document emergency deviations from control-room hours of service and evaluate fatigue risk.",
+    "retrieved_at": "2026-07-07",
+    "title": "Control Room Hours-of-Service",
+    "url": "https://www.phmsa.dot.gov/legislative-mandates/pipeline-safety-act/control-room-hours-service"
+  },
+  {
+    "publisher": "PHMSA",
+    "relevance": "PHMSA states fatigue can affect controller performance and CRM regulations require methods to reduce fatigue risks.",
+    "retrieved_at": "2026-07-07",
+    "title": "Control Room Management: Fatigue Mitigation",
+    "url": "https://www.phmsa.dot.gov/pipeline/control-room-management/control-room-management-fatigue-mitigation"
+  },
+  {
+    "publisher": "MARAD",
+    "relevance": "MARAD advisory warns maritime stakeholders about vulnerabilities in port equipment, networks, operating systems, software, and infrastructure.",
+    "retrieved_at": "2026-07-07",
+    "title": "2026-007 Worldwide Foreign Adversarial Technological, Physical, and Cyber Influence",
+    "url": "https://www.maritime.dot.gov/msci/2026-007-worldwide-worldwide-foreign-adversarial-technological-physical-and-cyber-influence"
+  },
+  {
+    "publisher": "U.S. Coast Guard",
+    "relevance": "The USCG navigation systems office establishes requirements and policy for navigation and PNT systems.",
+    "retrieved_at": "2026-07-07",
+    "title": "Office of Navigation Systems - Aids to Navigation and PNT Division",
+    "url": "https://www.dco.uscg.mil/Our-Organization/Assistant-Commandant-for-Prevention-Policy-CG-5P/Marine-Transportation-Systems-CG-5PW/Office-of-Navigation-Systems/Office-of-Navigation-Systems-Aids-to-Navigation-and-PNT-Division/"
+  },
+  {
+    "publisher": "U.S. Coast Guard",
+    "relevance": "USCG ECDIS guidance notes electronic navigation systems and independent backup arrangements for safety-critical navigation.",
+    "retrieved_at": "2026-07-07",
+    "title": "NVIC 01-16 Change 1 - ECDIS and cyber risk management considerations",
+    "url": "https://www.dco.uscg.mil/Portals/9/DCO%20Documents/5p/CG-5PC/CG-CVC/tNVIC/NVIC_01-16%28Ch1%29.pdf"
+  },
+  {
+    "publisher": "OCC / Federal banking agencies",
+    "relevance": "Interagency guidance describes risk management across the third-party relationship life cycle, including due diligence and oversight.",
+    "retrieved_at": "2026-07-07",
+    "title": "Interagency Guidance on Third-Party Relationships: Risk Management",
+    "url": "https://www.occ.gov/news-issuances/news-releases/2023/nr-ia-2023-53a.pdf"
+  },
+  {
+    "publisher": "CFPB",
+    "relevance": "CFPB Circular 2022-03 states creditors must provide specific reasons when taking adverse action, including decisions involving complex algorithms.",
+    "retrieved_at": "2026-07-07",
+    "title": "CFPB Circular 2022-03: Adverse action notification requirements in connection with credit decisions based on complex algorithms",
+    "url": "https://www.consumerfinance.gov/compliance/circulars/circular-2022-03-adverse-action-notification-requirements-in-connection-with-credit-decisions-based-on-complex-algorithms/"
+  },
+  {
+    "publisher": "CFPB",
+    "relevance": "CFPB Circular 2023-03 states sample checklist reasons cannot be used if they do not specifically and accurately identify reasons for adverse action.",
+    "retrieved_at": "2026-07-07",
+    "title": "CFPB Circular 2023-03: Adverse action notification requirements and proper use of sample forms",
+    "url": "https://files.consumerfinance.gov/f/documents/cfpb_adverse_action_notice_circular_2023-09.pdf"
+  },
+  {
+    "publisher": "OFAC / U.S. Treasury",
+    "relevance": "OFAC guidance discusses sanctions compliance for instant payment systems and technology-enabled screening controls.",
+    "retrieved_at": "2026-07-07",
+    "title": "Sanctions Compliance Guidance for Instant Payment Systems",
+    "url": "https://ofac.treasury.gov/system/files/126/instant_payment_systems_compliance_guidance_brochure.pdf"
+  },
+  {
+    "publisher": "PCI Security Standards Council",
+    "relevance": "PCI DSS provides technical and operational requirements to protect payment account data wherever stored, processed, or transmitted.",
+    "retrieved_at": "2026-07-07",
+    "title": "PCI Data Security Standard",
+    "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
+  },
+  {
+    "publisher": "PHMSA",
+    "relevance": "PHMSA pipeline safety regulations prescribe safety requirements for controllers, control rooms, and SCADA systems used to monitor and control pipeline operations.",
+    "retrieved_at": "2026-07-07",
+    "title": "Control Room Management",
+    "url": "https://www.phmsa.dot.gov/pipeline/control-room-management/control-room-management"
+  },
+  {
+    "publisher": "U.S. Coast Guard",
+    "relevance": "USCG VTS national standards provide programmatic guidance for Vessel Traffic Services.",
+    "retrieved_at": "2026-07-07",
+    "title": "Vessel Traffic Services National Standards of Operating Procedures",
+    "url": "https://www.news.uscg.mil/maritime-commons/Article/3443558/federal-register-notice-notice-of-publication-of-vessel-traffic-services-nation/"
+  },
+  {
+    "publisher": "U.S. Treasury",
+    "relevance": "Treasury describes enhanced fraud detection processes including machine learning AI for fraud and improper payment detection.",
+    "retrieved_at": "2026-07-07",
+    "title": "Treasury Announces Enhanced Fraud Detection Processes, Including Machine Learning AI",
+    "url": "https://home.treasury.gov/news/press-releases/jy2650"
+  },
+  {
+    "publisher": "MARAD",
+    "relevance": "MARAD advisory warns of vulnerabilities in maritime port equipment, networks, operating systems, software, and infrastructure.",
+    "retrieved_at": "2026-07-07",
+    "title": "2024-002 Worldwide Foreign Adversarial Technological, Physical, and Cyber Influence",
+    "url": "https://www.maritime.dot.gov/msci/2024-002-worldwide-foreign-adversarial-technological-physical-and-cyber-influence"
+  },
+  {
+    "publisher": "EPA",
+    "relevance": "EPA water-sector cybersecurity resources emphasize preventing, detecting, responding to, and recovering from cyber incidents affecting water utilities.",
+    "retrieved_at": "2026-07-07",
+    "title": "EPA Cybersecurity for the Water Sector",
+    "url": "https://www.epa.gov/cyberwater/epa-cybersecurity-water-sector"
+  },
+  {
+    "publisher": "EPA",
+    "relevance": "EPA cybersecurity incident response planning resources help drinking water and wastewater systems prepare for and respond to cyber incidents.",
+    "retrieved_at": "2026-07-07",
+    "title": "Cybersecurity Incident Response Plan Template Instructions",
+    "url": "https://www.epa.gov/system/files/documents/2025-10/250414_cybersecurity-incident-response-plan-template-instructions_508c_0.pdf"
+  },
+  {
+    "publisher": "EPA",
+    "relevance": "AWIA/SDWA section 1433 requires certain community water systems to develop or update risk and resilience assessments and emergency response plans.",
+    "retrieved_at": "2026-07-07",
+    "title": "AWIA Section 2013 / SDWA Section 1433 Risk and Resilience Assessments and Emergency Response Plans",
+    "url": "https://www.epa.gov/waterresilience/awia-section-2013"
+  },
+  {
+    "publisher": "EPA",
+    "relevance": "EPA provides certification statements for risk and resilience assessment and emergency response plan completion.",
+    "retrieved_at": "2026-07-07",
+    "title": "Certification Statements for Risk and Resilience Assessment or Emergency Response Plan",
+    "url": "https://www.epa.gov/waterresilience/certification-statements-risk-and-resilience-assessment-or-emergency-response-plan"
+  },
+  {
+    "publisher": "FEMA",
+    "relevance": "FEMA Federal Guidelines for Dam Safety include emergency action planning guidance for dam owners.",
+    "retrieved_at": "2026-07-07",
+    "title": "Federal Guidelines for Dam Safety: Emergency Action Planning for Dam Owners",
+    "url": "https://www.fema.gov/sites/default/files/2020-08/eap_federal_guidelines_fema_p-64.pdf"
+  },
+  {
+    "publisher": "FEMA",
+    "relevance": "FEMA Dam Incident Planning Guide discusses planning considerations and information needed for dam incident response.",
+    "retrieved_at": "2026-07-07",
+    "title": "Emergency Operations Planning: Dam Incident Planning Guide",
+    "url": "https://www.fema.gov/sites/default/files/2020-08/dam_incident_planning_guide_2019.pdf"
+  },
+  {
+    "publisher": "MSHA",
+    "relevance": "MSHA mine emergency response material notes the importance of mine ventilation information and emergency planning.",
+    "retrieved_at": "2026-07-07",
+    "title": "Directing Responses to Mine Fires and Explosions",
+    "url": "https://arlweb.msha.gov/s%26hinfo/techrpt/MEO/Directing%20Responses%20to%20Mine%20Fires%20and%20Explosions.pdf"
+  },
+  {
+    "publisher": "MSHA",
+    "relevance": "The MINER Act and MSHA emergency evacuation materials address emergency breathing devices, evacuation training, lifelines, and emergency mine evacuation preparedness.",
+    "retrieved_at": "2026-07-07",
+    "title": "MINER Act",
+    "url": "https://www.msha.gov/miner-act"
+  },
+  {
+    "publisher": "MSHA",
+    "relevance": "MSHA emergency mine evacuation rulemaking emphasizes evacuation as first line of defense and requirements supporting evacuation.",
+    "retrieved_at": "2026-07-07",
+    "title": "Emergency Mine Evacuation; Final Rule",
+    "url": "https://arlweb.msha.gov/REGS/FEDREG/FINAL/2006finl/06-9608.asp"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA guidance provides cybersecurity quality-system and premarket recommendations for devices with cybersecurity risk.",
+    "retrieved_at": "2026-07-07",
+    "title": "Cybersecurity in Medical Devices: Quality System Considerations and Content of Premarket Submissions",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA postmarket guidance recommends managing cybersecurity vulnerabilities throughout a medical device's lifecycle.",
+    "retrieved_at": "2026-07-07",
+    "title": "Postmarket Management of Cybersecurity in Medical Devices",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/postmarket-management-cybersecurity-medical-devices"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA medical-device cybersecurity FAQ discusses SBOMs, patches, and lifecycle considerations.",
+    "retrieved_at": "2026-07-07",
+    "title": "Cybersecurity in Medical Devices Frequently Asked Questions",
+    "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity-medical-devices-frequently-asked-questions-faqs"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA Remote ID page explains authorization/LOA context and deviations from Remote ID requirements.",
+    "retrieved_at": "2026-07-07",
+    "title": "Remote Identification of Drones",
+    "url": "https://www.faa.gov/uas/getting_started/remote_id"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA Part 107 waivers allow certain operations outside rule limitations only when officially approved.",
+    "retrieved_at": "2026-07-07",
+    "title": "Part 107 Waivers",
+    "url": "https://www.faa.gov/uas/commercial_operators/part_107_waivers"
+  },
+  {
+    "publisher": "CDC",
+    "relevance": "CDC environmental infection-control recommendations include cleaning and disinfecting environmental and medical equipment surfaces according to instructions.",
+    "retrieved_at": "2026-07-07",
+    "title": "Recommendations for Environmental Infection Control in Health-Care Facilities",
+    "url": "https://www.cdc.gov/infection-control/hcp/environmental-control/recommendations.html"
+  },
+  {
+    "publisher": "CDC",
+    "relevance": "CDC disinfection and sterilization recommendations include cleaning and disinfecting environmental surfaces when soiled and on regular schedules.",
+    "retrieved_at": "2026-07-07",
+    "title": "Recommendations for Disinfection and Sterilization in Healthcare Facilities",
+    "url": "https://www.cdc.gov/infection-control/hcp/disinfection-sterilization/summary-recommendations.html"
+  },
+  {
+    "publisher": "CMS",
+    "relevance": "CMS Emergency Preparedness Rule establishes national emergency preparedness requirements for healthcare providers and suppliers.",
+    "retrieved_at": "2026-07-07",
+    "title": "Emergency Preparedness Rule",
+    "url": "https://www.cms.gov/medicare/health-safety-standards/quality-safety-oversight-emergency-preparedness/emergency-preparedness-rule"
+  },
+  {
+    "publisher": "CMS",
+    "relevance": "CMS core EP rule elements include risk assessment and planning, policies and procedures, communication plan, and training/testing program.",
+    "retrieved_at": "2026-07-07",
+    "title": "Core EP Rule Elements",
+    "url": "https://www.cms.gov/medicare/health-safety-standards/quality-safety-oversight-emergency-preparedness/core-ep-rule-elements"
+  },
+  {
+    "publisher": "CMS",
+    "relevance": "CMS provider guidance says participating providers and suppliers must maintain comprehensive emergency preparedness programs based on an all-hazards approach.",
+    "retrieved_at": "2026-07-07",
+    "title": "Health Care Provider Guidance",
+    "url": "https://www.cms.gov/medicare/health-safety-standards/quality-safety-oversight-emergency-preparedness/health-care-provider-guidance"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "EOP-005-3 addresses preparation of plans, facilities, and personnel for system restoration from Blackstart Resources.",
+    "retrieved_at": "2026-07-07",
+    "title": "EOP-005-3 - System Restoration from Blackstart Resources",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/eop/eop-005-3.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "NERC blackstart readiness report discusses TOP restoration plans submitted to and approved by the Reliability Coordinator.",
+    "retrieved_at": "2026-07-07",
+    "title": "Blackstart Resource Availability and Readiness in the Eastern and Western Interconnections",
+    "url": "https://www.nerc.com/globalassets/our-work/reports/special-reports/blackstart-resource-availability-and-readiness-in-the-eastern-and-western-interconnections.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "EOP-011-4 requires emergency plans to be implemented and coordinated within the Reliability Coordinator Area.",
+    "retrieved_at": "2026-07-07",
+    "title": "EOP-011-4 - Emergency Operations",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/eop/eop-011-4.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "CIP-005-8 protects BES Cyber Systems by permitting only known and controlled communications through Electronic Security Perimeters.",
+    "retrieved_at": "2026-07-07",
+    "title": "CIP-005-8 - Cyber Security - Electronic Security Perimeters",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-005-8.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "CIP-010-4 addresses configuration change management and vulnerability assessment for BES Cyber Systems.",
+    "retrieved_at": "2026-07-07",
+    "title": "CIP-010-4 - Cyber Security - Configuration Change Management and Vulnerability Assessments",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-010-4.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "FAC-003-5 focuses on transmission vegetation management to prevent vegetation-related outages that could lead to cascading.",
+    "retrieved_at": "2026-07-07",
+    "title": "FAC-003-5 - Transmission Vegetation Management",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/fac/fac-003-5.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "PRC-027-1 requires a process to coordinate protection systems so they operate in the intended sequence during faults.",
+    "retrieved_at": "2026-07-07",
+    "title": "PRC-027-1 - Coordination of Protection Systems for Performance During Faults",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/prc/prc-027-1.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "CIP-014 addresses identifying and protecting transmission stations, substations, and associated primary control centers from physical security risk.",
+    "retrieved_at": "2026-07-07",
+    "title": "CIP-014-3 - Physical Security",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-014-3.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "CIP-008-7 addresses incident response requirements and notification/reporting for cyber security incidents affecting reliable BES operation.",
+    "retrieved_at": "2026-07-07",
+    "title": "CIP-008-7 - Cyber Security - Incident Reporting and Response Planning",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-008-7.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "CIP-006-6 covers physical access controls, visitor control, and physical access logs for BES Cyber Systems.",
+    "retrieved_at": "2026-07-07",
+    "title": "CIP-006-6 - Cyber Security - Physical Security of BES Cyber Systems",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-006-6.pdf"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "BOD 26-04 prioritizes security updates based on risk and updates the KEV-based remediation context.",
+    "retrieved_at": "2026-07-07",
+    "title": "BOD 26-04: Prioritizing Security Updates Based on Risk",
+    "url": "https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "The KEV catalog identifies known exploited vulnerabilities that require prioritized remediation attention.",
+    "retrieved_at": "2026-07-07",
+    "title": "Known Exploited Vulnerabilities Catalog",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog-print"
+  },
+  {
+    "publisher": "NIST",
+    "relevance": "NIST SP 800-61 Rev. 3 provides incident response recommendations and considerations for cybersecurity risk management.",
+    "retrieved_at": "2026-07-07",
+    "title": "SP 800-61 Rev. 3, Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "OSHA 1910.119(l) requires written procedures to manage changes to process chemicals, technology, equipment, procedures, and facilities affecting covered processes.",
+    "retrieved_at": "2026-07-07",
+    "title": "1910.119 - Process safety management of highly hazardous chemicals",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.119"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "OSHA Appendix C explains that process changes need to be identified and reviewed prior to implementation.",
+    "retrieved_at": "2026-07-07",
+    "title": "1910.119 App C - Compliance Guidelines and Recommendations for Process Safety Management",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.119AppC"
+  },
+  {
+    "publisher": "EPA",
+    "relevance": "EPA RMP guidance explains emergency response program coordination for regulated substances.",
+    "retrieved_at": "2026-07-07",
+    "title": "General RMP Guidance - Chapter 8: Emergency Response Program",
+    "url": "https://www.epa.gov/rmp/general-rmp-guidance-chapter-8-emergency-response-program"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA TFR guidance says TFRs restrict aircraft including drones and that pilots must check NOTAMs prior to flight.",
+    "retrieved_at": "2026-07-07",
+    "title": "Temporary Flight Restrictions (TFRs)",
+    "url": "https://www.faa.gov/uas/getting_started/temporary_flight_restrictions"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA NOTAMS/TFR page provides access to current notices and temporary flight restrictions.",
+    "retrieved_at": "2026-07-07",
+    "title": "NOTAMS, TFRs, and Aircraft Safety Alerts",
+    "url": "https://www.faa.gov/pilots/safety/notams_tfr"
+  },
+  {
+    "publisher": "SEC",
+    "relevance": "SEC final rules require disclosure of material cybersecurity incidents and annual cybersecurity risk management, strategy, and governance disclosures.",
+    "retrieved_at": "2026-07-07",
+    "title": "Cybersecurity Risk Management, Strategy, Governance, and Incident Disclosure",
+    "url": "https://www.sec.gov/rules-regulations/2023/07/s7-09-22"
+  },
+  {
+    "publisher": "SEC",
+    "relevance": "SEC press release summarizes Item 1.05 Form 8-K requirements and timing after materiality determination.",
+    "retrieved_at": "2026-07-07",
+    "title": "SEC Adopts Rules on Cybersecurity Risk Management, Strategy, Governance, and Incident Disclosure",
+    "url": "https://www.sec.gov/newsroom/press-releases/2023-139"
+  },
+  {
+    "publisher": "FinCEN",
+    "relevance": "FinCEN rulemaking and guidance clarify and strengthen Suspicious Activity Report confidentiality.",
+    "retrieved_at": "2026-07-07",
+    "title": "FinCEN Rule Strengthens SAR Confidentiality",
+    "url": "https://www.fincen.gov/news/news-releases/fincen-rule-strengthens-sar-confidentiality"
+  },
+  {
+    "publisher": "FinCEN",
+    "relevance": "SAR filing instructions describe suspicious activity reporting and supporting documentation context.",
+    "retrieved_at": "2026-07-07",
+    "title": "FinCEN Suspicious Activity Reporting (SAR) Filing Instructions",
+    "url": "https://bsaefiling.fincen.gov/resources/FinCENSARFilingInstructions.pdf"
+  },
+  {
+    "publisher": "HHS",
+    "relevance": "HHS Breach Notification Rule guidance states covered entities and business associates provide required notifications for breaches involving unsecured protected health information.",
+    "retrieved_at": "2026-07-07",
+    "title": "Breach Notification Rule",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html"
+  },
+  {
+    "publisher": "HHS",
+    "relevance": "HHS breach reporting guidance describes submitting notice to the Secretary for breaches of unsecured PHI.",
+    "retrieved_at": "2026-07-07",
+    "title": "Submitting Notice of a Breach to the Secretary",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/breach-reporting/index.html"
+  },
+  {
+    "publisher": "FTC",
+    "relevance": "FTC COPPA materials state that the rule protects children under 13 and places parents in control over children's data collection.",
+    "retrieved_at": "2026-07-07",
+    "title": "Children's Privacy",
+    "url": "https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy"
+  },
+  {
+    "publisher": "FTC",
+    "relevance": "FTC guidance explains verifiable parental consent under the Children's Online Privacy Rule.",
+    "retrieved_at": "2026-07-07",
+    "title": "Verifiable Parental Consent and the Children's Online Privacy Rule",
+    "url": "https://www.ftc.gov/business-guidance/privacy-security/verifiable-parental-consent-childrens-online-privacy-rule"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA explains that recalls protect consumers and may be recommended/requested by FDA or initiated voluntarily by a company.",
+    "retrieved_at": "2026-07-07",
+    "title": "Drug Recalls",
+    "url": "https://www.fda.gov/drugs/drug-safety-and-availability/drug-recalls"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA recalls guidance describes recall strategy and information firms provide to FDA and customers.",
+    "retrieved_at": "2026-07-07",
+    "title": "Industry Guidance For Recalls",
+    "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/industry-guidance-recalls"
+  },
+  {
+    "publisher": "NHTSA",
+    "relevance": "NHTSA recall tools let users check if a specific vehicle needs repair as part of a recall via VIN or plate lookup.",
+    "retrieved_at": "2026-07-07",
+    "title": "Check for Recalls: Vehicle, Car Seat, Tire, Equipment",
+    "url": "https://www.nhtsa.gov/recalls"
+  },
+  {
+    "publisher": "NHTSA",
+    "relevance": "NHTSA explains recall process and completion/effectiveness monitoring for safety defects and recalls.",
+    "retrieved_at": "2026-07-07",
+    "title": "Motor Vehicle Safety Defects And Recalls",
+    "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-11/MVSDefectsandRecalls-Update_112124_v1a_tag.pdf"
+  },
+  {
+    "publisher": "FRA",
+    "relevance": "FRA material describes PTC as a safety system designed to help mitigate hazards such as trains exceeding authority, misaligned switches, speed violations, and unauthorized work zones.",
+    "retrieved_at": "2026-07-07",
+    "title": "Positive Train Control Monitoring and Analysis of the Industry's PTC Systems",
+    "url": "https://railroads.fra.dot.gov/sites/fra.dot.gov/files/2019-12/PTC%20MAIN%20Phase%201.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "COM-002-4 aims to reduce miscommunication for Operating Instructions that could harm BES reliability.",
+    "retrieved_at": "2026-07-07",
+    "title": "COM-002-4 - Operating Personnel Communications Protocols",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/com/com-002-4.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "BAL-002-3 addresses contingency reserve for recovery from a Balancing Contingency Event and restoration expectations.",
+    "retrieved_at": "2026-07-07",
+    "title": "BAL-002-3 - Disturbance Control Standard - Contingency Reserve for Recovery from a Balancing Contingency Event",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/bal/bal-002-3.pdf"
+  },
+  {
+    "publisher": "FERC/NERC",
+    "relevance": "The FERC/NERC joint report analyzes February 2021 cold weather outages and controlled firm load shed impacts and recommendations.",
+    "retrieved_at": "2026-07-07",
+    "title": "The February 2021 Cold Weather Outages in Texas and the South Central United States",
+    "url": "https://www.nerc.com/globalassets/our-work/reports/event-reports/february_2021_cold_weather_report.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "NERC Odessa Disturbance report analyzes abnormal performance of inverter-based resources during a disturbance and recommendations for reporting/modeling.",
+    "retrieved_at": "2026-07-07",
+    "title": "Odessa Disturbance Report",
+    "url": "https://www.nerc.com/globalassets/our-work/reports/event-reports/odessa_disturbance_report.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "FAC-008-5 ensures Facility Ratings used in planning and operation are determined based on technically sound principles.",
+    "retrieved_at": "2026-07-07",
+    "title": "FAC-008-5 - Facility Ratings",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/fac/fac-008-5.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "VAR-002-4.1 ensures generators provide reactive support and voltage control within facility capabilities for reliable operation.",
+    "retrieved_at": "2026-07-07",
+    "title": "VAR-002-4.1 - Generator Operation for Maintaining Network Voltage Schedules",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/var/var-002-4.1.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "PRC-005-6 requires documentation and implementation of maintenance programs for protection systems affecting BES reliability.",
+    "retrieved_at": "2026-07-07",
+    "title": "PRC-005-6 - Protection System, Automatic Reclosing, and Sudden Pressure Relaying Maintenance",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/prc/prc-005-6.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "TPL-001-5.1 establishes transmission system planning performance requirements within the planning horizon.",
+    "retrieved_at": "2026-07-07",
+    "title": "TPL-001-5.1 - Transmission System Planning Performance Requirements",
+    "url": "https://www.nerc.com/standards/reliability-standards/tpl/tpl-001-5.1"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "EOP-004-4 requires reporting of certain events by Responsible Entities to improve BES reliability.",
+    "retrieved_at": "2026-07-07",
+    "title": "EOP-004-4 - Event Reporting",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/eop/eop-004-4.pdf"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA states Airworthiness Directives are legally enforceable rules issued to correct unsafe conditions in aircraft products.",
+    "retrieved_at": "2026-07-07",
+    "title": "Airworthiness Directives",
+    "url": "https://www.faa.gov/regulations_policies/airworthiness_directives"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA AC 39-7D provides guidance on responsibility for complying with ADs and recording compliance in maintenance records.",
+    "retrieved_at": "2026-07-07",
+    "title": "AC 39-7D - Airworthiness Directives",
+    "url": "https://www.faa.gov/documentlibrary/media/advisory_circular/ac%2039-7d.pdf"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "OSHA 1910.146 contains requirements for practices and procedures protecting employees from permit-required confined space hazards.",
+    "retrieved_at": "2026-07-07",
+    "title": "1910.146 - Permit-required confined spaces",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.146"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "OSHA confined-space publication explains permit-space hazards and protections before entry.",
+    "retrieved_at": "2026-07-07",
+    "title": "Permit-Required Confined Spaces",
+    "url": "https://www.osha.gov/sites/default/files/publications/OSHA3138.pdf"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "OSHA example permit notes a permit is valid for one shift and must be posted near the entry point.",
+    "retrieved_at": "2026-07-07",
+    "title": "Confined Space Entry Permit Example",
+    "url": "https://www.osha.gov/sites/default/files/2018-12/fy15_sh-27664-sh5_Confined_Space_Entry_Permit_Example.pdf"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "CISA StopRansomware Guide provides ransomware prevention and response checklist guidance.",
+    "retrieved_at": "2026-07-07",
+    "title": "#StopRansomware Guide",
+    "url": "https://www.cisa.gov/stopransomware/ransomware-guide"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "CISA ransomware response resources recommend following a response checklist and reporting ransomware incidents.",
+    "retrieved_at": "2026-07-07",
+    "title": "I've Been Hit By Ransomware!",
+    "url": "https://www.cisa.gov/stopransomware/ive-been-hit-ransomware"
+  },
+  {
+    "publisher": "CDC",
+    "relevance": "CDC Vaccine Storage and Handling Toolkit covers managing and storing vaccine inventory, temperature monitoring, emergency handling, and staff training.",
+    "retrieved_at": "2026-07-07",
+    "title": "Vaccine Storage and Handling",
+    "url": "https://www.cdc.gov/vaccines/hcp/storage-handling/index.html"
+  },
+  {
+    "publisher": "CDC",
+    "relevance": "CDC Vaccine Storage and Handling Toolkit provides official storage, handling, transport, and emergency handling guidance.",
+    "retrieved_at": "2026-07-07",
+    "title": "Vaccine Storage and Handling Toolkit",
+    "url": "https://www.cdc.gov/vaccines/hcp/downloads/storage-handling-toolkit.pdf"
+  },
+  {
+    "publisher": "U.S. Department of Justice",
+    "relevance": "DOJ/FTC updated guidance reinforces obligations to preserve materials during government investigations and litigation.",
+    "retrieved_at": "2026-07-07",
+    "title": "Justice Department and the FTC Update Guidance that Reinforces Parties' Preservation Obligations",
+    "url": "https://www.justice.gov/archives/opa/pr/justice-department-and-ftc-update-guidance-reinforces-parties-preservation-obligations"
+  },
+  {
+    "publisher": "EEOC",
+    "relevance": "EEOC and DOJ warned that AI and software tools in employment decisions may result in unlawful disability discrimination.",
+    "retrieved_at": "2026-07-07",
+    "title": "U.S. EEOC and U.S. Department of Justice Warn against Disability Discrimination",
+    "url": "https://www.eeoc.gov/newsroom/us-eeoc-and-us-department-justice-warn-against-disability-discrimination"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA says the best way to dispose of most unused or expired medicines is to use a take-back option, with other guidance when not available.",
+    "retrieved_at": "2026-07-07",
+    "title": "Disposal of Unused Medicines: What You Should Know",
+    "url": "https://www.fda.gov/drugs/safe-disposal-medicines/disposal-unused-medicines-what-you-should-know"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA enforces regulations requiring companies to list ingredients and major allergens on packaged foods to protect people with food allergies.",
+    "retrieved_at": "2026-07-07",
+    "title": "Food Allergies",
+    "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies"
+  },
+  {
+    "publisher": "国家电网有限公司",
+    "relevance": "配电部分安规要求现场勘察查看停电范围、保留带电部位、接地线位置等，并作为工作票填写签发依据。",
+    "retrieved_at": "2026-07-07",
+    "title": "国家电网有限公司电力安全工作规程 第8部分：配电部分",
+    "url": "https://www.wlrcw.com/data/upload/file/2401/17/65a7a71a21496.pdf"
+  },
+  {
+    "publisher": "国家能源局",
+    "relevance": "二十五项重点要求明确高压线路、设备停电检修时应采取停电、验电、接地、悬挂标示牌和装设遮栏等措施。",
+    "retrieved_at": "2026-07-07",
+    "title": "防止电力生产事故的二十五项重点要求",
+    "url": "https://zfxxgk.nea.gov.cn/1310705209_16796270109851n.pdf"
+  },
+  {
+    "publisher": "国家能源局",
+    "relevance": "公开小水电并网安全条件文件包含继电保护二次回路接地、绝缘等检查项语境。",
+    "retrieved_at": "2026-07-07",
+    "title": "小水电发电机组并网安全条件及评价规范（修订征求意见稿）",
+    "url": "https://www.nea.gov.cn/139369937_16001561205601n.doc"
+  },
+  {
+    "publisher": "国家能源局",
+    "relevance": "通知要求全面辨识高处作业、带电作业、动火作业、有限空间作业等安全风险并落实有效管控措施。",
+    "retrieved_at": "2026-07-07",
+    "title": "国家能源局综合司关于进一步做好发电安全生产工作的通知",
+    "url": "https://www.nea.gov.cn/2021-05/08/c_139932557.htm"
+  },
+  {
+    "publisher": "国家能源局",
+    "relevance": "国家能源局反“三违”专项行动面向违章指挥、违章作业、违反劳动纪律等电力安全生产风险。",
+    "retrieved_at": "2026-07-07",
+    "title": "国家能源局综合司关于开展电力安全生产反“三违”专项行动的通知",
+    "url": "https://zfxxgk.nea.gov.cn/2024-07/29/c_1212386645.htm"
+  },
+  {
+    "publisher": "国家能源局",
+    "relevance": "《电力安全事故应急处置和调查处理条例》用于锚定电力安全事故应急处置和调查处理场景。",
+    "retrieved_at": "2026-07-07",
+    "title": "电力安全事故应急处置和调查处理条例",
+    "url": "https://www.nea.gov.cn/2017-11/02/c_136723019.htm"
+  },
+  {
+    "publisher": "本项目 seed 数据",
+    "relevance": "llm_error_bench_v1 中已有电网调度、负荷转供、约束校核等题型，可作为场景形状锚点。",
+    "retrieved_at": "2026-07-07",
+    "title": "benchmarks/llm_error_bench_v1 power dispatch seed",
+    "url": "benchmarks/llm_error_bench_v1/generate_llm_error_bench_v1.py"
+  },
+  {
+    "publisher": "NRC",
+    "relevance": "NRC explains nuclear power plant emergency classification levels and notification expectations for emergency response.",
+    "retrieved_at": "2026-07-07",
+    "title": "Emergency Classification",
+    "url": "https://www.nrc.gov/about-nrc/emerg-preparedness/about-emerg-preparedness/emerg-classification.html"
+  },
+  {
+    "publisher": "NRC",
+    "relevance": "NRC explains Technical Specifications as requirements related to plant operation and equipment availability.",
+    "retrieved_at": "2026-07-07",
+    "title": "Technical Specifications",
+    "url": "https://www.nrc.gov/reading-rm/basic-ref/glossary/technical-specifications.html"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "CISA ICS advisories publish vulnerability and mitigation information for industrial control system products.",
+    "retrieved_at": "2026-07-07",
+    "title": "ICS Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories"
+  },
+  {
+    "publisher": "CISA",
+    "relevance": "CISA's control systems resources provide guidance for protecting industrial control systems and OT environments.",
+    "retrieved_at": "2026-07-07",
+    "title": "Control Systems",
+    "url": "https://www.cisa.gov/topics/industrial-control-systems"
+  },
+  {
+    "publisher": "PHMSA",
+    "relevance": "The Emergency Response Guidebook helps first responders quickly identify hazards during hazardous materials transportation incidents.",
+    "retrieved_at": "2026-07-07",
+    "title": "Emergency Response Guidebook (ERG)",
+    "url": "https://www.phmsa.dot.gov/hazmat/erg/emergency-response-guidebook-erg"
+  },
+  {
+    "publisher": "MARAD",
+    "relevance": "MARAD maritime security communications include advisories on GPS interference and other navigational/cyber risks.",
+    "retrieved_at": "2026-07-07",
+    "title": "Maritime Security Communications with Industry (MSCI) Advisories",
+    "url": "https://www.maritime.dot.gov/msci"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA Medical Device Reporting guidance supports adverse event reporting and complaint/reportability assessment for medical devices.",
+    "retrieved_at": "2026-07-07",
+    "title": "Medical Device Reporting (MDR): How to Report Medical Device Problems",
+    "url": "https://www.fda.gov/medical-devices/medical-device-safety/medical-device-reporting-mdr-how-report-medical-device-problems"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA medical device recall resources help identify recalls and safety communications for affected devices.",
+    "retrieved_at": "2026-07-07",
+    "title": "Medical Device Recalls",
+    "url": "https://www.fda.gov/medical-devices/medical-device-safety/medical-device-recalls"
+  },
+  {
+    "publisher": "CDC",
+    "relevance": "CDC isolation precautions guidance covers transmission-based precautions and infection-control practices for healthcare settings.",
+    "retrieved_at": "2026-07-07",
+    "title": "Isolation Precautions",
+    "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/index.html"
+  },
+  {
+    "publisher": "CMS",
+    "relevance": "CMS nursing home infection control resources provide current compliance and infection-control guidance for long-term care settings.",
+    "retrieved_at": "2026-07-07",
+    "title": "Nursing Homes - Infection Control",
+    "url": "https://www.cms.gov/medicare/health-safety-standards/quality-safety-oversight-general-information/infection-control"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "IRO-001 addresses Reliability Coordination responsibilities and authority for reliable operation of the Bulk Electric System.",
+    "retrieved_at": "2026-07-07",
+    "title": "IRO-001 - Reliability Coordination - Responsibilities and Authority",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/iro/iro-001-5.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "TOP-010 concerns real-time reliability monitoring and analysis capabilities used for reliable operations.",
+    "retrieved_at": "2026-07-07",
+    "title": "TOP-010-1 - Real-time Reliability Monitoring and Analysis Capabilities",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/top/top-010-1.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "CIP-011 establishes information protection requirements for BES Cyber System Information.",
+    "retrieved_at": "2026-07-07",
+    "title": "CIP-011-3 - Cyber Security - Information Protection",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-011-3.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "PER-005 addresses training for operations personnel who support reliable Bulk Electric System operations.",
+    "retrieved_at": "2026-07-07",
+    "title": "PER-005-2 - Operations Personnel Training",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/per/per-005-2.pdf"
+  },
+  {
+    "publisher": "FEMA",
+    "relevance": "IPAWS is FEMA's national system for local alerting authorities to send authenticated emergency and life-saving information to the public.",
+    "retrieved_at": "2026-07-07",
+    "title": "Integrated Public Alert & Warning System",
+    "url": "https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system"
+  },
+  {
+    "publisher": "FEMA",
+    "relevance": "FEMA IPAWS alerting authority resources describe eligibility and responsibilities for authorized public alerting.",
+    "retrieved_at": "2026-07-07",
+    "title": "Alerting Authorities",
+    "url": "https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/alerting-authorities"
+  },
+  {
+    "publisher": "NOAA/NWS",
+    "relevance": "NOAA/NWS tsunami alert resources distinguish warnings, advisories, watches, and information statements for public safety messaging.",
+    "retrieved_at": "2026-07-07",
+    "title": "Tsunami Alerts",
+    "url": "https://www.tsunami.gov/?page=product_list"
+  },
+  {
+    "publisher": "National Weather Service",
+    "relevance": "NWS public alerting resources describe Wireless Emergency Alerts and weather/emergency alerting to mobile devices.",
+    "retrieved_at": "2026-07-07",
+    "title": "Wireless Emergency Alerts",
+    "url": "https://www.weather.gov/wrn/wea"
+  },
+  {
+    "publisher": "Federal Reserve / OCC",
+    "relevance": "SR 11-7 / OCC 2011-12 provides supervisory guidance on model risk management, including validation and governance expectations.",
+    "retrieved_at": "2026-07-07",
+    "title": "SR 11-7: Guidance on Model Risk Management",
+    "url": "https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm"
+  },
+  {
+    "publisher": "U.S. Treasury OFAC",
+    "relevance": "OFAC's framework describes risk-based sanctions compliance programs including screening and internal controls.",
+    "retrieved_at": "2026-07-07",
+    "title": "A Framework for OFAC Compliance Commitments",
+    "url": "https://ofac.treasury.gov/media/16331/download?inline"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "OSHA 1910.147 covers control of hazardous energy during servicing and maintenance of machines and equipment.",
+    "retrieved_at": "2026-07-07",
+    "title": "1910.147 - The control of hazardous energy (lockout/tagout)",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147"
+  },
+  {
+    "publisher": "EPA",
+    "relevance": "EPA pesticide label guidance emphasizes following label directions and using products consistent with labeling.",
+    "retrieved_at": "2026-07-07",
+    "title": "Pesticide Labels",
+    "url": "https://www.epa.gov/pesticide-labels"
+  },
+  {
+    "publisher": "USDA FSIS",
+    "relevance": "FSIS publishes recalls and public health alerts for meat, poultry, and egg products and provides recall/public health alert context.",
+    "retrieved_at": "2026-07-07",
+    "title": "Recalls and Public Health Alerts",
+    "url": "https://www.fsis.usda.gov/recalls"
+  },
+  {
+    "publisher": "OSHA",
+    "relevance": "OSHA 1910.134 contains respiratory protection requirements including fit testing for tight-fitting facepiece respirators.",
+    "retrieved_at": "2026-07-07",
+    "title": "1910.134 - Respiratory protection",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "CIP-004-7 includes access management for BES Cyber System Information and evidence of authorization and business need.",
+    "retrieved_at": "2026-07-07",
+    "title": "CIP-004-7 - Cyber Security - Personnel & Training",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-004-7.pdf"
+  },
+  {
+    "publisher": "NERC",
+    "relevance": "PRC-023-6 addresses transmission relay loadability while preserving reliable fault detection and system operator remedial action capability.",
+    "retrieved_at": "2026-07-07",
+    "title": "PRC-023-6 - Transmission Relay Loadability",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/prc/prc-023-6.pdf"
+  },
+  {
+    "publisher": "FERC/NERC",
+    "relevance": "The joint report describes cascading outages in the Southwest and recommendations related to situational awareness, planning, and reliable operation.",
+    "retrieved_at": "2026-07-07",
+    "title": "Arizona-Southern California Outages on September 8, 2011: Causes and Recommendations",
+    "url": "https://www.ferc.gov/sites/default/files/2020-05/04-27-2012-ferc-nerc-report.pdf"
+  },
+  {
+    "publisher": "FDA",
+    "relevance": "FDA clinical decision support software guidance clarifies oversight and distinctions for CDS software functions used in healthcare decisions.",
+    "retrieved_at": "2026-07-07",
+    "title": "Clinical Decision Support Software - Guidance",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software"
+  },
+  {
+    "publisher": "HHS",
+    "relevance": "HHS minimum necessary guidance says covered entities should limit PHI uses, disclosures, and requests to what is reasonably necessary for the purpose.",
+    "retrieved_at": "2026-07-07",
+    "title": "Minimum Necessary Requirement",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html"
+  },
+  {
+    "publisher": "CMS",
+    "relevance": "CMS EMTALA guidance explains hospitals' obligations to provide medical screening examinations and emergency care regardless of ability to pay.",
+    "retrieved_at": "2026-07-07",
+    "title": "Emergency Medical Treatment & Labor Act (EMTALA)",
+    "url": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA hot spot guidance identifies movement-area locations with history or potential risk of collision or runway incursion requiring heightened attention.",
+    "retrieved_at": "2026-07-07",
+    "title": "Hot Spots",
+    "url": "https://www.faa.gov/airports/runway_safety/hotspots"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA pilot best practices advise reviewing airfield NOTAMs and current ATIS for closures and airfield-specific risks.",
+    "retrieved_at": "2026-07-07",
+    "title": "Pilot Best Practices for Airfield Safety",
+    "url": "https://www.faa.gov/airports/runway_safety/pilots/best_practices"
+  },
+  {
+    "publisher": "TSA",
+    "relevance": "TSA security directives impose cybersecurity measures and reporting expectations for passenger and freight railroad carriers and rail transit systems.",
+    "retrieved_at": "2026-07-07",
+    "title": "Security Directives and Emergency Amendments",
+    "url": "https://www.tsa.gov/sd-and-ea"
+  },
+  {
+    "publisher": "NHTSA",
+    "relevance": "NHTSA cybersecurity best practices describe risk-based vehicle cybersecurity processes and safety implications for modern vehicles.",
+    "retrieved_at": "2026-07-07",
+    "title": "Cybersecurity Best Practices for the Safety of Modern Vehicles",
+    "url": "https://www.nhtsa.gov/press-releases/nhtsa-updates-cybersecurity-best-practices-new-vehicles"
+  },
+  {
+    "publisher": "FTC",
+    "relevance": "FTC Data Breach Response guidance helps businesses decide steps after personal information may have been exposed.",
+    "retrieved_at": "2026-07-07",
+    "title": "Data Breach Response: A Guide for Business",
+    "url": "https://www.ftc.gov/business-guidance/resources/data-breach-response-guide-business"
+  },
+  {
+    "publisher": "FAA",
+    "relevance": "FAA runway safety resources focus on reducing runway incursions and improving safe airport surface movement.",
+    "retrieved_at": "2026-07-07",
+    "title": "Runway Safety Program",
+    "url": "https://www.faa.gov/airports/runway_safety"
+  },
+  {
+    "publisher": "FTC",
+    "relevance": "FTC protecting personal information guidance recommends monitoring outgoing traffic for signs of a data breach and investigating unexpected large transmissions.",
+    "retrieved_at": "2026-07-07",
+    "title": "Protecting Personal Information: A Guide for Business",
+    "url": "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
+  },
+  {
+    "title": "EOP-010-1 - Geomagnetic Disturbance Operations",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/eop/eop-010-1.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "GMD operating plans and space-weather information dissemination for reliability operations."
+  },
+  {
+    "title": "TPL-007-4 - Transmission System Planned Performance for Geomagnetic Disturbance Events",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/tpl/tpl-007-4.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Planning performance and vulnerability assessment requirements for GMD events."
+  },
+  {
+    "title": "1910.252 - General requirements for welding, cutting, and brazing",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.252",
+    "publisher": "OSHA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Fire prevention, fire watch, and authorization expectations for welding/cutting."
+  },
+  {
+    "title": "40 CFR Part 141 Subpart Q - Public Notification of Drinking Water Violations",
+    "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-141/subpart-Q",
+    "publisher": "eCFR / EPA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Public notification requirements for drinking water violations and situations."
+  },
+  {
+    "title": "Lead and Copper Rule",
+    "url": "https://www.epa.gov/dwreginfo/lead-and-copper-rule",
+    "publisher": "EPA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Lead and copper compliance and public health protection requirements."
+  },
+  {
+    "title": "Election Security",
+    "url": "https://www.cisa.gov/topics/election-security",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Election infrastructure cybersecurity support and coordination for election officials."
+  },
+  {
+    "title": "Network Outage Reporting System (NORS)",
+    "url": "https://www.fcc.gov/general/network-outage-reporting-system-nors",
+    "publisher": "FCC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "911 outage reporting and public safety communications reliability context."
+  },
+  {
+    "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Framework for managing AI system risks."
+  },
+  {
+    "title": "Cross-Sector Cybersecurity Performance Goals",
+    "url": "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Baseline cybersecurity practices including account security and identity controls."
+  },
+  {
+    "title": "Data Integrity and Compliance With Drug CGMP: Questions and Answers",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/data-integrity-and-compliance-drug-cgmp-questions-and-answers",
+    "publisher": "FDA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Data integrity, audit trail, and regulated record expectations."
+  },
+  {
+    "title": "49 CFR Part 214 Subpart C - Roadway Worker Protection",
+    "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-II/part-214/subpart-C",
+    "publisher": "eCFR / Federal Railroad Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Roadway worker protection establishes authority and protection requirements before workers foul track."
+  },
+  {
+    "title": "42 CFR 482.13 - Condition of participation: Patient's rights",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-B/section-482.13",
+    "publisher": "eCFR / Centers for Medicare & Medicaid Services",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Patient rights include informed decisions about care; administrative payer approval is not patient consent."
+  },
+  {
+    "title": "1910.269 - Electric power generation, transmission, and distribution",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.269",
+    "publisher": "OSHA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Electric power work practices include de-energizing, testing, and grounding controls."
+  },
+  {
+    "title": "EOP-011 - Emergency Operations",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/EOP-011-4.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Emergency operations procedures distinguish required operational authority from planning or drill context."
+  },
+  {
+    "title": "FAC-008 - Facility Ratings",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/FAC-008-5.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Facility ratings depend on documented methodology and data, not a single brochure value."
+  },
+  {
+    "title": "CIP-007 - Cyber Security - Systems Security Management",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/CIP-007-6.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "BES Cyber System security management includes patch and change control boundaries."
+  },
+  {
+    "title": "PRC-027 - Coordination of Protection Systems for Performance During Faults",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/PRC-027-1.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Protection coordination depends on current system conditions and reviewed settings."
+  },
+  {
+    "title": "电力监控系统安全防护规定",
+    "url": "https://www.nea.gov.cn/2014-09/01/c_133610511.htm",
+    "publisher": "国家能源局",
+    "retrieved_at": "2026-07-07",
+    "relevance": "电力监控系统安全防护强调边界、访问和安全管理要求。"
+  },
+  {
+    "title": "CISA Industrial Control Systems Advisories",
+    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories?f%5B0%5D=advisory_type%3A95",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "ICS advisories provide mitigations but do not themselves authorize live process shutdowns."
+  },
+  {
+    "title": "NIST SP 800-61 Rev. 2 - Computer Security Incident Handling Guide",
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Incident handling separates detection, analysis, containment, eradication, recovery, and evidence handling."
+  },
+  {
+    "title": "CISA Cybersecurity Performance Goals",
+    "url": "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA CPGs encourage MFA while implementation still requires operational planning and exception control."
+  },
+  {
+    "title": "Cybersecurity Risk Management, Strategy, Governance, and Incident Disclosure",
+    "url": "https://www.sec.gov/rules/final/2023/33-11216.pdf",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "retrieved_at": "2026-07-07",
+    "relevance": "SEC cyber incident disclosure rules hinge on materiality determinations and public filing obligations."
+  },
+  {
+    "title": "12 CFR Part 1005.11 - Procedures for resolving errors",
+    "url": "https://www.consumerfinance.gov/rules-policy/regulations/1005/11/",
+    "publisher": "Consumer Financial Protection Bureau",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Regulation E error-resolution procedures define scoped investigation and timing for electronic fund transfer errors."
+  },
+  {
+    "title": "The Sedona Conference Commentary on Legal Holds",
+    "url": "https://thesedonaconference.org/publication/Commentary_on_Legal_Holds",
+    "publisher": "The Sedona Conference",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Public legal-hold guidance anchors preservation obligations for relevant custodial information."
+  },
+  {
+    "title": "Minimum Necessary Requirement",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html",
+    "publisher": "U.S. Department of Health and Human Services",
+    "retrieved_at": "2026-07-07",
+    "relevance": "HIPAA guidance frames the minimum necessary limit for certain uses and disclosures."
+  },
+  {
+    "title": "Cybersecurity in Medical Devices: Quality System Considerations and Content of Premarket Submissions",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-system-considerations-and-content-premarket-submissions",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA medical device cybersecurity guidance anchors risk management and update considerations."
+  },
+  {
+    "title": "Emergency Medical Treatment & Labor Act (EMTALA)",
+    "url": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act",
+    "publisher": "Centers for Medicare & Medicaid Services",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EMTALA anchors medical screening and stabilizing obligations for emergency departments."
+  },
+  {
+    "title": "NOTAMs",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/notams",
+    "publisher": "Federal Aviation Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FAA NOTAM resources anchor current operational notice handling."
+  },
+  {
+    "title": "Control Room Management",
+    "url": "https://www.phmsa.dot.gov/pipeline/control-room-management/control-room-management",
+    "publisher": "Pipeline and Hazardous Materials Safety Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "PHMSA control room management materials anchor alarm handling and controller responsibilities."
+  },
+  {
+    "title": "Risk Management Plan (RMP) Rule",
+    "url": "https://www.epa.gov/rmp",
+    "publisher": "U.S. Environmental Protection Agency",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EPA RMP materials anchor chemical accident prevention and emergency response planning."
+  },
+  {
+    "title": "工贸企业有限空间作业安全规定",
+    "url": "https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202312/t20231208_471732.shtml",
+    "publisher": "应急管理部",
+    "retrieved_at": "2026-07-07",
+    "relevance": "有限空间作业规定锚定审批、检测、监护等作业边界。"
+  },
+  {
+    "title": "Known Exploited Vulnerabilities Catalog",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA KEV catalog anchors prioritization of known exploited vulnerabilities."
+  },
+  {
+    "title": "Emergency Classification",
+    "url": "https://www.nrc.gov/about-nrc/emerg-preparedness/about-emerg-preparedness/emerg-classification",
+    "publisher": "U.S. Nuclear Regulatory Commission",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NRC public page describes emergency classification levels but does not provide site-specific declaration authority."
+  },
+  {
+    "title": "IRO-001-4 - Reliability Coordination - Responsibilities",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/iro/iro-001-4.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Reliability coordination responsibilities anchor treatment of operating instructions and inability responses."
+  },
+  {
+    "title": "电力安全事故应急处置和调查处理条例",
+    "url": "https://www.nea.gov.cn/2011-07/14/c_131344185.htm",
+    "publisher": "国家能源局",
+    "retrieved_at": "2026-07-07",
+    "relevance": "电力安全事故应急处置和调查处理要求锚定事故信息核实与处置边界。"
+  },
+  {
+    "title": "Recalls, Market Withdrawals, & Safety Alerts",
+    "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA recall resources anchor recall actions and public safety communications."
+  },
+  {
+    "title": "49 CFR Part 220 - Railroad Communications",
+    "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-II/part-220",
+    "publisher": "eCFR / Federal Railroad Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Railroad communications rules anchor safety-critical communication and authority boundaries."
+  },
+  {
+    "title": "TOP-001 - Transmission Operations",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/TOP-001-5.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Transmission operations standard anchors operating instructions and transmission operator responsibilities."
+  },
+  {
+    "title": "PER-005 - Operations Personnel Training",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/PER-005-2.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Operations personnel training materials anchor distinction between training/simulation and live operations."
+  },
+  {
+    "title": "电网调度管理条例",
+    "url": "https://www.gov.cn/gongbao/content/2011/content_1860813.htm",
+    "publisher": "中国政府网",
+    "retrieved_at": "2026-07-07",
+    "relevance": "电网调度管理条例锚定统一调度和调度指令权威边界。"
+  },
+  {
+    "title": "防止电力生产事故的二十五项重点要求",
+    "url": "https://www.nea.gov.cn/2023-03/31/c_1310705676.htm",
+    "publisher": "国家能源局",
+    "retrieved_at": "2026-07-07",
+    "relevance": "反事故重点要求锚定电力生产安全和故障处置控制边界。"
+  },
+  {
+    "title": "Isolation Precautions Guideline",
+    "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/index.html",
+    "publisher": "Centers for Disease Control and Prevention",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CDC isolation precautions guidance anchors infection-control boundaries."
+  },
+  {
+    "title": "Clinical Decision Support Software",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA CDS guidance anchors distinction between support information and autonomous clinical action."
+  },
+  {
+    "title": "Informed Consent FAQs",
+    "url": "https://www.hhs.gov/ohrp/regulations-and-policy/guidance/faq/informed-consent/index.html",
+    "publisher": "HHS Office for Human Research Protections",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OHRP informed consent guidance anchors consent requirements for human subjects research."
+  },
+  {
+    "title": "Breach Notification Rule",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html",
+    "publisher": "U.S. Department of Health and Human Services",
+    "retrieved_at": "2026-07-07",
+    "relevance": "HIPAA breach notification guidance anchors breach determination and notification duties."
+  },
+  {
+    "title": "CLIA Regulations and Federal Register Documents",
+    "url": "https://www.cms.gov/medicare/quality/clinical-laboratory-improvement-amendments/regulations-federal-register-documents",
+    "publisher": "Centers for Medicare & Medicaid Services",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CLIA materials anchor laboratory quality and result reporting controls."
+  },
+  {
+    "title": "AC 150/5370-2 - Operational Safety on Airports During Construction",
+    "url": "https://www.faa.gov/airports/resources/advisory_circulars/index.cfm/go/document.current/documentNumber/150_5370-2",
+    "publisher": "Federal Aviation Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FAA airport construction safety circular anchors construction phasing and movement-area safety controls."
+  },
+  {
+    "title": "Authentication and Access to Financial Institution Services and Systems",
+    "url": "https://www.ffiec.gov/guidance/Authentication-and-Access-to-Financial-Institution-Services-and-Systems.pdf",
+    "publisher": "FFIEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FFIEC authentication guidance anchors layered controls and risk-based access decisions."
+  },
+  {
+    "title": "FINRA Rule 2210 - Communications with the Public",
+    "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/2210",
+    "publisher": "FINRA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FINRA communications rule anchors approval and content standards for broker-dealer public communications."
+  },
+  {
+    "title": "Evaluation of Corporate Compliance Programs",
+    "url": "https://www.justice.gov/criminal/criminal-fraud/page/file/937501/download",
+    "publisher": "U.S. Department of Justice",
+    "retrieved_at": "2026-07-07",
+    "relevance": "DOJ compliance guidance discusses preservation, messaging applications, and compliance controls."
+  },
+  {
+    "title": "AI Risk Management Framework",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NIST AI RMF anchors governance, mapping, measurement, and management of AI risks."
+  },
+  {
+    "title": "Ransomware Guide",
+    "url": "https://www.cisa.gov/stopransomware/ransomware-guide",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA ransomware guidance anchors incident response and recovery considerations."
+  },
+  {
+    "title": "NIST SP 800-53 Rev. 5",
+    "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NIST SP 800-53 anchors audit, accountability, and security-control considerations."
+  },
+  {
+    "title": "Public Notification Rule",
+    "url": "https://www.epa.gov/dwreginfo/public-notification-rule",
+    "publisher": "U.S. Environmental Protection Agency",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EPA public notification rule anchors public notices for drinking water violations."
+  },
+  {
+    "title": "21 CFR Part 606 - Current Good Manufacturing Practice for Blood and Blood Components",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-606",
+    "publisher": "eCFR / FDA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Blood-component manufacturing and control regulations anchor transfusion-service quality boundaries."
+  },
+  {
+    "title": "Runway Safety Hot Spots",
+    "url": "https://www.faa.gov/airports/runway_safety/hotspots",
+    "publisher": "Federal Aviation Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FAA runway safety resources anchor hot-spot awareness and current surface information."
+  },
+  {
+    "title": "Cloud Security Technical Reference Architecture",
+    "url": "https://www.cisa.gov/resources-tools/resources/cloud-security-technical-reference-architecture",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA cloud security architecture resources anchor cloud access-control and risk-management practices."
+  },
+  {
+    "title": "CIP-005 - Cyber Security - Electronic Security Perimeter(s)",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/CIP-005-7.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Electronic Security Perimeter controls anchor remote access boundaries for BES Cyber Systems."
+  },
+  {
+    "title": "CIP-010 - Cyber Security - Configuration Change Management and Vulnerability Assessments",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/CIP-010-4.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Configuration change management anchors baseline and production change controls."
+  },
+  {
+    "title": "PRC-005 - Protection System, Automatic Reclosing, and Sudden Pressure Relaying Maintenance",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/PRC-005-6.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Protection-system maintenance standard anchors maintenance evidence and protection-function boundaries."
+  },
+  {
+    "title": "COM-002 - Operating Personnel Communications Protocols",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/COM-002-4.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Operating personnel communication protocols anchor readback and confirmation boundaries."
+  },
+  {
+    "title": "CISA Emergency Directives",
+    "url": "https://www.cisa.gov/news-events/directives",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Emergency directives can anchor urgent mitigation, but exact applicability and operational approval remain necessary."
+  },
+  {
+    "title": "NIST Digital Identity Guidelines",
+    "url": "https://pages.nist.gov/800-63-4/",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Digital identity guidelines anchor authentication and identity lifecycle boundaries."
+  },
+  {
+    "title": "NIST SP 800-207 - Zero Trust Architecture",
+    "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Zero Trust Architecture anchors policy decision and enforcement concepts, not blind pilot reuse."
+  },
+  {
+    "title": "Secure by Design",
+    "url": "https://www.cisa.gov/securebydesign",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Secure-by-design guidance anchors default-password risk while implementation still requires safe operational controls."
+  },
+  {
+    "title": "Discharge Planning",
+    "url": "https://www.cms.gov/medicare/provider-enrollment-and-certification/surveycertificationgeninfo/policy-and-memos-to-states-and-regions-items/qso19-15-hospital",
+    "publisher": "Centers for Medicare & Medicaid Services",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CMS discharge-planning materials anchor current patient needs and safe transition requirements."
+  },
+  {
+    "title": "Laboratory Developed Tests",
+    "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/laboratory-developed-tests",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA LDT materials anchor regulatory and validation context for laboratory-developed tests."
+  },
+  {
+    "title": "Medication Reconciliation",
+    "url": "https://www.jointcommission.org/resources/patient-safety-topics/medication-safety/",
+    "publisher": "The Joint Commission",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Medication safety resources anchor reconciliation risks and medication-history boundaries."
+  },
+  {
+    "title": "Vaccine Storage and Handling Toolkit",
+    "url": "https://www.cdc.gov/vaccines/hcp/admin/storage/toolkit/index.html",
+    "publisher": "Centers for Disease Control and Prevention",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CDC toolkit anchors vaccine storage, handling, and temperature excursion response."
+  },
+  {
+    "title": "Cranes and Derricks in Construction",
+    "url": "https://www.osha.gov/cranes-derricks",
+    "publisher": "OSHA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OSHA crane resources anchor lift safety and qualified planning boundaries."
+  },
+  {
+    "title": "Emergency Response Guidebook",
+    "url": "https://www.phmsa.dot.gov/hazmat/erg/emergency-response-guidebook-erg",
+    "publisher": "Pipeline and Hazardous Materials Safety Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "ERG materials anchor hazmat identification and initial response guidance."
+  },
+  {
+    "title": "Pesticide Labels",
+    "url": "https://www.epa.gov/pesticide-labels",
+    "publisher": "U.S. Environmental Protection Agency",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EPA pesticide label resources anchor label directions and legal use boundaries."
+  },
+  {
+    "title": "Maritime Cybersecurity",
+    "url": "https://www.maritime.dot.gov/innovation/maritime-cybersecurity/maritime-cybersecurity",
+    "publisher": "Maritime Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "MARAD cybersecurity resources anchor cyber risk context for maritime operations."
+  },
+  {
+    "title": "TPL-001 - Transmission System Planning Performance Requirements",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/TPL-001-5.1.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Planning performance requirements anchor planning-study context, not live switching authority."
+  },
+  {
+    "title": "VAR-001 - Voltage and Reactive Control",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/VAR-001-5.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Voltage and reactive control standard anchors transmission voltage-control responsibilities and instructions."
+  },
+  {
+    "title": "MOD-032 - Data for Power System Modeling and Analysis",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/MOD-032-1.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Modeling data requirements anchor planning-model context and data validation boundaries."
+  },
+  {
+    "title": "CIP-011 - Cyber Security - Information Protection",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/CIP-011-3.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Information protection standard anchors handling of BES Cyber System Information."
+  },
+  {
+    "title": "BAL-002-3 - Disturbance Control Standard",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/bal/bal-002-3.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Disturbance control standard anchors contingency reserve deployment context."
+  },
+  {
+    "title": "FDA Drug Safety Communications",
+    "url": "https://www.fda.gov/drugs/drug-safety-and-availability/drug-safety-communications",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA drug safety communications anchor general medication-risk information and care-team consultation boundaries."
+  },
+  {
+    "title": "Medical Device Recalls",
+    "url": "https://www.fda.gov/medical-devices/medical-device-safety/medical-device-recalls",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA device recall resources anchor recall identification and patient-safety workflow boundaries."
+  },
+  {
+    "title": "Guideline for Disinfection and Sterilization in Healthcare Facilities",
+    "url": "https://www.cdc.gov/infection-control/hcp/disinfection-sterilization/index.html",
+    "publisher": "Centers for Disease Control and Prevention",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CDC disinfection and sterilization guidance anchors cleaning and sterilization process order."
+  },
+  {
+    "title": "42 CFR 482.13 - Patient's rights",
+    "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-482/subpart-B/section-482.13",
+    "publisher": "eCFR / CMS",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Patient rights regulation anchors restraint and seclusion boundaries."
+  },
+  {
+    "title": "Regulation S-P: Privacy of Consumer Financial Information and Safeguarding Customer Information",
+    "url": "https://www.sec.gov/about/reports-publications/investor-publications/privacy-consumer-financial-information-regulation-s-p",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Regulation S-P materials anchor customer information privacy and safeguarding obligations."
+  },
+  {
+    "title": "Supervisory Guidance on Model Risk Management (SR 11-7)",
+    "url": "https://www.occ.gov/news-issuances/bulletins/2011/bulletin-2011-12a.pdf",
+    "publisher": "OCC / Federal Reserve",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Model risk management guidance anchors validation, governance, and use controls for models."
+  },
+  {
+    "title": "Health Breach Notification Rule",
+    "url": "https://www.ftc.gov/business-guidance/privacy-security/health-breach-notification-rule",
+    "publisher": "Federal Trade Commission",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FTC health breach rule anchors notification obligations and breach-response boundaries."
+  },
+  {
+    "title": "TSA Pipeline Cybersecurity",
+    "url": "https://www.tsa.gov/for-industry/pipeline-cybersecurity",
+    "publisher": "Transportation Security Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "TSA pipeline cybersecurity resources anchor pipeline cybersecurity governance and operational sensitivity."
+  },
+  {
+    "title": "Cybersecurity for the Water Sector",
+    "url": "https://www.epa.gov/waterresilience/cybersecurity-water-sector",
+    "publisher": "U.S. Environmental Protection Agency",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EPA water-sector cybersecurity resources anchor cyber risk management for water utilities."
+  },
+  {
+    "title": "Integrated Public Alert & Warning System (IPAWS)",
+    "url": "https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system",
+    "publisher": "Federal Emergency Management Agency",
+    "retrieved_at": "2026-07-07",
+    "relevance": "IPAWS materials anchor public warning authority and alert-originator workflows."
+  },
+  {
+    "title": "Damage Prevention",
+    "url": "https://www.phmsa.dot.gov/pipeline/damage-prevention/damage-prevention",
+    "publisher": "Pipeline and Hazardous Materials Safety Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "PHMSA damage-prevention resources anchor excavation and utility-locate safety boundaries."
+  },
+  {
+    "title": "Food Safety Modernization Act (FSMA)",
+    "url": "https://www.fda.gov/food/food-safety-modernization-act-fsma/full-text-food-safety-modernization-act-fsma",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FSMA materials anchor preventive controls and food-safety process discipline."
+  },
+  {
+    "title": "PRC-023 - Transmission Relay Loadability",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/PRC-023-6.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Transmission relay loadability standard anchors relay-setting and loadability review boundaries."
+  },
+  {
+    "title": "EOP-004 - Event Reporting",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/EOP-004-4.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Event reporting standard anchors reportability and reporting workflow boundaries."
+  },
+  {
+    "title": "FAC-003 - Transmission Vegetation Management",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/FAC-003-5.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Transmission vegetation management standard anchors vegetation-clearance and right-of-way context."
+  },
+  {
+    "title": "BAL-005 - Balancing Authority Control",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/BAL-005-1.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Balancing authority control standard anchors use of current control and telemetry data."
+  },
+  {
+    "title": "PRC-005 - Protection System Maintenance",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/PRC-005-6.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Protection system maintenance standard anchors testing records and current maintenance status."
+  },
+  {
+    "title": "Human Cells, Tissues, and Cellular and Tissue-Based Products",
+    "url": "https://www.fda.gov/vaccines-blood-biologics/tissue-tissue-products/human-cells-tissues-and-cellular-and-tissue-based-products",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA HCT/P materials anchor donor screening and eligibility boundaries."
+  },
+  {
+    "title": "Clinical Laboratory Improvement Amendments (CLIA) Proficiency Testing",
+    "url": "https://www.cms.gov/medicare/quality/clinical-laboratory-improvement-amendments/proficiency-testing",
+    "publisher": "Centers for Medicare & Medicaid Services",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CMS CLIA proficiency testing materials anchor PT sample handling and reporting boundaries."
+  },
+  {
+    "title": "Risk Evaluation and Mitigation Strategies (REMS)",
+    "url": "https://www.fda.gov/drugs/drug-safety-and-availability/risk-evaluation-and-mitigation-strategies-rems",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA REMS materials anchor required steps for certain high-risk medication access."
+  },
+  {
+    "title": "1910.1030 - Bloodborne pathogens",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+    "publisher": "OSHA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Bloodborne pathogens standard anchors exposure control and post-exposure follow-up boundaries."
+  },
+  {
+    "title": "Medication Guides",
+    "url": "https://www.fda.gov/drugs/drug-safety-and-availability/medication-guides",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA Medication Guides anchor patient-facing drug-risk information delivery."
+  },
+  {
+    "title": "Lithium Batteries Guide",
+    "url": "https://www.phmsa.dot.gov/lithiumbatteries",
+    "publisher": "Pipeline and Hazardous Materials Safety Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "PHMSA lithium battery resources anchor damaged/defective battery transport boundaries."
+  },
+  {
+    "title": "Aviation Safety Reporting System",
+    "url": "https://asrs.arc.nasa.gov/",
+    "publisher": "NASA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "ASRS narratives can inform safety lessons but must match airport and operational context before use."
+  },
+  {
+    "title": "NTSB Safety Recommendations",
+    "url": "https://www.ntsb.gov/safety/safety-recs/Pages/default.aspx",
+    "publisher": "National Transportation Safety Board",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NTSB recommendations are safety evidence but not direct local signal-disabling authority."
+  },
+  {
+    "title": "NIST SP 800-92 - Guide to Computer Security Log Management",
+    "url": "https://csrc.nist.gov/pubs/sp/800/92/final",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Log management guidance anchors collection, retention, and operational handling of security logs."
+  },
+  {
+    "title": "Regulation SCI",
+    "url": "https://www.sec.gov/rules/final/2014/34-73639.pdf",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Regulation SCI anchors systems compliance, integrity, and operational controls for key market systems."
+  },
+  {
+    "title": "Interagency Guidance on Third-Party Relationships: Risk Management",
+    "url": "https://www.fdic.gov/news/financial-institution-letters/2023/fil23029.html",
+    "publisher": "Federal Deposit Insurance Corporation",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Third-party risk guidance anchors vendor governance, access, and oversight boundaries."
+  },
+  {
+    "title": "EOP-006 - System Restoration from Blackstart Resources",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/EOP-006-3.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "System restoration standard anchors restoration planning, coordination, and blackstart procedures."
+  },
+  {
+    "title": "CIP-004 - Cyber Security - Personnel & Training",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/CIP-004-7.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Personnel and training standard anchors access, training, and personnel risk assessment boundaries."
+  },
+  {
+    "title": "CIP-008 - Cyber Security - Incident Reporting and Response Planning",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/CIP-008-6.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Incident response planning standard anchors response plan execution and incident handling boundaries."
+  },
+  {
+    "title": "COM-001 - Communications",
+    "url": "https://www.nerc.com/pa/Stand/Reliability%20Standards/COM-001-3.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Communications standard anchors reliable communication capability for operations."
+  },
+  {
+    "title": "Safety Management Systems for Airports",
+    "url": "https://www.faa.gov/airports/airport_safety/safety_management_systems",
+    "publisher": "Federal Aviation Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FAA airport SMS resources anchor safety risk management and operations change control."
+  },
+  {
+    "title": "Trenching and Excavation Safety",
+    "url": "https://www.osha.gov/trenching-excavation",
+    "publisher": "OSHA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OSHA trenching resources anchor excavation protective system requirements."
+  },
+  {
+    "title": "Spill Prevention, Control, and Countermeasure (SPCC) for Oil",
+    "url": "https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/spill-prevention-control-and-countermeasure-spcc",
+    "publisher": "U.S. Environmental Protection Agency",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EPA SPCC resources anchor oil spill prevention and containment controls."
+  },
+  {
+    "title": "Food Defense and Intentional Adulteration",
+    "url": "https://www.fda.gov/food/food-defense-tools-educational-materials/food-defense-and-intentional-adulteration",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA food defense resources anchor intentional-adulteration planning and response context."
+  },
+  {
+    "title": "Emergency Preparedness Rule",
+    "url": "https://www.cms.gov/medicare/provider-enrollment-and-certification/surveycertemergprep/emergency-prep-rule",
+    "publisher": "Centers for Medicare & Medicaid Services",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CMS emergency preparedness materials anchor planning, drills, and emergency response governance."
+  },
+  {
+    "title": "21 CFR Part 11 Electronic Records; Electronic Signatures",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application",
+    "publisher": "U.S. Food and Drug Administration",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA Part 11 guidance anchors electronic records and electronic signature controls."
+  },
+  {
+    "title": "Healthcare Personnel Vaccination Recommendations",
+    "url": "https://www.cdc.gov/infection-control/hcp/healthcare-personnel-vaccination/index.html",
+    "publisher": "Centers for Disease Control and Prevention",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CDC healthcare personnel vaccination resources anchor staff vaccination and documentation workflows."
+  },
+  {
+    "title": "Cyber Security Programs for Nuclear Facilities",
+    "url": "https://www.nrc.gov/reactors/operating/ops-experience/cyber-security.html",
+    "publisher": "U.S. Nuclear Regulatory Commission",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NRC cybersecurity resources anchor cyber program controls for nuclear facilities."
+  },
+  {
+    "title": "Regulation S-P: Privacy of Consumer Financial Information",
+    "url": "https://www.sec.gov/about/reports-publications/investor-publications/privacy-consumer-financial-information-regulation-s-p",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Regulation S-P materials anchor customer information privacy and safeguarding boundaries."
+  },
+  {
+    "title": "CIP-013-2 - Cyber Security - Supply Chain Risk Management",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-013-2.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Supply-chain risk management standard anchors vendor risk controls, not production deployment authority."
+  },
+  {
+    "title": "IRO-008-3 - Reliability Coordinator Operational Analyses and Real-time Assessments",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/iro/iro-008-3.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Operational analyses and real-time assessments standard anchors current SOL/IROL assessment boundaries."
+  },
+  {
+    "title": "405(d) Health Industry Cybersecurity Practices",
+    "url": "https://405d.hhs.gov/",
+    "publisher": "HHS 405(d) Program",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Healthcare cybersecurity guidance anchors risk reduction practices but does not itself authorize outage-causing clinical network changes."
+  },
+  {
+    "title": "21 CFR 820.100 Corrective and Preventive Action",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820/subpart-J/section-820.100",
+    "publisher": "eCFR",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CAPA regulation anchors investigation, correction, verification, validation, and quality-system documentation expectations."
+  },
+  {
+    "title": "CDC Core Elements of Antibiotic Stewardship for Nursing Homes",
+    "url": "https://www.cdc.gov/antibiotic-use/hcp/core-elements/nursing-homes.html",
+    "publisher": "CDC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CDC stewardship guidance anchors review and oversight practices, not autonomous medication discontinuation."
+  },
+  {
+    "title": "CMS Emergency Preparedness Rule",
+    "url": "https://www.cms.gov/medicare/provider-enrollment-and-certification/surveycertemergprep/emergency-prep-rule",
+    "publisher": "CMS",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CMS emergency-preparedness requirements anchor planning and readiness, not unsupervised evacuation orders."
+  },
+  {
+    "title": "FFIEC IT Handbook: Business Continuity Management",
+    "url": "https://ithandbook.ffiec.gov/it-booklets/business-continuity-management.aspx",
+    "publisher": "FFIEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FFIEC BCM guidance anchors resilience planning, testing, and governance for financial institutions."
+  },
+  {
+    "title": "FINRA Senior Investors",
+    "url": "https://www.finra.org/rules-guidance/key-topics/senior-investors",
+    "publisher": "FINRA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FINRA senior-investor resources anchor trusted-contact and investor-protection context without creating trading authority."
+  },
+  {
+    "title": "12 CFR 1024.41 Loss mitigation procedures",
+    "url": "https://www.consumerfinance.gov/rules-policy/regulations/1024/41/",
+    "publisher": "CFPB",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Regulation X loss-mitigation procedures anchor borrower-application handling and foreclosure-process constraints."
+  },
+  {
+    "title": "OCC Bulletin 2023-17: Third-Party Risk Management",
+    "url": "https://www.occ.gov/news-issuances/bulletins/2023/bulletin-2023-17.html",
+    "publisher": "OCC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OCC third-party risk guidance anchors due diligence, risk management, and governance for bank third-party relationships."
+  },
+  {
+    "title": "NIST SP 800-82 Rev. 3 Guide to Operational Technology Security",
+    "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OT guidance anchors safety, reliability, and operational continuity concerns for control systems."
+  },
+  {
+    "title": "CISA Cross-Sector Cybersecurity Performance Goals",
+    "url": "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals/cross-sector-cybersecurity-performance-goals",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA CPGs anchor baseline cybersecurity goals such as identity and access management."
+  },
+  {
+    "title": "EPA Cybersecurity for the Water Sector",
+    "url": "https://www.epa.gov/cyberwater",
+    "publisher": "US EPA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EPA water cybersecurity resources anchor cyber risk management for drinking water and wastewater systems."
+  },
+  {
+    "title": "CISA Secure by Design",
+    "url": "https://www.cisa.gov/securebydesign",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA secure-by-design guidance anchors the risk of default passwords and the need for secure practices."
+  },
+  {
+    "title": "CISA Federal Government Cybersecurity Incident and Vulnerability Response Playbooks",
+    "url": "https://www.cisa.gov/resources-tools/resources/federal-government-cybersecurity-incident-and-vulnerability-response-playbooks",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA playbooks anchor structured incident identification, coordination, remediation, recovery, and tracking."
+  },
+  {
+    "title": "NIST SP 800-61 Rev. 3 Incident Response Recommendations and Considerations",
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NIST incident response guidance anchors preparation, detection, response, recovery, and evidence-aware handling."
+  },
+  {
+    "title": "CISA #StopRansomware Guide",
+    "url": "https://www.cisa.gov/stopransomware/ransomware-guide",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA ransomware guide anchors prevention, response, and recovery practices."
+  },
+  {
+    "title": "NIST Cybersecurity Framework 2.0",
+    "url": "https://www.nist.gov/cyberframework",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NIST CSF 2.0 anchors cybersecurity risk-management outcomes but is not operational authorization."
+  },
+  {
+    "title": "OSHA 1910.147 Control of Hazardous Energy",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147",
+    "publisher": "OSHA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OSHA lockout/tagout standard anchors control of hazardous energy during servicing and maintenance."
+  },
+  {
+    "title": "OSHA Control of Hazardous Energy",
+    "url": "https://www.osha.gov/control-hazardous-energy/",
+    "publisher": "OSHA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OSHA LOTO resources anchor procedures for disabling and reenergizing equipment safely."
+  },
+  {
+    "title": "OSHA 1910.119 Process Safety Management of Highly Hazardous Chemicals",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.119",
+    "publisher": "OSHA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OSHA PSM standard anchors management practices for highly hazardous chemical processes."
+  },
+  {
+    "title": "PHMSA Control Room Management",
+    "url": "https://www.phmsa.dot.gov/pipeline/control-room-management/control-room-management",
+    "publisher": "PHMSA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "PHMSA control room management resources anchor controller performance, human factors, and SCADA control-room safety."
+  },
+  {
+    "title": "PHMSA Pipeline Emergency Responders Initiative",
+    "url": "https://www.phmsa.dot.gov/pipeline/peri/pipeline-emergency-responders-initiative-peri-overview",
+    "publisher": "PHMSA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "PHMSA PERI anchors training, cooperation, and communication for pipeline emergencies."
+  },
+  {
+    "title": "NRC Emergency Preparedness Regulations and Guidance",
+    "url": "https://www.nrc.gov/about-nrc/emerg-preparedness/regs-guidance-comm",
+    "publisher": "NRC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NRC guidance anchors emergency preparedness implementation for nuclear power plant operators."
+  },
+  {
+    "title": "NRC Backgrounder on Emergency Preparedness at Nuclear Power Plants",
+    "url": "https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/emerg-plan-prep-nuc-power",
+    "publisher": "NRC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NRC backgrounder anchors emergency plans, procedures, and evaluated exercises for nuclear plants."
+  },
+  {
+    "title": "FAA AIM Chapter 5 Preflight Preparation",
+    "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_1.html",
+    "publisher": "FAA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FAA AIM anchors preflight briefing and NOTAM checking."
+  },
+  {
+    "title": "FAA What is a NOTAM?",
+    "url": "https://www.faa.gov/about/initiatives/notam/what_is_a_notam",
+    "publisher": "FAA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FAA NOTAM page explains abnormal NAS status information essential to flight operations."
+  },
+  {
+    "title": "FAA Runway Safety Program",
+    "url": "https://www.faa.gov/airports/runway_safety",
+    "publisher": "FAA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FAA runway safety resources anchor runway safety as involving pilots, controllers, and airport vehicle drivers."
+  },
+  {
+    "title": "49 CFR Part 214 Subpart C Roadway Worker Protection",
+    "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-II/part-214/subpart-C",
+    "publisher": "eCFR",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FRA roadway worker protection rules anchor protection from moving rail equipment for roadway workers."
+  },
+  {
+    "title": "FTA Rail Transit Roadway Worker Protection",
+    "url": "https://www.transit.dot.gov/regulations-and-programs/safety/rail-transit-roadway-worker-protection",
+    "publisher": "FTA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FTA roadway worker protection material anchors minimum standards for worker safety on or near rails."
+  },
+  {
+    "title": "OSHA Process Safety Management Standards",
+    "url": "https://www.osha.gov/process-safety-management/standards",
+    "publisher": "OSHA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OSHA PSM resources anchor process-safety management requirements and related standards."
+  },
+  {
+    "title": "PHMSA Control Room Management: Key Documents",
+    "url": "https://www.phmsa.dot.gov/pipeline/control-room-management/control-room-management-key-documents",
+    "publisher": "PHMSA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "PHMSA CRM documents support operators implementing control room management requirements."
+  },
+  {
+    "title": "FTC Safeguards Rule",
+    "url": "https://www.ftc.gov/legal-library/browse/rules/safeguards-rule",
+    "publisher": "FTC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "The Safeguards Rule anchors measures to protect customer information and service-provider oversight."
+  },
+  {
+    "title": "16 CFR Part 314 Standards for Safeguarding Customer Information",
+    "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
+    "publisher": "eCFR",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Part 314 anchors customer information safeguards for covered financial institutions."
+  },
+  {
+    "title": "FTC Safeguards Rule: What Your Business Needs to Know",
+    "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know",
+    "publisher": "FTC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FTC business guidance explains covered institutions' safeguards for customer information."
+  },
+  {
+    "title": "HHS HIPAA Breach Notification Rule",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html",
+    "publisher": "HHS OCR",
+    "retrieved_at": "2026-07-07",
+    "relevance": "HHS guidance anchors notification obligations after a breach of unsecured PHI."
+  },
+  {
+    "title": "OFAC Sanctions Compliance Guidance for Instant Payment Systems",
+    "url": "https://ofac.treasury.gov/system/files/126/instant_payment_systems_compliance_guidance_brochure.pdf",
+    "publisher": "OFAC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OFAC guidance discusses sanctions risk management and exception processing for instant payment systems."
+  },
+  {
+    "title": "A Framework for OFAC Compliance Commitments",
+    "url": "https://ofac.treasury.gov/media/16331/download?inline=",
+    "publisher": "OFAC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OFAC framework anchors risk-based sanctions compliance controls and review."
+  },
+  {
+    "title": "FFIEC BSA/AML Manual: Office of Foreign Assets Control",
+    "url": "https://bsaaml.ffiec.gov/manual/OfficeOfForeignAssetsControl/01",
+    "publisher": "FFIEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FFIEC OFAC manual anchors sanctions compliance program and risk assessment context for banks."
+  },
+  {
+    "title": "SEC Form 8-K Item 1.05 Material Cybersecurity Incidents",
+    "url": "https://www.sec.gov/files/form8-k.pdf",
+    "publisher": "SEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "SEC Form 8-K anchors Item 1.05 disclosure after a cybersecurity incident is determined to be material."
+  },
+  {
+    "title": "Disclosure of Cybersecurity Incidents Determined To Be Material",
+    "url": "https://www.sec.gov/newsroom/speeches-statements/gerding-cybersecurity-incidents-05212024",
+    "publisher": "SEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "SEC statement clarifies expectations for Item 1.05 disclosures and materiality determinations."
+  },
+  {
+    "title": "SEC Form 8-K",
+    "url": "https://www.sec.gov/files/form8-k.pdf",
+    "publisher": "SEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Official Form 8-K text anchors Item 1.05 material cybersecurity incident reporting."
+  },
+  {
+    "title": "Fair Credit Reporting Act",
+    "url": "https://www.ftc.gov/legal-library/browse/statutes/fair-credit-reporting-act",
+    "publisher": "FTC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FCRA source anchors consumer report accuracy, privacy, and adverse action notice context."
+  },
+  {
+    "title": "EEOC Artificial Intelligence and the ADA",
+    "url": "https://www.eeoc.gov/eeoc-disability-related-resources/artificial-intelligence-and-ada",
+    "publisher": "EEOC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EEOC resources anchor ADA risks when AI tools assess applicants or employees."
+  },
+  {
+    "title": "NIST Privacy Framework",
+    "url": "https://www.nist.gov/privacy-framework",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NIST Privacy Framework anchors privacy risk management for personal data processing."
+  },
+  {
+    "title": "Complying with FTC's Health Breach Notification Rule",
+    "url": "https://www.ftc.gov/business-guidance/resources/complying-ftcs-health-breach-notification-rule-0",
+    "publisher": "FTC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FTC guidance explains health-breach notification obligations for health apps and related entities."
+  },
+  {
+    "title": "Health Breach Notification Rule Final Rule",
+    "url": "https://www.federalregister.gov/documents/2024/05/30/2024-10855/health-breach-notification-rule",
+    "publisher": "Federal Register",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Federal Register final rule clarifies breach of security includes unauthorized disclosure, not only cyber intrusion."
+  },
+  {
+    "title": "EEOC Launches Initiative on Artificial Intelligence and Algorithmic Fairness",
+    "url": "https://www.eeoc.gov/newsroom/eeoc-launches-initiative-artificial-intelligence-and-algorithmic-fairness",
+    "publisher": "EEOC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EEOC initiative anchors concern that employment technology should comply with anti-discrimination laws."
+  },
+  {
+    "title": "What is the EEOC's role in AI?",
+    "url": "https://www.eeoc.gov/sites/default/files/2024-04/20240429_What%20is%20the%20EEOCs%20role%20in%20AI.pdf",
+    "publisher": "EEOC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EEOC resource explains discrimination risks when AI is used in employment decisions."
+  },
+  {
+    "title": "TOP-001-6 Transmission Operations",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/top/top-001-6.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "TOP-001 anchors operating instructions and exceptions when an instruction cannot be implemented or would violate safety or equipment requirements."
+  },
+  {
+    "title": "TOP-002-5 Operations Planning",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/top/top-002-5.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "TOP-002 anchors next-day operations planning and provision of plans to the Reliability Coordinator."
+  },
+  {
+    "title": "COM-001-3 Communications",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/com/com-001-3.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "COM-001 establishes interpersonal and alternative communication capabilities necessary to maintain reliability."
+  },
+  {
+    "title": "EOP-011-4 Emergency Operations",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/eop/eop-011-4.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "EOP-011 anchors coordinated emergency operating plans and mitigation of operating emergencies."
+  },
+  {
+    "title": "PRC-006-5 Automatic Underfrequency Load Shedding",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/prc/prc-006-5.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "PRC-006 establishes design and documentation requirements for automatic underfrequency load shedding programs."
+  },
+  {
+    "title": "BAL-001-2 Real Power Balancing Control Performance",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/bal/bal-001-2.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "BAL-001 anchors balancing authority control performance and Interconnection frequency control."
+  },
+  {
+    "title": "FAC-003-5 Transmission Vegetation Management",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/fac/fac-003-5.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FAC-003 anchors vegetation management to prevent transmission outages that could lead to Cascading."
+  },
+  {
+    "title": "PRC-005-6 Protection System, Automatic Reclosing, and Sudden Pressure Relaying Maintenance",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/prc/prc-005-6.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "PRC-005 anchors documented maintenance programs for protection systems affecting BES reliability."
+  },
+  {
+    "title": "Understanding Drug Recalls: What to Know and What to Do",
+    "url": "https://www.fda.gov/drugs/drug-recalls/understanding-drug-recalls-what-know-and-what-do",
+    "publisher": "FDA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA recall guidance notes that stopping a medicine may be more harmful in some cases and patients should contact healthcare professionals."
+  },
+  {
+    "title": "Drug Safety and Availability",
+    "url": "https://www.fda.gov/drugs/drug-safety-and-availability",
+    "publisher": "FDA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FDA drug safety page anchors warnings, label changes, recalls, shortages, and safety communications."
+  },
+  {
+    "title": "CDC Infection Control Guidance: SARS-CoV-2",
+    "url": "https://www.cdc.gov/covid/hcp/infection-control/index.html",
+    "publisher": "CDC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CDC IPC guidance addresses testing and Transmission-Based Precautions in healthcare settings."
+  },
+  {
+    "title": "CDC Isolation Precautions Guideline",
+    "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/index.html",
+    "publisher": "CDC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CDC isolation precautions guideline anchors PPE use according to transmission risks in healthcare settings."
+  },
+  {
+    "title": "AHRQ MATCH Toolkit for Medication Reconciliation",
+    "url": "https://www.ahrq.gov/patient-safety/settings/hospital/match/index.html",
+    "publisher": "AHRQ",
+    "retrieved_at": "2026-07-07",
+    "relevance": "AHRQ MATCH toolkit anchors medication reconciliation as comparison of current regimen against orders to identify discrepancies."
+  },
+  {
+    "title": "Designing the Medication Reconciliation Process",
+    "url": "https://www.ahrq.gov/patient-safety/settings/hospital/match/chapter-3.html",
+    "publisher": "AHRQ",
+    "retrieved_at": "2026-07-07",
+    "relevance": "AHRQ MATCH chapter describes a single source of truth and sharing the reconciled medication list across care team members."
+  },
+  {
+    "title": "CISA Zero Trust Maturity Model",
+    "url": "https://www.cisa.gov/zero-trust-maturity-model",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA maturity model assists agencies in developing zero-trust strategies and implementation plans."
+  },
+  {
+    "title": "NIST SP 800-207 Zero Trust Architecture",
+    "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "publisher": "NIST",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NIST SP 800-207 describes zero-trust architecture focused on resource access decisions and policy enforcement."
+  },
+  {
+    "title": "Root user best practices for your AWS account",
+    "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html",
+    "publisher": "AWS",
+    "retrieved_at": "2026-07-07",
+    "relevance": "AWS root user best practices advise securing root credentials and not creating root access keys."
+  },
+  {
+    "title": "Manage access keys for IAM users",
+    "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html",
+    "publisher": "AWS",
+    "retrieved_at": "2026-07-07",
+    "relevance": "AWS IAM documentation explains access keys as long-term credentials and their management."
+  },
+  {
+    "title": "Manage emergency access accounts in Microsoft Entra ID",
+    "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+    "publisher": "Microsoft Learn",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Microsoft guidance explains securing, monitoring, and maintaining emergency access accounts."
+  },
+  {
+    "title": "Security best practices in IAM",
+    "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "publisher": "AWS",
+    "retrieved_at": "2026-07-07",
+    "relevance": "AWS IAM best practices include least privilege and protecting root and IAM credentials."
+  },
+  {
+    "title": "Secure access keys",
+    "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/securing_access-keys.html",
+    "publisher": "AWS",
+    "retrieved_at": "2026-07-07",
+    "relevance": "AWS guidance advises securing access keys and avoiding risky long-term credential exposure."
+  },
+  {
+    "title": "FFIEC BSA/AML Manual: Suspicious Activity Reporting Overview",
+    "url": "https://bsaaml.ffiec.gov/manual/AssessingComplianceWithBSARegulatoryRequirements/04",
+    "publisher": "FFIEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FFIEC SAR overview anchors suspicious activity reporting requirements and SAR confidentiality context."
+  },
+  {
+    "title": "Suspicious Activity Reports",
+    "url": "https://www.occ.gov/topics/supervision-and-examination/bank-operations/financial-crime/suspicious-activity-reports/index-suspicious-activity-reports.html",
+    "publisher": "OCC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "OCC SAR page states timing expectations after initial detection of facts that may constitute a SAR basis."
+  },
+  {
+    "title": "FinCEN SAR Frequently Asked Questions",
+    "url": "https://www.fincen.gov/resources/frequently-asked-questions-regarding-fincen-suspicious-activity-report-sar",
+    "publisher": "FinCEN",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FinCEN FAQ clarifies SAR requirements and continuing suspicious activity guidance."
+  },
+  {
+    "title": "FinCEN SAR Electronic Filing Instructions",
+    "url": "https://www.fincen.gov/system/files/shared/FinCEN%20SAR%20ElectronicFilingInstructions-%20Stand%20Alone%20doc.pdf",
+    "publisher": "FinCEN",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FinCEN e-filing instructions anchor SAR filing mechanics and information fields."
+  },
+  {
+    "title": "FFIEC SAR Quality Guidance",
+    "url": "https://bsaaml.ffiec.gov/manual/Appendices/13",
+    "publisher": "FFIEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FFIEC guidance describes SAR narrative quality and detail expectations."
+  },
+  {
+    "title": "17 CFR 240.15l-1 Regulation Best Interest",
+    "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-240/subject-group-ECFR64f52d737aea1ed/section-240.15l-1",
+    "publisher": "eCFR",
+    "retrieved_at": "2026-07-07",
+    "relevance": "Reg BI requires broker-dealers to act in the retail customer's best interest when making recommendations."
+  },
+  {
+    "title": "Regulation Best Interest - SEC Small Entity Compliance Guide",
+    "url": "https://www.sec.gov/resources-small-businesses/small-business-compliance-guides/regulation-best-interest",
+    "publisher": "SEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "SEC Reg BI guide explains obligations when making recommendations to retail customers."
+  },
+  {
+    "title": "SEC Regulation Best Interest, Form CRS and Related Interpretations",
+    "url": "https://www.sec.gov/about/divisions-offices/division-trading-markets/regulation-best-interest-form-crs-related-interpretations",
+    "publisher": "SEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "SEC page anchors Reg BI and related interpretations for broker-dealer retail relationships."
+  },
+  {
+    "title": "FINRA Small Firm Cybersecurity Checklist",
+    "url": "https://www.finra.org/compliance-tools/cybersecurity-checklist",
+    "publisher": "FINRA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FINRA checklist supports small firms establishing cybersecurity programs for threats, protection, detection, response, and recovery."
+  },
+  {
+    "title": "FINRA Cybersecurity",
+    "url": "https://www.finra.org/rules-guidance/key-topics/cybersecurity",
+    "publisher": "FINRA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FINRA cybersecurity topic page provides resources for threats, protection, detection, response, and recovery."
+  },
+  {
+    "title": "FFIEC BSA/AML Manual: Customer Due Diligence",
+    "url": "https://bsaaml.ffiec.gov/manual/AssessingComplianceWithBSARegulatoryRequirements/05",
+    "publisher": "FFIEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FFIEC CDD section anchors customer due diligence and beneficial ownership-related compliance context."
+  },
+  {
+    "title": "Regulation Best Interest, Form CRS and Related Interpretations",
+    "url": "https://www.sec.gov/about/divisions-offices/division-trading-markets/regulation-best-interest-form-crs-related-interpretations",
+    "publisher": "SEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "SEC Reg BI page anchors obligations around broker-dealer recommendations, disclosure, care, conflict, and compliance."
+  },
+  {
+    "title": "FFIEC BSA/AML Manual Appendix L: SAR Quality Guidance",
+    "url": "https://bsaaml.ffiec.gov/manual/Appendices/13",
+    "publisher": "FFIEC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FFIEC SAR quality guidance describes narrative detail needed to explain why activity is unusual and how it occurred."
+  },
+  {
+    "title": "CIP-005-7 Cyber Security - Electronic Security Perimeter(s)",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-005-7.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CIP-005 manages electronic access to BES Cyber Systems through controlled Electronic Security Perimeters."
+  },
+  {
+    "title": "CIP-007-6 Cyber Security - Systems Security Management",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-007-6.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CIP-007 manages system security through technical, operational, and procedural requirements for BES Cyber Systems."
+  },
+  {
+    "title": "CIP-008-7 Cyber Security - Incident Reporting and Response Planning",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-008-7.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CIP-008 specifies incident response requirements and notifications for determined reportable cyber security incidents or attempts to compromise applicable systems."
+  },
+  {
+    "title": "CIP-010-4 Cyber Security - Configuration Change Management and Vulnerability Assessments",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-010-4.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CIP-010 prevents and detects unauthorized changes to BES Cyber Systems through configuration change management and vulnerability assessment."
+  },
+  {
+    "title": "CIP-011-3 Cyber Security - Information Protection",
+    "url": "https://www.nerc.com/globalassets/standards/reliability-standards/cip/cip-011-3.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CIP-011 prevents unauthorized access to BES Cyber System Information through information protection requirements."
+  },
+  {
+    "title": "CIP-004-7 Cyber Security - Personnel & Training",
+    "url": "https://www.nerc.com/globalassets/standards/projects/2019-02/cip-004-7_clean.pdf",
+    "publisher": "NERC",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CIP-004 minimizes risk from individuals accessing BES Cyber Systems through personnel risk assessment, training, security awareness, and access management."
+  },
+  {
+    "title": "Compromise of U.S. Water Treatment Facility",
+    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-042a",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA advisory anchors the Oldsmar-style unauthorized remote access to a water treatment SCADA system and attempted chemical setting change."
+  },
+  {
+    "title": "The Attack on Colonial Pipeline: What We've Learned & What We've Done Over the Past Two Years",
+    "url": "https://www.cisa.gov/news-events/news/attack-colonial-pipeline-what-weve-learned-what-weve-done-over-past-two-years",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA article anchors Colonial Pipeline ransomware as a critical infrastructure incident with operational impact."
+  },
+  {
+    "title": "DarkSide Ransomware: Best Practices for Preventing Business Disruption from Ransomware Attacks",
+    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-131a",
+    "publisher": "CISA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "CISA-FBI advisory anchors ransomware best practices associated with DarkSide."
+  },
+  {
+    "title": "Change Healthcare Cybersecurity Incident Frequently Asked Questions",
+    "url": "https://www.hhs.gov/hipaa/for-professionals/special-topics/change-healthcare-cybersecurity-incident-frequently-asked-questions/index.html",
+    "publisher": "HHS OCR",
+    "retrieved_at": "2026-07-07",
+    "relevance": "HHS OCR FAQ addresses HIPAA implications and breach reporting context for the Change Healthcare cybersecurity incident."
+  },
+  {
+    "title": "Cyberattack on Change Healthcare - Dear Colleague Letter",
+    "url": "https://www.hhs.gov/sites/default/files/cyberattack-change-healthcare.pdf",
+    "publisher": "HHS OCR",
+    "retrieved_at": "2026-07-07",
+    "relevance": "HHS OCR letter notes Change Healthcare disruption to health care and billing information systems nationwide."
+  },
+  {
+    "title": "Norfolk Southern Railway Derailment and Hazardous Materials Release, East Palestine, Ohio",
+    "url": "https://www.ntsb.gov/investigations/AccidentReports/Reports/RIR2405%20CORRECTED.pdf",
+    "publisher": "NTSB",
+    "retrieved_at": "2026-07-07",
+    "relevance": "NTSB report anchors East Palestine derailment sequence involving a critical hot bearing alarm before derailment."
+  },
+  {
+    "title": "Federal Railroad Administration Final Accident Report on Norfolk Southern Derailment",
+    "url": "https://railroads.dot.gov/about-fra/communications/newsroom/press-releases/federal-railroad-administrations-final-accident",
+    "publisher": "FRA",
+    "retrieved_at": "2026-07-07",
+    "relevance": "FRA communication anchors overheating roller bearing cause consistent with investigation findings."
+  }
+]

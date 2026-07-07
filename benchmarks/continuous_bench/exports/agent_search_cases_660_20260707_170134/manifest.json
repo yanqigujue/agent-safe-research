@@ -1,0 +1,27 @@
+{
+  "package_name": "agent_search_cases_660_20260707_170134",
+  "created_at_local": "2026-07-07T17:01:38",
+  "archive_path": "C:\\Users\\wang\\Documents\\agent-safe-research\\benchmarks\\continuous_bench\\exports\\agent_search_cases_660_20260707_170134.zip",
+  "contents": [
+    {
+      "path": "agent_search_cases.jsonl",
+      "description": "660 append-only agent scenario test cases"
+    },
+    {
+      "path": "test_results.json",
+      "description": "Local JSON/schema/dedup distribution validation results"
+    },
+    {
+      "path": "qwen3_8b_check.json",
+      "description": "Local Ollama qwen3:8b quality check result"
+    },
+    {
+      "path": "source_refs.json",
+      "description": "Deduplicated public source references embedded in the dataset"
+    },
+    {
+      "path": "README.md",
+      "description": "Human-readable package summary"
+    }
+  ]
+}

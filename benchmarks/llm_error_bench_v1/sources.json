@@ -1,0 +1,86 @@
+{
+  "gb_26859_2011": {
+    "title": "GB 26859-2011 电力安全工作规程 电力线路部分",
+    "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=74A9B7AE2CAC72BDC758660FE5DB8D99",
+    "source_type": "official_standard_anchor",
+    "use": "电力线路安全规则锚点；本数据集不逐条复制规范原文。"
+  },
+  "gb_26860_2011": {
+    "title": "GB 26860-2011 电力安全工作规程 发电厂和变电站电气部分",
+    "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=3428089C6475E0B29FF38B8C6D8EC205",
+    "source_type": "official_standard_anchor",
+    "use": "发电厂和变电站安全规则锚点；样本为人工构造。"
+  },
+  "gb_26861_2011": {
+    "title": "GB 26861-2011 电力安全工作规程 高压试验室部分",
+    "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=6F990320CE5456A5BBD96E3316DFAB25",
+    "source_type": "official_standard_anchor",
+    "use": "高压试验和试验室安全规则锚点。"
+  },
+  "gb_38755_2019": {
+    "title": "GB 38755-2019 电力系统安全稳定导则",
+    "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=1D988D54A435E864E67CAA13217E8A99",
+    "source_type": "official_standard_anchor",
+    "use": "系统安全稳定、调度和约束决策锚点。"
+  },
+  "osha_1910_269": {
+    "title": "OSHA 1910.269 Electric power generation, transmission, and distribution",
+    "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.269",
+    "source_type": "official_standard_anchor",
+    "use": "英文电力作业安全规则锚点。"
+  },
+  "nerc_lessons": {
+    "title": "NERC Lessons Learned Quick Reference Guide",
+    "url": "https://www.nerc.com/programs/event-analysis/lessons-learned",
+    "source_type": "public_incident_anchor",
+    "use": "公开 lessons learned 元数据作为事故/运行风险场景锚点。"
+  },
+  "pglib_opf": {
+    "title": "PGLib-OPF benchmark cases",
+    "url": "https://github.com/power-grid-lib/pglib-opf",
+    "source_type": "public_dataset_anchor",
+    "use": "潮流、OPF 和线路约束场景锚点；样本数字为合成。"
+  },
+  "matpower_cases": {
+    "title": "MATPOWER example cases",
+    "url": "https://matpower.app/manual/matpower/ExamplematpowerCases.html",
+    "source_type": "public_dataset_anchor",
+    "use": "电力系统算例和调度题型锚点；样本数字为合成。"
+  },
+  "grid2op_l2rpn": {
+    "title": "Grid2Op / L2RPN power-grid operation environments",
+    "url": "https://grid2op.readthedocs.io/en/latest/available_envs.html",
+    "source_type": "public_dataset_anchor",
+    "use": "运行决策、拓扑动作和安全约束场景锚点。"
+  },
+  "ieee_test_feeders": {
+    "title": "IEEE PES Distribution Test Feeders",
+    "url": "https://ewh.ieee.org/soc/pes/dsacom/testfeeders.html",
+    "source_type": "public_dataset_anchor",
+    "use": "配电网和馈线场景锚点；样本为人工构造。"
+  },
+  "safetybench": {
+    "title": "SafetyBench",
+    "url": "https://github.com/thu-coai/safetybench",
+    "source_type": "public_dataset_anchor",
+    "use": "非电网安全题型和风险分类锚点；未复制原题。"
+  },
+  "truthfulqa": {
+    "title": "TruthfulQA",
+    "url": "https://github.com/sylinrl/truthfulqa",
+    "source_type": "public_dataset_anchor",
+    "use": "诱发幻觉/错误常识题型锚点；未复制原题。"
+  },
+  "do_not_answer": {
+    "title": "Do-Not-Answer",
+    "url": "https://github.com/libr-ai/do-not-answer",
+    "source_type": "public_dataset_anchor",
+    "use": "拒答和安全边界题型锚点；未复制原题。"
+  },
+  "synthetic_manual": {
+    "title": "Manual synthetic adversarial cases",
+    "url": "internal://synthetic_manual_cases",
+    "source_type": "synthetic_manual",
+    "use": "人工构造的高概率诱错样本。"
+  }
+}

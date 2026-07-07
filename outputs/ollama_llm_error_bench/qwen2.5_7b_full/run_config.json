@@ -1,0 +1,15 @@
+{
+  "dataset": "benchmarks\\llm_error_bench_v1\\llm_error_bench_v1.jsonl",
+  "model": "qwen2.5:7b",
+  "ollama_url": "http://127.0.0.1:11434",
+  "output_root": "outputs\\ollama_llm_error_bench",
+  "output_dir": "C:\\Users\\wang\\Documents\\agent-safe-research\\outputs\\ollama_llm_error_bench\\qwen2.5_7b_full",
+  "start": 0,
+  "max_cases": null,
+  "temperature": 0.0,
+  "num_ctx": 4096,
+  "num_predict": 192,
+  "timeout_seconds": 300.0,
+  "progress_every": 25,
+  "resume": true
+}

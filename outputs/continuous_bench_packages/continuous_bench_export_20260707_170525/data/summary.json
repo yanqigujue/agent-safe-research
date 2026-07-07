@@ -1,0 +1,98 @@
+{
+  "benchmark_version": "continuous_bench_v1",
+  "updated_at": "2026-07-07T02:19:20.082054+00:00",
+  "model": "qwen3:8b",
+  "completed_iterations": 36,
+  "latest_run": {
+    "generated": 140,
+    "evaluated": 100,
+    "bench": 100,
+    "accepted": 18,
+    "rejected": 116,
+    "model_errors": 18,
+    "model_error_rate": 0.18,
+    "model_pass_rate": 0.82,
+    "bench_label_distribution": {
+      "correct": 82,
+      "incorrect": 18
+    },
+    "failure_mode_distribution": {
+      "false_premise": 11,
+      "safety_overconfidence": 5,
+      "control_normal_case": 3,
+      "terminology_confusion": 2,
+      "missing_condition": 6,
+      "unsafe_correction": 7,
+      "constraint_violation": 2,
+      "counter_authority_ignored": 7,
+      "plan_step_order_error": 7,
+      "rag_retrieval_error": 6,
+      "rag_evidence_pollution": 6,
+      "tool_wrong_parameter": 6,
+      "skill_misuse": 6,
+      "memory_misuse": 5,
+      "approval_scope_expansion": 5,
+      "prior_step_as_authorization": 5,
+      "authority_conflict_power_dispatch": 5,
+      "multi_source_conflict": 6
+    },
+    "accepted_failure_mode_distribution": {
+      "safety_overconfidence": 2,
+      "false_premise": 4,
+      "constraint_violation": 1,
+      "missing_condition": 2,
+      "skill_misuse": 1,
+      "authority_conflict_power_dispatch": 2,
+      "multi_source_conflict": 2,
+      "plan_step_order_error": 1,
+      "counter_authority_ignored": 2,
+      "tool_wrong_parameter": 1
+    }
+  },
+  "totals": {
+    "accepted": 574,
+    "bench": 3051,
+    "evaluated": 3051,
+    "rejected": 2973,
+    "model_errors": 565,
+    "model_correct": 2486,
+    "model_incorrect": 565,
+    "model_pass_rate": 0.8148148148148148
+  },
+  "bench_label_distribution": {
+    "correct": 2486,
+    "incorrect": 565
+  },
+  "failure_mode_distribution": {
+    "safety_overconfidence": 174,
+    "false_premise": 305,
+    "unsafe_correction": 165,
+    "missing_condition": 285,
+    "terminology_confusion": 131,
+    "constraint_violation": 94,
+    "rag_retrieval_error": 151,
+    "rag_evidence_pollution": 150,
+    "tool_wrong_parameter": 151,
+    "skill_misuse": 152,
+    "memory_misuse": 150,
+    "approval_scope_expansion": 149,
+    "prior_step_as_authorization": 148,
+    "authority_conflict_power_dispatch": 149,
+    "multi_source_conflict": 152,
+    "counter_authority_ignored": 153,
+    "plan_step_order_error": 152,
+    "control_normal_case": 207,
+    "negation_trap": 33
+  },
+  "scenario_kind_distribution": {
+    "qa": 1394,
+    "agent": 1657
+  },
+  "output_files": {
+    "accepted": "benchmarks\\continuous_bench\\accepted_bench.jsonl",
+    "bench": "benchmarks\\continuous_bench\\mixed_bench.jsonl",
+    "evaluated": "benchmarks\\continuous_bench\\evaluated_pool.jsonl",
+    "rejected": "benchmarks\\continuous_bench\\rejected_pool.jsonl",
+    "summary": "benchmarks\\continuous_bench\\summary.json"
+  }
+}

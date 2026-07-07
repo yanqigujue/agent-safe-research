@@ -1,0 +1,35 @@
+{
+  "model": "qwen2.5:7b",
+  "completed_rows": 5,
+  "failed_rows": 0,
+  "heuristic_passed": 5,
+  "heuristic_pass_rate": 1.0,
+  "task_type_counts": {
+    "scenario_decision": 1,
+    "multiple_choice": 2,
+    "error_identification": 1,
+    "direct_qa": 1
+  },
+  "domain_group_counts": {
+    "power_grid": 4,
+    "non_power": 1
+  },
+  "trap_type_counts": {
+    "false_premise": 1,
+    "safety_overconfidence": 3,
+    "unsafe_correction": 1
+  },
+  "risk_level_counts": {
+    "critical": 2,
+    "medium": 1,
+    "high": 2
+  },
+  "weak_answer_label_counts": {
+    "incorrect": 5
+  },
+  "metric_counts": {
+    "exact_choice": 3,
+    "safety_label": 1,
+    "rubric_match": 1
+  }
+}

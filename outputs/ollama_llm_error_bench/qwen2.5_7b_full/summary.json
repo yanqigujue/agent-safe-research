@@ -1,0 +1,43 @@
+{
+  "model": "qwen2.5:7b",
+  "completed_rows": 2500,
+  "failed_rows": 0,
+  "heuristic_passed": 1804,
+  "heuristic_pass_rate": 0.7216,
+  "task_type_counts": {
+    "scenario_decision": 417,
+    "multiple_choice": 417,
+    "error_identification": 416,
+    "direct_qa": 416,
+    "correction": 416,
+    "true_false": 418
+  },
+  "domain_group_counts": {
+    "power_grid": 2000,
+    "non_power": 500
+  },
+  "trap_type_counts": {
+    "false_premise": 566,
+    "safety_overconfidence": 312,
+    "unsafe_correction": 284,
+    "constraint_violation": 184,
+    "negation_trap": 43,
+    "terminology_confusion": 241,
+    "missing_condition": 495,
+    "control_normal_case": 375
+  },
+  "risk_level_counts": {
+    "critical": 865,
+    "medium": 717,
+    "high": 918
+  },
+  "weak_answer_label_counts": {
+    "incorrect": 2125,
+    "correct": 375
+  },
+  "metric_counts": {
+    "exact_choice": 834,
+    "safety_label": 834,
+    "rubric_match": 832
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "dataset_id": "llm_error_bench_v1",
+  "version": "1.0.0",
+  "generated_at": "2026-07-07",
+  "generator_seed": 20260707,
+  "total_rows": 2500,
+  "sha256": "d3f63f36fdd6f7740ccdd980f30084f0631af1113efe20b64f713242c6af6411",
+  "domain_group_counts": {
+    "power_grid": 2000,
+    "non_power": 500
+  },
+  "domain_counts": {
+    "power_grid_operations": 500,
+    "medical_safety": 50,
+    "general_electrical_safety": 200,
+    "power_equipment_operations": 300,
+    "electric_power_safety": 600,
+    "financial_safety": 50,
+    "food_safety": 50,
+    "legal_safety": 50,
+    "chemical_lab_safety": 50,
+    "power_grid_incident_response": 400,
+    "construction_safety": 50,
+    "transportation_safety": 50,
+    "privacy_safety": 50,
+    "fire_safety": 50,
+    "cybersecurity_safety": 50
+  },
+  "task_type_counts": {
+    "scenario_decision": 417,
+    "multiple_choice": 417,
+    "error_identification": 416,
+    "direct_qa": 416,
+    "correction": 416,
+    "true_false": 418
+  },
+  "language_counts": {
+    "zh": 1540,
+    "en": 960
+  },
+  "source_type_counts": {
+    "official_standard_anchor": 1009,
+    "public_dataset_anchor": 900,
+    "public_incident_anchor": 475,
+    "synthetic_manual": 116
+  },
+  "trap_type_counts": {
+    "false_premise": 566,
+    "safety_overconfidence": 312,
+    "unsafe_correction": 284,
+    "constraint_violation": 184,
+    "negation_trap": 43,
+    "terminology_confusion": 241,
+    "missing_condition": 495,
+    "control_normal_case": 375
+  },
+  "risk_level_counts": {
+    "critical": 865,
+    "medium": 717,
+    "high": 918
+  },
+  "weak_answer_label_counts": {
+    "incorrect": 2125,
+    "correct": 375
+  },
+  "intended_use": "Internal benchmark for LLM error detection, correction, safe answering, and scenario-decision evaluation.",
+  "limitations": [
+    "Most rows are synthetic or source-anchored synthetic cases, not expert-certified operational procedures.",
+    "Official/public sources are used as anchors and taxonomies; most wording is not copied from the source.",
+    "High-risk prompts are framed for refusal, correction, or safe decision evaluation and must not be treated as instructions."
+  ]
+}

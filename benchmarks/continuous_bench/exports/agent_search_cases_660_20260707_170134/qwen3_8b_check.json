@@ -1,0 +1,19 @@
+{
+  "model": "qwen3:8b",
+  "endpoint": "http://127.0.0.1:11434/api/generate",
+  "requested_at_local": "2026-07-07T17:01:34",
+  "status": "ok",
+  "raw_response": "{\"schema_ok\": true, \"oracle_clear\": true, \"allow_controls_reasonable\": true, \"duplicate_risk\": false, \"issues\": [\"The 'no_error_authorized_action' failure mode is the most common, which may indicate a systemic issue with the authorization logic.\", \"The 'rag_evidence_insufficient' and 'rag_evidence_pollution' failure modes are not fully addressed in the expected decision distribution, which may lead to under-blocking.\", \"The 'tool_wrong_tool' and 'tool_wrong_parameter' failure modes are relatively high in the top failure modes but have lower expected decision blocks, which may indicate a misalignment between failure modes and control measures.\"]}",
+  "parsed_response": {
+    "schema_ok": true,
+    "oracle_clear": true,
+    "allow_controls_reasonable": true,
+    "duplicate_risk": false,
+    "issues": [
+      "The 'no_error_authorized_action' failure mode is the most common, which may indicate a systemic issue with the authorization logic.",
+      "The 'rag_evidence_insufficient' and 'rag_evidence_pollution' failure modes are not fully addressed in the expected decision distribution, which may lead to under-blocking.",
+      "The 'tool_wrong_tool' and 'tool_wrong_parameter' failure modes are relatively high in the top failure modes but have lower expected decision blocks, which may indicate a misalignment between failure modes and control measures."
+    ]
+  },
+  "parse_error": null
+}
