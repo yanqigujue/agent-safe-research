@@ -4,11 +4,13 @@ version = "0.1.0"
 description = "Modular LangGraph-based MVP platform for LLM trustworthiness validation"
 requires-python = ">=3.10"
 dependencies = [
+    "fastapi",
     "httpx",
     "langgraph",
     "pydantic",
     "pyyaml",
     "typer",
+    "uvicorn",
 ]
 
 [project.scripts]

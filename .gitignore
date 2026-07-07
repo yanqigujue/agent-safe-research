@@ -2,7 +2,11 @@ __pycache__/
 .pytest_cache/
 *.pyc
 runs/
+tmp/
 .tmp_cli_runs/
 .tmp_*.json
 .superpowers/
 *.egg-info/
+ui/node_modules/
+ui/dist/
+ui/.vite/

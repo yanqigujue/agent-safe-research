@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 204 22% 96%;
+    --foreground: 220 24% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 24% 13%;
+    --primary: 188 78% 25%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 38 82% 56%;
+    --secondary-foreground: 35 35% 14%;
+    --muted: 210 20% 91%;
+    --muted-foreground: 218 12% 38%;
+    --accent: 166 37% 89%;
+    --accent-foreground: 179 55% 18%;
+    --destructive: 0 72% 44%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 211 17% 82%;
+    --input: 211 17% 82%;
+    --ring: 188 78% 25%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply h-full overflow-hidden bg-background text-foreground antialiased;
+  }
+
+  #root {
+    @apply h-full;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .desktop-shell {
+    @apply flex h-full min-h-0 flex-col;
+  }
+
+  .is-resizing-sidebar,
+  .is-resizing-sidebar * {
+    cursor: col-resize !important;
+    user-select: none;
+  }
+
+  .workspace-bar {
+    @apply flex min-h-14 items-center justify-between gap-3 rounded-md border bg-card px-3 py-2 shadow-sm;
+  }
+
+  .workbench-grid {
+    @apply grid flex-1 min-h-0 p-3;
+  }
+
+  .sidebar-column {
+    @apply flex min-h-0 min-w-0 flex-col gap-3;
+  }
+
+  .sidebar-rail {
+    @apply flex h-full min-h-0 w-full flex-col items-center gap-2 rounded-md border bg-card px-1.5 py-3 text-muted-foreground shadow-sm transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+  }
+
+  .sidebar-rail-label {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    @apply mt-2 text-xs font-medium tracking-normal;
+  }
+
+  .resize-handle {
+    @apply relative flex h-full min-h-0 w-full touch-none items-center justify-center rounded-md text-muted-foreground/70 transition-colors hover:bg-primary/10 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+    cursor: col-resize;
+  }
+
+  .resize-handle::before {
+    content: '';
+    @apply absolute h-12 w-0.5 rounded-full bg-border transition-all;
+  }
+
+  .resize-handle:hover::before,
+  .resize-handle:focus-visible::before {
+    @apply h-20 bg-primary;
+  }
+
+  .resize-handle svg {
+    @apply relative z-10 opacity-0 transition-opacity;
+  }
+
+  .resize-handle:hover svg,
+  .resize-handle:focus-visible svg {
+    @apply opacity-100;
+  }
+
+  .resize-handle-disabled {
+    @apply pointer-events-none opacity-0;
+  }
+
+  .main-work-panel {
+    cursor: default;
+  }
+
+  .main-work-panel:hover {
+    border-color: hsl(var(--border));
+  }
+
+  .section-toggle {
+    @apply flex min-w-0 items-center gap-2 rounded-md text-left text-sm font-semibold text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+  }
+
+  @media (max-width: 1180px) {
+    .workbench-grid {
+      @apply gap-0;
+    }
+  }
+
+  @media (max-width: 820px) {
+    body {
+      @apply overflow-auto;
+    }
+
+    .workbench-grid {
+      @apply flex flex-col gap-3 overflow-auto;
+    }
+
+    .resize-handle {
+      @apply hidden;
+    }
+
+    .sidebar-rail {
+      @apply h-12 min-h-12 flex-row justify-center;
+    }
+
+    .sidebar-rail-label {
+      writing-mode: horizontal-tb;
+      @apply mt-0;
+    }
+  }
+}
