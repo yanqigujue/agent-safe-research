@@ -13,6 +13,8 @@ from pydantic import Field
 
 from formaltrust_platform.state import StrictModel
 
+DEFAULT_MODEL_ENDPOINTS_PATH = Path(__file__).resolve().parents[1] / "runs" / "model_endpoints.json"
+
 
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()

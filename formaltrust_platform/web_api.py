@@ -23,6 +23,7 @@ from formaltrust_platform.config import ExperimentConfig, load_config
 from formaltrust_platform.datasets import load_cases
 from formaltrust_platform.graph import build_graph
 from formaltrust_platform.model_endpoints import (
+    DEFAULT_MODEL_ENDPOINTS_PATH,
     ModelEndpoint,
     ModelEndpointStore,
     chat_with_endpoint,
@@ -35,7 +36,7 @@ WORKSPACE_ROOT = Path(__file__).resolve().parents[1]
 EXAMPLES_DIR = WORKSPACE_ROOT / "examples"
 GENERATED_CONFIG_DIR = EXAMPLES_DIR / "ui_configs"
 RUNS_DIR = WORKSPACE_ROOT / "runs"
-MODEL_ENDPOINTS_PATH = RUNS_DIR / "model_endpoints.json"
+MODEL_ENDPOINTS_PATH = DEFAULT_MODEL_ENDPOINTS_PATH
 SUPPORTED_CONFIG_EXTENSIONS = {".yaml", ".yml"}
 SUPPORTED_DATASET_EXTENSIONS = {".jsonl", ".json", ".csv"}
 
@@ -411,6 +412,7 @@ def _node_catalog_item(descriptor: Any) -> dict[str, Any]:
                 "default": field.default,
                 "description": field.description,
                 "secret_env": field.secret_env,
+                "required_without_any": getattr(field, "required_without_any", []),
             }
             for field in descriptor.config_fields
         ],

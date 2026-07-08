@@ -147,10 +147,19 @@ class ConfigField(StrictModel):
     default: Any = None
     description: str = ""
     secret_env: bool = False
+    required_without_any: list[str] = Field(default_factory=list)
 
     def __init__(self, name: str, **data: Any) -> None:
         # Ergonomic positional name: ConfigField("base_url", required=True, ...)
         super().__init__(name=name, **data)
+
+
+class NodeExample(StrictModel):
+    """Small example shown by UIs that render a node as an interface."""
+
+    name: str
+    config: dict[str, Any] = Field(default_factory=dict)
+    note: str = ""
 
 
 class NodeDescriptor(StrictModel):
@@ -162,6 +171,12 @@ class NodeDescriptor(StrictModel):
     category: NodeCategory = "custom"
     summary: str = ""
     config_fields: list[ConfigField] = Field(default_factory=list)
+    inputs: list[str] = Field(default_factory=list)
+    outputs: list[str] = Field(default_factory=list)
+    metrics: list[str] = Field(default_factory=list)
+    artifacts: list[str] = Field(default_factory=list)
+    advanced_fields: list[str] = Field(default_factory=list)
+    examples: list[NodeExample] = Field(default_factory=list)
     func: Callable[..., Any]
 
 
@@ -175,6 +190,12 @@ def node(
     category: NodeCategory,
     summary: str = "",
     config_fields: Sequence[ConfigField] = (),
+    inputs: Sequence[str] = (),
+    outputs: Sequence[str] = (),
+    metrics: Sequence[str] = (),
+    artifacts: Sequence[str] = (),
+    advanced_fields: Sequence[str] = (),
+    examples: Sequence[NodeExample | Mapping[str, Any]] = (),
 ) -> Callable[[Callable[..., Any]], Callable[..., Any]]:
     """Declare a node's interface inline and attach it to the function.
 
@@ -189,6 +210,15 @@ def node(
             category=category,
             summary=summary,
             config_fields=list(config_fields),
+            inputs=list(inputs),
+            outputs=list(outputs),
+            metrics=list(metrics),
+            artifacts=list(artifacts),
+            advanced_fields=list(advanced_fields),
+            examples=[
+                example if isinstance(example, NodeExample) else NodeExample.model_validate(example)
+                for example in examples
+            ],
             func=func,
         )
         return func
@@ -224,6 +254,8 @@ def validate_config(
         present = field.name in config
         if not present:
             if field.required:
+                if field.required_without_any and any(other in config for other in field.required_without_any):
+                    continue
                 detail = f" ({field.description})" if field.description else ""
                 issues.append(f"missing required config '{field.name}'{detail}")
             continue

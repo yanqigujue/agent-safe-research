@@ -99,6 +99,22 @@ def test_validate_config_flags_missing_unknown_and_wrong_type() -> None:
     assert any("timeout_seconds' should be float" in m for m in wrong_type)
 
 
+def test_model_node_accepts_model_endpoint_id_config() -> None:
+    registry = NodeRegistry.with_builtins()
+    descriptor = registry.describe("model.openai_compatible")
+    field_names = {field.name for field in descriptor.config_fields}
+
+    assert "model_endpoint_id" in field_names
+
+
+def test_model_endpoint_id_satisfies_openai_compatible_required_fields() -> None:
+    registry = NodeRegistry.with_builtins()
+    descriptor = registry.describe("model.openai_compatible")
+
+    assert validate_config(descriptor, {"model_endpoint_id": "mock-offline"}, check_env=False) == []
+    assert any("base_url" in issue for issue in validate_config(descriptor, {}, check_env=False))
+
+
 def test_validate_config_reports_missing_secret_env(monkeypatch: pytest.MonkeyPatch) -> None:
     registry = NodeRegistry.with_builtins()
     descriptor = registry.describe("model.openai_compatible")
