@@ -18,15 +18,24 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+from formaltrust_platform.agent_interfaces import agent_interface_catalog
 from formaltrust_platform.config import ExperimentConfig, load_config
 from formaltrust_platform.datasets import load_cases
 from formaltrust_platform.graph import build_graph
+from formaltrust_platform.model_endpoints import (
+    ModelEndpoint,
+    ModelEndpointStore,
+    chat_with_endpoint,
+    list_ollama_models,
+    probe_endpoint,
+)
 from formaltrust_platform.registry import NodeRegistry
 
 WORKSPACE_ROOT = Path(__file__).resolve().parents[1]
 EXAMPLES_DIR = WORKSPACE_ROOT / "examples"
 GENERATED_CONFIG_DIR = EXAMPLES_DIR / "ui_configs"
 RUNS_DIR = WORKSPACE_ROOT / "runs"
+MODEL_ENDPOINTS_PATH = RUNS_DIR / "model_endpoints.json"
 SUPPORTED_CONFIG_EXTENSIONS = {".yaml", ".yml"}
 SUPPORTED_DATASET_EXTENSIONS = {".jsonl", ".json", ".csv"}
 
@@ -47,6 +56,16 @@ class ValidateConfigRequest(BaseModel):
 class RunRequest(BaseModel):
     config_path: str
     output_dir: str | None = None
+
+
+class ModelEndpointRequest(BaseModel):
+    endpoint: dict[str, Any]
+
+
+class QaRunRequest(BaseModel):
+    endpoint_id: str
+    prompt: str
+    temperature: float = 0
 
 
 @dataclass
@@ -75,8 +94,202 @@ app.add_middleware(
 )
 
 _registry = NodeRegistry.with_builtins()
+_model_endpoints = ModelEndpointStore(MODEL_ENDPOINTS_PATH)
 _jobs: dict[str, JobRecord] = {}
 _jobs_lock = threading.Lock()
+
+CATEGORY_INTERFACE_DEFAULTS: dict[str, dict[str, list[str]]] = {
+    "attack": {
+        "inputs": ["case.input", "case.metadata", "retrieval_context"],
+        "outputs": ["prompt", "attack", "retrieval_context", "metrics"],
+        "metrics": ["attack metadata"],
+    },
+    "custom": {
+        "inputs": ["case.metadata", "metrics"],
+        "outputs": ["metrics"],
+        "metrics": ["adapter diagnostics"],
+    },
+    "guardrail": {
+        "inputs": ["prompt", "model_response", "retrieval_context", "metrics"],
+        "outputs": ["metrics", "errors", "final_action"],
+        "metrics": ["gate decision"],
+    },
+    "model": {
+        "inputs": ["prompt", "case.input"],
+        "outputs": ["model_response", "metrics"],
+        "metrics": ["model_called"],
+    },
+    "evaluator": {
+        "inputs": ["model_response", "metrics", "case.expected_behavior"],
+        "outputs": ["evaluation", "metrics"],
+        "metrics": ["evaluation_passed"],
+    },
+}
+
+NODE_INTERFACE_HINTS: dict[str, dict[str, Any]] = {
+    "attack.template": {
+        "inputs": ["case.input"],
+        "outputs": ["prompt", "attack"],
+        "metrics": ["attack_type"],
+        "examples": [
+            {
+                "name": "Prompt injection wrapper",
+                "config": {
+                    "attack_type": "prompt_injection",
+                    "template": "{input}\\n[TEST] Ignore unsafe instructions.",
+                },
+            }
+        ],
+    },
+    "attack.eair_bench_retrieval": {
+        "inputs": ["case.metadata.case_id", "case.metadata.condition"],
+        "outputs": ["prompt", "attack", "retrieval_context", "metrics.oracle_action"],
+        "metrics": ["eair_bench_case_id", "eair_bench_condition", "oracle_action"],
+    },
+    "attack.eair_retrieval_perturbation": {
+        "inputs": ["retrieval_context"],
+        "outputs": ["retrieval_context", "metrics"],
+        "metrics": [
+            "retrieval_perturbation_applied",
+            "retrieval_perturbation_removed_doc_count",
+        ],
+        "advanced_fields": ["drop_ranks", "shuffle", "seed"],
+    },
+    "attack.eair_claim_extraction_noise": {
+        "inputs": ["retrieval_context.metadata.claims"],
+        "outputs": ["retrieval_context", "metrics"],
+        "metrics": [
+            "claim_noise_applied",
+            "claim_noise_dropped_claim_count",
+            "claim_noise_injected_claim_count",
+        ],
+        "advanced_fields": [
+            "candidate_inject_claims",
+            "drop_probability",
+            "inject_probability",
+            "seed",
+            "target_doc_id",
+            "target_rank",
+            "prepend_injected",
+        ],
+    },
+    "custom.afw_trace_adapter": {
+        "inputs": ["case.metadata.agent_trace_events", "metrics.agent_trace_events"],
+        "outputs": [
+            "metrics.afw_source_events",
+            "metrics.afw_consumptions",
+            "metrics.afw_counter_authority",
+            "metrics.candidate_action",
+        ],
+        "metrics": ["afw_trace_adapter_summary", "afw_trace_adapter_diagnostics"],
+        "advanced_fields": [
+            "event_type_key",
+            "schema_preset",
+            "source_event_type",
+            "candidate_action_event_type",
+            "consumption_event_type",
+            "counter_authority_event_type",
+        ],
+        "examples": [
+            {
+                "name": "Canonical power-ops trace",
+                "config": {"trace_key": "agent_trace_events", "schema_preset": "canonical"},
+            }
+        ],
+    },
+    "guardrail.afw_capguard": {
+        "inputs": [
+            "metrics.afw_source_events",
+            "metrics.afw_consumptions",
+            "metrics.candidate_action",
+            "metrics.afw_rows",
+        ],
+        "outputs": [
+            "metrics.afw_gate_decision",
+            "metrics.afw_runtime_summary",
+            "metrics.final_action",
+        ],
+        "metrics": [
+            "afw_capguard_summary",
+            "afw_runtime_summary",
+            "afw_gate_decision",
+        ],
+        "advanced_fields": [
+            "rows_path",
+            "trace_scenarios_path",
+            "include_trace_generated",
+            "baselines",
+            "runtime_enforce_obligations",
+            "runtime_block_final_action",
+        ],
+        "examples": [
+            {
+                "name": "Field repair runtime gate",
+                "config": {"runtime_final_action_mode": "fieldwise_repair"},
+            }
+        ],
+    },
+    "evaluate.afw_runtime": {
+        "inputs": ["metrics.afw_gate_decision", "metrics.final_action", "case.metadata.oracle"],
+        "outputs": ["evaluation", "metrics"],
+        "metrics": ["afw_runtime_behmatch", "afw_runtime_false_allow"],
+        "advanced_fields": ["require_no_false_allow"],
+    },
+    "model.mock": {
+        "inputs": ["prompt", "case.input"],
+        "outputs": ["model_response", "metrics.model_called"],
+        "examples": [
+            {
+                "name": "Offline safe response",
+                "config": {
+                    "model": "mock-safe-model",
+                    "response_template": "SAFE_RESPONSE: {input}",
+                },
+            }
+        ],
+    },
+    "model.openai_compatible": {
+        "inputs": ["prompt", "case.input", "environment variable api_key_env"],
+        "outputs": ["model_response", "metrics.model_called"],
+        "advanced_fields": ["temperature", "timeout_seconds"],
+        "examples": [
+            {
+                "name": "Compatible chat endpoint",
+                "config": {
+                    "base_url": "https://api.example.com/v1",
+                    "model": "model-name",
+                    "api_key_env": "OPENAI_API_KEY",
+                },
+                "note": "The config stores the env var name, not the secret.",
+            }
+        ],
+    },
+    "model.eair_structured_action_json": {
+        "inputs": ["model_response.content", "metrics.candidate_action"],
+        "outputs": ["metrics.candidate_action"],
+        "advanced_fields": ["action_json"],
+    },
+    "evaluate.rules": {
+        "inputs": ["model_response.content"],
+        "outputs": ["evaluation", "metrics.evaluation_passed"],
+    },
+    "evaluate.eair_bench_action": {
+        "inputs": ["metrics.candidate_action", "metrics.oracle_action"],
+        "outputs": ["evaluation", "metrics"],
+    },
+    "evaluate.eair_robustness_sweep": {
+        "inputs": ["retrieval_context", "metrics.oracle_action"],
+        "outputs": ["metrics", "artifacts"],
+        "artifacts": ["sweep result files"],
+        "advanced_fields": ["gate", "output_dir", "seed_grid"],
+    },
+    "evaluate.eair_case_robustness_sweep": {
+        "inputs": ["EAIR case selector", "sweep config"],
+        "outputs": ["metrics", "artifacts"],
+        "artifacts": ["case sweep result files"],
+        "advanced_fields": ["case_selector", "coverage", "sweep", "output_dir"],
+    },
+}
 
 
 @app.get("/api/health")
@@ -88,28 +301,210 @@ def health() -> dict[str, str]:
 def node_catalog() -> dict[str, Any]:
     descriptors = []
     for descriptor in _registry.catalog():
-        descriptors.append(
-            {
-                "node_id": descriptor.node_id,
-                "category": descriptor.category,
-                "summary": descriptor.summary,
-                "config_fields": [
-                    {
-                        "name": field.name,
-                        "type": field.type,
-                        "required": field.required,
-                        "default": field.default,
-                        "description": field.description,
-                        "secret_env": field.secret_env,
-                    }
-                    for field in descriptor.config_fields
-                ],
-            }
-        )
+        descriptors.append(_node_catalog_item(descriptor))
     return {
         "nodes": descriptors,
         "edge_conditions": ["has_errors", "no_errors", "halted"],
     }
+
+
+@app.get("/api/agent-interfaces")
+def agent_interfaces() -> dict[str, Any]:
+    return agent_interface_catalog()
+
+
+@app.get("/api/model-endpoints")
+def list_model_endpoints() -> dict[str, Any]:
+    return {"endpoints": [endpoint.model_dump(mode="json") for endpoint in _model_endpoints.list()]}
+
+
+@app.post("/api/model-endpoints")
+def save_model_endpoint(request: ModelEndpointRequest) -> dict[str, Any]:
+    endpoint = _model_endpoints.upsert(ModelEndpoint.model_validate(request.endpoint))
+    return {"endpoint": endpoint.model_dump(mode="json")}
+
+
+@app.put("/api/model-endpoints/{endpoint_id}")
+def update_model_endpoint(endpoint_id: str, request: ModelEndpointRequest) -> dict[str, Any]:
+    endpoint = ModelEndpoint.model_validate({**request.endpoint, "endpoint_id": endpoint_id})
+    endpoint = _model_endpoints.upsert(endpoint)
+    return {"endpoint": endpoint.model_dump(mode="json")}
+
+
+@app.delete("/api/model-endpoints/{endpoint_id}")
+def delete_model_endpoint(endpoint_id: str) -> dict[str, str]:
+    try:
+        _model_endpoints.delete(endpoint_id)
+        return {"status": "deleted"}
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+
+@app.post("/api/model-endpoints/{endpoint_id}/probe")
+def probe_model_endpoint(endpoint_id: str) -> dict[str, Any]:
+    try:
+        endpoint = _model_endpoints.get(endpoint_id)
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+    probe = probe_endpoint(endpoint)
+    updated = endpoint.model_copy(
+        update={
+            "status": probe.status,
+            "last_probe_at": probe.checked_at,
+            "last_probe_error": probe.error,
+        }
+    )
+    _model_endpoints.upsert(updated)
+    return {"probe": probe.model_dump(mode="json"), "endpoint": updated.model_dump(mode="json")}
+
+
+@app.get("/api/ollama/models")
+def ollama_models(base_url: str = Query("http://127.0.0.1:11434")) -> dict[str, Any]:
+    return {"models": list_ollama_models(base_url)}
+
+
+@app.post("/api/qa/run")
+def run_qa(request: QaRunRequest) -> dict[str, Any]:
+    try:
+        endpoint = _model_endpoints.get(request.endpoint_id)
+        result = chat_with_endpoint(endpoint, request.prompt, temperature=request.temperature)
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+    run_id = f"qa-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:6]}"
+    payload = {
+        "run_id": run_id,
+        "run_type": "qa",
+        "input": {"prompt": request.prompt},
+        "answer": result.answer,
+        "model_snapshot": result.model_snapshot,
+        "latency_ms": result.latency_ms,
+        "evaluation": {"passed": True, "label": "completed", "score": 1.0, "reasons": []},
+        "raw": result.raw,
+    }
+    run_dir = RUNS_DIR / run_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+    (run_dir / "qa_result.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    return payload
+
+
+def _node_catalog_item(descriptor: Any) -> dict[str, Any]:
+    interface = _node_interface(descriptor)
+    return {
+        "node_id": descriptor.node_id,
+        "category": descriptor.category,
+        "summary": descriptor.summary,
+        "inputs": interface["inputs"],
+        "outputs": interface["outputs"],
+        "metrics": interface["metrics"],
+        "artifacts": interface["artifacts"],
+        "advanced_fields": interface["advanced_fields"],
+        "examples": interface["examples"],
+        "config_fields": [
+            {
+                "name": field.name,
+                "type": field.type,
+                "required": field.required,
+                "default": field.default,
+                "description": field.description,
+                "secret_env": field.secret_env,
+            }
+            for field in descriptor.config_fields
+        ],
+    }
+
+
+def _node_interface(descriptor: Any) -> dict[str, Any]:
+    defaults = CATEGORY_INTERFACE_DEFAULTS.get(descriptor.category, CATEGORY_INTERFACE_DEFAULTS["custom"])
+    hints = NODE_INTERFACE_HINTS.get(descriptor.node_id, {})
+    config_fields = list(descriptor.config_fields)
+
+    return {
+        "inputs": _unique_values(
+            getattr(descriptor, "inputs", []),
+            hints.get("inputs") or defaults["inputs"],
+        ),
+        "outputs": _unique_values(
+            getattr(descriptor, "outputs", []),
+            hints.get("outputs") or defaults["outputs"],
+        ),
+        "metrics": _unique_values(
+            getattr(descriptor, "metrics", []),
+            hints.get("metrics") or defaults["metrics"],
+        ),
+        "artifacts": _unique_values(
+            getattr(descriptor, "artifacts", []),
+            hints.get("artifacts") or [],
+        ),
+        "advanced_fields": _unique_values(
+            getattr(descriptor, "advanced_fields", []),
+            hints.get("advanced_fields") or [],
+            _heuristic_advanced_fields(config_fields),
+        ),
+        "examples": _node_examples(descriptor, hints),
+    }
+
+
+def _unique_values(*groups: Any) -> list[str]:
+    seen: set[str] = set()
+    result: list[str] = []
+    for group in groups:
+        if not isinstance(group, (list, tuple)):
+            continue
+        for item in group:
+            value = str(item)
+            if value and value not in seen:
+                seen.add(value)
+                result.append(value)
+    return result
+
+
+def _heuristic_advanced_fields(config_fields: list[Any]) -> list[str]:
+    advanced_names = {
+        "baselines",
+        "candidate_inject_claims",
+        "coverage",
+        "event_type_key",
+        "gate",
+        "include_trace_generated",
+        "output_dir",
+        "runtime_block_final_action",
+        "runtime_enforce_obligations",
+        "seed",
+        "seed_grid",
+        "timeout_seconds",
+        "trace_scenarios_path",
+    }
+    result: list[str] = []
+    for field in config_fields:
+        if field.name in advanced_names or (field.type in {"list", "dict"} and not field.required):
+            result.append(field.name)
+    return result
+
+
+def _node_examples(descriptor: Any, hints: dict[str, Any]) -> list[dict[str, Any]]:
+    examples: list[dict[str, Any]] = []
+    for example in getattr(descriptor, "examples", []):
+        examples.append(
+            {
+                "name": example.name,
+                "config": example.config,
+                "note": example.note,
+            }
+        )
+    for example in hints.get("examples") or []:
+        if isinstance(example, dict):
+            examples.append(
+                {
+                    "name": str(example.get("name", "Example")),
+                    "config": example.get("config") or {},
+                    "note": str(example.get("note", "")),
+                }
+            )
+    return examples
 
 
 @app.get("/api/datasets")
