@@ -49,13 +49,17 @@ import {
   type GraphEdge,
   type GraphNode,
   type JobRecord,
+  type ModelEndpoint,
   type NodeDescriptor,
+  type QaRunResult,
   type RunDetail,
   type RunSummary,
+  type ValidationResult,
 } from '@/lib/api'
 import { cn } from '@/lib/utils'
 
-type BusyState = 'idle' | 'boot' | 'save' | 'run' | 'load'
+type BusyState = 'idle' | 'boot' | 'save' | 'run' | 'load' | 'validate' | 'probe'
+type Workspace = 'model-endpoints' | 'qa' | 'agent-flow'
 type MainTab = 'configure' | 'run' | 'results'
 type SidebarSide = 'left' | 'right'
 type NativeMenuAction =
@@ -81,6 +85,27 @@ const emptyConfig: ExperimentConfig = {
     nodes: [],
     edges: [],
   },
+}
+
+const workspaceLabels: Record<Workspace, string> = {
+  'model-endpoints': '模型连接',
+  qa: '问答',
+  'agent-flow': 'Agent 流程',
+}
+
+const emptyEndpoint: ModelEndpoint = {
+  endpoint_id: 'new-endpoint',
+  name: 'New model endpoint',
+  kind: 'ollama',
+  provider: 'Ollama',
+  base_url: 'http://127.0.0.1:11434',
+  model: 'qwen2.5:7b',
+  api_key_env: null,
+  capabilities: ['chat'],
+  status: 'unchecked',
+  last_probe_at: null,
+  last_probe_error: null,
+  metadata: {},
 }
 
 const selectClass =
@@ -502,8 +527,11 @@ function getNodeOptionText(descriptor: NodeDescriptor) {
 }
 
 function App() {
+  const [workspace, setWorkspace] = useState<Workspace>('qa')
   const [catalog, setCatalog] = useState<NodeDescriptor[]>([])
   const [edgeConditions, setEdgeConditions] = useState<string[]>([])
+  const [modelEndpoints, setModelEndpoints] = useState<ModelEndpoint[]>([])
+  const [selectedEndpointId, setSelectedEndpointId] = useState('mock-offline')
   const [configs, setConfigs] = useState<ConfigSummary[]>([])
   const [datasets, setDatasets] = useState<DatasetSummary[]>([])
   const [runs, setRuns] = useState<RunSummary[]>([])
@@ -514,6 +542,7 @@ function App() {
   const [dirty, setDirty] = useState(false)
   const [busy, setBusy] = useState<BusyState>('boot')
   const [notice, setNotice] = useState<string | null>(null)
+  const [validation, setValidation] = useState<ValidationResult | null>(null)
   const [tab, setTab] = useState<MainTab>('configure')
   const [selectedRun, setSelectedRun] = useState<RunDetail | null>(null)
   const [selectedReport, setSelectedReport] = useState('')
@@ -524,8 +553,15 @@ function App() {
   const [leftSidebarWidth, setLeftSidebarWidth] = useState(300)
   const [rightSidebarWidth, setRightSidebarWidth] = useState(360)
   const [mainPanelResizeEdge, setMainPanelResizeEdge] = useState<SidebarSide | null>(null)
+  const [endpointDraft, setEndpointDraft] = useState<ModelEndpoint>(emptyEndpoint)
+  const [qaPrompt, setQaPrompt] = useState('请总结当前电网运行风险。')
+  const [qaResult, setQaResult] = useState<QaRunResult | null>(null)
 
   const nodeById = useMemo(() => new Map(catalog.map((node) => [node.node_id, node])), [catalog])
+  const selectedEndpoint = useMemo(
+    () => modelEndpoints.find((endpoint) => endpoint.endpoint_id === selectedEndpointId),
+    [modelEndpoints, selectedEndpointId],
+  )
   const groupedCatalog = useMemo(() => {
     return catalog.reduce<Record<string, NodeDescriptor[]>>((groups, node) => {
       groups[node.category] = groups[node.category] ? [...groups[node.category], node] : [node]
@@ -566,13 +602,22 @@ function App() {
     setBusy('boot')
     setNotice(null)
     try {
-      const [catalogResponse, configResponse, datasetResponse, runResponse, jobResponse] = await Promise.all([
+      const [endpointResponse, catalogResponse, configResponse, datasetResponse, runResponse, jobResponse] = await Promise.all([
+        api.modelEndpoints(),
         api.catalog(),
         api.configs(),
         api.datasets(),
         api.runs(),
         api.jobs(),
       ])
+      setModelEndpoints(endpointResponse.endpoints)
+      if (endpointResponse.endpoints[0]) {
+        setSelectedEndpointId((current) =>
+          endpointResponse.endpoints.some((endpoint) => endpoint.endpoint_id === current)
+            ? current
+            : endpointResponse.endpoints[0].endpoint_id,
+        )
+      }
       setCatalog(catalogResponse.nodes)
       setEdgeConditions(catalogResponse.edge_conditions)
       setConfigs(configResponse.configs)
@@ -598,9 +643,82 @@ function App() {
     setRuns(runResponse.runs)
   }
 
+  async function refreshModelEndpoints(nextSelectedId?: string) {
+    const endpointResponse = await api.modelEndpoints()
+    setModelEndpoints(endpointResponse.endpoints)
+    if (nextSelectedId) {
+      setSelectedEndpointId(nextSelectedId)
+    } else if (!endpointResponse.endpoints.some((endpoint) => endpoint.endpoint_id === selectedEndpointId)) {
+      setSelectedEndpointId(endpointResponse.endpoints[0]?.endpoint_id ?? 'mock-offline')
+    }
+  }
+
+  async function saveEndpoint(endpoint: ModelEndpoint) {
+    setBusy('save')
+    setNotice(null)
+    try {
+      const response = await api.saveModelEndpoint(endpoint)
+      setEndpointDraft(response.endpoint)
+      await refreshModelEndpoints(response.endpoint.endpoint_id)
+      setNotice('模型连接已保存。')
+    } catch (error) {
+      setNotice(error instanceof Error ? error.message : String(error))
+    } finally {
+      setBusy('idle')
+    }
+  }
+
+  async function probeEndpoint(endpointId: string) {
+    setBusy('probe')
+    setNotice(null)
+    try {
+      const response = await api.probeModelEndpoint(endpointId)
+      await refreshModelEndpoints(response.endpoint.endpoint_id)
+      setNotice(response.probe.error ? `连接检查未通过：${response.probe.error}` : '连接检查通过。')
+    } catch (error) {
+      setNotice(error instanceof Error ? error.message : String(error))
+    } finally {
+      setBusy('idle')
+    }
+  }
+
+  async function runQa() {
+    setBusy('run')
+    setNotice(null)
+    try {
+      const result = await api.runQa(selectedEndpointId, qaPrompt)
+      setQaResult(result)
+      setNotice('问答运行完成。')
+    } catch (error) {
+      setNotice(error instanceof Error ? error.message : String(error))
+    } finally {
+      setBusy('idle')
+    }
+  }
+
   async function refreshConfigs() {
     const configResponse = await api.configs()
     setConfigs(configResponse.configs)
+  }
+
+  async function validateDraft(options: { quiet?: boolean } = {}) {
+    setBusy('validate')
+    setNotice(null)
+    try {
+      const result = await api.validateConfig(draft)
+      setValidation(result)
+      if (!options.quiet) {
+        setNotice(result.valid ? '预检通过：当前配置可以保存或运行。' : '预检未通过：请处理下方问题。')
+      }
+      return result
+    } catch (error) {
+      const result = { valid: false, issues: [error instanceof Error ? error.message : String(error)] }
+      setValidation(result)
+      if (!options.quiet) setNotice('预检请求失败。')
+      return result
+    } finally {
+      setBusy('idle')
+    }
   }
 
   function createNewConfig() {
@@ -608,6 +726,7 @@ function App() {
     setDraft(cloneConfig(emptyConfig))
     setSaveName(emptyConfig.experiment_name)
     setDirty(true)
+    setValidation(null)
     setTab('configure')
   }
 
@@ -620,6 +739,7 @@ function App() {
       setDraft(cloneConfig(detail.config))
       setSaveName(detail.config.experiment_name)
       setDirty(false)
+      setValidation(null)
     } catch (error) {
       setNotice(error instanceof Error ? error.message : String(error))
     } finally {
@@ -634,6 +754,7 @@ function App() {
       return next
     })
     setDirty(true)
+    setValidation(null)
   }
 
   function updateNode(index: number, patch: Partial<GraphNode>) {
@@ -757,6 +878,12 @@ function App() {
   }
 
   async function saveCurrentConfig() {
+    const check = await validateDraft({ quiet: true })
+    if (!check.valid) {
+      setNotice('预检未通过：配置没有保存。')
+      return null
+    }
+
     setBusy('save')
     setNotice(null)
     try {
@@ -777,6 +904,13 @@ function App() {
   }
 
   async function startRun() {
+    const check = await validateDraft({ quiet: true })
+    if (!check.valid) {
+      setNotice('预检未通过：任务没有启动。')
+      setTab('configure')
+      return
+    }
+
     setBusy('run')
     setNotice(null)
     try {
@@ -841,7 +975,11 @@ function App() {
           void saveCurrentConfig()
           break
         case 'run-experiment':
-          void startRun()
+          if (workspace === 'qa') {
+            void runQa()
+          } else {
+            void startRun()
+          }
           break
         case 'refresh-all':
           void bootstrap()
@@ -853,12 +991,15 @@ function App() {
           rebuildEdges()
           break
         case 'view-configure':
+          setWorkspace('agent-flow')
           setTab('configure')
           break
         case 'view-run':
+          setWorkspace('agent-flow')
           setTab('run')
           break
         case 'view-results':
+          setWorkspace('agent-flow')
           setTab('results')
           break
         case 'refresh-runtime':
@@ -911,15 +1052,23 @@ function App() {
 
         <section className="flex min-h-0 min-w-0 flex-col gap-3 px-2">
           <div className="shrink-0 space-y-2">
-            <WorkspaceBar
-              activeTab={tab}
-              busy={busy}
-              dirty={dirty}
-              nodeCount={draft.graph.nodes.length}
-              selectedConfigPath={selectedConfig?.path}
-              onSaveConfig={() => void saveCurrentConfig()}
-              onStartRun={() => void startRun()}
-            />
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <WorkspaceSwitcher workspace={workspace} onWorkspaceChange={setWorkspace} />
+              <EndpointPill endpoint={selectedEndpoint} />
+            </div>
+            {workspace === 'agent-flow' && (
+              <WorkspaceBar
+                activeTab={tab}
+                busy={busy}
+                dirty={dirty}
+                validation={validation}
+                nodeCount={draft.graph.nodes.length}
+                selectedConfigPath={selectedConfig?.path}
+                onValidate={() => void validateDraft()}
+                onSaveConfig={() => void saveCurrentConfig()}
+                onStartRun={() => void startRun()}
+              />
+            )}
             {notice && (
               <div className="rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900">
                 {notice}
@@ -936,39 +1085,75 @@ function App() {
             onPointerMove={updateMainPanelResizeEdge}
             onPointerLeave={() => setMainPanelResizeEdge(null)}
           >
-            {tab === 'configure' && (
-              <ConfigPanel
-                draft={draft}
-                saveName={saveName}
-                selectedConfig={selectedConfig}
-                datasets={datasets}
-                groupedCatalog={groupedCatalog}
-                nodeById={nodeById}
-                edgeConditions={edgeConditions}
-                onSaveNameChange={setSaveName}
-                onDraftChange={editDraft}
-                onUpdateNode={updateNode}
-                onUpdateNodeConfig={updateNodeConfig}
-                onAddNode={addNode}
-                onRemoveNode={removeNode}
-                onMoveNode={moveNode}
-                onRebuildEdges={rebuildEdges}
-                onUpdateEdge={updateEdge}
+            {workspace === 'model-endpoints' && (
+              <ModelEndpointsWorkspace
+                endpoints={modelEndpoints}
+                selectedEndpointId={selectedEndpointId}
+                draft={endpointDraft}
+                busy={busy}
+                onSelect={(endpoint) => {
+                  setSelectedEndpointId(endpoint.endpoint_id)
+                  setEndpointDraft(endpoint)
+                }}
+                onDraftChange={setEndpointDraft}
+                onSave={() => void saveEndpoint(endpointDraft)}
+                onProbe={(endpointId) => void probeEndpoint(endpointId)}
+                onNew={() => setEndpointDraft(emptyEndpoint)}
               />
             )}
-            {tab === 'run' && <RunPanel jobs={jobs} latestJob={latestJob} onRefresh={() => void refreshRuntime()} />}
-            {tab === 'results' && (
-              <ResultsPanel
-                runs={runs}
-                selectedRun={selectedRun}
-                selectedReport={selectedReport}
-                selectedCase={selectedCase}
-                filteredCases={filteredCases}
-                caseFilter={caseFilter}
-                onCaseFilterChange={setCaseFilter}
-                onRunSelect={(runId) => void loadRun(runId)}
-                onCaseSelect={(caseRow) => void loadCase(caseRow)}
+            {workspace === 'qa' && (
+              <QaWorkspace
+                endpoints={modelEndpoints}
+                selectedEndpointId={selectedEndpointId}
+                prompt={qaPrompt}
+                result={qaResult}
+                busy={busy}
+                onEndpointChange={setSelectedEndpointId}
+                onPromptChange={setQaPrompt}
+                onRun={() => void runQa()}
               />
+            )}
+            {workspace === 'agent-flow' && (
+              <div className="workspace-stack">
+                <AgentFlowHeader draft={draft} endpoints={modelEndpoints} busy={busy} onRun={() => void startRun()} />
+                {tab === 'configure' && (
+                  <ConfigPanel
+                    draft={draft}
+                    saveName={saveName}
+                    selectedConfig={selectedConfig}
+                    datasets={datasets}
+                    groupedCatalog={groupedCatalog}
+                    nodeById={nodeById}
+                    edgeConditions={edgeConditions}
+                    validation={validation}
+                    busy={busy}
+                    onSaveNameChange={setSaveName}
+                    onDraftChange={editDraft}
+                    onValidate={() => void validateDraft()}
+                    onUpdateNode={updateNode}
+                    onUpdateNodeConfig={updateNodeConfig}
+                    onAddNode={addNode}
+                    onRemoveNode={removeNode}
+                    onMoveNode={moveNode}
+                    onRebuildEdges={rebuildEdges}
+                    onUpdateEdge={updateEdge}
+                  />
+                )}
+                {tab === 'run' && <RunPanel jobs={jobs} latestJob={latestJob} onRefresh={() => void refreshRuntime()} />}
+                {tab === 'results' && (
+                  <ResultsPanel
+                    runs={runs}
+                    selectedRun={selectedRun}
+                    selectedReport={selectedReport}
+                    selectedCase={selectedCase}
+                    filteredCases={filteredCases}
+                    caseFilter={caseFilter}
+                    onCaseFilterChange={setCaseFilter}
+                    onRunSelect={(runId) => void loadRun(runId)}
+                    onCaseSelect={(caseRow) => void loadCase(caseRow)}
+                  />
+                )}
+              </div>
             )}
           </div>
         </section>
@@ -1056,20 +1241,319 @@ function ResizeHandle({
   )
 }
 
+function WorkspaceSwitcher({
+  workspace,
+  onWorkspaceChange,
+}: {
+  workspace: Workspace
+  onWorkspaceChange: (workspace: Workspace) => void
+}) {
+  const items: Workspace[] = ['model-endpoints', 'qa', 'agent-flow']
+  return (
+    <div className="workspace-switcher">
+      {items.map((item) => (
+        <button
+          key={item}
+          type="button"
+          className={cn('workspace-switcher-item', workspace === item && 'workspace-switcher-item-active')}
+          onClick={() => onWorkspaceChange(item)}
+        >
+          {workspaceLabels[item]}
+        </button>
+      ))}
+    </div>
+  )
+}
+
+function EndpointPill({ endpoint }: { endpoint: ModelEndpoint | undefined }) {
+  if (!endpoint) return <Badge variant="outline">未选择模型</Badge>
+  const variant =
+    endpoint.status === 'available' ? 'success' : endpoint.status === 'error' ? 'destructive' : 'secondary'
+  return (
+    <div className="endpoint-pill" title={endpoint.last_probe_error || endpoint.name}>
+      <span>{endpoint.provider || endpoint.kind}</span>
+      <span className="truncate font-mono">{endpoint.model}</span>
+      <Badge variant={variant}>{endpoint.status}</Badge>
+    </div>
+  )
+}
+
+function ModelEndpointsWorkspace({
+  endpoints,
+  selectedEndpointId,
+  draft,
+  busy,
+  onSelect,
+  onDraftChange,
+  onSave,
+  onProbe,
+  onNew,
+}: {
+  endpoints: ModelEndpoint[]
+  selectedEndpointId: string
+  draft: ModelEndpoint
+  busy: BusyState
+  onSelect: (endpoint: ModelEndpoint) => void
+  onDraftChange: (endpoint: ModelEndpoint) => void
+  onSave: () => void
+  onProbe: (endpointId: string) => void
+  onNew: () => void
+}) {
+  const isBusy = busy !== 'idle'
+  return (
+    <div className="workspace-stack">
+      <div className="workspace-header">
+        <div>
+          <h2>模型连接</h2>
+          <p>问答和 Agent 流程共享这些模型端点。</p>
+        </div>
+        <Button variant="outline" onClick={onNew}>
+          <Plus className="size-4" />
+          新建
+        </Button>
+      </div>
+      <div className="workspace-two-column">
+        <section className="workspace-panel">
+          <div className="flex items-center justify-between gap-2">
+            <h3>连接列表</h3>
+            <Badge variant="muted">{endpoints.length} 个</Badge>
+          </div>
+          <div className="endpoint-list">
+            {endpoints.map((endpoint) => (
+              <button
+                key={endpoint.endpoint_id}
+                type="button"
+                className={cn('endpoint-list-item', endpoint.endpoint_id === selectedEndpointId && 'endpoint-list-item-active')}
+                onClick={() => onSelect(endpoint)}
+              >
+                <div className="min-w-0">
+                  <div className="truncate text-sm font-semibold">{endpoint.name}</div>
+                  <div className="truncate font-mono text-xs text-muted-foreground">
+                    {endpoint.kind} / {endpoint.model}
+                  </div>
+                </div>
+                <Badge variant={endpoint.status === 'available' ? 'success' : endpoint.status === 'error' ? 'destructive' : 'outline'}>
+                  {endpoint.status}
+                </Badge>
+              </button>
+            ))}
+          </div>
+        </section>
+        <section className="workspace-panel">
+          <div className="flex items-center justify-between gap-2">
+            <h3>连接详情</h3>
+            <div className="flex gap-2">
+              <Button variant="outline" onClick={() => onProbe(draft.endpoint_id)} disabled={isBusy || !draft.endpoint_id}>
+                {busy === 'probe' ? <Loader2 className="size-4 animate-spin" /> : <RefreshCw className="size-4" />}
+                检查
+              </Button>
+              <Button onClick={onSave} disabled={isBusy}>
+                <Save className="size-4" />
+                保存
+              </Button>
+            </div>
+          </div>
+          <div className="endpoint-form-grid">
+            <Label>
+              ID
+              <Input value={draft.endpoint_id} onChange={(event) => onDraftChange({ ...draft, endpoint_id: event.target.value })} />
+            </Label>
+            <Label>
+              名称
+              <Input value={draft.name} onChange={(event) => onDraftChange({ ...draft, name: event.target.value })} />
+            </Label>
+            <Label>
+              类型
+              <select
+                className={selectClass}
+                value={draft.kind}
+                onChange={(event) => onDraftChange({ ...draft, kind: event.target.value })}
+              >
+                <option value="ollama">Ollama</option>
+                <option value="openai_compatible">OpenAI Compatible</option>
+                <option value="mock">Mock</option>
+              </select>
+            </Label>
+            <Label>
+              Provider
+              <Input value={draft.provider} onChange={(event) => onDraftChange({ ...draft, provider: event.target.value })} />
+            </Label>
+            <Label className="endpoint-form-wide">
+              Base URL
+              <Input
+                value={draft.base_url ?? ''}
+                onChange={(event) => onDraftChange({ ...draft, base_url: event.target.value || null })}
+              />
+            </Label>
+            <Label>
+              Model
+              <Input value={draft.model} onChange={(event) => onDraftChange({ ...draft, model: event.target.value })} />
+            </Label>
+            <Label>
+              API Key Env
+              <Input
+                value={draft.api_key_env ?? ''}
+                onChange={(event) => onDraftChange({ ...draft, api_key_env: event.target.value || null })}
+              />
+            </Label>
+          </div>
+          {draft.last_probe_error && <div className="endpoint-error">{draft.last_probe_error}</div>}
+        </section>
+      </div>
+    </div>
+  )
+}
+
+function QaWorkspace({
+  endpoints,
+  selectedEndpointId,
+  prompt,
+  result,
+  busy,
+  onEndpointChange,
+  onPromptChange,
+  onRun,
+}: {
+  endpoints: ModelEndpoint[]
+  selectedEndpointId: string
+  prompt: string
+  result: QaRunResult | null
+  busy: BusyState
+  onEndpointChange: (value: string) => void
+  onPromptChange: (value: string) => void
+  onRun: () => void
+}) {
+  const endpoint = endpoints.find((item) => item.endpoint_id === selectedEndpointId)
+  return (
+    <div className="workspace-stack">
+      <div className="workspace-header">
+        <div>
+          <h2>问答</h2>
+          <EndpointPill endpoint={endpoint} />
+        </div>
+        <Button onClick={onRun} disabled={busy !== 'idle' || !endpoint}>
+          {busy === 'run' ? <Loader2 className="size-4 animate-spin" /> : <Play className="size-4" />}
+          运行
+        </Button>
+      </div>
+      <div className="workspace-two-column">
+        <section className="workspace-panel">
+          <Label>
+            模型连接
+            <select className={selectClass} value={selectedEndpointId} onChange={(event) => onEndpointChange(event.target.value)}>
+              {endpoints.map((endpoint) => (
+                <option key={endpoint.endpoint_id} value={endpoint.endpoint_id}>
+                  {endpoint.name} / {endpoint.model}
+                </option>
+              ))}
+            </select>
+          </Label>
+          <Label>
+            Prompt
+            <Textarea value={prompt} onChange={(event) => onPromptChange(event.target.value)} className="min-h-40" />
+          </Label>
+        </section>
+        <section className="workspace-panel">
+          <h3>回答</h3>
+          {result ? (
+            <>
+              <div className="qa-answer">{result.answer}</div>
+              <div className="grid gap-2 text-xs text-muted-foreground">
+                <span>Run: {result.run_id}</span>
+                <span>Latency: {Math.round(result.latency_ms)} ms</span>
+              </div>
+              <pre className="json-preview">{JSON.stringify(result.model_snapshot, null, 2)}</pre>
+            </>
+          ) : (
+            <div className="empty-state">运行后这里显示模型回答、延迟和模型快照。</div>
+          )}
+        </section>
+      </div>
+    </div>
+  )
+}
+
+function AgentFlowHeader({
+  draft,
+  endpoints,
+  busy,
+  onRun,
+}: {
+  draft: ExperimentConfig
+  endpoints: ModelEndpoint[]
+  busy: BusyState
+  onRun: () => void
+}) {
+  const summaries = agentModelSummariesFromConfig(draft, endpoints)
+  return (
+    <div className="workspace-header">
+      <div>
+        <h2>Agent 流程</h2>
+        <div className="endpoint-row">
+          {summaries.length ? (
+            summaries.map((summary) => (
+              <div key={summary.key} className="endpoint-pill">
+                <span>{summary.label}</span>
+                <span className="truncate font-mono">{summary.detail}</span>
+                {summary.status && <Badge variant={summary.status === 'available' ? 'success' : 'outline'}>{summary.status}</Badge>}
+              </div>
+            ))
+          ) : (
+            <Badge variant="outline">未绑定模型节点</Badge>
+          )}
+        </div>
+      </div>
+      <Button onClick={onRun} disabled={busy !== 'idle'}>
+        <Play className="size-4" />
+        运行流程
+      </Button>
+    </div>
+  )
+}
+
+function agentModelSummariesFromConfig(config: ExperimentConfig, endpoints: ModelEndpoint[]) {
+  return config.graph.nodes
+    .filter((node) => node.node_id.startsWith('model.'))
+    .map((node) => {
+      const endpointId = typeof node.config.model_endpoint_id === 'string' ? node.config.model_endpoint_id : ''
+      const endpoint = endpoints.find((item) => item.endpoint_id === endpointId)
+      if (endpoint) {
+        return {
+          key: `${node.name}:${endpoint.endpoint_id}`,
+          label: node.name,
+          detail: `${endpoint.provider || endpoint.kind} / ${endpoint.model}`,
+          status: endpoint.status,
+        }
+      }
+      const explicitModel = typeof node.config.model === 'string' ? node.config.model : node.node_id
+      const apiKeyEnv = typeof node.config.api_key_env === 'string' ? ` / ${node.config.api_key_env}` : ''
+      return {
+        key: `${node.name}:${node.node_id}`,
+        label: node.name,
+        detail: `${node.node_id} / ${explicitModel}${apiKeyEnv}`,
+        status: undefined,
+      }
+    })
+}
+
 function WorkspaceBar({
   activeTab,
   busy,
   dirty,
+  validation,
   nodeCount,
   selectedConfigPath,
+  onValidate,
   onSaveConfig,
   onStartRun,
 }: {
   activeTab: MainTab
   busy: BusyState
   dirty: boolean
+  validation: ValidationResult | null
   nodeCount: number
   selectedConfigPath: string | undefined
+  onValidate: () => void
   onSaveConfig: () => void
   onStartRun: () => void
 }) {
@@ -1094,6 +1578,20 @@ function WorkspaceBar({
       </div>
       <div className="flex shrink-0 items-center gap-1.5">
         {dirty && <Badge variant="warning">未保存</Badge>}
+        {validation && (
+          <Badge variant={validation.valid ? 'success' : 'destructive'}>
+            {validation.valid ? '预检通过' : `${validation.issues.length} 个问题`}
+          </Badge>
+        )}
+        <Button variant="outline" size="icon" onClick={onValidate} disabled={isBusy} aria-label="预检配置" title="预检配置">
+          {busy === 'validate' ? (
+            <Loader2 className="size-4 animate-spin" />
+          ) : validation?.valid ? (
+            <CheckCircle2 className="size-4" />
+          ) : (
+            <CircleAlert className="size-4" />
+          )}
+        </Button>
         <Button variant="outline" size="icon" onClick={onSaveConfig} disabled={isBusy} aria-label="保存配置" title="保存配置">
           <Save className="size-4" />
         </Button>
@@ -1215,8 +1713,11 @@ function ConfigPanel({
   groupedCatalog,
   nodeById,
   edgeConditions,
+  validation,
+  busy,
   onSaveNameChange,
   onDraftChange,
+  onValidate,
   onUpdateNode,
   onUpdateNodeConfig,
   onAddNode,
@@ -1232,8 +1733,11 @@ function ConfigPanel({
   groupedCatalog: Record<string, NodeDescriptor[]>
   nodeById: Map<string, NodeDescriptor>
   edgeConditions: string[]
+  validation: ValidationResult | null
+  busy: BusyState
   onSaveNameChange: (value: string) => void
   onDraftChange: (mutator: (next: ExperimentConfig) => void) => void
+  onValidate: () => void
   onUpdateNode: (index: number, patch: Partial<GraphNode>) => void
   onUpdateNodeConfig: (index: number, field: ConfigField, rawValue: string | boolean) => void
   onAddNode: () => void
@@ -1297,6 +1801,8 @@ function ConfigPanel({
         </CardContent>
       </Card>
 
+      <PreflightPanel validation={validation} busy={busy} onValidate={onValidate} />
+
       <Card>
         <CardHeader className="flex-row items-center justify-between gap-3 pb-3">
           <div>
@@ -1312,53 +1818,27 @@ function ConfigPanel({
           </Button>
         </CardHeader>
         <CardContent className="space-y-3">
-          {draft.graph.nodes.map((node, index) => (
-            <div key={`${node.name}-${index}`} className="rounded-lg border bg-background p-3">
-              <div className="grid gap-3 lg:grid-cols-[1fr_1.5fr_auto]">
-                <Field label="节点名称">
-                  <Input value={node.name} onChange={(event) => onUpdateNode(index, { name: event.target.value })} />
-                </Field>
-                <Field label="节点类型">
-                  <select
-                    className={selectClass}
-                    value={node.node_id}
-                    onChange={(event) => onUpdateNode(index, { node_id: event.target.value, config: {} })}
-                  >
-                    {Object.entries(groupedCatalog).map(([category, nodes]) => (
-                      <optgroup key={category} label={getCategoryLabel(category)}>
-                        {nodes.map((descriptor) => (
-                          <option key={descriptor.node_id} value={descriptor.node_id}>
-                            {getNodeOptionText(descriptor)}
-                          </option>
-                        ))}
-                      </optgroup>
-                    ))}
-                  </select>
-                </Field>
-                <div className="flex items-end gap-1">
-                  <Button variant="outline" size="icon" onClick={() => onMoveNode(index, -1)} disabled={index === 0}>
-                    <ArrowUp className="size-4" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => onMoveNode(index, 1)}
-                    disabled={index === draft.graph.nodes.length - 1}
-                  >
-                    <ArrowDown className="size-4" />
-                  </Button>
-                  <Button variant="outline" size="icon" onClick={() => onRemoveNode(index)}>
-                    <Trash2 className="size-4" />
-                  </Button>
-                </div>
-              </div>
-              <NodeConfigEditor
-                descriptor={nodeById.get(node.node_id)}
-                node={node}
-                onFieldChange={(field, value) => onUpdateNodeConfig(index, field, value)}
-              />
+          {draft.graph.nodes.length > 0 && <NodeFlowPreview nodes={draft.graph.nodes} nodeById={nodeById} />}
+          {draft.graph.nodes.length === 0 ? (
+            <div className="rounded-md border border-dashed bg-background p-4 text-sm text-muted-foreground">
+              还没有节点。
             </div>
-          ))}
+          ) : (
+            draft.graph.nodes.map((node, index) => (
+              <NodeCard
+                key={`${node.name}-${index}`}
+                node={node}
+                index={index}
+                totalNodes={draft.graph.nodes.length}
+                descriptor={nodeById.get(node.node_id)}
+                groupedCatalog={groupedCatalog}
+                onUpdateNode={(patch) => onUpdateNode(index, patch)}
+                onUpdateNodeConfig={(field, value) => onUpdateNodeConfig(index, field, value)}
+                onMoveNode={(direction) => onMoveNode(index, direction)}
+                onRemoveNode={() => onRemoveNode(index)}
+              />
+            ))
+          )}
         </CardContent>
       </Card>
 
@@ -1435,6 +1915,184 @@ function ConfigPanel({
   )
 }
 
+function PreflightPanel({
+  validation,
+  busy,
+  onValidate,
+}: {
+  validation: ValidationResult | null
+  busy: BusyState
+  onValidate: () => void
+}) {
+  const tone = validation?.valid ? 'good' : validation ? 'bad' : 'muted'
+  return (
+    <Card className={cn('preflight-card', `preflight-card-${tone}`)}>
+      <CardHeader className="flex-row items-center justify-between gap-3 pb-3">
+        <div>
+          <CardTitle className="flex items-center gap-2">
+            {validation?.valid ? <CheckCircle2 className="size-4" /> : <CircleAlert className="size-4" />}
+            运行前检查
+          </CardTitle>
+          <CardDescription>
+            {validation
+              ? validation.valid
+                ? '当前配置通过校验。'
+                : `${validation.issues.length} 个问题需要处理。`
+              : '尚未检查当前配置。'}
+          </CardDescription>
+        </div>
+        <Button variant="outline" size="sm" onClick={onValidate} disabled={busy !== 'idle'}>
+          {busy === 'validate' ? <Loader2 className="size-4 animate-spin" /> : <CheckCircle2 className="size-4" />}
+          预检
+        </Button>
+      </CardHeader>
+      {validation && !validation.valid && (
+        <CardContent className="space-y-2 pt-0">
+          {validation.issues.map((issue, index) => (
+            <div key={`${issue}-${index}`} className="rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-800">
+              {issue}
+            </div>
+          ))}
+        </CardContent>
+      )}
+    </Card>
+  )
+}
+
+function NodeFlowPreview({
+  nodes,
+  nodeById,
+}: {
+  nodes: GraphNode[]
+  nodeById: Map<string, NodeDescriptor>
+}) {
+  return (
+    <div className="flow-strip">
+      <span className="flow-terminal">START</span>
+      {nodes.map((node, index) => {
+        const descriptor = nodeById.get(node.node_id)
+        const copy = descriptor ? getNodeCopy(descriptor) : { label: node.node_id, summary: '' }
+        return (
+          <div key={`${node.name}-${index}`} className="flow-step">
+            <ArrowRight className="flow-arrow" />
+            <span className="flow-node-pill">
+              <span className="flow-node-index">{index + 1}</span>
+              <span className="truncate">{node.name || copy.label}</span>
+            </span>
+          </div>
+        )
+      })}
+      <ArrowRight className="flow-arrow" />
+      <span className="flow-terminal">END</span>
+    </div>
+  )
+}
+
+function NodeCard({
+  node,
+  index,
+  totalNodes,
+  descriptor,
+  groupedCatalog,
+  onUpdateNode,
+  onUpdateNodeConfig,
+  onMoveNode,
+  onRemoveNode,
+}: {
+  node: GraphNode
+  index: number
+  totalNodes: number
+  descriptor: NodeDescriptor | undefined
+  groupedCatalog: Record<string, NodeDescriptor[]>
+  onUpdateNode: (patch: Partial<GraphNode>) => void
+  onUpdateNodeConfig: (field: ConfigField, value: string | boolean) => void
+  onMoveNode: (direction: -1 | 1) => void
+  onRemoveNode: () => void
+}) {
+  const [open, setOpen] = useState(index === 0)
+  const nodeInfo = descriptor ? getNodeCopy(descriptor) : { label: node.node_id, summary: '未知节点类型。' }
+  const configuredFields = descriptor
+    ? descriptor.config_fields.filter((field) => fieldConfigured(node, field)).length
+    : 0
+
+  return (
+    <div className="node-interface-card">
+      <div className="node-interface-header">
+        <Button variant="ghost" size="icon" onClick={() => setOpen((current) => !current)} aria-label={open ? '收起节点' : '展开节点'}>
+          {open ? <ChevronDown className="size-4" /> : <ChevronRight className="size-4" />}
+        </Button>
+        <div className="min-w-0 flex-1">
+          <div className="flex min-w-0 flex-wrap items-center gap-2">
+            <span className="node-step-badge">{index + 1}</span>
+            <span className="truncate text-sm font-semibold">{node.name || nodeInfo.label}</span>
+            {descriptor && <Badge variant="outline">{getCategoryLabel(descriptor.category)}</Badge>}
+            {descriptor && <Badge variant="muted">{configuredFields}/{descriptor.config_fields.length} 参数</Badge>}
+            <span className="truncate font-mono text-xs text-muted-foreground">{node.node_id}</span>
+          </div>
+          <div className="mt-1 line-clamp-2 text-xs leading-relaxed text-muted-foreground">{nodeInfo.summary}</div>
+          {descriptor && (
+            <div className="mt-2 flex min-w-0 flex-wrap gap-1.5">
+              {descriptor.outputs.slice(0, 3).map((output) => (
+                <span key={output} className="contract-chip contract-chip-output">{output}</span>
+              ))}
+            </div>
+          )}
+        </div>
+        <div className="flex shrink-0 items-center gap-1">
+          <Button variant="outline" size="icon" onClick={() => onMoveNode(-1)} disabled={index === 0} aria-label="上移节点" title="上移节点">
+            <ArrowUp className="size-4" />
+          </Button>
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => onMoveNode(1)}
+            disabled={index === totalNodes - 1}
+            aria-label="下移节点"
+            title="下移节点"
+          >
+            <ArrowDown className="size-4" />
+          </Button>
+          <Button variant="outline" size="icon" onClick={onRemoveNode} aria-label="删除节点" title="删除节点">
+            <Trash2 className="size-4" />
+          </Button>
+        </div>
+      </div>
+
+      {open && (
+        <div className="node-interface-body">
+          <div className="grid gap-3 lg:grid-cols-[minmax(180px,0.8fr)_minmax(280px,1.2fr)]">
+            <Field label="节点名称">
+              <Input value={node.name} onChange={(event) => onUpdateNode({ name: event.target.value })} />
+            </Field>
+            <Field label="节点类型">
+              <select
+                className={selectClass}
+                value={node.node_id}
+                onChange={(event) => onUpdateNode({ node_id: event.target.value, config: {} })}
+              >
+                {Object.entries(groupedCatalog).map(([category, nodes]) => (
+                  <optgroup key={category} label={getCategoryLabel(category)}>
+                    {nodes.map((option) => (
+                      <option key={option.node_id} value={option.node_id}>
+                        {getNodeOptionText(option)}
+                      </option>
+                    ))}
+                  </optgroup>
+                ))}
+              </select>
+            </Field>
+          </div>
+          <NodeConfigEditor
+            descriptor={descriptor}
+            node={node}
+            onFieldChange={(field, value) => onUpdateNodeConfig(field, value)}
+          />
+        </div>
+      )}
+    </div>
+  )
+}
+
 function NodeConfigEditor({
   descriptor,
   node,
@@ -1444,75 +2102,243 @@ function NodeConfigEditor({
   node: GraphNode
   onFieldChange: (field: ConfigField, value: string | boolean) => void
 }) {
+  const [advancedOpen, setAdvancedOpen] = useState(false)
   if (!descriptor) {
     return <div className="mt-3 rounded-md border border-red-200 bg-red-50 p-3 text-sm text-red-700">未知节点类型。</div>
   }
-  const nodeInfo = getNodeCopy(descriptor)
-  if (descriptor.config_fields.length === 0) {
-    return (
-      <div className="mt-3 rounded-md border bg-card px-3 py-2 text-sm">
-        <div className="font-medium">{nodeInfo.label}</div>
-        <div className="mt-1 text-xs leading-relaxed text-muted-foreground">
-          {nodeInfo.summary || '这个节点没有额外参数。'}
-        </div>
-      </div>
-    )
-  }
+  const fieldGroups = splitConfigFields(descriptor)
   return (
-    <div className="mt-3 space-y-3">
-      <div className="rounded-md border bg-card px-3 py-2 text-sm">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="font-medium">{nodeInfo.label}</span>
-          <Badge variant="outline">{getCategoryLabel(descriptor.category)}</Badge>
-          <span className="font-mono text-xs text-muted-foreground">{descriptor.node_id}</span>
-        </div>
-        <div className="mt-1 text-xs leading-relaxed text-muted-foreground">{nodeInfo.summary}</div>
-      </div>
-
-      <div className="grid gap-3 md:grid-cols-2">
-        {descriptor.config_fields.map((field) => {
-          const value = node.config[field.name] ?? field.default
-          const copy = getFieldCopy(descriptor, field)
-          return (
-            <div key={field.name} className="space-y-1.5">
-              <div className="flex min-w-0 flex-wrap items-center gap-2">
-                <Label className="text-sm font-medium">{copy.label}</Label>
-                {field.required && <Badge variant="warning">必填</Badge>}
-                {field.secret_env && <Badge variant="muted">环境变量</Badge>}
-                <Badge variant="outline" className="whitespace-nowrap">{typeLabels[field.type]}</Badge>
-                <span className="font-mono text-xs text-muted-foreground">{field.name}</span>
+    <div className="mt-4 grid gap-4 xl:grid-cols-[minmax(0,1fr)_320px]">
+      <div className="space-y-4">
+        {descriptor.config_fields.length === 0 ? (
+          <div className="rounded-md border bg-card px-3 py-2 text-sm text-muted-foreground">这个节点没有额外参数。</div>
+        ) : (
+          <>
+            {fieldGroups.required.length > 0 && (
+              <FieldGroup
+                title="必填参数"
+                descriptor={descriptor}
+                node={node}
+                fields={fieldGroups.required}
+                onFieldChange={onFieldChange}
+              />
+            )}
+            {fieldGroups.common.length > 0 && (
+              <FieldGroup
+                title="常用参数"
+                descriptor={descriptor}
+                node={node}
+                fields={fieldGroups.common}
+                onFieldChange={onFieldChange}
+              />
+            )}
+            {fieldGroups.advanced.length > 0 && (
+              <div className="rounded-md border bg-card">
+                <button
+                  type="button"
+                  className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm font-semibold"
+                  onClick={() => setAdvancedOpen((open) => !open)}
+                >
+                  <span className="flex items-center gap-2">
+                    {advancedOpen ? <ChevronDown className="size-4" /> : <ChevronRight className="size-4" />}
+                    高级参数
+                  </span>
+                  <Badge variant="muted">{fieldGroups.advanced.length}</Badge>
+                </button>
+                {advancedOpen && (
+                  <div className="border-t p-3">
+                    <FieldGrid descriptor={descriptor} node={node} fields={fieldGroups.advanced} onFieldChange={onFieldChange} />
+                  </div>
+                )}
               </div>
-              {field.type === 'bool' ? (
-                <label className="flex h-9 items-center gap-2 rounded-md border bg-card px-3 text-sm">
-                  <input
-                    type="checkbox"
-                    checked={Boolean(value)}
-                    onChange={(event) => onFieldChange(field, event.target.checked)}
-                  />
-                  <span>{value ? '开启' : '关闭'}</span>
-                  <span className="font-mono text-xs text-muted-foreground">{value ? 'true' : 'false'}</span>
-                </label>
-              ) : field.type === 'list' || field.type === 'dict' ? (
-                <Textarea
-                  className="min-h-20 font-mono text-xs"
-                  defaultValue={fieldValueToText(value, field)}
-                  placeholder={copy.placeholder}
-                  onBlur={(event) => onFieldChange(field, event.target.value)}
-                />
-              ) : (
-                <Input
-                  type={field.type === 'int' || field.type === 'float' ? 'number' : 'text'}
-                  value={fieldValueToText(value, field)}
-                  placeholder={copy.placeholder}
-                  onChange={(event) => onFieldChange(field, event.target.value)}
-                />
-              )}
-              <div className="text-xs leading-relaxed text-muted-foreground">{copy.description}</div>
+            )}
+          </>
+        )}
+      </div>
+      <ContractPanel descriptor={descriptor} />
+    </div>
+  )
+}
+
+function FieldGroup({
+  title,
+  descriptor,
+  node,
+  fields,
+  onFieldChange,
+}: {
+  title: string
+  descriptor: NodeDescriptor
+  node: GraphNode
+  fields: ConfigField[]
+  onFieldChange: (field: ConfigField, value: string | boolean) => void
+}) {
+  return (
+    <div className="space-y-2">
+      <div className="flex items-center gap-2 text-sm font-semibold">
+        <span>{title}</span>
+        <Badge variant="muted">{fields.length}</Badge>
+      </div>
+      <FieldGrid descriptor={descriptor} node={node} fields={fields} onFieldChange={onFieldChange} />
+    </div>
+  )
+}
+
+function FieldGrid({
+  descriptor,
+  node,
+  fields,
+  onFieldChange,
+}: {
+  descriptor: NodeDescriptor
+  node: GraphNode
+  fields: ConfigField[]
+  onFieldChange: (field: ConfigField, value: string | boolean) => void
+}) {
+  return (
+    <div className="grid gap-3 md:grid-cols-2">
+      {fields.map((field) => (
+        <NodeFieldEditor
+          key={field.name}
+          descriptor={descriptor}
+          node={node}
+          field={field}
+          onFieldChange={onFieldChange}
+        />
+      ))}
+    </div>
+  )
+}
+
+function NodeFieldEditor({
+  descriptor,
+  node,
+  field,
+  onFieldChange,
+}: {
+  descriptor: NodeDescriptor
+  node: GraphNode
+  field: ConfigField
+  onFieldChange: (field: ConfigField, value: string | boolean) => void
+}) {
+  const value = node.config[field.name] ?? field.default
+  const copy = getFieldCopy(descriptor, field)
+  const missingRequired = field.required && !fieldConfigured(node, field)
+  return (
+    <div className="space-y-1.5">
+      <div className="flex min-w-0 flex-wrap items-center gap-2">
+        <Label className="text-sm font-medium">{copy.label}</Label>
+        {field.required && <Badge variant={missingRequired ? 'destructive' : 'warning'}>必填</Badge>}
+        {field.secret_env && <Badge variant="muted">环境变量</Badge>}
+        <Badge variant="outline" className="whitespace-nowrap">{typeLabels[field.type]}</Badge>
+        <span className="font-mono text-xs text-muted-foreground">{field.name}</span>
+      </div>
+      {field.type === 'bool' ? (
+        <label className="flex h-9 items-center gap-2 rounded-md border bg-card px-3 text-sm">
+          <input
+            type="checkbox"
+            checked={Boolean(value)}
+            onChange={(event) => onFieldChange(field, event.target.checked)}
+          />
+          <span>{value ? '开启' : '关闭'}</span>
+          <span className="font-mono text-xs text-muted-foreground">{value ? 'true' : 'false'}</span>
+        </label>
+      ) : field.type === 'list' || field.type === 'dict' ? (
+        <Textarea
+          className={cn('min-h-20 font-mono text-xs', missingRequired && 'border-destructive')}
+          defaultValue={fieldValueToText(value, field)}
+          placeholder={copy.placeholder}
+          onBlur={(event) => onFieldChange(field, event.target.value)}
+        />
+      ) : (
+        <Input
+          className={cn(missingRequired && 'border-destructive')}
+          type={field.type === 'int' || field.type === 'float' ? 'number' : 'text'}
+          value={fieldValueToText(value, field)}
+          placeholder={copy.placeholder}
+          onChange={(event) => onFieldChange(field, event.target.value)}
+        />
+      )}
+      <div className="text-xs leading-relaxed text-muted-foreground">{copy.description}</div>
+    </div>
+  )
+}
+
+function ContractPanel({ descriptor }: { descriptor: NodeDescriptor }) {
+  return (
+    <div className="contract-panel">
+      <ContractList title="输入" items={descriptor.inputs} tone="input" />
+      <ContractList title="输出" items={descriptor.outputs} tone="output" />
+      <ContractList title="指标" items={descriptor.metrics} tone="metric" />
+      {descriptor.artifacts.length > 0 && <ContractList title="产物" items={descriptor.artifacts} tone="artifact" />}
+      {descriptor.examples.length > 0 && (
+        <div className="space-y-2">
+          <div className="text-xs font-semibold text-muted-foreground">示例</div>
+          {descriptor.examples.slice(0, 2).map((example) => (
+            <div key={example.name} className="rounded-md border bg-background p-2">
+              <div className="text-xs font-medium">{example.name}</div>
+              {example.note && <div className="mt-1 text-xs text-muted-foreground">{example.note}</div>}
+              <pre className="mt-2 max-h-40 overflow-auto rounded bg-slate-950 p-2 text-xs text-slate-100">
+                {JSON.stringify(example.config, null, 2)}
+              </pre>
             </div>
-          )
-        })}
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function ContractList({
+  title,
+  items,
+  tone,
+}: {
+  title: string
+  items: string[]
+  tone: 'input' | 'output' | 'metric' | 'artifact'
+}) {
+  return (
+    <div className="space-y-2">
+      <div className="text-xs font-semibold text-muted-foreground">{title}</div>
+      <div className="flex flex-wrap gap-1.5">
+        {items.length > 0 ? (
+          items.map((item) => (
+            <span key={item} className={cn('contract-chip', `contract-chip-${tone}`)}>
+              {item}
+            </span>
+          ))
+        ) : (
+          <span className="text-xs text-muted-foreground">无</span>
+        )}
       </div>
     </div>
+  )
+}
+
+function splitConfigFields(descriptor: NodeDescriptor) {
+  const advancedNames = new Set(descriptor.advanced_fields)
+  const required: ConfigField[] = []
+  const common: ConfigField[] = []
+  const advanced: ConfigField[] = []
+
+  descriptor.config_fields.forEach((field) => {
+    if (field.required) {
+      required.push(field)
+    } else if (advancedNames.has(field.name)) {
+      advanced.push(field)
+    } else {
+      common.push(field)
+    }
+  })
+
+  return { required, common, advanced }
+}
+
+function fieldConfigured(node: GraphNode, field: ConfigField) {
+  return (
+    Object.prototype.hasOwnProperty.call(node.config, field.name) ||
+    (field.default !== undefined && field.default !== null)
   )
 }
 

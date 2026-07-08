@@ -184,6 +184,17 @@ export type QaRunResult = {
   raw: Record<string, unknown>
 }
 
+export type QaRunSummary = {
+  run_id: string
+  run_type: 'qa'
+  path: string
+  updated_at: string
+  prompt: string
+  answer: string
+  model_snapshot: Record<string, unknown>
+  latency_ms: number | null
+}
+
 async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE}${path}`, {
     headers: {
@@ -219,6 +230,8 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ endpoint_id: endpointId, prompt, temperature }),
     }),
+  qaRuns: () => apiFetch<{ runs: QaRunSummary[] }>('/api/qa/runs'),
+  qaRun: (runId: string) => apiFetch<QaRunResult>(`/api/qa/runs/${encodeURIComponent(runId)}`),
   configs: () => apiFetch<{ configs: ConfigSummary[] }>('/api/configs'),
   config: (path: string) => apiFetch<ConfigDetail>(`/api/config?path=${encodeURIComponent(path)}`),
   saveConfig: (name: string, config: ExperimentConfig) =>

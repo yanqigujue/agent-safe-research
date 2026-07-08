@@ -62,6 +62,15 @@ def test_web_api_model_endpoints_and_mock_qa_run() -> None:
     assert payload["answer"].startswith("MOCK_RESPONSE:")
     assert payload["model_snapshot"]["endpoint_id"] == "mock-offline"
 
+    runs_response = client.get("/api/qa/runs")
+    assert runs_response.status_code == 200
+    run_ids = {run["run_id"] for run in runs_response.json()["runs"]}
+    assert payload["run_id"] in run_ids
+
+    detail_response = client.get(f"/api/qa/runs/{payload['run_id']}")
+    assert detail_response.status_code == 200
+    assert detail_response.json()["answer"] == payload["answer"]
+
 
 def test_web_api_lists_formaltrust_configs() -> None:
     client = TestClient(app)

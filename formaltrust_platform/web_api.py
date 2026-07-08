@@ -392,6 +392,45 @@ def run_qa(request: QaRunRequest) -> dict[str, Any]:
     return payload
 
 
+@app.get("/api/qa/runs")
+def list_qa_runs() -> dict[str, Any]:
+    runs: list[dict[str, Any]] = []
+    if RUNS_DIR.exists():
+        for run_dir in RUNS_DIR.iterdir():
+            if not run_dir.is_dir():
+                continue
+            result_path = run_dir / "qa_result.json"
+            if not result_path.exists():
+                continue
+            try:
+                payload = json.loads(result_path.read_text(encoding="utf-8"))
+            except Exception:  # noqa: BLE001 - malformed QA runs should not break the list.
+                payload = {}
+            runs.append(
+                {
+                    "run_id": run_dir.name,
+                    "run_type": "qa",
+                    "path": _relative_to_workspace(run_dir),
+                    "updated_at": _mtime_iso(result_path),
+                    "prompt": payload.get("input", {}).get("prompt", ""),
+                    "answer": payload.get("answer", ""),
+                    "model_snapshot": payload.get("model_snapshot", {}),
+                    "latency_ms": payload.get("latency_ms"),
+                }
+            )
+    runs.sort(key=lambda run: run["updated_at"], reverse=True)
+    return {"runs": runs}
+
+
+@app.get("/api/qa/runs/{run_id}")
+def get_qa_run(run_id: str) -> dict[str, Any]:
+    run_dir = _resolve_run_dir(run_id)
+    result_path = run_dir / "qa_result.json"
+    if not result_path.exists():
+        raise HTTPException(status_code=404, detail="QA run result not found.")
+    return json.loads(result_path.read_text(encoding="utf-8"))
+
+
 def _node_catalog_item(descriptor: Any) -> dict[str, Any]:
     interface = _node_interface(descriptor)
     return {
