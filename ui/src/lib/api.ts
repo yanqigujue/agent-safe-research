@@ -8,12 +8,25 @@ export type ConfigField = {
   default: unknown
   description: string
   secret_env: boolean
+  required_without_any?: string[]
+}
+
+export type NodeExample = {
+  name: string
+  config: Record<string, unknown>
+  note: string
 }
 
 export type NodeDescriptor = {
   node_id: string
   category: 'attack' | 'guardrail' | 'model' | 'evaluator' | 'custom'
   summary: string
+  inputs: string[]
+  outputs: string[]
+  metrics: string[]
+  artifacts: string[]
+  advanced_fields: string[]
+  examples: NodeExample[]
   config_fields: ConfigField[]
 }
 
@@ -127,6 +140,50 @@ export type RunDetail = {
   report_exists: boolean
 }
 
+export type ValidationResult = {
+  valid: boolean
+  issues: string[]
+}
+
+export type ModelEndpoint = {
+  endpoint_id: string
+  name: string
+  kind: string
+  provider: string
+  base_url: string | null
+  model: string
+  api_key_env: string | null
+  capabilities: string[]
+  status: 'unchecked' | 'available' | 'unavailable' | 'error' | string
+  last_probe_at: string | null
+  last_probe_error: string | null
+  metadata: Record<string, unknown>
+}
+
+export type ModelEndpointProbe = {
+  endpoint_id: string
+  status: string
+  checked_at: string
+  models: string[]
+  error: string | null
+}
+
+export type QaRunResult = {
+  run_id: string
+  run_type: 'qa'
+  input: { prompt: string; case_id?: string | null }
+  answer: string
+  model_snapshot: Record<string, unknown>
+  latency_ms: number
+  evaluation: {
+    passed: boolean
+    label: string
+    score: number
+    reasons: string[]
+  }
+  raw: Record<string, unknown>
+}
+
 async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE}${path}`, {
     headers: {
@@ -144,12 +201,35 @@ async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
 
 export const api = {
   catalog: () => apiFetch<{ nodes: NodeDescriptor[]; edge_conditions: string[] }>('/api/catalog'),
+  modelEndpoints: () => apiFetch<{ endpoints: ModelEndpoint[] }>('/api/model-endpoints'),
+  saveModelEndpoint: (endpoint: ModelEndpoint) =>
+    apiFetch<{ endpoint: ModelEndpoint }>('/api/model-endpoints', {
+      method: 'POST',
+      body: JSON.stringify({ endpoint }),
+    }),
+  probeModelEndpoint: (endpointId: string) =>
+    apiFetch<{ probe: ModelEndpointProbe; endpoint: ModelEndpoint }>(
+      `/api/model-endpoints/${encodeURIComponent(endpointId)}/probe`,
+      { method: 'POST' },
+    ),
+  ollamaModels: (baseUrl: string) =>
+    apiFetch<{ models: string[] }>(`/api/ollama/models?base_url=${encodeURIComponent(baseUrl)}`),
+  runQa: (endpointId: string, prompt: string, temperature = 0) =>
+    apiFetch<QaRunResult>('/api/qa/run', {
+      method: 'POST',
+      body: JSON.stringify({ endpoint_id: endpointId, prompt, temperature }),
+    }),
   configs: () => apiFetch<{ configs: ConfigSummary[] }>('/api/configs'),
   config: (path: string) => apiFetch<ConfigDetail>(`/api/config?path=${encodeURIComponent(path)}`),
   saveConfig: (name: string, config: ExperimentConfig) =>
     apiFetch<ConfigDetail>('/api/configs', {
       method: 'POST',
       body: JSON.stringify({ name, config }),
+    }),
+  validateConfig: (config: ExperimentConfig) =>
+    apiFetch<ValidationResult>('/api/configs/validate', {
+      method: 'POST',
+      body: JSON.stringify({ config }),
     }),
   datasets: () => apiFetch<{ datasets: DatasetSummary[] }>('/api/datasets'),
   runs: () => apiFetch<{ runs: RunSummary[] }>('/api/runs'),
