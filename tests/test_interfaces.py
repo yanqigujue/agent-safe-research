@@ -24,12 +24,19 @@ def test_builtins_expose_category_and_config_requirements() -> None:
     catalog = {d.node_id: d for d in registry.catalog()}
 
     assert set(catalog) == {
+        "analysis.claim_extraction",
+        "attack.evidence_rag_poisoning",
         "attack.template",
+        "evaluate.action",
         "evaluate.rules",
+        "guardrail.evidence_action_gate",
         "guardrail.input.noop",
         "guardrail.output.noop",
+        "model.deepseek_action",
+        "model.metadata_action",
         "model.mock",
         "model.openai_compatible",
+        "retrieval.conflict_aware_rerank",
     }
     assert catalog["model.openai_compatible"].category == "model"
     required = {f.name for f in catalog["model.openai_compatible"].config_fields if f.required}

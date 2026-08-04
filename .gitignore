@@ -4,3 +4,5 @@ __pycache__/
 runs/
 .tmp_cli_runs/
 *.egg-info/
+external/
+outputs/*_preview/

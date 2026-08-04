@@ -37,6 +37,15 @@ class NodeRegistry:
         registry = cls()
         from formaltrust_platform.nodes.attacks import template_attack_node
         from formaltrust_platform.nodes.evaluators import rule_evaluator_node
+        from formaltrust_platform.nodes.evidence_action import (
+            action_evaluator_node,
+            claim_extraction_node,
+            conflict_aware_rerank_node,
+            deepseek_action_model_node,
+            evidence_action_gate_node,
+            evidence_rag_poisoning_node,
+            metadata_action_model_node,
+        )
         from formaltrust_platform.nodes.guardrails import (
             input_noop_guardrail_node,
             output_noop_guardrail_node,
@@ -50,6 +59,13 @@ class NodeRegistry:
             mock_model_node,
             openai_compatible_model_node,
             rule_evaluator_node,
+            evidence_rag_poisoning_node,
+            conflict_aware_rerank_node,
+            claim_extraction_node,
+            metadata_action_model_node,
+            deepseek_action_model_node,
+            evidence_action_gate_node,
+            action_evaluator_node,
         ):
             registry.register(builtin)
         return registry
