@@ -1,0 +1,15 @@
+{
+  "clean_doc_count": 288,
+  "poison_doc_count": 3,
+  "top_k": 1,
+  "target_qids": [
+    "blackstart_zh:12",
+    "blackstart_zh:13",
+    "monitoring_zh:13"
+  ],
+  "target_poison_hit_count": 3,
+  "target_poison_hit_rate": 1.0,
+  "non_target_question_count": 285,
+  "non_target_poison_hit_count": 0,
+  "non_target_poison_hit_rate": 0.0
+}

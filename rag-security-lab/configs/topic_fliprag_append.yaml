@@ -1,0 +1,38 @@
+experiment:
+  name: topic_fliprag_monitoring_append_hybrid_lsa
+  seed: 2026
+  output_root: runs
+
+dataset:
+  type: elecbench
+  path: 知识库污染数据集/Elecbench中文版
+
+# attack_targets 从污染文件的 target_qid 自动生成查询集。
+queries:
+  mode: attack_targets
+
+attack:
+  type: external_jsonl
+  mode: append
+  path: experiments/topic_fliprag_simplified/monitoring_capacity_group_a_poisoned_docs.jsonl
+
+retriever:
+  type: hybrid_lsa
+  top_k: [1, 5]
+  alpha: 0.5
+  components: 64
+  analyzer: char_wb
+  ngram_range: [2, 5]
+
+generation:
+  enabled: false
+  type: ollama
+  base_url: http://localhost:11434
+  model: qwen3:8b
+  top_k: 5
+  prompt_mode: naive
+  query_scope: targets
+  max_queries: 6
+  temperature: 0.0
+  timeout: 300
+

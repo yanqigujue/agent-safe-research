@@ -1,0 +1,29 @@
+experiment:
+  name: poisonedrag_consensus_10_tfidf
+  seed: 2026
+  output_root: runs
+
+dataset:
+  type: elecbench
+  path: 知识库污染数据集/Elecbench中文版
+
+queries:
+  mode: all
+
+attack:
+  type: targeted_static
+  mode: append
+  targets_file: experiments/poisonedrag_full/manual_review_poisonedrag_10_attacks.csv
+  style: query_consensus
+  poisons_per_target: 5
+
+retriever:
+  type: tfidf
+  top_k: [1, 3, 5, 10]
+  analyzer: char_wb
+  ngram_range: [2, 5]
+  min_df: 1
+  sublinear_tf: true
+
+generation:
+  enabled: false

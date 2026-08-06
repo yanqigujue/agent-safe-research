@@ -1,0 +1,3 @@
+[submodule "rag-security-lab/上下文污染BIPIA数据集/BIPIA"]
+	path = rag-security-lab/上下文污染BIPIA数据集/BIPIA
+	url = https://github.com/microsoft/BIPIA.git

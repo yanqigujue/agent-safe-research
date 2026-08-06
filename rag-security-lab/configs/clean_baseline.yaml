@@ -1,0 +1,22 @@
+experiment:
+  name: elecbench_clean_baseline
+  seed: 2026
+  output_root: runs
+
+dataset:
+  type: elecbench
+  path: 知识库污染数据集/Elecbench中文版
+
+queries:
+  mode: all
+
+attack:
+  type: none
+
+retriever:
+  type: tfidf
+  top_k: [1, 5]
+
+generation:
+  enabled: false
+

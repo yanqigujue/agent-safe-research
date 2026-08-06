@@ -1,0 +1,40 @@
+[
+  {
+    "topic": "monitoring",
+    "query_count": 6,
+    "candidate_count": 6,
+    "selected_count": 6,
+    "selected": [
+      {
+        "doc_id": "topicflip_group_a_monitoring_capacity_overestimate_004::append_opt_4",
+        "surrogate_avg_relevance": 0.343754,
+        "variant": "append_rank_margin_opt_4"
+      },
+      {
+        "doc_id": "topicflip_group_a_monitoring_data_processing_006::append_opt_4",
+        "surrogate_avg_relevance": 0.27732,
+        "variant": "append_rank_margin_opt_4"
+      },
+      {
+        "doc_id": "topicflip_group_a_monitoring_limitations_001::append_opt_4",
+        "surrogate_avg_relevance": 0.221442,
+        "variant": "append_rank_margin_opt_4"
+      },
+      {
+        "doc_id": "topicflip_group_a_monitoring_ai_capacity_003::append_opt_4",
+        "surrogate_avg_relevance": 0.19717,
+        "variant": "append_rank_margin_opt_4"
+      },
+      {
+        "doc_id": "topicflip_group_a_monitoring_response_capacity_005::append_opt_4",
+        "surrogate_avg_relevance": 0.195897,
+        "variant": "append_rank_margin_opt_4"
+      },
+      {
+        "doc_id": "topicflip_group_a_monitoring_resilience_002::append_opt_4",
+        "surrogate_avg_relevance": 0.194359,
+        "variant": "append_rank_margin_opt_4"
+      }
+    ]
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "step": 1,
+    "selected_terms": [
+      "系统稳定性"
+    ],
+    "mean_poison_score": 0.296959,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.702612,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 11.714286,
+    "ranks": [
+      8,
+      7,
+      6,
+      8,
+      10,
+      23,
+      20
+    ]
+  },
+  {
+    "step": 2,
+    "selected_terms": [
+      "系统稳定性",
+      "黑启动设施启动功能"
+    ],
+    "mean_poison_score": 0.305061,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.69451,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 9.428571,
+    "ranks": [
+      9,
+      7,
+      6,
+      8,
+      10,
+      13,
+      13
+    ]
+  },
+  {
+    "step": 3,
+    "selected_terms": [
+      "系统稳定性",
+      "黑启动设施启动功能",
+      "协调员统筹协调职责"
+    ],
+    "mean_poison_score": 0.309073,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.690498,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 9.285714,
+    "ranks": [
+      9,
+      8,
+      6,
+      8,
+      10,
+      12,
+      12
+    ]
+  },
+  {
+    "step": 4,
+    "selected_terms": [
+      "系统稳定性",
+      "黑启动设施启动功能",
+      "协调员统筹协调职责",
+      "而非单纯隔离故障"
+    ],
+    "mean_poison_score": 0.312747,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.686824,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 8.857143,
+    "ranks": [
+      9,
+      7,
+      6,
+      6,
+      10,
+      12,
+      12
+    ]
+  },
+  {
+    "step": 5,
+    "selected_terms": [
+      "系统稳定性",
+      "黑启动设施启动功能",
+      "协调员统筹协调职责",
+      "而非单纯隔离故障",
+      "同步发电机作为核心组件"
+    ],
+    "mean_poison_score": 0.316238,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.683333,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 9.0,
+    "ranks": [
+      9,
+      7,
+      6,
+      6,
+      10,
+      12,
+      13
+    ]
+  },
+  {
+    "step": 6,
+    "selected_terms": [
+      "系统稳定性",
+      "黑启动设施启动功能",
+      "协调员统筹协调职责",
+      "而非单纯隔离故障",
+      "同步发电机作为核心组件",
+      "协调员职责"
+    ],
+    "mean_poison_score": 0.317757,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.681814,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 8.857143,
+    "ranks": [
+      9,
+      7,
+      6,
+      6,
+      10,
+      12,
+      12
+    ]
+  },
+  {
+    "step": 7,
+    "selected_terms": [
+      "系统稳定性",
+      "黑启动设施启动功能",
+      "协调员统筹协调职责",
+      "而非单纯隔离故障",
+      "同步发电机作为核心组件",
+      "协调员职责",
+      "战略位置发电机优先级"
+    ],
+    "mean_poison_score": 0.318967,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.680603,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 8.857143,
+    "ranks": [
+      9,
+      7,
+      6,
+      6,
+      10,
+      12,
+      12
+    ]
+  },
+  {
+    "step": 8,
+    "selected_terms": [
+      "系统稳定性",
+      "黑启动设施启动功能",
+      "协调员统筹协调职责",
+      "而非单纯隔离故障",
+      "同步发电机作为核心组件",
+      "协调员职责",
+      "战略位置发电机优先级",
+      "战略位置"
+    ],
+    "mean_poison_score": 0.319508,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.680063,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 8.714286,
+    "ranks": [
+      8,
+      7,
+      6,
+      6,
+      10,
+      12,
+      12
+    ]
+  },
+  {
+    "step": 9,
+    "selected_terms": [
+      "系统稳定性",
+      "黑启动设施启动功能",
+      "协调员统筹协调职责",
+      "而非单纯隔离故障",
+      "同步发电机作为核心组件",
+      "协调员职责",
+      "战略位置发电机优先级",
+      "战略位置",
+      "设施作用"
+    ],
+    "mean_poison_score": 0.319964,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.679606,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 8.857143,
+    "ranks": [
+      9,
+      7,
+      6,
+      6,
+      10,
+      12,
+      12
+    ]
+  },
+  {
+    "step": 10,
+    "selected_terms": [
+      "系统稳定性",
+      "黑启动设施启动功能",
+      "协调员统筹协调职责",
+      "而非单纯隔离故障",
+      "同步发电机作为核心组件",
+      "协调员职责",
+      "战略位置发电机优先级",
+      "战略位置",
+      "设施作用",
+      "恢复目标"
+    ],
+    "mean_poison_score": 0.320103,
+    "mean_best_clean_score": 0.999571,
+    "mean_margin": -0.679467,
+    "topk_hit_count": 0,
+    "rank1_count": 0,
+    "avg_rank": 8.857143,
+    "ranks": [
+      9,
+      7,
+      6,
+      6,
+      10,
+      12,
+      12
+    ]
+  }
+]
