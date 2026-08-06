@@ -1,0 +1,41 @@
+experiment:
+  name: poisonedrag_manual_10_tfidf
+  seed: 2026
+  output_root: runs
+
+dataset:
+  type: elecbench
+  path: 知识库污染数据集/Elecbench中文版
+
+# all 用于同时统计目标命中和非目标溢出。
+queries:
+  mode: all
+
+attack:
+  type: targeted_static
+  mode: append
+  targets_file: experiments/poisonedrag_full/manual_review_poisonedrag_10_attacks.csv
+  style: paper_lm_targeted
+  poisons_per_target: 5
+
+retriever:
+  type: tfidf
+  top_k: [1, 3, 5, 10]
+  analyzer: char_wb
+  ngram_range: [2, 5]
+  min_df: 1
+  sublinear_tf: true
+
+# 先默认关闭昂贵的模型生成；需要时改为 true。
+generation:
+  enabled: false
+  type: ollama
+  base_url: http://localhost:11434
+  model: qwen3:8b
+  top_k: 5
+  prompt_mode: naive
+  query_scope: targets
+  max_queries: 10
+  temperature: 0.0
+  timeout: 300
+

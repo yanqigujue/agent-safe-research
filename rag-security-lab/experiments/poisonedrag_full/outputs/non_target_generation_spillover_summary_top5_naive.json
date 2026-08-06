@@ -1,0 +1,7 @@
+{
+  "top_k": 5,
+  "evaluated_non_target_spillover_cases": 10,
+  "non_target_generation_spillover_count": 0,
+  "non_target_generation_spillover_rate": 0.0,
+  "note": "This is measured only on non-target questions whose retrieval context already contained poison docs."
+}

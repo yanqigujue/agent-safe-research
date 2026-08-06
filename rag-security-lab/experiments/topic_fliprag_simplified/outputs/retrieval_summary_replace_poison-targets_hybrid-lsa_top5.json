@@ -1,0 +1,43 @@
+{
+  "demo": "topic_fliprag_simplified",
+  "second_step": "source_aligned_fixed_trigger_ranking_manipulation",
+  "source_dataset": "知识库污染数据集\\Elecbench中文版",
+  "poison_docs_path": "experiments\\topic_fliprag_simplified\\monitoring_capacity_group_a_poisoned_docs.jsonl",
+  "query_source": "poison-targets",
+  "topics": [
+    "blackstart",
+    "monitoring",
+    "dispatch"
+  ],
+  "clean_doc_count": 288,
+  "attacked_doc_count": 288,
+  "topic_query_count": 6,
+  "poison_candidate_count": 6,
+  "selected_poison_doc_count": 6,
+  "attack_mode": "replace",
+  "replaced_clean_doc_count": 6,
+  "appended_poison_doc_count": 0,
+  "replaced_clean_doc_ids": [
+    "monitoring_zh:10",
+    "monitoring_zh:11",
+    "monitoring_zh:12",
+    "monitoring_zh:13",
+    "monitoring_zh:14",
+    "monitoring_zh:9"
+  ],
+  "retriever": "hybrid-lsa",
+  "hybrid_alpha": 0.5,
+  "dense_components": 64,
+  "top_k": 5,
+  "selected_poisons_per_topic": 6,
+  "topk_origin_target_proportion": 0.0,
+  "topk_attacked_target_proportion": 1.0,
+  "topk_target_proportion_delta": 1.0,
+  "ranking_attack_success_rate": 1.0,
+  "topic_poison_hit_count": 6,
+  "topic_poison_hit_rate": 1.0,
+  "topic_poison_rank1_count": 6,
+  "topic_poison_rank1_rate": 1.0,
+  "cross_topic_poison_hit_count": 0,
+  "cross_topic_poison_hit_rate": 0.0
+}

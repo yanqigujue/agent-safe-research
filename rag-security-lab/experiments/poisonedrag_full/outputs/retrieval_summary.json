@@ -1,0 +1,15 @@
+[
+  {
+    "top_k": 5,
+    "clean_doc_count": 288,
+    "target_count": 10,
+    "poison_doc_count": 50,
+    "target_poison_hit_count": 10,
+    "target_poison_hit_rate": 1.0,
+    "target_poison_rank1_count": 7,
+    "target_poison_rank1_rate": 0.7,
+    "non_target_question_count": 278,
+    "non_target_poison_hit_count": 13,
+    "non_target_spillover_rate": 0.046762589928057555
+  }
+]

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-security-lab"
+version = "0.1.0"
+description = "Config-driven research framework for RAG knowledge-base and context poisoning experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "PyYAML>=6.0",
+  "requests>=2.31",
+  "scikit-learn>=1.3",
+]
+
+[project.scripts]
+rag-security-lab = "rag_security_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["rag_security_lab*"]
+

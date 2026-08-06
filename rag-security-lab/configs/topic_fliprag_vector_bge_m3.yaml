@@ -1,0 +1,29 @@
+experiment:
+  name: topic_fliprag_monitoring_append_bge_m3_q4
+  seed: 2026
+  output_root: runs
+
+dataset:
+  type: elecbench
+  path: 知识库污染数据集/Elecbench中文版
+
+queries:
+  mode: attack_targets
+
+attack:
+  type: external_jsonl
+  mode: append
+  path: experiments/topic_fliprag_simplified/monitoring_capacity_group_a_poisoned_docs.jsonl
+
+retriever:
+  type: ollama_embedding
+  model: bge-m3-ms-q4
+  base_url: http://localhost:11434
+  top_k: [1, 5]
+  batch_size: 32
+  timeout: 300
+  max_retries: 3
+  cache_path: .cache/rag_security_lab/bge_m3_q4_embeddings.sqlite3
+
+generation:
+  enabled: false

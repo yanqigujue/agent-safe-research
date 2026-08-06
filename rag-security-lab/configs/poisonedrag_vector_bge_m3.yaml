@@ -1,0 +1,32 @@
+experiment:
+  name: poisonedrag_manual_10_bge_m3_q4
+  seed: 2026
+  output_root: runs
+
+dataset:
+  type: elecbench
+  path: 知识库污染数据集/Elecbench中文版
+
+queries:
+  mode: all
+
+attack:
+  type: targeted_static
+  mode: append
+  targets_file: experiments/poisonedrag_full/manual_review_poisonedrag_10_attacks.csv
+  style: paper_lm_targeted
+  poisons_per_target: 5
+
+retriever:
+  type: ollama_embedding
+  model: bge-m3-ms-q4
+  base_url: http://localhost:11434
+  top_k: [1, 3, 5, 10]
+  batch_size: 32
+  timeout: 300
+  max_retries: 3
+  cache_path: .cache/rag_security_lab/bge_m3_q4_embeddings.sqlite3
+
+generation:
+  enabled: false
+

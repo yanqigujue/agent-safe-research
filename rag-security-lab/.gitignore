@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.cache/
+.venv/
+venv/
+
+# Experiment outputs are reproducible artifacts, not source files.
+runs/
+local_models/
+
+# Local credentials must never be committed.
+.env
+.env.*
+deepseek-api.txt
+*api-key*.txt

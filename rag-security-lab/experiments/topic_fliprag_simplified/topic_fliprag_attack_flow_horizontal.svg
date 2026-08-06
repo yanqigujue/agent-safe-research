@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="360" viewBox="0 0 2200 360">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 14; }
+      .box-soft { fill: #eef6ff; stroke: #2563eb; stroke-width: 2; rx: 14; }
+      .box-warn { fill: #fff7ed; stroke: #ea580c; stroke-width: 2; rx: 14; }
+      .text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; font-size: 24px; font-weight: 600; }
+      .sub { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #475569; font-size: 18px; }
+      .arrow { stroke: #334155; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="2200" height="360" fill="#ffffff"/>
+
+  <g transform="translate(40 95)">
+    <rect class="box-soft" width="160" height="130"/>
+    <text class="text" x="80" y="52" text-anchor="middle">目标类别</text>
+    <text class="sub" x="80" y="84" text-anchor="middle">Topic</text>
+    <text class="sub" x="80" y="110" text-anchor="middle">Query Set</text>
+  </g>
+
+  <path class="arrow" d="M 215 160 L 285 160"/>
+
+  <g transform="translate(300 95)">
+    <rect class="box" width="170" height="130"/>
+    <text class="text" x="85" y="52" text-anchor="middle">Stage 1</text>
+    <text class="sub" x="85" y="86" text-anchor="middle">生成目标立场</text>
+    <text class="sub" x="85" y="112" text-anchor="middle">知识段</text>
+  </g>
+
+  <path class="arrow" d="M 485 160 L 555 160"/>
+
+  <g transform="translate(570 95)">
+    <rect class="box-warn" width="175" height="130"/>
+    <text class="text" x="87.5" y="56" text-anchor="middle">污染知识</text>
+    <text class="sub" x="87.5" y="92" text-anchor="middle">Poisoned</text>
+    <text class="sub" x="87.5" y="118" text-anchor="middle">Passage</text>
+  </g>
+
+  <path class="arrow" d="M 760 160 L 830 160"/>
+
+  <g transform="translate(845 95)">
+    <rect class="box" width="170" height="130"/>
+    <text class="text" x="85" y="52" text-anchor="middle">Stage 2</text>
+    <text class="sub" x="85" y="86" text-anchor="middle">优化 Trigger</text>
+    <text class="sub" x="85" y="112" text-anchor="middle">提升检索排名</text>
+  </g>
+
+  <path class="arrow" d="M 1030 160 L 1100 160"/>
+
+  <g transform="translate(1115 95)">
+    <rect class="box-warn" width="190" height="130"/>
+    <text class="text" x="95" y="56" text-anchor="middle">Trigger</text>
+    <text class="sub" x="95" y="92" text-anchor="middle">+</text>
+    <text class="sub" x="95" y="118" text-anchor="middle">Poisoned Passage</text>
+  </g>
+
+  <path class="arrow" d="M 1320 160 L 1390 160"/>
+
+  <g transform="translate(1405 95)">
+    <rect class="box" width="165" height="130"/>
+    <text class="text" x="82.5" y="56" text-anchor="middle">知识库</text>
+    <text class="sub" x="82.5" y="92" text-anchor="middle">注入 / 替换</text>
+  </g>
+
+  <path class="arrow" d="M 1585 160 L 1655 160"/>
+
+  <g transform="translate(1670 95)">
+    <rect class="box-soft" width="155" height="130"/>
+    <text class="text" x="77.5" y="56" text-anchor="middle">Attacked</text>
+    <text class="sub" x="77.5" y="92" text-anchor="middle">Knowledge Base</text>
+  </g>
+
+  <path class="arrow" d="M 1840 160 L 1910 160"/>
+
+  <g transform="translate(1925 95)">
+    <rect class="box" width="155" height="130"/>
+    <text class="text" x="77.5" y="56" text-anchor="middle">RAG 检索</text>
+    <text class="sub" x="77.5" y="92" text-anchor="middle">Top-K 上下文</text>
+  </g>
+
+  <path class="arrow" d="M 2002 240 C 2002 300 930 300 930 240"/>
+
+  <g transform="translate(760 245)">
+    <rect class="box-warn" width="340" height="80"/>
+    <text class="text" x="170" y="35" text-anchor="middle">污染文本进入上下文</text>
+    <text class="sub" x="170" y="62" text-anchor="middle">影响 LLM 生成与类别立场</text>
+  </g>
+
+  <path class="arrow" d="M 1105 285 L 1195 285"/>
+
+  <g transform="translate(1210 245)">
+    <rect class="box-soft" width="210" height="80"/>
+    <text class="text" x="105" y="35" text-anchor="middle">立场偏转</text>
+    <text class="sub" x="105" y="62" text-anchor="middle">Topic Flip</text>
+  </g>
+</svg>

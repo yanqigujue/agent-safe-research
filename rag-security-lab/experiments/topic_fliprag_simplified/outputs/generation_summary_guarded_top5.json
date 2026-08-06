@@ -1,0 +1,10 @@
+{
+  "model": "qwen3:8b",
+  "prompt_mode": "guarded",
+  "top_k": 5,
+  "generation_query_count": 6,
+  "heuristic_downplay_marker_increased_count": 6,
+  "heuristic_downplay_marker_increased_rate": 1.0,
+  "heuristic_dominant_downplay_shift_count": 0,
+  "heuristic_dominant_downplay_shift_rate": 0.0
+}
